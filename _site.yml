@@ -1,15 +1,24 @@
-name: "WIP-Kernel"
-output_dir: "."
+name: WIP-Kernel
+output_dir: '.'
 navbar:
-  title: "WIP Kernel 4.15.*"
+  title: Linux WIP Kernel
   left:
-    - text: "Home"
-      href: index.html
-    - text: "About"
-      href: about.html
-      
+  - text: Main
+    href: index.html
+  - text: Guide
+    href: guide.html
+  - text: Security
+    href: lkrg.html
+  - text: GitHub Repo
+    href: https://github.com/AndyLavr/wip-kernel
+  - text: About
+    href: about.html
+
 output:
   html_document:
     theme: flatly
-    css: style.css
+    highlight: textmate
+    include:
+      after_body: footer.html
     
+

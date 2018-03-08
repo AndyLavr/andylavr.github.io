@@ -1,5 +1,21 @@
 ---
-title: "About"
+title: "Information"
 ---
 
-WIP Kernel 4.15.*
+
+**Created by:**
+
+Andrei Lavreniyuk, CEO at "Technica-03, Inc."
+
+
+**Donate:**
+
+[![Donate with Bitcoin](https://en.cryptobadges.io/badge/big/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)](https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)
+[![Donate with Ethereum](https://en.cryptobadges.io/badge/big/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)](https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)
+
+
+
+**Contact me:**
+
+[E-Mail](mailto:andy.lavr@gmail.com)
+

@@ -11,7 +11,7 @@
 
 
 
-<title>Information</title>
+<title>Recommended system configuration</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -204,17 +204,132 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Information</h1>
+<h1 class="title toc-ignore">Recommended system configuration</h1>
 
 </div>
 
 
-<p><strong>Created by:</strong></p>
-<p>Andrei Lavreniyuk, CEO at “Technica-03, Inc.”</p>
-<p><strong>Donate:</strong></p>
-<p><a href="https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW"><img src="https://en.cryptobadges.io/badge/big/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW" alt="Donate with Bitcoin" /></a> <a href="https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb"><img src="https://en.cryptobadges.io/badge/big/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb" alt="Donate with Ethereum" /></a></p>
-<p><strong>Contact me:</strong></p>
-<p><a href="mailto:andy.lavr@gmail.com">E-Mail</a></p>
+<div id="example-config-files-for-intel-i7-broadwell-32mb-ram" class="section level3">
+<h3>Example config files for Intel i7 Broadwell, 32Mb RAM</h3>
+<ul>
+<li>/etc/default/grub</li>
+</ul>
+<pre class="bash"><code>GRUB_CMDLINE_LINUX_DEFAULT=&quot;spectre_v2=auto pti=auto ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux acpi_backlight=vendor intel_iommu=on swiotlb=32768 apparmor=0&quot;
+GRUB_CMDLINE_LINUX=&quot;noresume systemd.gpt_auto=0&quot;</code></pre>
+<ul>
+<li>/etc/sysctl.conf</li>
+</ul>
+<pre class="bash"><code>vm.laptop_mode=0
+vm.swappiness=60
+vm.vfs_cache_pressure=1000
+vm.dirty_writeback_centisecs=15000
+
+# You can monitor the kernel behavior with regard to the dirty
+# pages by using grep -A 1 dirty /proc/vmstat
+vm.dirty_background_ratio=5
+vm.dirty_ratio=15
+
+# required free memory (set to 1% of physical ram)
+vm.min_free_kbytes=328979
+
+# system open file limit
+fs.file-max=2055936
+
+# Core dump suidsafe
+kernel.core_uses_pid = 1
+kernel.core_pattern = /tmp/core-%e-%s-%u-%g-%p-%t
+fs.suid_dumpable = 2
+
+kernel.printk=4 4 1 7
+kernel.core_uses_pid=1
+kernel.sysrq=0
+
+# VMware
+kernel.shmmax=30318719385
+kernel.shmmni = 16384
+
+### ---
+
+net.ipv4.conf.all.accept_redirects = 0
+net.ipv4.conf.all.secure_redirects = 0
+net.ipv4.conf.all.send_redirects = 0
+net.ipv4.tcp_max_orphans = 65536
+net.ipv4.tcp_fin_timeout = 10
+net.ipv4.tcp_keepalive_time = 1800
+net.ipv4.tcp_keepalive_intvl = 15
+net.ipv4.tcp_keepalive_probes = 5
+net.ipv4.tcp_max_syn_backlog = 4096
+net.ipv4.tcp_syn_retries = 3
+net.ipv4.tcp_synack_retries = 1
+net.ipv4.tcp_mem = 50576   64768   98152
+net.ipv4.tcp_orphan_retries = 0
+net.ipv4.tcp_syncookies = 1
+net.netfilter.nf_conntrack_max = 16777216
+net.ipv4.tcp_timestamps = 1
+net.ipv4.tcp_sack = 1
+net.ipv4.tcp_congestion_control = yeah
+net.ipv4.tcp_no_metrics_save = 1
+net.ipv4.route.flush = 1
+net.ipv4.conf.all.rp_filter = 1
+net.ipv4.conf.lo.rp_filter = 1
+net.ipv4.conf.default.rp_filter = 1
+net.ipv4.conf.all.accept_source_route = 0
+net.ipv4.conf.lo.accept_source_route = 0
+net.ipv4.conf.default.accept_source_route = 0
+net.ipv4.ip_local_port_range = 1024 65535
+net.ipv4.tcp_tw_reuse = 1
+net.ipv4.tcp_window_scaling = 1
+net.ipv4.tcp_rfc1337 = 1
+net.ipv4.ip_forward = 0
+net.ipv4.icmp_echo_ignore_broadcasts = 1
+net.ipv4.icmp_echo_ignore_all = 1
+net.ipv4.icmp_ignore_bogus_error_responses = 1
+net.core.somaxconn = 65535
+fs.inotify.max_user_watches = 16777216
+#
+net.ipv4.tcp_slow_start_after_idle = 0
+net.ipv4.ip_default_ttl = 63
+#
+net.ipv4.tcp_ecn = 1
+net.core.default_qdisc = fq_codel
+#
+net.ipv4.tcp_fastopen = 3
+#
+# IO shedulers
+vm.dirty_background_bytes=67108864
+vm.dirty_bytes=134217728
+#
+# Huge Page
+vm.nr_hugepages=4096
+vm.nr_overcommit_hugepages=4096
+vm.hugetlb_shm_group=1001
+#
+# Memory
+net.core.rmem_default = 33554432
+net.core.wmem_default = 33554432
+net.core.rmem_max = 33554432
+net.core.wmem_max = 33554432
+net.core.netdev_max_backlog = 16384
+#
+net.ipv4.tcp_rmem = 8192 87380 33554432
+net.ipv4.tcp_wmem = 8192 65536 33554432
+#
+#
+kernel.yama.ptrace_scope=2
+#
+kernel.perf_event_paranoid=2
+#
+net.netfilter.nf_conntrack_helper=1</code></pre>
+<ul>
+<li>/etc/network/interfaces</li>
+</ul>
+<pre class="bash"><code>wireless-power off</code></pre>
+<ul>
+<li>/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf</li>
+</ul>
+<pre class="bash"><code>[connection]
+wifi.powersave = 2</code></pre>
+</div>
 
 <p>Copyright &copy; 2018 AndyLavr All rights reserved.</p>
 

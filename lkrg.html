@@ -11,7 +11,7 @@
 
 
 
-<title>Information</title>
+<title>Using Linux Kernel Runtime Guard (LKRG)</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -204,17 +204,63 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Information</h1>
+<h1 class="title toc-ignore">Using Linux Kernel Runtime Guard (LKRG)</h1>
 
 </div>
 
 
-<p><strong>Created by:</strong></p>
-<p>Andrei Lavreniyuk, CEO at “Technica-03, Inc.”</p>
-<p><strong>Donate:</strong></p>
-<p><a href="https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW"><img src="https://en.cryptobadges.io/badge/big/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW" alt="Donate with Bitcoin" /></a> <a href="https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb"><img src="https://en.cryptobadges.io/badge/big/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb" alt="Donate with Ethereum" /></a></p>
-<p><strong>Contact me:</strong></p>
-<p><a href="mailto:andy.lavr@gmail.com">E-Mail</a></p>
+<ul>
+<li>Installation of <a href="http://openwall.info/wiki/p_lkrg/Protected_Features"><strong>LKRG</strong></a> is exactly the same as loading normal kernel module.</li>
+<li>As soon as system is installed it starts the work.</li>
+<li>If default logging level is used, LKRG produces one short sentence saying that system is clean unless corruptions are detected.</li>
+</ul>
+<pre class="bash"><code># modprobe lkrg
+
+# modinfo lkrg
+
+filename:       /lib/modules/4.15.7-wip-x30-broadwell/kernel/drivers/staging/lkrg/lkrg.ko
+license:        GPL v2
+description:    pi3s Linux kernel Runtime Guard
+author:         Adam &#39;pi3&#39; Zabrocki (http://pi3.com.pl)
+srcversion:     Current version
+depends:
+staging:        Y
+retpoline:      Y
+intree:         Y
+name:           lkrg
+vermagic:       4.15.7-wip-x30-broadwell SMP mod_unload modversions retpoline
+signat:         PKCS#7
+signer:
+sig_key:
+sig_hashalgo:   md4
+parm:           p_init_log_level:Logging level init value [1 (alive) is default] (uint)
+
+
+ Add file /etc/modprobe.d/lkrg.conf
+
+and insert string options:
+
+options lkrg p_init_log_level=3</code></pre>
+<ul>
+<li>The project has built in a <strong>sysctl</strong> interface which enables the interaction between the administrator and LKRG.</li>
+</ul>
+<p><strong>By default 5 different options are available:</strong></p>
+<pre class="bash"><code> # sysctl -a | egrep lkrg
+ 
+lkrg.block_modules = 0
+lkrg.clean_message = 1
+lkrg.force_run = 0
+lkrg.hide = 0
+lkrg.log_level = 3
+lkrg.random_events = 1
+lkrg.timestamp = 15</code></pre>
+<ul>
+<li><p>Blocking module functionality (lkrg.block_modules) - only two options are available: 0 - do NOT lock the kernel and allow to load kernel module 1 - lock the kernel and do NOT allow to load kernel module</p></li>
+<li><p>Printing “System is clean!” message (lkrg.clean_message) - only two options are available: 0 - do NOT print “System is clean!” message regardless of log_level value 1 - if log_level value allows it, print “System is clean!” message</p></li>
+<li><p>Force (lkrg.force_run) - forces LKRG to run integrity function right now. It is always visible as 0 number. Nevertheless, if you set it to 1, the integrity checking function will be immediately fired and value restored to 0 again</p></li>
+<li><p>log level (lkrg.log_level) - it might be a number between 0-4 or 0-6 (if debugging compilation was used). A strong debug provides very useful data to identify where could be a specific problem with LKRG (if it ever appears). Unfortunately, it produces tons of logs per execution and must be used only for debugging purpose, not as a normal run.</p></li>
+<li><p>timestamp (lkrg.timestamp) - changes how often kernel timer will be launched (kernel timer periodically calls integrity function). It can’t be less than 5 seconds (not to eat too much system resources) and not more than 1800 seconds (half an hour) - not to be silent for too long</p></li>
+</ul>
 
 <p>Copyright &copy; 2018 AndyLavr All rights reserved.</p>
 

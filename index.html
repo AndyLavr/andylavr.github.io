@@ -10,8 +10,9 @@
 
 
 
+<meta name="date" content="2018-03-08" />
 
-<title>WIP Kernel 4.15.*</title>
+<title>Linux WIP Kernel</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,7 +21,7 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -68,7 +69,6 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="style.css" type="text/css" />
 
 </head>
 
@@ -174,12 +174,21 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">WIP Kernel 4.15.*</a>
+      <a class="navbar-brand" href="index.html">Linux WIP Kernel</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Home</a>
+  <a href="index.html">Main</a>
+</li>
+<li>
+  <a href="guide.html">Guide</a>
+</li>
+<li>
+  <a href="lkrg.html">Security</a>
+</li>
+<li>
+  <a href="https://github.com/AndyLavr/wip-kernel">GitHub Repo</a>
 </li>
 <li>
   <a href="about.html">About</a>
@@ -196,13 +205,71 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">WIP Kernel 4.15.*</h1>
+<h1 class="title toc-ignore">Linux WIP Kernel</h1>
+<h3 class="subtitle"><em>WIP Patched Kernel Ubuntu packages (Linux 4.15.*)</em></h3>
+<h4 class="date"><em>2018-03-08</em></h4>
 
 </div>
 
 
-<p>Hello, World!</p>
+<p><a href="https://github.com/RichardLitt/standard-readme"><img src="https://img.shields.io/badge/readme%20style-standard-brightgreen.svg" alt="standard-readme compliant" /></a> <a href="https://github.com/AndyLavr/wip-kernel/releases"><img src="https://img.shields.io/badge/Release-last-green.svg" alt="Releases" /></a> <a href="https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW"><img src="https://en.cryptobadges.io/badge/micro/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW" alt="Donate with Bitcoin" /></a> <a href="https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb"><img src="https://en.cryptobadges.io/badge/micro/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb" alt="Donate with Ethereum" /></a></p>
+<p>WIP Patched Kernel kernel distribution with custom settings (Linux 4.15.7)</p>
+<ul>
+<li>Full kernel adaptation to version <strong>Ubuntu 18.04 LTS Bionic.</strong></li>
+<li>Full kernel adaptation to build GCC7/GCC8.</li>
+<li>Optimized to take full advantage of high-performance.</li>
+<li>Supports all recent 64-bit versions of Debian and Ubuntu-based systems.</li>
+</ul>
+<p><strong>Main Features:</strong></p>
+<ul>
+<li>Tuned CPU for Intel i5/i7/Atom and Amd k10 platform.</li>
+<li>PDS CPU Scheduler &amp; Multi-Queue I/O Block Layer w/ BFQ-MQ for smoothness and responsiveness.</li>
+<li>Caching, Virtual Memory Manager and CPU Governor Improvements.</li>
+<li>General-purpose Multitasking Kernel.</li>
+<li>Built on the GCC 8.0.1 (experimental) [wip]</li>
+<li>DRM Optimized Performance.</li>
+<li>Intel CPUFreq (P-State passive mode).</li>
+<li>ZFS, AUFS, BFQ and Ureadahead support available.</li>
+</ul>
+<div id="full-support" class="section level2">
+<h2>Full support:</h2>
+<ul>
+<li>Indirect Branch Restricted Speculation (IBRS)</li>
+<li>Indirect Branch Prediction Barrier (IBPB)</li>
+</ul>
+</div>
+<div id="add-linux-kernel-runtime-guard-lkrg" class="section level2">
+<h2>Add Linux Kernel Runtime Guard (LKRG)</h2>
+<p>Linux Kernel Runtime Guard (LKRG) is a loadable kernel module that performs runtime integrity checking of the Linux kernel and detection of security vulnerability exploits against the kernel.</p>
+</div>
+<div id="install" class="section level2">
+<h2>Install</h2>
+<p>Download the installation packages for your CPU, only x86_64 packages:</p>
+<p><a href="https://drive.google.com/drive/folders/1jd2mliolOMy30uL8opuDLVGat8JxUXPG"><img src="https://img.shields.io/badge/Download-broadwell-blue.svg" alt="Download" /></a> <a href="https://drive.google.com/drive/folders/1b2wWdKqB_KjaVhkxlIIQ5wqgt3DiMAwT"><img src="https://img.shields.io/badge/Download-westmere-yellow.svg" alt="Download" /></a> <a href="https://drive.google.com/drive/folders/1N9q2mlsiROjpq7_HG2yD-CQ2tOrnt-YD"><img src="https://img.shields.io/badge/Dowload-atom-red.svg" alt="Download" /></a> <a href="https://drive.google.com/drive/folders/1EmBc7ybd-AqHyKiWAnMQjLpV69-8jFv4"><img src="https://img.shields.io/badge/Download-k10-ff69b4.svg" alt="Download" /></a> <a href="https://drive.google.com/drive/folders/1PSEKJYXq5fm-xNR_lS2nTZ9QjVJ3uAtC"><img src="https://img.shields.io/badge/Download-generic-green.svg" alt="Download" /></a></p>
+<table>
+<thead>
+<tr class="header">
+<th>Builds</th>
+<th>Release</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Last</td>
+<td><a href="https://github.com/AndyLavr/wip-kernel/releases"><img src="https://img.shields.io/github/release/AndyLavr/wip-kernel/all.svg" alt="GitHub release" /></a></td>
+<td><a href="https://github.com/AndyLavr/wip-kernel/releases"><img src="https://img.shields.io/github/release-date-pre/AndyLavr/wip-kernel.svg" alt="GitHub Release Date" /></a></td>
+</tr>
+<tr class="even">
+<td>Stable</td>
+<td><a href="https://github.com/AndyLavr/wip-kernel/releases"><img src="https://img.shields.io/github/release/AndyLavr/wip-kernel.svg" alt="GitHub release" /></a></td>
+<td><a href="https://github.com/AndyLavr/wip-kernel/releases"><img src="https://img.shields.io/github/release-date/AndyLavr/wip-kernel.svg" alt="GitHub Release Date" /></a></td>
+</tr>
+</tbody>
+</table>
+</div>
 
+<p>Copyright &copy; 2018 AndyLavr All rights reserved.</p>
 
 
 
