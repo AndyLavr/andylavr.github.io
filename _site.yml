@@ -9,16 +9,18 @@ navbar:
     href: guide.html
   - text: Security
     href: lkrg.html
+  - text: Solve problem
+    href: solve.html
   - text: GitHub Repo
     href: https://github.com/AndyLavr/wip-kernel
   - text: About
     href: about.html
-
 output:
   html_document:
     theme: flatly
     highlight: textmate
     include:
       after_body: footer.html
-    
+    lib_dir: site_libs
+    self_contained: no
 
