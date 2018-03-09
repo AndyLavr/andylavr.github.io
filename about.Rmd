@@ -5,7 +5,7 @@ title: "Information"
 
 **Created by:**
 
-![](./images/lavr.png) AndyLavr © 1966-2018"
+![](./images/lavr.png) "AndyLavr © 1966-2018"
 
 
 **Donate:**
