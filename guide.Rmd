@@ -13,6 +13,8 @@ GRUB_CMDLINE_LINUX_DEFAULT="spectre_v2=auto pti=auto ipv6.disable=1 intremap=no_
 GRUB_CMDLINE_LINUX="noresume systemd.gpt_auto=0"
 ```
 
+---
+
 - /etc/sysctl.conf
 
 ```bash
@@ -119,11 +121,15 @@ kernel.perf_event_paranoid=2
 net.netfilter.nf_conntrack_helper=1
 ```
 
+---
+
 - /etc/network/interfaces
 
 ```bash
 wireless-power off
 ```
+
+---
 
 - /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
 
@@ -131,3 +137,6 @@ wireless-power off
 [connection]
 wifi.powersave = 2
 ```
+
+---
+

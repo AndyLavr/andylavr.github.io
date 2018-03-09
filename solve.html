@@ -237,9 +237,11 @@ Example for (Qualcomm Atheros QCA6174 802.11ac Wireless Network Adapter)
 ln -s /lib/firmware/ath10k/QCA6174/hw2.1/board.bin /lib/firmware/ath10k/pre-cal-pci-0000:05:00.0.bin
 
 ln -s /lib/firmware/ath10k/QCA6174/hw2.1/board-2.bin /lib/firmware/ath10k/cal-pci-0000:05:00.0.bin</code></pre>
+<hr />
 <p><strong>Fix regulatory DB for WiFI</strong></p>
 <p><a href="https://drive.google.com/drive/folders/1eYDcZ0NX1buDMWwzLMcHy2YLJlSgXnw6">Download files</a></p>
 <pre class="bash"><code>Copy files regulatory.db and regulatory.db.p7s to /lib/firmware</code></pre>
+<hr />
 <p><strong>Fix start X session</strong></p>
 <pre class="yama"><code>If start X session fail and error from system journal :
 
@@ -248,6 +250,7 @@ lightdm[1182]: PAM unable to dlopen(pam_kwallet.so):
 
 then turn off all the lines containing pam_kwallet.co and pam_kwallet5.so in
 all the files in this directory /etc/pam.d</code></pre>
+<hr />
 <p><strong>Intel – Fix MMC/GPT warning</strong></p>
 <pre class="yama"><code>
  I had been getting a warning on boot with recent kernels on my 
@@ -261,6 +264,7 @@ not being able to recognise some mmc disk partitions at that stage of the boot p
 
 The workaround is to add systemd.gpt_auto=0 to the kernel command line.
 </code></pre>
+<hr />
 
 <p>Copyright &copy; 1966-2018 AndyLavr All rights reserved.</p>
 

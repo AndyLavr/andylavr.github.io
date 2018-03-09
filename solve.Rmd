@@ -18,6 +18,8 @@ ln -s /lib/firmware/ath10k/QCA6174/hw2.1/board.bin /lib/firmware/ath10k/pre-cal-
 ln -s /lib/firmware/ath10k/QCA6174/hw2.1/board-2.bin /lib/firmware/ath10k/cal-pci-0000:05:00.0.bin
 ```
 
+---
+
 **Fix regulatory DB for WiFI**
 
 [Download files](https://drive.google.com/drive/folders/1eYDcZ0NX1buDMWwzLMcHy2YLJlSgXnw6) 
@@ -26,6 +28,8 @@ ln -s /lib/firmware/ath10k/QCA6174/hw2.1/board-2.bin /lib/firmware/ath10k/cal-pc
 ```bash
 Copy files regulatory.db and regulatory.db.p7s to /lib/firmware
 ```
+
+---
 
 **Fix start X session**
 
@@ -38,6 +42,8 @@ lightdm[1182]: PAM unable to dlopen(pam_kwallet.so):
 then turn off all the lines containing pam_kwallet.co and pam_kwallet5.so in
 all the files in this directory /etc/pam.d
 ```
+
+---
 
 **Intel – Fix MMC/GPT warning**
 
@@ -55,4 +61,6 @@ not being able to recognise some mmc disk partitions at that stage of the boot p
 The workaround is to add systemd.gpt_auto=0 to the kernel command line.
 
 ```
+
+---
 

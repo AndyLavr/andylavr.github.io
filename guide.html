@@ -232,6 +232,7 @@ $(document).ready(function () {
 </ul>
 <pre class="bash"><code>GRUB_CMDLINE_LINUX_DEFAULT=&quot;spectre_v2=auto pti=auto ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux acpi_backlight=vendor intel_iommu=on swiotlb=32768 apparmor=0&quot;
 GRUB_CMDLINE_LINUX=&quot;noresume systemd.gpt_auto=0&quot;</code></pre>
+<hr />
 <ul>
 <li>/etc/sysctl.conf</li>
 </ul>
@@ -336,15 +337,18 @@ kernel.yama.ptrace_scope=2
 kernel.perf_event_paranoid=2
 #
 net.netfilter.nf_conntrack_helper=1</code></pre>
+<hr />
 <ul>
 <li>/etc/network/interfaces</li>
 </ul>
 <pre class="bash"><code>wireless-power off</code></pre>
+<hr />
 <ul>
 <li>/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf</li>
 </ul>
 <pre class="bash"><code>[connection]
 wifi.powersave = 2</code></pre>
+<hr />
 </div>
 
 <p>Copyright &copy; 1966-2018 AndyLavr All rights reserved.</p>

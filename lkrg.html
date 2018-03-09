@@ -277,6 +277,7 @@ lkrg.timestamp = 15</code></pre>
 <li><p>log level (lkrg.log_level) - it might be a number between 0-4 or 0-6 (if debugging compilation was used). A strong debug provides very useful data to identify where could be a specific problem with LKRG (if it ever appears). Unfortunately, it produces tons of logs per execution and must be used only for debugging purpose, not as a normal run.</p></li>
 <li><p>timestamp (lkrg.timestamp) - changes how often kernel timer will be launched (kernel timer periodically calls integrity function). It can’t be less than 5 seconds (not to eat too much system resources) and not more than 1800 seconds (half an hour) - not to be silent for too long</p></li>
 </ul>
+<hr />
 
 <p>Copyright &copy; 1966-2018 AndyLavr All rights reserved.</p>
 
