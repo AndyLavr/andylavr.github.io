@@ -5,7 +5,7 @@ title: "Information"
 
 **Created by:**
 
-Andrei Lavreniyuk, CEO at "Technica-03, Inc."
+![](./images/lavr.png) AndyLavr © 1966-2018"
 
 
 **Donate:**
