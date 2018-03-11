@@ -22,7 +22,7 @@ date: "`r Sys.Date()`"
 ---
 
 
-WIP Patched Kernel kernel distribution with custom settings (Linux 4.15.7)
+WIP Patched Kernel kernel distribution with custom settings (Linux 4.15.8)
 
  - Full kernel adaptation to version **Ubuntu 18.04 LTS Bionic.**
  - Full kernel adaptation to build GCC7/GCC8.
