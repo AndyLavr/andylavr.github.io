@@ -35,7 +35,7 @@ WIP Patched Kernel kernel distribution with custom settings (Linux 4.15.8)
  - PDS CPU Scheduler & Multi-Queue I/O Block Layer w/ BFQ-MQ for smoothness and responsiveness.
  - Caching, Virtual Memory Manager and CPU Governor Improvements.
  - General-purpose Multitasking Kernel.
- - Built on the GCC 8.0.1 (experimental) [wip]
+ - Built on the latest GCC 8.0.1
  - DRM Optimized Performance.
  - Intel CPUFreq (P-State passive mode).
  - ZFS, AUFS, BFQ and Ureadahead support available.

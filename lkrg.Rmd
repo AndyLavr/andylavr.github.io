@@ -44,7 +44,7 @@ options lkrg p_init_log_level=3
  # sysctl -a | egrep lkrg
  
 lkrg.block_modules = 0
-lkrg.clean_message = 1
+lkrg.clean_message = 0
 lkrg.force_run = 0
 lkrg.hide = 0
 lkrg.log_level = 3
