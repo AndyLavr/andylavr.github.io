@@ -238,6 +238,26 @@ If yours update microcode CPU is supported **IBRS/IBPB** then enable IBRS option
 spectre_v2=ibrs
 
 IBPB will be turned on automatically.
+
+
+$ dmesg | egrep microcode
+
+[0.000000] microcode: microcode updated early to revision 0x1d, date = 2018-01-21
+[0.766365] microcode: sig=0x40671, pf=0x20, revision=0x1d
+[0.767580] microcode: Microcode Update Driver: v2.2.
+
+$ dmesg | egrep Spectre
+
+[0.012444] Spectre V2 : ibrs selected on command line.
+[0.012445] Spectre V2 : Mitigation: Indirect Branch Restricted Speculation
+[0.012446] Spectre V2 : IBPB - Enabling Indirect Branch Prediction Barrier
+[0.012447] Spectre V2 : IBRS - Enabling Restricted Speculation for firmware calls
+
+~$ grep . /sys/devices/system/cpu/vulnerabilities/*
+
+/sys/devices/system/cpu/vulnerabilities/meltdown:Mitigation: PTI
+/sys/devices/system/cpu/vulnerabilities/spectre_v1:Mitigation: __user pointer sanitization
+/sys/devices/system/cpu/vulnerabilities/spectre_v2:Mitigation: Indirect Branch Restricted Speculation, IBPB
 </code></pre>
 <hr />
 <ul>
