@@ -34,9 +34,9 @@ $ dmesg | egrep Spectre
 
 ~$ grep . /sys/devices/system/cpu/vulnerabilities/*
 
-/sys/devices/system/cpu/vulnerabilities/meltdown:Mitigation: PTI
-/sys/devices/system/cpu/vulnerabilities/spectre_v1:Mitigation: __user pointer sanitization
-/sys/devices/system/cpu/vulnerabilities/spectre_v2:Mitigation: Indirect Branch Restricted Speculation, IBPB
+/sys/devices/system/cpu/vulnerabilities/meltdown:Mitigation:PTI
+/sys/devices/system/cpu/vulnerabilities/spectre_v1:Mitigation:__user pointer sanitization
+/sys/devices/system/cpu/vulnerabilities/spectre_v2:Mitigation:Indirect Branch Restricted Speculation,IBPB
 
 ```
 
