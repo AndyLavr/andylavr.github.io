@@ -59,6 +59,11 @@ security vulnerability exploits against the kernel.
 
 ## Install
 
+Update Intel microcode for use IBRS/IBPB:
+
+[![Download](https://img.shields.io/badge/Download-microcode-red.svg)](https://downloadcenter.intel.com/download/27591/Linux-Processor-Microcode-Data-File)
+
+
 Download the installation packages for your CPU, only x86_64 packages:
 
 [![Download](https://img.shields.io/badge/Download-broadwell-blue.svg)](https://drive.google.com/drive/folders/1jd2mliolOMy30uL8opuDLVGat8JxUXPG)
