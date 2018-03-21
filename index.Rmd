@@ -44,21 +44,35 @@ WIP Patched Kernel kernel distribution with custom settings (Linux 4.15.*)
  - ZFS, AUFS, BFQ and Ureadahead support available.
 
 ---
+
+[![**Meltdown-Spectre**](images/ibrs3.jpeg)]()
  
-## Full support:
+## Full security support:
  
  - Indirect Branch Restricted Speculation (IBRS)
  - Indirect Branch Prediction Barrier (IBPB)
 
 ---
 
-## Add Linux Kernel Runtime Guard (LKRG)
+[![**LKRG - Linux Kernel Runtime Guard**](images/logo_openwall.png)](http://www.openwall.com/lkrg/)
+
+## Add Linux Kernel Runtime Guard ([LKRG](http://www.openwall.com/lkrg/))
 
  Linux Kernel Runtime Guard (LKRG) is a loadable kernel module that
 performs runtime integrity checking of the Linux kernel and detection of
 security vulnerability exploits against the kernel.
 
 ---
+
+[![**Linux Test Project**](images/ltp_logo.jpeg)](http://linux-test-project.github.io/)
+
+## Kernel tested by - [Linux Test Project](http://linux-test-project.github.io/)
+
+ **Linux Test Project** is a joint project started by SGI, developed and maintained by IBM, Cisco, Fujitsu, SUSE, Red Hat and others, that has a goal to deliver test suites to the open source community that validate the reliability, robustness, and stability of Linux. The LTP testsuite contains a collection of tools for testing the Linux kernel and related features.
+
+
+---
+
 
 ## Install
 
