@@ -83,11 +83,11 @@ Update Intel microcode for use IBRS/IBPB:
 
 Download the installation packages for your CPU, only x86_64 packages:
 
-[![Download](https://img.shields.io/badge/Download-broadwell-blue.svg)](https://drive.google.com/drive/folders/1jd2mliolOMy30uL8opuDLVGat8JxUXPG)
-[![Download](https://img.shields.io/badge/Download-westmere-yellow.svg)](https://drive.google.com/drive/folders/1b2wWdKqB_KjaVhkxlIIQ5wqgt3DiMAwT)
-[![Download](https://img.shields.io/badge/Dowload-atom-red.svg)](https://drive.google.com/drive/folders/1N9q2mlsiROjpq7_HG2yD-CQ2tOrnt-YD)
-[![Download](https://img.shields.io/badge/Download-k10-ff69b4.svg)](https://drive.google.com/drive/folders/1EmBc7ybd-AqHyKiWAnMQjLpV69-8jFv4)
-[![Download](https://img.shields.io/badge/Download-generic-green.svg)](https://drive.google.com/drive/folders/1PSEKJYXq5fm-xNR_lS2nTZ9QjVJ3uAtC)
+[![Download](https://img.shields.io/badge/Download-broadwell-blue.svg)](https://goo.gl/Fdz9uT)
+[![Download](https://img.shields.io/badge/Download-westmere-yellow.svg)](https://goo.gl/b49thD)
+[![Download](https://img.shields.io/badge/Dowload-atom-red.svg)](https://goo.gl/zHHafR)
+[![Download](https://img.shields.io/badge/Download-k10-ff69b4.svg)](https://goo.gl/13NTmf)
+[![Download](https://img.shields.io/badge/Download-generic-green.svg)](https://goo.gl/DSHRoF)
 
 ---
 
