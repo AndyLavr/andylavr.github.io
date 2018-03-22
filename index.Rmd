@@ -1,5 +1,5 @@
 ---
-title: "Linux WIP Kernel"
+title: "Linux WIP-Kernel"
 subtitle: "WIP Patched Kernel Ubuntu/Debian packages (Linux 4.15.*)"
 date: "`r Sys.Date()`"
 ---
