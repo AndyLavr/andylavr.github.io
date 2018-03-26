@@ -1,6 +1,6 @@
 ---
 title: "Linux WIP-Kernel"
-subtitle: "WIP Patched Kernel Ubuntu/Debian packages (Linux 4.15.*)"
+subtitle: "WIP Patched Kernel Ubuntu/Debian packages (Linux 4.15.13-wip-x43)"
 date: "`r Sys.Date()`"
 ---
 
@@ -40,7 +40,7 @@ date: "`r Sys.Date()`"
 
 **PERFORMANCE AND TO POWER AMAZING EXPERIENCE FOR GAMING G SERIES**
 
-WIP Patched Kernel kernel distribution with custom settings (Linux 4.15.*)
+WIP Patched Kernel kernel distribution with custom settings:
 
  - Experience a whole new way to interact with your PC like never before. 
  - Full kernel adaptation to version **Ubuntu 18.04 LTS Bionic.**
