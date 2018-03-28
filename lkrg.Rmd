@@ -73,6 +73,12 @@ lkrg.timestamp = 15
     to identify where could be a specific problem with LKRG (if it ever
     appears). Unfortunately, it produces tons of logs per execution and must be
     used only for debugging purpose, not as a normal run.
+    
+ - Random events (lkrg.random_events) - only two options are available:
+    0 - do NOT perform integrity checking on the random events (perform it
+        only at regular intervals configured by lkrg.timestamp)
+    1 - perform integrity checking on the random events (as well as at the
+        regular intervals)
 
  - timestamp (lkrg.timestamp) - changes how often kernel timer will be
     launched (kernel timer periodically calls integrity function). It can't be

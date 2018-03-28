@@ -309,6 +309,7 @@ lkrg.timestamp = 15</code></pre>
 <li><p>Printing “System is clean!” message (lkrg.clean_message) - only two options are available: 0 - do NOT print “System is clean!” message regardless of log_level value 1 - if log_level value allows it, print “System is clean!” message</p></li>
 <li><p>Force (lkrg.force_run) - forces LKRG to run integrity function right now. It is always visible as 0 number. Nevertheless, if you set it to 1, the integrity checking function will be immediately fired and value restored to 0 again</p></li>
 <li><p>log level (lkrg.log_level) - it might be a number between 0-4 or 0-6 (if debugging compilation was used). A strong debug provides very useful data to identify where could be a specific problem with LKRG (if it ever appears). Unfortunately, it produces tons of logs per execution and must be used only for debugging purpose, not as a normal run.</p></li>
+<li><p>Random events (lkrg.random_events) - only two options are available: 0 - do NOT perform integrity checking on the random events (perform it only at regular intervals configured by lkrg.timestamp) 1 - perform integrity checking on the random events (as well as at the regular intervals)</p></li>
 <li><p>timestamp (lkrg.timestamp) - changes how often kernel timer will be launched (kernel timer periodically calls integrity function). It can’t be less than 5 seconds (not to eat too much system resources) and not more than 1800 seconds (half an hour) - not to be silent for too long</p></li>
 </ul>
 <hr />
