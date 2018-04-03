@@ -1,13 +1,12 @@
 ---
 title: "Linux WIP-Kernel"
-subtitle: "WIP Patched Kernel Ubuntu/Debian packages (Linux 4.15.15-wip-x45)"
+subtitle: "AVL (WIP) Patched Kernel Ubuntu/Debian packages (Linux 4.16.0-avl-x0)"
 date: "`r Sys.Date()`"
 ---
 
 
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
-[![Releases](https://img.shields.io/badge/Release-last-green.svg)](https://github.com/AndyLavr/wip-kernel/releases)
 [![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)](https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)
 [![Donate with Ethereum](https://en.cryptobadges.io/badge/micro/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)](https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)
 
@@ -30,11 +29,7 @@ date: "`r Sys.Date()`"
 
 ---
 
-![**WIP Kernel SourceForge Project**](images/g.jpeg)
-
-<!--html_preserve-->
-<a href="https://sourceforge.net/p/wip-kernel/"><img alt="Download wip-kernel" src="https://sourceforge.net/sflogo.php?type=17&group_id=2933490" width=200></a>
-<!--/html_preserve-->
+![**AVL Kernel**](images/g.jpeg)
 
 ---
 
@@ -55,7 +50,7 @@ WIP Patched Kernel kernel distribution with custom settings:
  - PDS CPU Scheduler & Multi-Queue I/O Block Layer w/ BFQ-MQ for smoothness and responsiveness.
  - Caching, Virtual Memory Manager and CPU Governor Improvements.
  - General-purpose Multitasking Kernel.
- - Built on the latest GCC 8.0.1
+ - Built on the latest GCC 8
  - DRM Optimized Performance.
  - Intel CPUFreq (P-State passive mode).
  - ZFS, AUFS, BFQ and Ureadahead support available.
@@ -106,19 +101,4 @@ Download the installation packages for your CPU, only x86_64 packages:
 [![Download](https://img.shields.io/badge/Download-generic-green.svg)](https://goo.gl/DSHRoF)
 
 ---
-
-| Builds | Release | Date |
-| ------ | ------- | ---- |
-| Last    | [![GitHub release](https://img.shields.io/github/release/AndyLavr/wip-kernel/all.svg)](https://github.com/AndyLavr/wip-kernel/releases) | [![GitHub Release Date](https://img.shields.io/github/release-date-pre/AndyLavr/wip-kernel.svg)](https://github.com/AndyLavr/wip-kernel/releases) |
-| Stable  | [![GitHub release](https://img.shields.io/github/release/AndyLavr/wip-kernel.svg)](https://github.com/AndyLavr/wip-kernel/releases) | [![GitHub Release Date](https://img.shields.io/github/release-date/AndyLavr/wip-kernel.svg)](https://github.com/AndyLavr/wip-kernel/releases) |
-
----
-
-## Download Source
-
-[![Download wip-kernel](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/wip-kernel/files/latest/download)
-
----
-
-
 
