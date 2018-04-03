@@ -11,8 +11,6 @@ navbar:
     href: lkrg.html
   - text: Solve problem
     href: solve.html
-  - text: GitHub Repo
-    href: https://github.com/AndyLavr/wip-kernel
   - text: About
     href: about.html
 output:
