@@ -29,11 +29,9 @@ date: "`r Sys.Date()`"
 
 ---
 
-![**AVL Kernel**](images/g.jpeg)
+![**PERFORMANCE AND TO POWER AMAZING EXPERIENCE FOR GAMING G SERIES**](images/g.jpeg)
 
 ---
-
-**PERFORMANCE AND TO POWER AMAZING EXPERIENCE FOR GAMING G SERIES**
 
 WIP Patched Kernel kernel distribution with custom settings:
 
