@@ -1,6 +1,6 @@
 ---
 title: "Linux WIP-Kernel 4.17"
-subtitle: "AVL (WIP) Patched Linux mainline kernel (Ubuntu/Debian packages Linux 4.17.0-avl-x0)"
+subtitle: "AVL (WIP) Patched Linux mainline kernel (Ubuntu/Debian packages Linux 4.17.0-avl-20180407)"
 date: "`r Sys.Date()`"
 ---
 
@@ -43,7 +43,7 @@ WIP Patched Kernel kernel distribution with custom settings:
 
  - Experience a whole new way to interact with your PC like never before. 
  - Full kernel adaptation to version **Ubuntu 18.04 LTS Bionic.**
- - Full kernel adaptation to build GCC7/GCC8.
+ - Full kernel adaptation to build GCC8.
  - Optimized to take full advantage of high-performance.
  - Supports all recent 64-bit versions of Debian and Ubuntu-based systems. 
 
@@ -57,7 +57,7 @@ WIP Patched Kernel kernel distribution with custom settings:
  - Built on the latest GCC 8
  - DRM Optimized Performance.
  - Intel CPUFreq (P-State passive mode).
- - ZFS, AUFS, BFQ and Ureadahead support available.
+ - ZFS, BFQ and Ureadahead support available.
 
 ---
 
