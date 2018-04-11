@@ -1,6 +1,6 @@
 ---
 title: "Linux WIP-Kernel 4.17"
-subtitle: "AVL (WIP) Patched Linux mainline kernel (Ubuntu packages Linux 4.17.0-avl-20180410)"
+subtitle: "AVL (WIP) Patched Linux mainline kernel (Ubuntu packages Linux 4.17.0-avl-20180411)"
 date: "`r Sys.Date()`"
 ---
 
