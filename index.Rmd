@@ -75,7 +75,7 @@ WIP Patched Kernel kernel distribution with custom settings:
  
 ## The Ultra Kernel Samepage Merging feature (UKSM)
  
- - This is an improvement upon KSM. 
+ - This is an improvement upon ([KSM](https://www.kernel.org/doc/html/latest/admin-guide/mm/ksm.html)). 
    Some basic data structures and routines are borrowed from KSM.
 
 ---
