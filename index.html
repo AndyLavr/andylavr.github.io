@@ -10,9 +10,9 @@
 
 
 
-<meta name="date" content="2018-04-12" />
+<meta name="date" content="2018-10-31" />
 
-<title>Linux WIP-Kernel 4.17</title>
+<title>Linux WIP-Kernel 4.19</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -138,6 +138,9 @@ img {
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
 }
@@ -252,9 +255,9 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Linux WIP-Kernel 4.17</h1>
-<h3 class="subtitle"><em>AVL (WIP) Patched Linux mainline kernel (Ubuntu packages Linux 4.17.0-avl-20180412)</em></h3>
-<h4 class="date"><em>2018-04-12</em></h4>
+<h1 class="title toc-ignore">Linux WIP-Kernel 4.19</h1>
+<h3 class="subtitle"><em>WIP Patched Linux mainline kernel (For Ubuntu 18.10 Cosmic)</em></h3>
+<h4 class="date"><em>2018-10-31</em></h4>
 
 </div>
 
@@ -288,8 +291,8 @@ $(document).ready(function () {
 <p>WIP Patched Kernel kernel distribution with custom settings:</p>
 <ul>
 <li>Experience a whole new way to interact with your PC like never before.</li>
-<li>Full kernel adaptation to version <strong>Ubuntu 18.04 LTS Bionic.</strong></li>
-<li>Full kernel adaptation to build GCC8.</li>
+<li>Full kernel adaptation to version <strong>Ubuntu 18.10 Cosmic.</strong></li>
+<li>Full kernel adaptation to build GCC 8.2</li>
 <li>Optimized to take full advantage of high-performance.</li>
 <li>Supports all recent 64-bit versions of Debian and Ubuntu-based systems.</li>
 </ul>
@@ -297,12 +300,13 @@ $(document).ready(function () {
 <ul>
 <li>Tuned CPU for Intel i5/i7/Atom platform.</li>
 <li>PDS CPU Scheduler &amp; Multi-Queue I/O Block Layer w/ BFQ-MQ for smoothness and responsiveness.</li>
+<li>UKSM - Ultra Kernel Samepage Merging.</li>
 <li>Caching, Virtual Memory Manager and CPU Governor Improvements.</li>
 <li>General-purpose Multitasking Kernel.</li>
-<li>Built on the latest GCC 8</li>
+<li>Built on the latest GCC 8.2</li>
 <li>DRM Optimized Performance.</li>
 <li>Intel CPUFreq (P-State passive mode).</li>
-<li>ZFS, BFQ and Ureadahead support available.</li>
+<li>ZFS, AUFS, BFQ and Ureadahead support available.</li>
 </ul>
 <hr />
 <p><a href=""><img src="images/ibrs3.jpeg" alt="Meltdown-Spectre" /></a></p>
@@ -311,6 +315,14 @@ $(document).ready(function () {
 <ul>
 <li>Indirect Branch Restricted Speculation (IBRS)</li>
 <li>Indirect Branch Prediction Barrier (IBPB)</li>
+</ul>
+<hr />
+<p><a href=""><img src="images/uksm.jpeg" alt="UKSM" /></a></p>
+</div>
+<div id="the-ultra-kernel-samepage-merging-feature" class="section level2">
+<h2>The Ultra Kernel Samepage Merging feature</h2>
+<ul>
+<li>This is an improvement upon KSM. Some basic data structures and routines are borrowed from KSM.</li>
 </ul>
 <hr />
 <p><a href="http://www.openwall.com/lkrg/"><img src="images/logo_openwall.png" alt="LKRG - Linux Kernel Runtime Guard" /></a></p>
@@ -330,8 +342,9 @@ $(document).ready(function () {
 <h2>Install</h2>
 <p>Update Intel microcode for use IBRS/IBPB:</p>
 <p><a href="https://downloadcenter.intel.com/download/27591/Linux-Processor-Microcode-Data-File"><img src="https://img.shields.io/badge/Download-microcode-red.svg" alt="Download" /></a></p>
-<p>Download the installation packages for your CPU, only x86_64 packages:</p>
-<p><a href="https://goo.gl/Fdz9uT"><img src="https://img.shields.io/badge/Download-broadwell-blue.svg" alt="Download" /></a> <a href="https://goo.gl/b49thD"><img src="https://img.shields.io/badge/Download-westmere-yellow.svg" alt="Download" /></a> <a href="https://goo.gl/zHHafR"><img src="https://img.shields.io/badge/Dowload-atom-red.svg" alt="Download" /></a> <a href="https://goo.gl/DSHRoF"><img src="https://img.shields.io/badge/Download-generic-green.svg" alt="Download" /></a></p>
+<p>Install the packages from launchpad PPA “Linux WIP-Kernel” Team:</p>
+<p>Westmere and Atom x86_64 packages ONLY!</p>
+<p><a href="https://goo.gl/bEcNdv"><img src="https://img.shields.io/badge/Download-westmere-yellow.svg" alt="Download" /></a> <a href="https://goo.gl/bEcNdv"><img src="https://img.shields.io/badge/Dowload-atom-red.svg" alt="Download" /></a></p>
 <ul>
 <li>Ready packages are upload as they become available</li>
 </ul>

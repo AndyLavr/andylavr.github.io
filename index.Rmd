@@ -1,6 +1,6 @@
 ---
-title: "Linux WIP-Kernel 4.17"
-subtitle: "AVL (WIP) Patched Linux mainline kernel (Ubuntu packages Linux 4.17.0-avl-20180412)"
+title: "Linux WIP-Kernel 4.19"
+subtitle: "WIP Patched Linux mainline kernel (For Ubuntu 18.10 Cosmic)"
 date: "`r Sys.Date()`"
 ---
 
@@ -42,8 +42,8 @@ These kernels are not supported and are not appropriate for production use.
 WIP Patched Kernel kernel distribution with custom settings:
 
  - Experience a whole new way to interact with your PC like never before. 
- - Full kernel adaptation to version **Ubuntu 18.04 LTS Bionic.**
- - Full kernel adaptation to build GCC8.
+ - Full kernel adaptation to version **Ubuntu 18.10 Cosmic.**
+ - Full kernel adaptation to build GCC 8.2
  - Optimized to take full advantage of high-performance.
  - Supports all recent 64-bit versions of Debian and Ubuntu-based systems. 
 
@@ -52,12 +52,13 @@ WIP Patched Kernel kernel distribution with custom settings:
 
  - Tuned CPU for Intel i5/i7/Atom platform.
  - PDS CPU Scheduler & Multi-Queue I/O Block Layer w/ BFQ-MQ for smoothness and responsiveness.
+ - UKSM - Ultra Kernel Samepage Merging.
  - Caching, Virtual Memory Manager and CPU Governor Improvements.
  - General-purpose Multitasking Kernel.
- - Built on the latest GCC 8
+ - Built on the latest GCC 8.2
  - DRM Optimized Performance.
  - Intel CPUFreq (P-State passive mode).
- - ZFS, BFQ and Ureadahead support available.
+ - ZFS, AUFS, BFQ and Ureadahead support available.
 
 ---
 
@@ -68,6 +69,15 @@ WIP Patched Kernel kernel distribution with custom settings:
  - Indirect Branch Restricted Speculation (IBRS)
  - Indirect Branch Prediction Barrier (IBPB)
 
+---
+
+[![**UKSM**](images/uksm.jpeg)]()
+ 
+## The Ultra Kernel Samepage Merging feature
+ 
+ - This is an improvement upon KSM. 
+   Some basic data structures and routines are borrowed from KSM.
+ 
 ---
 
 [![**LKRG - Linux Kernel Runtime Guard**](images/logo_openwall.png)](http://www.openwall.com/lkrg/)
@@ -97,12 +107,12 @@ Update Intel microcode for use IBRS/IBPB:
 [![Download](https://img.shields.io/badge/Download-microcode-red.svg)](https://downloadcenter.intel.com/download/27591/Linux-Processor-Microcode-Data-File)
 
 
-Download the installation packages for your CPU, only x86_64 packages:
+Install the packages from launchpad PPA “Linux WIP-Kernel” Team:
 
-[![Download](https://img.shields.io/badge/Download-broadwell-blue.svg)](https://goo.gl/Fdz9uT)
-[![Download](https://img.shields.io/badge/Download-westmere-yellow.svg)](https://goo.gl/b49thD)
-[![Download](https://img.shields.io/badge/Dowload-atom-red.svg)](https://goo.gl/zHHafR)
-[![Download](https://img.shields.io/badge/Download-generic-green.svg)](https://goo.gl/DSHRoF)
+Westmere and Atom x86_64 packages ONLY!
+
+[![Download](https://img.shields.io/badge/Download-westmere-yellow.svg)](https://goo.gl/bEcNdv)
+[![Download](https://img.shields.io/badge/Dowload-atom-red.svg)](https://goo.gl/bEcNdv)
 
 - Ready packages are upload as they become available
 

@@ -1,3 +1,9 @@
+
+# Install one time
+install.packages('Rcpp')
+install.packages('htmltools')
+install.packages('rmarkdown')
+
 #Set our working directory. 
 setwd("~/git-main/wip-kernel-www")
 
