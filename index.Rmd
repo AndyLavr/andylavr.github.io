@@ -89,6 +89,16 @@ volume managers, and more, with consistent reliability, functionality and perfor
  
  - The module ZFS is integrated into the kernel.
 
+Warning! This kernel implement ZFS version 0.7.11.
+Packages for this version strictly install from my repository:
+
+To install ZFS, head to a terminal and run the following command:
+
+$ sudo add-apt-repository ppa:lavrandy/zfs-linux
+$ sudo apt-get update
+$ sudo apt install zfsutils-linux
+$ sudo reboot
+
 ---
 
 [![**AUFS**](images/aufs.jpeg)]()
