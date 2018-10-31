@@ -82,7 +82,7 @@ WIP Patched Kernel kernel distribution with custom settings:
 
 [![**ZFS**](images/zfs.jpeg)]()
  
-## OpenZFS ([OpenZFS])http://open-zfs.org/wiki/Main_Page))
+## OpenZFS ([OpenZFS](http://open-zfs.org/wiki/Main_Page))
  
  OpenZFS is an outstanding storage platform that encompasses the functionality of traditional filesystems,
 volume managers, and more, with consistent reliability, functionality and performance.
