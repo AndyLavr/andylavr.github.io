@@ -10,35 +10,52 @@ title: "Recommended system configuration"
 
 ```bash
 GRUB_CMDLINE_LINUX_DEFAULT="spectre_v2=auto pti=auto ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux acpi_backlight=vendor intel_iommu=on swiotlb=32768 apparmor=0"
-GRUB_CMDLINE_LINUX="noresume systemd.gpt_auto=0"
+GRUB_CMDLINE_LINUX="noresume systemd.gpt_auto=0 zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15"
 
 If yours update microcode CPU is supported "IBRS/IBPB" then enable IBRS option:
 
-"spectre_v2=ibrs"
+"spectre_v2=auto"
 
 IBPB will be turned on automatically.
 
 
 $ dmesg | egrep microcode
 
-[0.000000] microcode: microcode updated early to revision 0x1d, date = 2018-01-21
-[0.766365] microcode: sig=0x40671, pf=0x20, revision=0x1d
-[0.767580] microcode: Microcode Update Driver: v2.2.
+[    0.000000] microcode: microcode updated early to revision 0x7, date = 2018-04-23
+[    5.254707] microcode: sig=0x20655, pf=0x10, revision=0x7
+[    5.295071] microcode: Microcode Update Driver: v2.2.
 
 $ dmesg | egrep Spectre
 
-[0.012444] Spectre V2 : ibrs selected on command line.
-[0.012445] Spectre V2 : Mitigation: Indirect Branch Restricted Speculation
-[0.012446] Spectre V2 : IBPB - Enabling Indirect Branch Prediction Barrier
-[0.012447] Spectre V2 : IBRS - Enabling Restricted Speculation for firmware calls
+[    0.118050] Spectre V2 : Mitigation: Full generic retpoline
+[    0.118053] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.118056] Spectre V2 : Spectre v2 mitigation: Enabling Indirect Branch Prediction Barrier
+[    0.118060] Spectre V2 : Enabling Restricted Speculation for firmware calls
 
 ~$ grep . /sys/devices/system/cpu/vulnerabilities/*
 
-/sys/devices/system/cpu/vulnerabilities/meltdown:Mitigation:PTI
-/sys/devices/system/cpu/vulnerabilities/spectre_v1:Mitigation:__user pointer sanitization
-/sys/devices/system/cpu/vulnerabilities/spectre_v2:Mitigation:Indirect Branch Restricted Speculation,IBPB
+/sys/devices/system/cpu/vulnerabilities/l1tf:Mitigation: PTE Inversion; VMX: conditional cache flushes, SMT vulnerable
+/sys/devices/system/cpu/vulnerabilities/meltdown:Mitigation: PTI
+/sys/devices/system/cpu/vulnerabilities/spec_store_bypass:Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+/sys/devices/system/cpu/vulnerabilities/spectre_v1:Mitigation: __user pointer sanitization
+/sys/devices/system/cpu/vulnerabilities/spectre_v2:Mitigation: Full generic retpoline, IBPB, IBRS_FW
 
 ```
+
+---
+
+Enable ZSWAP:
+
+Add to grub.cfg:
+
+GRUB_CMDLINE_LINUX="zswap.compressor=lz4 zswap.max_pool_percent=15"
+
+Add to /etc/initramfs-tools/modules:
+
+lz4
+lz4_compress
+
+and run command # update-grub && update-initramfs -u
 
 ---
 

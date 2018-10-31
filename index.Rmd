@@ -107,7 +107,7 @@ Update Intel microcode for use IBRS/IBPB:
 [![Download](https://img.shields.io/badge/Download-microcode-red.svg)](https://downloadcenter.intel.com/download/27591/Linux-Processor-Microcode-Data-File)
 
 
-Install the packages from launchpad PPA “Linux WIP-Kernel” Team:
+Install the packages from Launchpad PPA “Linux WIP-Kernel” Team:
 
 Westmere and Atom x86_64 packages ONLY!
 
