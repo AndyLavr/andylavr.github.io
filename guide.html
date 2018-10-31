@@ -296,11 +296,16 @@ $ dmesg | egrep Spectre
 /sys/devices/system/cpu/vulnerabilities/spectre_v2:Mitigation: Full generic retpoline, IBPB, IBRS_FW
 </code></pre>
 <hr />
-<p>Enable ZSWAP:</p>
+<ul>
+<li>Enable ZSWAP</li>
+</ul>
 <p>Add to grub.cfg:</p>
-<p>GRUB_CMDLINE_LINUX=“zswap.compressor=lz4 zswap.max_pool_percent=15”</p>
-<p>Add to /etc/initramfs-tools/modules:</p>
-<p>lz4 lz4_compress</p>
+<pre class="bash"><code>GRUB_CMDLINE_LINUX=&quot;zswap.compressor=lz4 zswap.max_pool_percent=15&quot;
+
+Add to /etc/initramfs-tools/modules:
+
+lz4
+lz4_compress</code></pre>
 <p>and run command # update-grub &amp;&amp; update-initramfs -u</p>
 <hr />
 <ul>

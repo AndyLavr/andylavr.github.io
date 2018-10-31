@@ -44,16 +44,18 @@ $ dmesg | egrep Spectre
 
 ---
 
-Enable ZSWAP:
+- Enable ZSWAP
 
 Add to grub.cfg:
 
+```bash
 GRUB_CMDLINE_LINUX="zswap.compressor=lz4 zswap.max_pool_percent=15"
 
 Add to /etc/initramfs-tools/modules:
 
 lz4
 lz4_compress
+```
 
 and run command # update-grub && update-initramfs -u
 
