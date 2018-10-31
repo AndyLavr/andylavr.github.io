@@ -299,14 +299,17 @@ $ dmesg | egrep Spectre
 <ul>
 <li>Enable ZSWAP</li>
 </ul>
+<p>Zswap is a kernel feature that provides a compressed RAM cache for swap pages</p>
 <p>Add to grub.cfg:</p>
 <pre class="bash"><code>GRUB_CMDLINE_LINUX=&quot;zswap.compressor=lz4 zswap.max_pool_percent=15&quot;
 
 Add to /etc/initramfs-tools/modules:
 
 lz4
-lz4_compress</code></pre>
-<p>and run command # update-grub &amp;&amp; update-initramfs -u</p>
+lz4_compress
+</code></pre>
+<p>and run command:</p>
+<p>$ sudo update-grub &amp;&amp; update-initramfs -u</p>
 <hr />
 <ul>
 <li>/etc/sysctl.conf</li>
