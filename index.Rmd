@@ -73,7 +73,7 @@ WIP Patched Kernel kernel distribution with custom settings:
 
 [![**UKSM**](images/uksm.jpeg)]()
  
-## The Ultra Kernel Samepage Merging feature
+## The Ultra Kernel Samepage Merging feature (UKSM)
  
  - This is an improvement upon KSM. 
    Some basic data structures and routines are borrowed from KSM.
@@ -114,7 +114,7 @@ Westmere and Atom x86_64 packages ONLY!
 [![Download](https://img.shields.io/badge/Download-westmere-yellow.svg)](https://goo.gl/bEcNdv)
 [![Download](https://img.shields.io/badge/Dowload-atom-red.svg)](https://goo.gl/bEcNdv)
 
-- Ready packages are upload as they become available
+- Ready packages are build as they become update and fixed the source
 
 ---
 
