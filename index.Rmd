@@ -94,10 +94,12 @@ Packages for this version strictly install from my repository:
 
 To install ZFS, head to a terminal and run the following command:
 
+```bash
 $ sudo add-apt-repository ppa:lavrandy/zfs-linux
 $ sudo apt-get update
 $ sudo apt install zfsutils-linux
 $ sudo reboot
+```
 
 ---
 
