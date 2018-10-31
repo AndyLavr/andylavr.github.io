@@ -90,7 +90,8 @@ volume managers, and more, with consistent reliability, functionality and perfor
  - The module ZFS is integrated into the kernel.
 
 #### Warning! This kernel implement ZFS version 0.7.11.
-Packages for this version strictly install from my repository:
+
+Packages for this version strictly install from my repository!
 
 To install ZFS, head to a terminal and run the following command:
 
