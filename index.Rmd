@@ -109,7 +109,7 @@ Update Intel microcode for use IBRS/IBPB:
 
 Install the packages from Launchpad PPA “Linux WIP-Kernel” Team:
 
-Westmere and Atom x86_64 packages ONLY!
+Warning! Westmere and Atom x86_64 packages ONLY! Packages for Generic x86_64 will be later...
 
 [![Download](https://img.shields.io/badge/Download-westmere-yellow.svg)](https://goo.gl/bEcNdv)
 [![Download](https://img.shields.io/badge/Dowload-atom-red.svg)](https://goo.gl/bEcNdv)
