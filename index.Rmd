@@ -77,7 +77,18 @@ WIP Patched Kernel kernel distribution with custom settings:
  
  - This is an improvement upon KSM. 
    Some basic data structures and routines are borrowed from KSM.
+
+---
+
+[![**ZFS**](images/zfs.jpeg)]()
  
+## OpenZFS ([OpenZFS])http://open-zfs.org/wiki/Main_Page))
+ 
+ OpenZFS is an outstanding storage platform that encompasses the functionality of traditional filesystems,
+volume managers, and more, with consistent reliability, functionality and performance.
+ 
+ - The module ZFS is integrated into the kernel.
+
 ---
 
 [![**LKRG - Linux Kernel Runtime Guard**](images/logo_openwall.png)](http://www.openwall.com/lkrg/)
@@ -87,6 +98,8 @@ WIP Patched Kernel kernel distribution with custom settings:
  Linux Kernel Runtime Guard (LKRG) is a loadable kernel module that
 performs runtime integrity checking of the Linux kernel and detection of
 security vulnerability exploits against the kernel.
+
+ - The module LKRG is integrated into the kernel.
 
 ---
 
