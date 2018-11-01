@@ -11,7 +11,7 @@ title: "Information"
 
 **Contact me:**
 
-[![E-Mail](https://img.shields.io/badge/Send-E--Mail-red.svg)](mailto:andy.lavr@gmail.com)
+[![E-Mail](./images/launchpad.png)](https://launchpad.net/~lavrandy)
 
 ---
 
