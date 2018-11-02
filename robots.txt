@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://dragon-kernel.pro/sitemap.xml
+Sitemap: https://dragon-kernel.pro/sitemap.xml
 

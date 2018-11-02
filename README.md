@@ -1,2 +1,2 @@
 
-## Dragon Kernel WWW (http://dragon-kernel.pro)
+## Dragon Kernel WWW (https://dragon-kernel.pro)
