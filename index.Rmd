@@ -4,7 +4,10 @@ subtitle: "WIP Patched Linux mainline kernel (For Ubuntu 18.10 Cosmic)"
 date: "`r Sys.Date()`"
 ---
 
-[![**WIP-Kernel**](images/dragon.webp)]()
+<picture>
+    <source srcset="images/dragon.webp" type="image/webp">
+    <img src="images/dragon.webp" alt="WIP Kernel">
+</picture>
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
 [![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)](https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)
