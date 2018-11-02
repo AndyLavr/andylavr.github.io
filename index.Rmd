@@ -141,8 +141,7 @@ security vulnerability exploits against the kernel.
 
 ---
 
-
-## Install
+[![**Install**](images/launchpad.png)]()
 
 Update Intel microcode for use IBRS/IBPB:
 
