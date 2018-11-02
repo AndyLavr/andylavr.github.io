@@ -1,12 +1,12 @@
 ---
-title: "Linux WIP-Kernel 4.19"
-subtitle: "WIP Patched Linux mainline kernel (For Ubuntu 18.10 Cosmic)"
+title: "Dragon Linux Kernel 4.19"
+subtitle: "Patched Linux mainline kernel (For Ubuntu 18.10 Cosmic)"
 date: "`r Sys.Date()`"
 ---
 
 <picture>
     <source srcset="images/dragon.webp" type="image/webp">
-    <img src="images/dragon.webp" alt="WIP Kernel">
+    <img src="images/dragon.webp" alt="Dragon Kernel">
 </picture>
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
@@ -44,7 +44,7 @@ By default, Ubuntu systems run with the Ubuntu kernels provided by the Ubuntu re
 
 These kernels are not supported and are not appropriate for production use.
 
-WIP Patched Kernel kernel distribution with custom settings:
+Patched Kernel kernel distribution with custom settings:
 
  - Experience a whole new way to interact with your PC like never before. 
  - Full kernel adaptation to version **Ubuntu 18.10 Cosmic.**
@@ -141,7 +141,7 @@ security vulnerability exploits against the kernel.
 
 ---
 
-## Install WIP Kernel
+## Install Dragon Kernel
 
 [![Update](images/intel.jpeg)](https://downloadcenter.intel.com/download/27591/Linux-Processor-Microcode-Data-File)
 
