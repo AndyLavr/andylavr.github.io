@@ -10,6 +10,10 @@ date: "`r Sys.Date()`"
 [![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)](https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)
 [![Donate with Ethereum](https://en.cryptobadges.io/badge/micro/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)](https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)
 
+---
+
+![**PERFORMANCE AND TO POWER AMAZING EXPERIENCE FOR GAMING G SERIES**](images/g.jpeg)
+
 <!--html_preserve-->
 
 <script>
@@ -26,10 +30,6 @@ date: "`r Sys.Date()`"
 <gcse:search></gcse:search>
 
 <!--/html_preserve-->
-
----
-
-![**PERFORMANCE AND TO POWER AMAZING EXPERIENCE FOR GAMING G SERIES**](images/g.jpeg)
 
 ---
 
