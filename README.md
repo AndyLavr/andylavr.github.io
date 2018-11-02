@@ -1,2 +1,2 @@
 
-## WIP Kernel WWW (http://wip-kernel.ru)
+## Dragon Kernel WWW (http://dragon-kernel.pro)
