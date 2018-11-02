@@ -141,12 +141,16 @@ security vulnerability exploits against the kernel.
 
 ---
 
-[![**Install**](images/launchpad.png)]()
+## Install WIP Kernel
+
+[![Update](images/intel.jpeg)](https://downloadcenter.intel.com/download/27591/Linux-Processor-Microcode-Data-File)
 
 Update Intel microcode for use IBRS/IBPB:
 
 [![Download](https://img.shields.io/badge/Download-microcode-red.svg)](https://downloadcenter.intel.com/download/27591/Linux-Processor-Microcode-Data-File)
 
+
+[![**Install**](images/launchpad.png)](https://launchpad.net/~wip-kernel)
 
 Install the packages from Launchpad PPA “Linux WIP-Kernel” Team:
 
