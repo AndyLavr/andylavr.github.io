@@ -12,6 +12,8 @@ date: "`r Sys.Date()`"
 
 ---
 
+![**PERFORMANCE AND TO POWER AMAZING EXPERIENCE FOR GAMING G SERIES**](images/g.jpeg)
+
 
 <!--html_preserve-->
 
@@ -29,8 +31,6 @@ date: "`r Sys.Date()`"
 <gcse:search></gcse:search>
 
 <!--/html_preserve-->
-
-![**PERFORMANCE AND TO POWER AMAZING EXPERIENCE FOR GAMING G SERIES**](images/g.jpeg)
 
 
 ---
