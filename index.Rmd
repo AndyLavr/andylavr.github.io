@@ -4,7 +4,7 @@ subtitle: "WIP Patched Linux mainline kernel (For Ubuntu 18.10 Cosmic)"
 date: "`r Sys.Date()`"
 ---
 
-[![**WIP-Kernel**](images/dragon.jpeg)]()
+[![**WIP-Kernel**](images/dragon.webp)]()
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
 [![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)](https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)
@@ -12,7 +12,6 @@ date: "`r Sys.Date()`"
 
 ---
 
-![**PERFORMANCE AND TO POWER AMAZING EXPERIENCE FOR GAMING G SERIES**](images/g.jpeg)
 
 <!--html_preserve-->
 
@@ -30,6 +29,9 @@ date: "`r Sys.Date()`"
 <gcse:search></gcse:search>
 
 <!--/html_preserve-->
+
+![**PERFORMANCE AND TO POWER AMAZING EXPERIENCE FOR GAMING G SERIES**](images/g.jpeg)
+
 
 ---
 
