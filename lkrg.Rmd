@@ -11,9 +11,9 @@ title: "Using Linux Kernel Runtime Guard (LKRG)"
 
 # modinfo lkrg
 
-filename:       /lib/modules/4.19.0-041900.201810221809-westmere/kernel/drivers/staging/lkrg/lkrg.ko
+filename:       /lib/modules/4.19.1-dragon-westmere/kernel/drivers/staging/lkrg/lkrg.ko
 license:        GPL v2
-description:    'pi3's Linux kernel Runtime Guard
+description:    pi3's Linux kernel Runtime Guard
 author:         Adam 'pi3' Zabrocki (http://pi3.com.pl)
 srcversion:     55B570DD224083E27457CD8
 depends:        
@@ -21,7 +21,7 @@ staging:        Y
 retpoline:      Y
 intree:         Y
 name:           lkrg
-vermagic:       4.19.0-041900.201810221809-westmere SMP mod_unload 
+vermagic:       4.19.1-dragon-westmere SMP mod_unload 
 sig_id:         PKCS#7
 signer:         
 sig_key:        
