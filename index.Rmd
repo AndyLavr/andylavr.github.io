@@ -73,6 +73,7 @@ Patched Kernel kernel distribution with custom settings:
  
  - Indirect Branch Restricted Speculation (IBRS)
  - Indirect Branch Prediction Barrier (IBPB)
+ - L1TF/Foreshadow Mitigations
 
 ---
 
