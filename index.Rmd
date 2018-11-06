@@ -155,9 +155,9 @@ Update Intel microcode for use IBRS/IBPB:
 
 Install the packages from Launchpad PPA “Linux WIP-Kernel” Team:
 
-[![Download](https://img.shields.io/badge/Download-westmere-yellow.svg)](https://goo.gl/evCMZy)
-[![Download](https://img.shields.io/badge/Dowload-atom-red.svg)](https://goo.gl/evCMZy)
-[![Download](https://img.shields.io/badge/Download-generic-green.svg)](https://goo.gl/yZMPpY)
+[![Download](https://img.shields.io/badge/Download-westmere-yellow.svg)](https://goo.gl/vPPQ3A)
+[![Download](https://img.shields.io/badge/Dowload-atom-red.svg)](https://goo.gl/vPPQ3A)
+[![Download](https://img.shields.io/badge/Download-generic-green.svg)](https://goo.gl/4v8yr9)
 
 - Ready packages are build as they become update and fixed the source
 
