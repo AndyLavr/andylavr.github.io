@@ -1,0 +1,318 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+  <title>Linux Test Project - Results</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<h1>LTP Output/Log (Report Generated on Чтв ноя  8 19:48:26 EET 2018) </h1>
+<table border="1" cellspacing="3">
+  <tbody>
+    <tr>
+      <td bgcolor="#66ff66"><b>&nbsp;PASSED&nbsp;</b></td>
+      <td bgcolor="#ff0000"><b>&nbsp;FAILED&nbsp;</b></td>
+      <td bgcolor="Fuchsia"><b>&nbsp;WARNING&nbsp;</b></td>
+      <td bgcolor="Yellow"><b>&nbsp;BROKEN&nbsp;</b></td>
+      <td bgcolor="#8dc997"><b>&nbsp;RETIRED&nbsp;</b></td>
+      <td bgcolor="Aqua"><b>&nbsp;CONFIG-ERROR&nbsp;</b></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>Meaning of the following KEYWORDS in test results/logs:</b>
+<hr>
+<li><b>TPASS -</b> Indicates that the test case had the expected result and passed</li>
+<li><b>TFAIL -</b> Indicates that the test case had an unexpected result and failed.</li>
+<li><b>TBROK -</b> Indicates that the remaining test cases are broken and will not execute correctly, because some precondition not met, such as a resource not being available.</li>
+<li><b>TCONF -</b> Indicates that the test case was not written to run on the current harware or software configuration such as machine type, or, kernel version.</li>
+<li><b>TWARN -</b> Indicates that the test case experienced an unexpected or undesirable event that should not affect the test itself such as being unable to cleanup resources after the test finished.</li>
+<li><b>TINFO -</b> Specifies useful information about the status of the test that does not affect the result and does not indicate a problem.</li>
+<hr>
+
+<br>
+<li><a href="#_1">Click Here for Detailed Report</a></li>
+<li><a href="#_2">Click Here for Summary Report</a></li>
+<br>
+
+<h2 id="_1">Detailed Report</h2>
+<div>
+<table border="1" cellspacing="3">
+<tbody>
+    <tr>
+      <td bgcolor="Silver"><strong>No</strong></td>
+      <td bgcolor="Silver"><strong>Test-Name</strong></td>
+      <td bgcolor="Silver"><strong>Start-Time</strong></td>
+      <td bgcolor="Silver"><strong>Command-Line</strong></td>
+      <td bgcolor="Silver"><strong>Contacts</strong></td>
+      <td bgcolor="Silver"><strong>Analysis</strong></td>
+      <td bgcolor="Silver"><strong>Test-Output</strong></td>
+      <td bgcolor="Silver"><strong>Initiation-Status</strong></td>
+      <td bgcolor="Silver"><strong>Duration</strong></td>
+      <td bgcolor="Silver"><strong>Termination-type</strong></td>
+      <td bgcolor="Silver"><strong>Termination-id</strong></td>
+      <td bgcolor="Silver"><strong>Core-File</strong></td>
+      <td bgcolor="Silver"><strong>cutime</strong></td>
+      <td bgcolor="Silver"><strong>cstime</strong></td>
+    </tr>
+<tr bgcolor=#66ff66><td><p><strong>1</strong></p></td>
+<td><p><strong>kmsg01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:48:26 2018</strong></pre></p></td>
+<td><p><strong> "kmsg01" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+kmsg01.c:301: INFO: TEST: injected messages appear in /dev/kmsg 
+kmsg01.c:343: PASS: injected messages found in log 
+kmsg01.c:344: PASS: sequence numbers grow as expected 
+kmsg01.c:251: INFO: TEST: nonblock read 
+kmsg01.c:256: PASS: non-block read returned EAGAIN 
+kmsg01.c:267: INFO: TEST: blocking read 
+kmsg01.c:272: PASS: read blocked 
+kmsg01.c:283: INFO: TEST: partial read 
+kmsg01.c:288: PASS: read failed as expected: EINVAL 
+kmsg01.c:358: INFO: TEST: mult. readers will get same first message 
+kmsg01.c:394: PASS: all readers got same message on first read 
+kmsg01.c:412: INFO: TEST: read returns EPIPE when messages get overwritten 
+kmsg01.c:417: INFO: first seqno: 0 
+kmsg01.c:430: INFO: first seqno now: 464 
+kmsg01.c:442: PASS: read failed with EPIPE as expected 
+kmsg01.c:448: INFO: TEST: Subsequent reads() will return available records again 
+kmsg01.c:452: PASS: after EPIPE read returned next record 
+kmsg01.c:484: INFO: TEST: seek SEEK_SET 0 
+kmsg01.c:533: PASS: SEEK_SET 0 
+kmsg01.c:539: INFO: TEST: seek SEEK_END 0 
+kmsg01.c:543: PASS: SEEK_END 0 
+kmsg01.c:549: INFO: TEST: seek SEEK_DATA 0 
+kmsg01.c:557: PASS: SEEK_DATA 0 
+ 
+Summary: 
+passed   11 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>4</strong></p></td>
+<td><p><strong>33</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>2</strong></p></td>
+<td><p><strong>fw_load</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:48:27 2018</strong></pre></p></td>
+<td><p><strong> "fw_load" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>fw_load     1  TPASS  :  Expect: can load firmware '.../n0_load_tst.fw' 
+fw_load     2  TPASS  :  Expect: can load firmware '.../n1_load_tst.fw' 
+fw_load     3  TPASS  :  Expect: can load firmware '.../n2_load_tst.fw' 
+fw_load     4  TPASS  :  Expect: can load firmware '.../n3_load_tst.fw' 
+fw_load     5  TPASS  :  Expect: can't load firmware '.../n4_load_tst.fw' 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>3</strong></p></td>
+<td><p><strong>rtc01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:48:27 2018</strong></pre></p></td>
+<td><p><strong> "rtc01" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>rtc01       0  TINFO  :  RTC READ TEST: 
+rtc01       1  TPASS  :  RTC READ TEST Passed 
+rtc01       0  TINFO  :  Current RTC date/time is 8-11-2018, 17:48:27. 
+rtc01       0  TINFO  :  RTC ALARM TEST : 
+rtc01       0  TINFO  :  Alarm time set to 17:48:32. 
+rtc01       0  TINFO  :  Waiting 5 seconds for the alarm... 
+rtc01       0  TINFO  :  Alarm rang. 
+rtc01       2  TPASS  :  RTC ALARM TEST Passed 
+rtc01       0  TINFO  :  RTC UPDATE INTERRUPTS TEST : 
+rtc01       0  TINFO  :  Waiting for  5 update interrupts... 
+rtc01       0  TINFO  :  Update interrupt 1 
+rtc01       0  TINFO  :  Update interrupt 2 
+rtc01       0  TINFO  :  Update interrupt 3 
+rtc01       0  TINFO  :  Update interrupt 4 
+rtc01       0  TINFO  :  Update interrupt 5 
+rtc01       3  TPASS  :  RTC UPDATE INTERRUPTS TEST Passed 
+rtc01       0  TINFO  :  RTC Tests Done! 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>10</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>1</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>4</strong></p></td>
+<td><p><strong>ltp_acpi</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:48:37 2018</strong></pre></p></td>
+<td><p><strong> "ltp_acpi" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>ltp_acpi    1  TPASS  :  Test-case '0' 
+ltp_acpi    2  TPASS  :  Test-case '1' 
+ltp_acpi    3  TPASS  :  Test-case '2' 
+ltp_acpi    4  TPASS  :  Test-case '3' 
+ltp_acpi    5  TPASS  :  Test-case '4' 
+ltp_acpi    6  TPASS  :  Test-case '5' 
+ltp_acpi    7  TPASS  :  Test-case '6' 
+ltp_acpi    8  TPASS  :  Test-case '7' 
+ltp_acpi    9  TPASS  :  Test-case '8' 
+ltp_acpi   10  TPASS  :  Test-case '9' 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>1</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>5</strong></p></td>
+<td><p><strong>cpufreq_boost</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:48:37 2018</strong></pre></p></td>
+<td><p><strong> "cpufreq_boost" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>cpufreq_boost    0  TINFO  :  found 'acpi_cpufreq' driver, sysfs knob '/sys/devices/system/cpu/cpufreq/boost' 
+cpufreq_boost    0  TINFO  :  maximum speed is 2661000 KHz 
+cpufreq_boost    0  TINFO  :  load CPU0 with boost enabled 
+cpufreq_boost    0  TINFO  :  elapsed time is 1850 ms 
+cpufreq_boost    0  TINFO  :  load CPU0 with boost disabled 
+cpufreq_boost    0  TINFO  :  elapsed time is 2015 ms 
+cpufreq_boost    1  TPASS  :  compare time spent with and without boost (-2%) 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>3</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>384</strong></p></td>
+<td><p><strong>2</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>6</strong></p></td>
+<td><p><strong>uaccess</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:48:41 2018</strong></pre></p></td>
+<td><p><strong> "uaccess" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>ltp_uaccess    0  TINFO  :  TC 0: read user-space memory from kernel, ptr '0x5610f06551a0' 
+ltp_uaccess    1  TPASS  :  copy_from_user(), get_user(): strings equal 
+ltp_uaccess    0  TINFO  :  TC 1: write from kernel-space to user-space, ptr '0x7ffdc53041cc' 
+ltp_uaccess    2  TPASS  :  copy_to_user(), put_user(): strings equal 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>1</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>7</strong></p></td>
+<td><p><strong>rcu_torture</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:48:42 2018</strong></pre></p></td>
+<td><p><strong> "rcu_torture.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>rcu_torture 1 TINFO: estimate time 4.00 min 
+rcu_torture 1 TINFO: rcu: running 60 sec... 
+rcu_torture 1 TPASS: rcu: completed 
+rcu_torture 2 TINFO: rcu_bh: running 60 sec... 
+rcu_torture 2 TPASS: rcu_bh: completed 
+rcu_torture 3 TINFO: srcu: running 60 sec... 
+rcu_torture 3 TPASS: srcu: completed 
+rcu_torture 4 TINFO: sched: running 60 sec... 
+rcu_torture 4 TPASS: sched: completed 
+rcu_torture 5 TINFO: cleanup 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>243</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>5</strong></p></td>
+<td><p><strong>5</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>8</strong></p></td>
+<td><p><strong>lock_torture</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:52:45 2018</strong></pre></p></td>
+<td><p><strong> "lock_torture.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>lock_torture 1 TINFO: estimate time 6.00 min 
+lock_torture 1 TINFO: spin_lock: running 60 sec... 
+lock_torture 1 TPASS: spin_lock: completed 
+lock_torture 2 TINFO: spin_lock_irq: running 60 sec... 
+lock_torture 2 TPASS: spin_lock_irq: completed 
+lock_torture 3 TINFO: rw_lock: running 60 sec... 
+lock_torture 3 TPASS: rw_lock: completed 
+lock_torture 4 TINFO: rw_lock_irq: running 60 sec... 
+lock_torture 4 TPASS: rw_lock_irq: completed 
+lock_torture 5 TINFO: mutex_lock: running 60 sec... 
+lock_torture 5 TPASS: mutex_lock: completed 
+lock_torture 6 TINFO: rwsem_lock: running 60 sec... 
+lock_torture 6 TPASS: rwsem_lock: completed 
+lock_torture 7 TINFO: cleanup 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>360</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>8</strong></p></td>
+<td><p><strong>6</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>9</strong></p></td>
+<td><p><strong>zram01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:58:45 2018</strong></pre></p></td>
+<td><p><strong> "zram01.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>zram01 1 TINFO: create '4' zram device(s) 
+zram01 1 TPASS: test succeeded 
+zram01 2 TCONF: The device attribute max_comp_streams was introduced in kernel 3.15 and deprecated in 4.7 
+zram01 2 TINFO: test that we can set compression algorithm 
+/opt/ltp/testcases/bin/zram01.sh: 101: local: 842: bad variable name 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>1</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>10</strong></p></td>
+<td><p><strong>zram02</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:58:45 2018</strong></pre></p></td>
+<td><p><strong> "zram02.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>zram02 1 TINFO: create '1' zram device(s) 
+zram02 1 TFAIL: unexpected num of devices: 4 
+zram02 2 TINFO: zram cleanup 
+sh: echo: I/O error 
+incrementing stop 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>1</strong></p></td></tr>
+</tbody></table></div> 
+
+<h2 id="_2">Summary Report</h2>
+
+<div>
+
+<table border="1" cellspacing="3"><tbody>
+<tr>
+<td bgcolor="#ff0000"> <strong>Test Summary</strong></p></td><td bgcolor="#ff0000"><strong>Pan reported some Tests FAIL</strong></p></td></tr>
+<tr><td><strong>LTP Version</strong> </td><td><strong> 20180926     </strong></td></tr>
+<tr><td><strong>Start Time</strong>  </td><td><strong> Чтв ноя  8 19:48:26 EET 2018 </strong></td></tr>
+<tr><td><strong>End Time</strong>    </td><td><strong> Чтв ноя  8 19:58:45 EET 2018   </strong></td></tr>
+<tr><td><strong>Log Result</strong>  </td><td><a href="file:///opt/ltp/results/">      <strong>/opt/ltp/results</strong></a></td></tr>
+<tr><td><strong>Output/Failed Result</strong></td><td><a href="file:///opt/ltp/output/"> <strong>/opt/ltp/output</strong></a></td></tr>
+<tr><td><strong>Total Tests</strong></td><td><strong>10                         </strong></td></tr>
+<tr><td><strong>Total Test TPASS:</strong></td><td><strong> 10 </strong></td></tr>
+<tr><td><strong>Total Test TFAIL:</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Total Test TBROK</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Total Test TWARN</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Total Test TCONF</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Kernel Version</strong></td><td><strong>   </strong></td></tr>
+<tr><td><strong>Machine Architecture</strong></td><td><strong>  </strong></td></tr>
+<tr><td><strong>Hostname</strong>  </td> <td><strong>wip
+  </strong></td></tr></tbody></table></div></body></html>

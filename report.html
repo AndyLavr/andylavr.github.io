@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Linux Dragon Kernel testing report</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<!--html_preserve-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="WIP Patched Kernel kernel distribution with custom settings">
+<meta charset="utf-8" />
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+<center>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- AdSense_RU -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4314805673333081"
+     data-ad-slot="3717696774"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115408845-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115408845-3');
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4314805673333081",
+          enable_page_level_ads: true
+     });
+</script>
+
+<!--/html_preserve-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Linux WIP Kernel</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Main</a>
+</li>
+<li>
+  <a href="guide.html">Guide</a>
+</li>
+<li>
+  <a href="lkrg.html">Security</a>
+</li>
+<li>
+  <a href="solve.html">Solve problem</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Linux Dragon Kernel testing report</h1>
+
+</div>
+
+
+<p><a href="http://linux-test-project.github.io/"><img src="images/ltp_logo.jpeg" alt="Linux Test Project" /></a></p>
+<div id="kernel-tested-by---linux-test-project" class="section level2">
+<h2>Kernel tested by - <a href="http://linux-test-project.github.io/">Linux Test Project</a></h2>
+<p><strong>Linux Test Project</strong> is a joint project started by SGI, developed and maintained by IBM, Cisco, Fujitsu, SUSE, Red Hat and others, that has a goal to deliver test suites to the open source community that validate the reliability, robustness, and stability of Linux. The LTP testsuite contains a collection of tools for testing the Linux kernel and related features.</p>
+<hr />
+</div>
+<div id="testing-platform" class="section level2">
+<h2>Testing platform</h2>
+<pre class="bash"><code>DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=18.10
+DISTRIB_CODENAME=cosmic
+DISTRIB_DESCRIPTION=&quot;Ubuntu 18.10&quot;
+NAME=&quot;Ubuntu&quot;
+VERSION=&quot;18.10 (Cosmic Cuttlefish)&quot;
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME=&quot;Ubuntu 18.10&quot;
+VERSION_ID=&quot;18.10&quot;
+HOME_URL=&quot;https://www.ubuntu.com/&quot;
+SUPPORT_URL=&quot;https://help.ubuntu.com/&quot;
+BUG_REPORT_URL=&quot;https://bugs.launchpad.net/ubuntu/&quot;
+PRIVACY_POLICY_URL=&quot;https://www.ubuntu.com/legal/terms-and-policies/privacy-policy&quot;
+VERSION_CODENAME=cosmic
+UBUNTU_CODENAME=cosmic
+
+uname:
+Linux wip 4.19.1-dragon-westmere #201811060006-Ubuntu SMP Tue Nov 6 20:52:51 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+
+/proc/cmdline
+BOOT_IMAGE=/@/boot/vmlinuz-4.19.1-dragon-westmere root=UUID=281ed76e-a164-46f9-9c13-cc539b5084d4 ro rootflags=subvol=@ noresume systemd.gpt_auto=0 ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux intel_iommu=on swiotlb=32768 apparmor=0 acpi_backlight=vendor nowatchdog zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 modprobe.blacklist=lkrg pcie_acs_override=downstream
+
+Gnu C                  gcc (Ubuntu 8.2.0-7ubuntu1) 8.2.0
+Gnu make               4.2.1
+util-linux             linux 2.32
+mount                  linux 2.32 (libmount 2.32.0: selinux, smack, btrfs, assert, debug)
+modutils               25
+e2fsprogs              1.44.4
+PPP                    2.4.7
+Linux C Library        &gt; libc.2.28
+Dynamic linker (ldd)   2.28
+Procps                 3.3.15
+Net-tools              2.10-alpha
+iproute2               iproute2-ss181023
+iputils                iputils-s20180629
+Kbd                    2.0.4
+Sh-utils               8.28
+Modules Loaded         sctp brd overlay nls_iso8859_1 xfs ext2 geneve tcp_dctcp ip_gre gre ip_tunnel ipvlan esp4 macsec ah4 xfrm4_mode_transport macvtap tap macvlan 8021q garp mrp stp llc vxlan ip6_udp_tunnel udp_tunnel sch_netem tcp_bbr xfrm_user xfrm_algo veth hid_generic dell_laptop dell_smm_hwmon iptable_nat nf_nat_ipv4 binfmt_misc intel_powerclamp coretemp kvm_intel kvm irqbypass intel_cstate joydev dell_wmi dell_smbios dcdbas sparse_keymap dell_wmi_descriptor i2c_i801 wmi_bmof snd_hda_codec_idt snd_hda_codec_generic snd_hda_codec_hdmi snd_hda_intel snd_hda_codec snd_hda_core snd_hwdep snd_pcm snd_seq_dummy snd_seq_oss wl snd_seq_midi snd_seq_midi_event snd_rawmidi cfg80211 snd_seq usbhid r8169 hid snd_seq_device snd_timer snd soundcore eeprom ipt_REJECT nf_reject_ipv4 nf_log_ipv4 nf_log_common xt_LOG xt_limit tcp_yeah xt_tcpudp tcp_vegas xt_addrtype sch_fq_codel xt_conntrack ip6_tables nf_conntrack_netbios_ns nf_conntrack_broadcast parport_pc nf_nat_ftp nf_nat ppdev nf_conntrack_ftp nf_conntrack nf_defrag_ipv6 lp nf_defrag_ipv4 parport iptable_filter sunrpc bpfilter ip_tables x_tables btrfs libcrc32c xor zstd_compress raid6_pq gpu_sched rtsx_pci_sdmmc rtsx_pci mmc_block radeon ttm drm_kms_helper syscopyarea sysfillrect sysimgblt input_leds psmouse fb_sys_fops serio_raw drm ahci libahci i2c_algo_bit wmi video mac_hid lz4 lz4_compress
+
+free reports:
+              всего        занято        свободно      общая  буф./врем.   доступно
+Память:     1963432      948236      159340       42276      855856      787512
+Подкачка:     8388604      143360     8245244
+
+cpuinfo:
+Архитектура:         x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Порядок байт:        Little Endian
+CPU(s):              4
+On-line CPU(s) list: 0-3
+Потоков на ядро:     2
+Ядер на сокет:       2
+Сокетов:             1
+NUMA node(s):        1
+ID прроизводителя:   GenuineIntel
+Семейство ЦПУ:       6
+Модель:              37
+Имя модели:          Intel(R) Core(TM) i5 CPU       M 480  @ 2.67GHz
+Степпинг:            5
+CPU МГц:             1628.980
+CPU max MHz:         2661,0000
+CPU min MHz:         1197,0000
+BogoMIPS:            5319.44
+Виртуализация:       VT-x
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            256K
+L3 cache:            3072K
+NUMA node0 CPU(s):   0-3
+Флаги:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt lahf_lm pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid dtherm ida arat flush_l1d</code></pre>
+</div>
+<div id="testing-results" class="section level2">
+<h2>Testing results</h2>
+<hr />
+<ul>
+<li><p><a href="report/can.html">Controller Area Network (CAN)</a></p></li>
+<li><p><a href="report/cap_bounds.html">Posix capability bounding set</a></p></li>
+<li><p><a href="report/commands.html">General Linux commands</a></p></li>
+<li><p><a href="report/connectors.html">Netlink Connector</a></p></li>
+<li><p><a href="report/containers.html">Resource namespaces</a></p></li>
+<li><p><a href="report/cpuhotplug.html">CPU HotPlug</a></p></li>
+<li><p><a href="report/crypto.html">Crypto</a></p></li>
+<li><p><a href="report/cve.html">Tests which check for vulnerabilities by CVE number</a></p></li>
+<li><p><a href="report/filecaps.html">File capabilities</a></p></li>
+<li><p><a href="report/fs_perms_simple.html">Permissions/group/uid and open/write/execute the file</a></p></li>
+<li><p><a href="report/hugetlb.html">Huge Translation Lookaside Buffer</a></p></li>
+<li><p><a href="report/hyperthreading.html">Hyperthreading stress</a></p></li>
+<li><p><a href="report/input.html">Input device</a></p></li>
+<li><p><a href="report/ipc.html">Interprocess communication stress</a></p></li>
+<li><p><a href="report/kernel_misc.html">Kernel misc</a></p></li>
+<li><p><a href="report/math.html">Math library and - CPU</a></p></li>
+<li><p><a href="report/mm.html">Memory Mgmt</a></p></li>
+<li><p><a href="report/net.features.html">Various network features</a></p></li>
+<li><p><a href="report/nptl.html">Native POSIX Thread Library (NPTL)</a></p></li>
+<li><p><a href="report/numa.html">Non-Uniform Memory Access</a></p></li>
+<li><p><a href="report/pty.html">Terminal type</a></p></li>
+<li><p><a href="report/quickhit.html">A small subset of the syscalls</a></p></li>
+<li><p><a href="report/sched.html">Scheduler Stress</a></p></li>
+<li><p><a href="report/securebits.html">Securebits</a></p></li>
+<li><p><a href="report/smack.html">Net smack</a></p></li>
+<li><p><a href="report/swaping.html">Swaping</a></p></li>
+<li><p><a href="report/syscalls.html">Kernel system calls</a></p></li>
+<li><p><a href="report/timers.html">Posix Timer</a></p></li>
+</ul>
+<hr />
+</div>
+
+<p>Copyright &copy; 1966-2018 AndyLavr All rights reserved.</p>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+  <title>Linux Test Project - Results</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<h1>LTP Output/Log (Report Generated on Чтв ноя  8 22:00:50 EET 2018) </h1>
+<table border="1" cellspacing="3">
+  <tbody>
+    <tr>
+      <td bgcolor="#66ff66"><b>&nbsp;PASSED&nbsp;</b></td>
+      <td bgcolor="#ff0000"><b>&nbsp;FAILED&nbsp;</b></td>
+      <td bgcolor="Fuchsia"><b>&nbsp;WARNING&nbsp;</b></td>
+      <td bgcolor="Yellow"><b>&nbsp;BROKEN&nbsp;</b></td>
+      <td bgcolor="#8dc997"><b>&nbsp;RETIRED&nbsp;</b></td>
+      <td bgcolor="Aqua"><b>&nbsp;CONFIG-ERROR&nbsp;</b></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>Meaning of the following KEYWORDS in test results/logs:</b>
+<hr>
+<li><b>TPASS -</b> Indicates that the test case had the expected result and passed</li>
+<li><b>TFAIL -</b> Indicates that the test case had an unexpected result and failed.</li>
+<li><b>TBROK -</b> Indicates that the remaining test cases are broken and will not execute correctly, because some precondition not met, such as a resource not being available.</li>
+<li><b>TCONF -</b> Indicates that the test case was not written to run on the current harware or software configuration such as machine type, or, kernel version.</li>
+<li><b>TWARN -</b> Indicates that the test case experienced an unexpected or undesirable event that should not affect the test itself such as being unable to cleanup resources after the test finished.</li>
+<li><b>TINFO -</b> Specifies useful information about the status of the test that does not affect the result and does not indicate a problem.</li>
+<hr>
+
+<br>
+<li><a href="#_1">Click Here for Detailed Report</a></li>
+<li><a href="#_2">Click Here for Summary Report</a></li>
+<br>
+
+<h2 id="_1">Detailed Report</h2>
+<div>
+<table border="1" cellspacing="3">
+<tbody>
+    <tr>
+      <td bgcolor="Silver"><strong>No</strong></td>
+      <td bgcolor="Silver"><strong>Test-Name</strong></td>
+      <td bgcolor="Silver"><strong>Start-Time</strong></td>
+      <td bgcolor="Silver"><strong>Command-Line</strong></td>
+      <td bgcolor="Silver"><strong>Contacts</strong></td>
+      <td bgcolor="Silver"><strong>Analysis</strong></td>
+      <td bgcolor="Silver"><strong>Test-Output</strong></td>
+      <td bgcolor="Silver"><strong>Initiation-Status</strong></td>
+      <td bgcolor="Silver"><strong>Duration</strong></td>
+      <td bgcolor="Silver"><strong>Termination-type</strong></td>
+      <td bgcolor="Silver"><strong>Termination-id</strong></td>
+      <td bgcolor="Silver"><strong>Core-File</strong></td>
+      <td bgcolor="Silver"><strong>cutime</strong></td>
+      <td bgcolor="Silver"><strong>cstime</strong></td>
+    </tr>
+<tr bgcolor=#66ff66><td><p><strong>1</strong></p></td>
+<td><p><strong>clock_gettime02</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 22:00:51 2018</strong></pre></p></td>
+<td><p><strong> "clock_gettime02" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>clock_gettime02    1  TPASS  :  passed 
+clock_gettime02    2  TPASS  :  passed 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>2</strong></p></td>
+<td><p><strong>clock_gettime03</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 22:00:51 2018</strong></pre></p></td>
+<td><p><strong> "clock_gettime03" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>clock_gettime03    1  TPASS  :  got expected failure: TEST_ERRNO=EFAULT(14): Bad address 
+clock_gettime03    2  TPASS  :  got expected failure: TEST_ERRNO=EFAULT(14): Bad address 
+clock_gettime03    3  TPASS  :  got expected failure: TEST_ERRNO=EINVAL(22): Invalid argument 
+clock_gettime03    4  TPASS  :  got expected failure: TEST_ERRNO=EINVAL(22): Invalid argument 
+clock_gettime03    5  TPASS  :  got expected failure: TEST_ERRNO=EFAULT(14): Bad address 
+clock_gettime03    6  TPASS  :  got expected failure: TEST_ERRNO=EFAULT(14): Bad address 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>3</strong></p></td>
+<td><p><strong>clock_settime02</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 22:00:52 2018</strong></pre></p></td>
+<td><p><strong> "clock_settime02" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>clock_settime02    1  TPASS  :  clock_settime passed 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>4</strong></p></td>
+<td><p><strong>clock_settime03</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 22:00:52 2018</strong></pre></p></td>
+<td><p><strong> "clock_settime03" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>clock_settime03    1  TPASS  :  clock_settime(2) got expected failure.: TEST_ERRNO=EFAULT(14): Bad address 
+clock_settime03    2  TPASS  :  clock_settime(2) got expected failure.: TEST_ERRNO=EINVAL(22): Invalid argument 
+clock_settime03    3  TPASS  :  clock_settime(2) got expected failure.: TEST_ERRNO=EINVAL(22): Invalid argument 
+clock_settime03    4  TPASS  :  clock_settime(2) got expected failure.: TEST_ERRNO=EINVAL(22): Invalid argument 
+clock_settime03    5  TPASS  :  clock_settime(2) got expected failure.: TEST_ERRNO=EINVAL(22): Invalid argument 
+clock_settime03    6  TPASS  :  clock_settime(2) got expected failure.: TEST_ERRNO=EINVAL(22): Invalid argument 
+clock_settime03    7  TPASS  :  clock_settime(2) got expected failure.: TEST_ERRNO=EPERM(1): Operation not permitted 
+clock_settime03    8  TPASS  :  clock_settime(2) got expected failure.: TEST_ERRNO=EINVAL(22): Invalid argument 
+clock_settime03    9  TPASS  :  clock_settime(2) got expected failure.: TEST_ERRNO=EINVAL(22): Invalid argument 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>5</strong></p></td>
+<td><p><strong>timer_create02</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 22:00:52 2018</strong></pre></p></td>
+<td><p><strong> "timer_create02" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>timer_create02    1  TPASS  :  CLOCK_REALTIME passed with notification type = SIGEV_SIGNAL 
+timer_create02    2  TPASS  :  CLOCK_MONOTONIC passed with notification type = SIGEV_SIGNAL 
+timer_create02    3  TPASS  :  CLOCK_PROCESS_CPUTIME_ID passed with notification type = SIGEV_SIGNAL 
+timer_create02    4  TPASS  :  CLOCK_THREAD_CPUTIME_ID passed with notification type = SIGEV_SIGNAL 
+timer_create02    5  TPASS  :  CLOCK_REALTIME passed with notification type = NULL 
+timer_create02    6  TPASS  :  CLOCK_MONOTONIC passed with notification type = NULL 
+timer_create02    7  TPASS  :  CLOCK_PROCESS_CPUTIME_ID passed with notification type = NULL 
+timer_create02    8  TPASS  :  CLOCK_THREAD_CPUTIME_ID passed with notification type = NULL 
+timer_create02    9  TPASS  :  CLOCK_REALTIME passed with notification type = SIGEV_NONE 
+timer_create02   10  TPASS  :  CLOCK_MONOTONIC passed with notification type = SIGEV_NONE 
+timer_create02   11  TPASS  :  CLOCK_PROCESS_CPUTIME_ID passed with notification type = SIGEV_NONE 
+timer_create02   12  TPASS  :  CLOCK_THREAD_CPUTIME_ID passed with notification type = SIGEV_NONE 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>6</strong></p></td>
+<td><p><strong>timer_create03</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 22:00:52 2018</strong></pre></p></td>
+<td><p><strong> "timer_create03" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>timer_create03    1  TPASS  :  passed with notification type = SIGEV_SIGNAL 
+timer_create03    2  TPASS  :  passed with notification type = NULL 
+timer_create03    3  TPASS  :  passed with notification type = SIGEV_NONE 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>7</strong></p></td>
+<td><p><strong>timer_create04</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 22:00:52 2018</strong></pre></p></td>
+<td><p><strong> "timer_create04" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>timer_create04    1  TPASS  :  failed as expected: TEST_ERRNO=EINVAL(22): Invalid argument 
+timer_create04    2  TPASS  :  failed as expected: TEST_ERRNO=EINVAL(22): Invalid argument 
+timer_create04    3  TPASS  :  failed as expected: TEST_ERRNO=EFAULT(14): Bad address 
+timer_create04    4  TPASS  :  failed as expected: TEST_ERRNO=EFAULT(14): Bad address 
+timer_create04    5  TPASS  :  failed as expected: TEST_ERRNO=EFAULT(14): Bad address 
+timer_create04    6  TPASS  :  failed as expected: TEST_ERRNO=EFAULT(14): Bad address 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>8</strong></p></td>
+<td><p><strong>timer_delete02</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 22:00:52 2018</strong></pre></p></td>
+<td><p><strong> "timer_delete02" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>timer_delete02    1  TPASS  :  passed 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>9</strong></p></td>
+<td><p><strong>timer_delete03</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 22:00:52 2018</strong></pre></p></td>
+<td><p><strong> "timer_delete03" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>timer_delete03    1  TPASS  :  failed as expected failure: TEST_ERRNO=EINVAL(22): Invalid argument 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>10</strong></p></td>
+<td><p><strong>timer_settime02</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 22:00:52 2018</strong></pre></p></td>
+<td><p><strong> "timer_settime02" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>timer_settime02    1  TPASS  :  passed 
+timer_settime02    2  TPASS  :  passed 
+timer_settime02    3  TPASS  :  passed 
+timer_settime02    4  TPASS  :  passed 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>11</strong></p></td>
+<td><p><strong>timer_settime03</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 22:00:52 2018</strong></pre></p></td>
+<td><p><strong> "timer_settime03" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>timer_settime03    1  TPASS  :  failed as expected: TEST_ERRNO=EINVAL(22): Invalid argument 
+timer_settime03    2  TPASS  :  failed as expected: TEST_ERRNO=EINVAL(22): Invalid argument 
+timer_settime03    3  TPASS  :  failed as expected: TEST_ERRNO=EINVAL(22): Invalid argument 
+timer_settime03    4  TPASS  :  failed as expected: TEST_ERRNO=EINVAL(22): Invalid argument 
+timer_settime03    5  TPASS  :  failed as expected: TEST_ERRNO=EFAULT(14): Bad address 
+timer_settime03    6  TPASS  :  failed as expected: TEST_ERRNO=EFAULT(14): Bad address 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>1</strong></p></td></tr>
+<tr bgcolor=Yellow><td><p><strong>12</strong></p></td>
+<td><p><strong>leapsec_timer</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 22:00:52 2018</strong></pre></p></td>
+<td><p><strong> "leapsec_timer" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>leapsec_timer    0  TINFO  :  test start at 2018-11-08 22:00:52.047663571 +0200 
+leapsec_timer    0  TINFO  :  now is     2018-11-08 22:00:52.047731125 +0200 
+leapsec_timer    0  TINFO  :  sleep till 2018-11-08 22:00:53.047731125 +0200 
+leapsec_timer    0  TINFO  :  now is     2018-11-08 22:00:53.047822512 +0200 
+leapsec_timer    0  TINFO  :  hrtimer early expiration is not detected. 
+leapsec_timer    0  TINFO  :  scheduling leap second 2018-11-09 02:00:00.000000000 +0200 
+leapsec_timer    0  TINFO  :  setting time to        2018-11-09 01:59:58.000000000 +0200 
+leapsec_timer    0  TINFO  :  2018-11-09 01:59:58.192973000 +0200 adjtimex: clock synchronized 
+leapsec_timer    0  TINFO  :  2018-11-09 01:59:58.000204000 +0200 adjtimex: clock synchronized 
+leapsec_timer    0  TINFO  :  2018-11-09 01:59:58.000211000 +0200 adjtimex: clock synchronized 
+leapsec_timer    0  TINFO  :  2018-11-09 01:59:58.000219000 +0200 adjtimex: clock synchronized 
+leapsec_timer    0  TINFO  :  2018-11-08 22:00:53.531352750000 +0200 adjtimex: clock synchronized 
+leapsec_timer    0  TINFO  :  2018-11-08 22:00:54.31494013000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:00:54.531627080000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:00:55.31781668000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:00:55.531918669000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:00:56.32084041000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:00:56.532232888000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:00:57.32391193000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:00:57.532527417000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:00:58.32677673000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:00:58.532841401000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:00:59.32980033000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:00:59.533153409000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:00.33297625000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:00.533443198000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:01.33609200000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:01.533797041000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:02.33943541000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:02.534104298000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:03.34247043000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:03.534425982000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:04.34550377000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:04.534725334000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:05.34874403000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:05.535057385000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:06.35186347000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:06.535325512000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:07.35498307000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:07.535655311000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:08.35807715000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:08.535956685000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:09.36122135000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:09.536286501000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:10.36522828000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:10.536671861000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:11.36747616000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:11.536899934000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:12.37041719000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:12.537122914000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:13.37314074000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:13.537481669000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:14.37611807000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:14.537745752000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:15.37916972000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:15.538075028000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:16.38221569000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:16.538349865000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:17.38488372000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:17.538707592000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:18.38882990000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:18.539047974000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:19.39261663000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:19.539409670000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:20.39611968000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:20.539784287000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:21.39961901000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:21.540151849000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:22.40327835000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:22.540446897000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:23.40627029000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:23.540794326000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:24.40961983000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:24.541202375000 +0200 adjtimex: insert leap second 
+leapsec_timer    0  TINFO  :  2018-11-08 22:01:25.41386873000 +0200 adjtimex: insert leap second 
+leapsec_timer    1  TBROK  :  leapsec_timer.c:97: adjtimex status 8208 not set 
+leapsec_timer    2  TBROK  :  leapsec_timer.c:97: Remaining cases broken 
+incrementing stop 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>33</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+</tbody></table></div> 
+
+<h2 id="_2">Summary Report</h2>
+
+<div>
+
+<table border="1" cellspacing="3"><tbody>
+<tr>
+<td bgcolor="#ff0000"> <strong>Test Summary</strong></p></td><td bgcolor="#ff0000"><strong>Pan reported some Tests FAIL</strong></p></td></tr>
+<tr><td><strong>LTP Version</strong> </td><td><strong> 20180926     </strong></td></tr>
+<tr><td><strong>Start Time</strong>  </td><td><strong> Чтв ноя  8 22:00:50 EET 2018 </strong></td></tr>
+<tr><td><strong>End Time</strong>    </td><td><strong> Чтв ноя  8 22:01:25 EET 2018   </strong></td></tr>
+<tr><td><strong>Log Result</strong>  </td><td><a href="file:///opt/ltp/results/">      <strong>/opt/ltp/results</strong></a></td></tr>
+<tr><td><strong>Output/Failed Result</strong></td><td><a href="file:///opt/ltp/output/"> <strong>/opt/ltp/output</strong></a></td></tr>
+<tr><td><strong>Total Tests</strong></td><td><strong>12                         </strong></td></tr>
+<tr><td><strong>Total Test TPASS:</strong></td><td><strong> 11 </strong></td></tr>
+<tr><td><strong>Total Test TFAIL:</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Total Test TBROK</strong></td><td><strong> 1 </strong></td></tr>
+<tr><td><strong>Total Test TWARN</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Total Test TCONF</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Kernel Version</strong></td><td><strong>   </strong></td></tr>
+<tr><td><strong>Machine Architecture</strong></td><td><strong>  </strong></td></tr>
+<tr><td><strong>Hostname</strong>  </td> <td><strong>wip
+  </strong></td></tr></tbody></table></div></body></html>

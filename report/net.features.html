@@ -1,0 +1,1102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+  <title>Linux Test Project - Results</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<h1>LTP Output/Log (Report Generated on Чтв ноя  8 21:38:29 EET 2018) </h1>
+<table border="1" cellspacing="3">
+  <tbody>
+    <tr>
+      <td bgcolor="#66ff66"><b>&nbsp;PASSED&nbsp;</b></td>
+      <td bgcolor="#ff0000"><b>&nbsp;FAILED&nbsp;</b></td>
+      <td bgcolor="Fuchsia"><b>&nbsp;WARNING&nbsp;</b></td>
+      <td bgcolor="Yellow"><b>&nbsp;BROKEN&nbsp;</b></td>
+      <td bgcolor="#8dc997"><b>&nbsp;RETIRED&nbsp;</b></td>
+      <td bgcolor="Aqua"><b>&nbsp;CONFIG-ERROR&nbsp;</b></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>Meaning of the following KEYWORDS in test results/logs:</b>
+<hr>
+<li><b>TPASS -</b> Indicates that the test case had the expected result and passed</li>
+<li><b>TFAIL -</b> Indicates that the test case had an unexpected result and failed.</li>
+<li><b>TBROK -</b> Indicates that the remaining test cases are broken and will not execute correctly, because some precondition not met, such as a resource not being available.</li>
+<li><b>TCONF -</b> Indicates that the test case was not written to run on the current harware or software configuration such as machine type, or, kernel version.</li>
+<li><b>TWARN -</b> Indicates that the test case experienced an unexpected or undesirable event that should not affect the test itself such as being unable to cleanup resources after the test finished.</li>
+<li><b>TINFO -</b> Specifies useful information about the status of the test that does not affect the result and does not indicate a problem.</li>
+<hr>
+
+<br>
+<li><a href="#_1">Click Here for Detailed Report</a></li>
+<li><a href="#_2">Click Here for Summary Report</a></li>
+<br>
+
+<h2 id="_1">Detailed Report</h2>
+<div>
+<table border="1" cellspacing="3">
+<tbody>
+    <tr>
+      <td bgcolor="Silver"><strong>No</strong></td>
+      <td bgcolor="Silver"><strong>Test-Name</strong></td>
+      <td bgcolor="Silver"><strong>Start-Time</strong></td>
+      <td bgcolor="Silver"><strong>Command-Line</strong></td>
+      <td bgcolor="Silver"><strong>Contacts</strong></td>
+      <td bgcolor="Silver"><strong>Analysis</strong></td>
+      <td bgcolor="Silver"><strong>Test-Output</strong></td>
+      <td bgcolor="Silver"><strong>Initiation-Status</strong></td>
+      <td bgcolor="Silver"><strong>Duration</strong></td>
+      <td bgcolor="Silver"><strong>Termination-type</strong></td>
+      <td bgcolor="Silver"><strong>Termination-id</strong></td>
+      <td bgcolor="Silver"><strong>Core-File</strong></td>
+      <td bgcolor="Silver"><strong>cutime</strong></td>
+      <td bgcolor="Silver"><strong>cstime</strong></td>
+    </tr>
+<tr bgcolor=#66ff66><td><p><strong>1</strong></p></td>
+<td><p><strong>bbr01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:29 2018</strong></pre></p></td>
+<td><p><strong> "bbr01.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>bbr01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+bbr01 1 TINFO: set local addr 10.0.0.2/24 
+bbr01 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+bbr01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+bbr01 1 TINFO: set remote addr 10.0.0.1/24 
+bbr01 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+bbr01 1 TINFO: Network config (local -- remote): 
+bbr01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+bbr01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+bbr01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+bbr01 1 TINFO: emulate congestion with packet loss 0.5% 
+bbr01 1 TINFO: compare 'cubic' and 'bbr' congestion alg. results 
+bbr01 1 TINFO: setting cubic 
+bbr01 1 TINFO: run server 'netstress -R 500000 -B /tmp/ltp-q7VIbNYtn6/LTP_bbr01.p8S4qdxSAV' 
+tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+netstress.c:923: INFO: max requests '500000' 
+netstress.c:944: INFO: TCP server is using old TCP API. 
+netstress.c:791: INFO: '/proc/sys/net/ipv4/tcp_fastopen' is 1 
+safe_net.c:129: CONF: netstress.c:675: socket(10, 1, 0) failed: EAFNOSUPPORT 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+safe_net.c:129: CONF: netstress.c:675: socket(10, 1, 0) failed: EAFNOSUPPORT 
+bbr01 1 TCONF: server failed 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  1 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>4</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>13</strong></p></td>
+<td><p><strong>14</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>2</strong></p></td>
+<td><p><strong>bbr02</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:33 2018</strong></pre></p></td>
+<td><p><strong> "bbr02.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>bbr02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+bbr02 1 TINFO: set local addr 10.0.0.2/24 
+bbr02 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+bbr02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+bbr02 1 TINFO: set remote addr 10.0.0.1/24 
+bbr02 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+bbr02 1 TINFO: Network config (local -- remote): 
+bbr02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+bbr02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+bbr02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+bbr02 1 TINFO: emulate congestion with packet delay 5ms 1ms 20% loss 0.3% ecn corrupt 0.1% reorder 93% 50% limit 10000 
+bbr02 1 TINFO: set qdisc on ltp_ns_veth1 to pfifo_fast len 1000 
+bbr02 1 TINFO: compare 'cubic' and 'bbr' congestion alg. results 
+bbr02 1 TINFO: setting cubic 
+bbr02 1 TINFO: run server 'netstress -R 500000 -B /tmp/ltp-q7VIbNYtn6/LTP_bbr02.kIKf0PNvtD' 
+tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+netstress.c:923: INFO: max requests '500000' 
+netstress.c:944: INFO: TCP server is using old TCP API. 
+netstress.c:791: INFO: '/proc/sys/net/ipv4/tcp_fastopen' is 1 
+safe_net.c:129: CONF: netstress.c:675: socket(10, 1, 0) failed: EAFNOSUPPORT 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+safe_net.c:129: CONF: netstress.c:675: socket(10, 1, 0) failed: EAFNOSUPPORT 
+bbr02 1 TCONF: server failed 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  1 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>16</strong></p></td>
+<td><p><strong>14</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>3</strong></p></td>
+<td><p><strong>bind_noport01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:33 2018</strong></pre></p></td>
+<td><p><strong> "bind_noport01.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>bind_noport01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+bind_noport01 1 TINFO: set local addr 10.0.0.2/24 
+bind_noport01 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+bind_noport01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+bind_noport01 1 TINFO: set remote addr 10.0.0.1/24 
+bind_noport01 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+bind_noport01 1 TINFO: Network config (local -- remote): 
+bind_noport01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+bind_noport01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+bind_noport01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+bind_noport01 1 TINFO: test IP_BIND_ADDRESS_NO_PORT with tcp socket 
+bind_noport01 1 TINFO: run server 'netstress -T tcp -S 10.0.0.1 -R 500000 -B /tmp/ltp-q7VIbNYtn6/LTP_bind_noport01.uWk4xMQjtC' 
+tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+netstress.c:923: INFO: max requests '500000' 
+netstress.c:944: INFO: TCP server is using old TCP API. 
+netstress.c:791: INFO: '/proc/sys/net/ipv4/tcp_fastopen' is 1 
+safe_net.c:129: CONF: netstress.c:675: socket(10, 1, 0) failed: EAFNOSUPPORT 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+safe_net.c:129: CONF: netstress.c:675: socket(10, 1, 0) failed: EAFNOSUPPORT 
+bind_noport01 1 TCONF: server failed 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  1 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>10</strong></p></td>
+<td><p><strong>11</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>4</strong></p></td>
+<td><p><strong>busy_poll01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:33 2018</strong></pre></p></td>
+<td><p><strong> "busy_poll01.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>busy_poll01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+busy_poll01 1 TINFO: set local addr 10.0.0.2/24 
+busy_poll01 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+busy_poll01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+busy_poll01 1 TINFO: set remote addr 10.0.0.1/24 
+busy_poll01 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+busy_poll01 1 TINFO: Network config (local -- remote): 
+busy_poll01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+busy_poll01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+busy_poll01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+busy_poll01 1 TCONF: 'ethtool' not found 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  1 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>8</strong></p></td>
+<td><p><strong>7</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>5</strong></p></td>
+<td><p><strong>busy_poll02</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:33 2018</strong></pre></p></td>
+<td><p><strong> "busy_poll02.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>busy_poll02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+busy_poll02 1 TINFO: set local addr 10.0.0.2/24 
+busy_poll02 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+busy_poll02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+busy_poll02 1 TINFO: set remote addr 10.0.0.1/24 
+busy_poll02 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+busy_poll02 1 TINFO: Network config (local -- remote): 
+busy_poll02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+busy_poll02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+busy_poll02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+busy_poll02 1 TCONF: 'ethtool' not found 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  1 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>9</strong></p></td>
+<td><p><strong>7</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>6</strong></p></td>
+<td><p><strong>busy_poll03</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:33 2018</strong></pre></p></td>
+<td><p><strong> "busy_poll03.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>busy_poll03 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+busy_poll03 1 TINFO: set local addr 10.0.0.2/24 
+busy_poll03 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+busy_poll03 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+busy_poll03 1 TINFO: set remote addr 10.0.0.1/24 
+busy_poll03 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+busy_poll03 1 TINFO: Network config (local -- remote): 
+busy_poll03 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+busy_poll03 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+busy_poll03 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+busy_poll03 1 TCONF: 'ethtool' not found 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  1 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>8</strong></p></td>
+<td><p><strong>6</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>7</strong></p></td>
+<td><p><strong>dccp01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:33 2018</strong></pre></p></td>
+<td><p><strong> "dccp01.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>dccp01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+dccp01 1 TINFO: set local addr 10.0.0.2/24 
+dccp01 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+dccp01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+dccp01 1 TINFO: set remote addr 10.0.0.1/24 
+dccp01 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+dccp01 1 TINFO: Network config (local -- remote): 
+dccp01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+dccp01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+dccp01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+dccp01 1 TINFO: compare UDP/DCCP/UDP-Lite performance 
+dccp01 1 TINFO: run server 'netstress -T udp -R 500000 -B /tmp/ltp-q7VIbNYtn6/dccp01.qlaBGtK46P' 
+tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+netstress.c:923: INFO: max requests '500000' 
+netstress.c:950: INFO: using UDP 
+safe_net.c:129: CONF: netstress.c:675: socket(10, 2, 0) failed: EAFNOSUPPORT 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+safe_net.c:129: CONF: netstress.c:675: socket(10, 2, 0) failed: EAFNOSUPPORT 
+dccp01 1 TCONF: server failed 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>12</strong></p></td>
+<td><p><strong>8</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>8</strong></p></td>
+<td><p><strong>sctp01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:34 2018</strong></pre></p></td>
+<td><p><strong> "sctp01.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>sctp01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+sctp01 1 TINFO: set local addr 10.0.0.2/24 
+sctp01 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+sctp01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+sctp01 1 TINFO: set remote addr 10.0.0.1/24 
+sctp01 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+sctp01 1 TINFO: Network config (local -- remote): 
+sctp01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+sctp01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+sctp01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+sctp01 1 TINFO: compare TCP/SCTP performance 
+sctp01 1 TINFO: run server 'netstress -T tcp -R 3 -B /tmp/ltp-q7VIbNYtn6/LTP_sctp01.Ij2siJtNRp' 
+tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+netstress.c:923: INFO: max requests '3' 
+netstress.c:944: INFO: TCP server is using old TCP API. 
+netstress.c:791: INFO: '/proc/sys/net/ipv4/tcp_fastopen' is 1 
+safe_net.c:129: CONF: netstress.c:675: socket(10, 1, 0) failed: EAFNOSUPPORT 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+safe_net.c:129: CONF: netstress.c:675: socket(10, 1, 0) failed: EAFNOSUPPORT 
+sctp01 1 TCONF: server failed 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  1 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>11</strong></p></td>
+<td><p><strong>9</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>9</strong></p></td>
+<td><p><strong>tcp_fastopen</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:34 2018</strong></pre></p></td>
+<td><p><strong> "tcp_fastopen_run.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tcp_fastopen_run 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+tcp_fastopen_run 1 TINFO: set local addr 10.0.0.2/24 
+tcp_fastopen_run 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+tcp_fastopen_run 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+tcp_fastopen_run 1 TINFO: set remote addr 10.0.0.1/24 
+tcp_fastopen_run 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+tcp_fastopen_run 1 TINFO: Network config (local -- remote): 
+tcp_fastopen_run 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+tcp_fastopen_run 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+tcp_fastopen_run 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+tcp_fastopen_run 1 TINFO: using old TCP API and set tcp_fastopen to '0' 
+tcp_fastopen_run 1 TINFO: run server 'netstress -t 0 -R 3 -B /tmp/ltp-q7VIbNYtn6/LTP_tcp_fastopen_run.NOdRXKWfZi' 
+tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+netstress.c:923: INFO: max requests '3' 
+netstress.c:944: INFO: TCP server is using old TCP API. 
+netstress.c:791: INFO: '/proc/sys/net/ipv4/tcp_fastopen' is 1 
+netstress.c:804: INFO: set '/proc/sys/net/ipv4/tcp_fastopen' to '0' 
+safe_net.c:129: CONF: netstress.c:675: socket(10, 1, 0) failed: EAFNOSUPPORT 
+netstress.c:193: INFO: unset '/proc/sys/net/ipv4/tcp_fastopen' back to '1' 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+safe_net.c:129: CONF: netstress.c:675: socket(10, 1, 0) failed: EAFNOSUPPORT 
+tcp_fastopen_run 1 TCONF: server failed 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  1 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>12</strong></p></td>
+<td><p><strong>11</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>10</strong></p></td>
+<td><p><strong>vxlan01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:34 2018</strong></pre></p></td>
+<td><p><strong> "vxlan01.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>vxlan01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+vxlan01 1 TINFO: set local addr 10.0.0.2/24 
+vxlan01 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+vxlan01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+vxlan01 1 TINFO: set remote addr 10.0.0.1/24 
+vxlan01 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+vxlan01 1 TINFO: Network config (local -- remote): 
+vxlan01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+vxlan01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+vxlan01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+vxlan01 1 TINFO: add vxlan with 'l2miss l3miss' 
+vxlan01 1 TINFO: add 10 vxlan, then delete 
+vxlan01 1 TPASS: done 
+vxlan01 2 TINFO: add vxlan with 'norsc nolearning noproxy' 
+vxlan01 2 TINFO: add 10 vxlan, then delete 
+vxlan01 2 TPASS: done 
+vxlan01 3 TINFO: add vxlan with 'ttl 0x01 tos 0x01' 
+vxlan01 3 TINFO: add 10 vxlan, then delete 
+vxlan01 3 TPASS: done 
+vxlan01 4 TINFO: add vxlan with 'ttl 0xff tos 0xff' 
+vxlan01 4 TINFO: add 10 vxlan, then delete 
+vxlan01 4 TPASS: done 
+vxlan01 5 TINFO: add vxlan with 'gbp' 
+vxlan01 5 TINFO: add 10 vxlan, then delete 
+vxlan01 5 TPASS: done 
+vxlan01 6 TINFO: cleanup virtual interfaces... 
+ 
+Summary: 
+passed   5 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>7</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>39</strong></p></td>
+<td><p><strong>68</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>11</strong></p></td>
+<td><p><strong>vxlan02</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:41 2018</strong></pre></p></td>
+<td><p><strong> "vxlan02.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>vxlan02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+vxlan02 1 TINFO: set local addr 10.0.0.2/24 
+vxlan02 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+vxlan02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+vxlan02 1 TINFO: set remote addr 10.0.0.1/24 
+vxlan02 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+vxlan02 1 TINFO: Network config (local -- remote): 
+vxlan02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+vxlan02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+vxlan02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+vxlan02 1 TINFO: add/del vxlan 10 times 
+vxlan02 1 TPASS: done 
+vxlan02 2 TINFO: cleanup virtual interfaces... 
+ 
+Summary: 
+passed   1 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>13</strong></p></td>
+<td><p><strong>17</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>12</strong></p></td>
+<td><p><strong>vxlan_multi_03</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:42 2018</strong></pre></p></td>
+<td><p><strong> "vxlan03.sh -d multi" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>vxlan03 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+vxlan03 1 TINFO: set local addr 10.0.0.2/24 
+vxlan03 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+vxlan03 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+vxlan03 1 TINFO: set remote addr 10.0.0.1/24 
+vxlan03 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+vxlan03 1 TINFO: Network config (local -- remote): 
+vxlan03 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+vxlan03 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+vxlan03 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+vxlan03 1 TINFO: the same VNI must work 
+vxlan03 1 TINFO: setup local vxlan with 'id 0xFFFFFE  group 239.185.85.188' 
+vxlan03 1 TINFO: setup rhost vxlan with 'id 0xFFFFFE  group 239.185.85.188' 
+vxlan03 1 TBROK: 'ip ad add fd00:23::1/64 dev ltp_v0 nodad' failed on '': 'RTNETLINK answers: Operation not supported' 
+vxlan03 1 TINFO: cleanup virtual interfaces... 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>13</strong></p></td>
+<td><p><strong>13</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>13</strong></p></td>
+<td><p><strong>vxlan_uni_03</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:42 2018</strong></pre></p></td>
+<td><p><strong> "vxlan03.sh -d uni" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>vxlan03 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+vxlan03 1 TINFO: set local addr 10.0.0.2/24 
+vxlan03 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+vxlan03 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+vxlan03 1 TINFO: set remote addr 10.0.0.1/24 
+vxlan03 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+vxlan03 1 TINFO: Network config (local -- remote): 
+vxlan03 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+vxlan03 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+vxlan03 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+vxlan03 1 TINFO: the same VNI must work 
+vxlan03 1 TINFO: setup local vxlan with 'id 0xFFFFFE  remote 10.0.0.1' 
+vxlan03 1 TINFO: setup rhost vxlan with 'id 0xFFFFFE  remote 10.0.0.2' 
+vxlan03 1 TBROK: 'ip ad add fd00:23::1/64 dev ltp_v0 nodad' failed on '': 'RTNETLINK answers: Operation not supported' 
+vxlan03 1 TINFO: cleanup virtual interfaces... 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>13</strong></p></td>
+<td><p><strong>14</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>14</strong></p></td>
+<td><p><strong>vlan01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:42 2018</strong></pre></p></td>
+<td><p><strong> "vlan01.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>vlan01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+vlan01 1 TINFO: set local addr 10.0.0.2/24 
+vlan01 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+vlan01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+vlan01 1 TINFO: set remote addr 10.0.0.1/24 
+vlan01 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+vlan01 1 TINFO: Network config (local -- remote): 
+vlan01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+vlan01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+vlan01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+vlan01 1 TINFO: add vlan with '' 
+vlan01 1 TINFO: add 10 vlan, then delete 
+vlan01 1 TPASS: done 
+vlan01 2 TINFO: add vlan with 'protocol 802.1Q loose_binding off reorder_hdr off' 
+vlan01 2 TINFO: add 10 vlan, then delete 
+vlan01 2 TPASS: done 
+vlan01 3 TINFO: add vlan with 'protocol 802.1Q loose_binding off reorder_hdr on' 
+vlan01 3 TINFO: add 10 vlan, then delete 
+vlan01 3 TPASS: done 
+vlan01 4 TINFO: add vlan with 'protocol 802.1Q loose_binding on reorder_hdr off' 
+vlan01 4 TINFO: add 10 vlan, then delete 
+vlan01 4 TPASS: done 
+vlan01 5 TINFO: add vlan with 'protocol 802.1Q loose_binding on reorder_hdr on' 
+vlan01 5 TINFO: add 10 vlan, then delete 
+vlan01 5 TPASS: done 
+vlan01 6 TINFO: add vlan with 'protocol 802.1ad loose_binding off reorder_hdr off' 
+vlan01 6 TINFO: add 10 vlan, then delete 
+vlan01 6 TPASS: done 
+vlan01 7 TINFO: add vlan with 'protocol 802.1ad loose_binding off reorder_hdr on' 
+vlan01 7 TINFO: add 10 vlan, then delete 
+vlan01 7 TPASS: done 
+vlan01 8 TINFO: add vlan with 'protocol 802.1ad loose_binding on reorder_hdr off' 
+vlan01 8 TINFO: add 10 vlan, then delete 
+vlan01 8 TPASS: done 
+vlan01 9 TINFO: add vlan with 'protocol 802.1ad loose_binding on reorder_hdr on' 
+vlan01 9 TINFO: add 10 vlan, then delete 
+vlan01 9 TPASS: done 
+vlan01 10 TINFO: cleanup virtual interfaces... 
+ 
+Summary: 
+passed   9 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>5</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>71</strong></p></td>
+<td><p><strong>114</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>15</strong></p></td>
+<td><p><strong>vlan02</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:47 2018</strong></pre></p></td>
+<td><p><strong> "vlan02.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>vlan02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+vlan02 1 TINFO: set local addr 10.0.0.2/24 
+vlan02 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+vlan02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+vlan02 1 TINFO: set remote addr 10.0.0.1/24 
+vlan02 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+vlan02 1 TINFO: Network config (local -- remote): 
+vlan02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+vlan02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+vlan02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+vlan02 1 TINFO: add/del vlan 10 times 
+vlan02 1 TPASS: done 
+vlan02 2 TINFO: cleanup virtual interfaces... 
+ 
+Summary: 
+passed   1 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>14</strong></p></td>
+<td><p><strong>18</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>16</strong></p></td>
+<td><p><strong>vlan03</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:47 2018</strong></pre></p></td>
+<td><p><strong> "vlan03.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>vlan03 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+vlan03 1 TINFO: set local addr 10.0.0.2/24 
+vlan03 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+vlan03 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+vlan03 1 TINFO: set remote addr 10.0.0.1/24 
+vlan03 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+vlan03 1 TINFO: Network config (local -- remote): 
+vlan03 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+vlan03 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+vlan03 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+vlan03 1 TINFO: networks with the same VLAN ID must work 
+vlan03 1 TINFO: setup local vlan with 'id 4094 ' 
+vlan03 1 TINFO: setup rhost vlan with 'id 4094 ' 
+vlan03 1 TBROK: 'ip ad add fd00:23::1/64 dev ltp_v0 nodad' failed on '': 'RTNETLINK answers: Operation not supported' 
+vlan03 1 TINFO: cleanup virtual interfaces... 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>13</strong></p></td>
+<td><p><strong>12</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>17</strong></p></td>
+<td><p><strong>macvlan01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:48 2018</strong></pre></p></td>
+<td><p><strong> "macvlan01.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>macvlan01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+macvlan01 1 TINFO: set local addr 10.0.0.2/24 
+macvlan01 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+macvlan01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+macvlan01 1 TINFO: set remote addr 10.0.0.1/24 
+macvlan01 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+macvlan01 1 TINFO: Network config (local -- remote): 
+macvlan01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+macvlan01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+macvlan01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+macvlan01 1 TINFO: add and then delete macvlan with 'mode private' 
+macvlan01 1 TINFO: add/del macvlan 10 times 
+macvlan01 1 TPASS: done 
+macvlan01 2 TINFO: add and then delete macvlan with 'mode vepa' 
+macvlan01 2 TINFO: add/del macvlan 10 times 
+macvlan01 2 TPASS: done 
+macvlan01 3 TINFO: add and then delete macvlan with 'mode bridge' 
+macvlan01 3 TINFO: add/del macvlan 10 times 
+macvlan01 3 TPASS: done 
+macvlan01 4 TINFO: add and then delete macvlan with 'mode passthru' 
+macvlan01 4 TINFO: add/del macvlan 10 times 
+macvlan01 4 TPASS: done 
+macvlan01 5 TINFO: cleanup virtual interfaces... 
+ 
+Summary: 
+passed   4 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>31</strong></p></td>
+<td><p><strong>52</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>18</strong></p></td>
+<td><p><strong>macvtap01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:50 2018</strong></pre></p></td>
+<td><p><strong> "macvtap01.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>macvtap01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+macvtap01 1 TINFO: set local addr 10.0.0.2/24 
+macvtap01 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+macvtap01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+macvtap01 1 TINFO: set remote addr 10.0.0.1/24 
+macvtap01 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+macvtap01 1 TINFO: Network config (local -- remote): 
+macvtap01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+macvtap01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+macvtap01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+macvtap01 1 TINFO: add and then delete macvtap with 'mode private' 
+macvtap01 1 TINFO: add/del macvtap 10 times 
+macvtap01 1 TPASS: done 
+macvtap01 2 TINFO: add and then delete macvtap with 'mode vepa' 
+macvtap01 2 TINFO: add/del macvtap 10 times 
+macvtap01 2 TPASS: done 
+macvtap01 3 TINFO: add and then delete macvtap with 'mode bridge' 
+macvtap01 3 TINFO: add/del macvtap 10 times 
+macvtap01 3 TPASS: done 
+macvtap01 4 TINFO: add and then delete macvtap with 'mode passthru' 
+macvtap01 4 TINFO: add/del macvtap 10 times 
+macvtap01 4 TPASS: done 
+macvtap01 5 TINFO: cleanup virtual interfaces... 
+ 
+Summary: 
+passed   4 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>50</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>19</strong></p></td>
+<td><p><strong>macsec01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:51 2018</strong></pre></p></td>
+<td><p><strong> "macsec01.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>macsec01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+macsec01 1 TINFO: set local addr 10.0.0.2/24 
+macsec01 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+macsec01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+macsec01 1 TINFO: set remote addr 10.0.0.1/24 
+macsec01 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+macsec01 1 TINFO: Network config (local -- remote): 
+macsec01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+macsec01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+macsec01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+macsec01 1 TINFO: setup IPsec transport/ah des3_ede 
+macsec01 1 TINFO: setup local macsec with 'icvlen 16 encodingsa 0 ' 
+macsec01 1 TINFO: setup rhost macsec with 'icvlen 16 encodingsa 0 ' 
+macsec01 1 TBROK: 'ip ad add fd00:23::1/64 dev ltp_v0 nodad' failed on '': 'RTNETLINK answers: Operation not supported' 
+macsec01 1 TINFO: cleanup virtual interfaces... 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>14</strong></p></td>
+<td><p><strong>15</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>20</strong></p></td>
+<td><p><strong>macsec02</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:52 2018</strong></pre></p></td>
+<td><p><strong> "macsec02.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>macsec02 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+macsec02 1 TINFO: set local addr 10.0.0.2/24 
+macsec02 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+macsec02 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+macsec02 1 TINFO: set remote addr 10.0.0.1/24 
+macsec02 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+macsec02 1 TINFO: Network config (local -- remote): 
+macsec02 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+macsec02 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+macsec02 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+macsec02 1 TINFO: setup IPsec transport/esp_aead des3_ede 
+macsec02 1 TINFO: setup local macsec with 'icvlen 16 encodingsa 0 replay on window 300 encrypt on protect on' 
+macsec02 1 TINFO: setup rhost macsec with 'icvlen 16 encodingsa 0 replay on window 300 encrypt on protect on' 
+macsec02 1 TBROK: 'ip ad add fd00:23::1/64 dev ltp_v0 nodad' failed on '': 'RTNETLINK answers: Operation not supported' 
+macsec02 1 TINFO: cleanup virtual interfaces... 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>15</strong></p></td>
+<td><p><strong>14</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>21</strong></p></td>
+<td><p><strong>ipvlan01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:52 2018</strong></pre></p></td>
+<td><p><strong> "ipvlan01.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>ipvlan01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+ipvlan01 1 TINFO: set local addr 10.0.0.2/24 
+ipvlan01 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+ipvlan01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+ipvlan01 1 TINFO: set remote addr 10.0.0.1/24 
+ipvlan01 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+ipvlan01 1 TINFO: Network config (local -- remote): 
+ipvlan01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+ipvlan01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+ipvlan01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+ipvlan01 1 TINFO: add and then delete ipvlan with 'mode l2' 
+ipvlan01 1 TINFO: add/del ipvlan 10 times 
+ipvlan01 1 TPASS: done 
+ipvlan01 2 TINFO: add and then delete ipvlan with 'mode l3' 
+ipvlan01 2 TINFO: add/del ipvlan 10 times 
+ipvlan01 2 TPASS: done 
+ipvlan01 3 TINFO: cleanup virtual interfaces... 
+ 
+Summary: 
+passed   2 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>22</strong></p></td>
+<td><p><strong>27</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>22</strong></p></td>
+<td><p><strong>gre_ipv4_01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:53 2018</strong></pre></p></td>
+<td><p><strong> "gre01.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>gre01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+gre01 1 TINFO: set local addr 10.0.0.2/24 
+gre01 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+gre01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+gre01 1 TINFO: set remote addr 10.0.0.1/24 
+gre01 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+gre01 1 TINFO: Network config (local -- remote): 
+gre01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+gre01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+gre01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+gre01 1 TINFO: test gre 
+gre01 1 TINFO: setup local gre with 'local 10.0.0.2 remote 10.0.0.1 dev ltp_ns_veth2' 
+gre01 1 TINFO: setup rhost gre with 'local 10.0.0.1 remote 10.0.0.2 dev ltp_ns_veth1' 
+gre01 1 TBROK: 'ip ad add fd00:23::1/64 dev ltp_v0 nodad' failed on '': 'RTNETLINK answers: Operation not supported' 
+gre01 1 TINFO: cleanup virtual interfaces... 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>13</strong></p></td>
+<td><p><strong>11</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>23</strong></p></td>
+<td><p><strong>dctcp_ipv4_01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:53 2018</strong></pre></p></td>
+<td><p><strong> "dctcp01.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>dctcp01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+dctcp01 1 TINFO: set local addr 10.0.0.2/24 
+dctcp01 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+dctcp01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+dctcp01 1 TINFO: set remote addr 10.0.0.1/24 
+dctcp01 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+dctcp01 1 TINFO: Network config (local -- remote): 
+dctcp01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+dctcp01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+dctcp01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+dctcp01 1 TINFO: emulate congestion with packet loss 0.5% and ECN 
+dctcp01 1 TINFO: compare 'cubic' and 'dctcp' congestion alg. results 
+dctcp01 1 TINFO: setting cubic 
+dctcp01 1 TINFO: run server 'netstress -R 500000 -B /tmp/ltp-q7VIbNYtn6/LTP_dctcp01.QoY3qGDio6' 
+tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+netstress.c:923: INFO: max requests '500000' 
+netstress.c:944: INFO: TCP server is using old TCP API. 
+netstress.c:791: INFO: '/proc/sys/net/ipv4/tcp_fastopen' is 1 
+safe_net.c:129: CONF: netstress.c:675: socket(10, 1, 0) failed: EAFNOSUPPORT 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+safe_net.c:129: CONF: netstress.c:675: socket(10, 1, 0) failed: EAFNOSUPPORT 
+dctcp01 1 TCONF: server failed 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  1 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>13</strong></p></td>
+<td><p><strong>12</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>24</strong></p></td>
+<td><p><strong>geneve01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 21:38:54 2018</strong></pre></p></td>
+<td><p><strong> "geneve01.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>geneve01 1 TINFO: initialize 'lhost' 'ltp_ns_veth2' interface 
+geneve01 1 TINFO: set local addr 10.0.0.2/24 
+geneve01 1 TINFO: set local addr fd00:1:1:1::2/64 
+RTNETLINK answers: Operation not supported 
+geneve01 1 TINFO: initialize 'rhost' 'ltp_ns_veth1' interface 
+geneve01 1 TINFO: set remote addr 10.0.0.1/24 
+geneve01 1 TINFO: set remote addr fd00:1:1:1::1/64 
+RTNETLINK answers: Operation not supported 
+# tst_net_iface_prefix.c:145: INFO: prefix and interface not found for 'fd00:1:1:1::2'. 
+ 
+geneve01 1 TINFO: Network config (local -- remote): 
+geneve01 1 TINFO: ltp_ns_veth2 -- ltp_ns_veth1 
+geneve01 1 TINFO: 10.0.0.2/24 -- 10.0.0.1/24 
+geneve01 1 TINFO: fd00:1:1:1::2/64 -- fd00:1:1:1::1/64 
+geneve01 1 TINFO: the same VNI must work 
+geneve01 1 TINFO: setup local geneve with 'id 0xFFFFFE remote 10.0.0.1' 
+geneve01 1 TINFO: setup rhost geneve with 'id 0xFFFFFE remote 10.0.0.2' 
+geneve01 1 TBROK: 'ip ad add fd00:23::1/64 dev ltp_v0 nodad' failed on '': 'RTNETLINK answers: Operation not supported' 
+geneve01 1 TINFO: cleanup virtual interfaces... 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+incrementing stop 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>12</strong></p></td>
+<td><p><strong>11</strong></p></td></tr>
+</tbody></table></div> 
+
+<h2 id="_2">Summary Report</h2>
+
+<div>
+
+<table border="1" cellspacing="3"><tbody>
+<tr>
+<td bgcolor="#ff0000"> <strong>Test Summary</strong></p></td><td bgcolor="#ff0000"><strong>Pan reported some Tests FAIL</strong></p></td></tr>
+<tr><td><strong>LTP Version</strong> </td><td><strong> 20180926     </strong></td></tr>
+<tr><td><strong>Start Time</strong>  </td><td><strong> Чтв ноя  8 21:38:29 EET 2018 </strong></td></tr>
+<tr><td><strong>End Time</strong>    </td><td><strong> Чтв ноя  8 21:38:54 EET 2018   </strong></td></tr>
+<tr><td><strong>Log Result</strong>  </td><td><a href="file:///opt/ltp/results/">      <strong>/opt/ltp/results</strong></a></td></tr>
+<tr><td><strong>Output/Failed Result</strong></td><td><a href="file:///opt/ltp/output/"> <strong>/opt/ltp/output</strong></a></td></tr>
+<tr><td><strong>Total Tests</strong></td><td><strong>24                         </strong></td></tr>
+<tr><td><strong>Total Test TPASS:</strong></td><td><strong> 24 </strong></td></tr>
+<tr><td><strong>Total Test TFAIL:</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Total Test TBROK</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Total Test TWARN</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Total Test TCONF</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Kernel Version</strong></td><td><strong>   </strong></td></tr>
+<tr><td><strong>Machine Architecture</strong></td><td><strong>  </strong></td></tr>
+<tr><td><strong>Hostname</strong>  </td> <td><strong>wip
+  </strong></td></tr></tbody></table></div></body></html>

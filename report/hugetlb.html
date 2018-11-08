@@ -1,0 +1,781 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+  <title>Linux Test Project - Results</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<h1>LTP Output/Log (Report Generated on Чтв ноя  8 19:45:58 EET 2018) </h1>
+<table border="1" cellspacing="3">
+  <tbody>
+    <tr>
+      <td bgcolor="#66ff66"><b>&nbsp;PASSED&nbsp;</b></td>
+      <td bgcolor="#ff0000"><b>&nbsp;FAILED&nbsp;</b></td>
+      <td bgcolor="Fuchsia"><b>&nbsp;WARNING&nbsp;</b></td>
+      <td bgcolor="Yellow"><b>&nbsp;BROKEN&nbsp;</b></td>
+      <td bgcolor="#8dc997"><b>&nbsp;RETIRED&nbsp;</b></td>
+      <td bgcolor="Aqua"><b>&nbsp;CONFIG-ERROR&nbsp;</b></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>Meaning of the following KEYWORDS in test results/logs:</b>
+<hr>
+<li><b>TPASS -</b> Indicates that the test case had the expected result and passed</li>
+<li><b>TFAIL -</b> Indicates that the test case had an unexpected result and failed.</li>
+<li><b>TBROK -</b> Indicates that the remaining test cases are broken and will not execute correctly, because some precondition not met, such as a resource not being available.</li>
+<li><b>TCONF -</b> Indicates that the test case was not written to run on the current harware or software configuration such as machine type, or, kernel version.</li>
+<li><b>TWARN -</b> Indicates that the test case experienced an unexpected or undesirable event that should not affect the test itself such as being unable to cleanup resources after the test finished.</li>
+<li><b>TINFO -</b> Specifies useful information about the status of the test that does not affect the result and does not indicate a problem.</li>
+<hr>
+
+<br>
+<li><a href="#_1">Click Here for Detailed Report</a></li>
+<li><a href="#_2">Click Here for Summary Report</a></li>
+<br>
+
+<h2 id="_1">Detailed Report</h2>
+<div>
+<table border="1" cellspacing="3">
+<tbody>
+    <tr>
+      <td bgcolor="Silver"><strong>No</strong></td>
+      <td bgcolor="Silver"><strong>Test-Name</strong></td>
+      <td bgcolor="Silver"><strong>Start-Time</strong></td>
+      <td bgcolor="Silver"><strong>Command-Line</strong></td>
+      <td bgcolor="Silver"><strong>Contacts</strong></td>
+      <td bgcolor="Silver"><strong>Analysis</strong></td>
+      <td bgcolor="Silver"><strong>Test-Output</strong></td>
+      <td bgcolor="Silver"><strong>Initiation-Status</strong></td>
+      <td bgcolor="Silver"><strong>Duration</strong></td>
+      <td bgcolor="Silver"><strong>Termination-type</strong></td>
+      <td bgcolor="Silver"><strong>Termination-id</strong></td>
+      <td bgcolor="Silver"><strong>Core-File</strong></td>
+      <td bgcolor="Silver"><strong>cutime</strong></td>
+      <td bgcolor="Silver"><strong>cstime</strong></td>
+    </tr>
+<tr bgcolor=#66ff66><td><p><strong>1</strong></p></td>
+<td><p><strong>hugemmap01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:45:58 2018</strong></pre></p></td>
+<td><p><strong> "hugemmap01" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 128 
+mem.c:823: BROK: nr_hugepages = 18, but expect 128 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>9</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>2</strong></p></td>
+<td><p><strong>hugemmap02</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:45:58 2018</strong></pre></p></td>
+<td><p><strong> "hugemmap02" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 128 
+hugemmap02.c:108: PASS: huge mmap succeeded (64-bit) 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   1 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>90</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>3</strong></p></td>
+<td><p><strong>hugemmap04</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:45:59 2018</strong></pre></p></td>
+<td><p><strong> "hugemmap04" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 128 
+hugemmap04.c:71: INFO: Size of huge pages is 2048 KB 
+hugemmap04.c:90: PASS: Succeeded mapping file using 128 pages 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   1 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>1</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>4</strong></p></td>
+<td><p><strong>hugemmap05</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:45:59 2018</strong></pre></p></td>
+<td><p><strong> "hugemmap05" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+hugemmap05.c:235: INFO: original nr_hugepages is 16 
+hugemmap05.c:248: INFO: original nr_overcommit_hugepages is 16 
+hugemmap05.c:101: BROK: mmap((nil),402653184,3,1,6,0) failed: ENOMEM 
+hugemmap05.c:192: INFO: restore nr_hugepages to 16. 
+hugemmap05.c:201: INFO: restore nr_overcommit_hugepages to 16. 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>21</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>5</strong></p></td>
+<td><p><strong>hugemmap06</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:00 2018</strong></pre></p></td>
+<td><p><strong> "hugemmap06" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 255 
+mem.c:823: BROK: nr_hugepages = 196, but expect 255 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>4</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>6</strong></p></td>
+<td><p><strong>hugemmap05_1</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:00 2018</strong></pre></p></td>
+<td><p><strong> "hugemmap05 -m" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+hugemmap05.c:235: INFO: original nr_hugepages is 16 
+hugemmap05.c:248: INFO: original nr_overcommit_hugepages is 16 
+hugemmap05.c:116: INFO: check /proc/meminfo before allocation. 
+hugemmap05.c:297: INFO: HugePages_Total is 192. 
+hugemmap05.c:297: INFO: HugePages_Free is 192. 
+hugemmap05.c:297: INFO: HugePages_Surp is 64. 
+hugemmap05.c:297: INFO: HugePages_Rsvd is 192. 
+hugemmap05.c:132: INFO: shmid: 0x79328000 
+hugemmap05.c:272: INFO: First hex is 7070707 
+hugemmap05.c:151: INFO: check /proc/meminfo. 
+hugemmap05.c:297: INFO: HugePages_Total is 192. 
+hugemmap05.c:297: INFO: HugePages_Free is 0. 
+hugemmap05.c:297: INFO: HugePages_Surp is 64. 
+hugemmap05.c:297: INFO: HugePages_Rsvd is 0. 
+hugemmap05.c:175: PASS: hugepages overcommit test pass 
+hugemmap05.c:192: INFO: restore nr_hugepages to 16. 
+hugemmap05.c:201: INFO: restore nr_overcommit_hugepages to 16. 
+ 
+Summary: 
+passed   1 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>33</strong></p></td>
+<td><p><strong>8</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>7</strong></p></td>
+<td><p><strong>hugemmap05_2</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:00 2018</strong></pre></p></td>
+<td><p><strong> "hugemmap05 -s" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+hugemmap05.c:235: INFO: original nr_hugepages is 16 
+hugemmap05.c:248: INFO: original nr_overcommit_hugepages is 16 
+hugemmap05.c:105: INFO: check sysfs before allocation. 
+hugemmap05.c:286: INFO: HugePages_Total is 192. 
+hugemmap05.c:286: INFO: HugePages_Free is 192. 
+hugemmap05.c:286: INFO: HugePages_Surp is 64. 
+hugemmap05.c:286: INFO: HugePages_Rsvd is 192. 
+hugemmap05.c:272: INFO: First hex is 7070707 
+hugemmap05.c:140: INFO: check sysfs. 
+hugemmap05.c:286: INFO: HugePages_Total is 192. 
+hugemmap05.c:286: INFO: HugePages_Free is 0. 
+hugemmap05.c:286: INFO: HugePages_Surp is 64. 
+hugemmap05.c:286: INFO: HugePages_Rsvd is 0. 
+hugemmap05.c:175: PASS: hugepages overcommit test pass 
+hugemmap05.c:192: INFO: restore nr_hugepages to 16. 
+hugemmap05.c:201: INFO: restore nr_overcommit_hugepages to 16. 
+ 
+Summary: 
+passed   1 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>9</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>8</strong></p></td>
+<td><p><strong>hugemmap05_3</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:01 2018</strong></pre></p></td>
+<td><p><strong> "hugemmap05 -s -m" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+hugemmap05.c:235: INFO: original nr_hugepages is 16 
+hugemmap05.c:248: INFO: original nr_overcommit_hugepages is 16 
+hugemmap05.c:105: INFO: check sysfs before allocation. 
+hugemmap05.c:286: INFO: HugePages_Total is 192. 
+hugemmap05.c:286: INFO: HugePages_Free is 192. 
+hugemmap05.c:286: INFO: HugePages_Surp is 64. 
+hugemmap05.c:286: INFO: HugePages_Rsvd is 192. 
+hugemmap05.c:132: INFO: shmid: 0x79330000 
+hugemmap05.c:272: INFO: First hex is 7070707 
+hugemmap05.c:140: INFO: check sysfs. 
+hugemmap05.c:286: INFO: HugePages_Total is 192. 
+hugemmap05.c:286: INFO: HugePages_Free is 0. 
+hugemmap05.c:286: INFO: HugePages_Surp is 64. 
+hugemmap05.c:286: INFO: HugePages_Rsvd is 0. 
+hugemmap05.c:175: PASS: hugepages overcommit test pass 
+hugemmap05.c:192: INFO: restore nr_hugepages to 16. 
+hugemmap05.c:201: INFO: restore nr_overcommit_hugepages to 16. 
+ 
+Summary: 
+passed   1 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>8</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>9</strong></p></td>
+<td><p><strong>hugeshmat01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:01 2018</strong></pre></p></td>
+<td><p><strong> "hugeshmat01 -i 5" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 128 
+hugeshmat01.c:163: PASS: conditions and functionality are correct 
+hugeshmat01.c:163: PASS: conditions and functionality are correct 
+hugeshmat01.c:163: PASS: conditions and functionality are correct 
+hugeshmat01.c:163: PASS: conditions and functionality are correct 
+hugeshmat01.c:163: PASS: conditions and functionality are correct 
+hugeshmat01.c:163: PASS: conditions and functionality are correct 
+hugeshmat01.c:163: PASS: conditions and functionality are correct 
+hugeshmat01.c:163: PASS: conditions and functionality are correct 
+hugeshmat01.c:163: PASS: conditions and functionality are correct 
+hugeshmat01.c:163: PASS: conditions and functionality are correct 
+hugeshmat01.c:163: PASS: conditions and functionality are correct 
+hugeshmat01.c:163: PASS: conditions and functionality are correct 
+hugeshmat01.c:163: PASS: conditions and functionality are correct 
+hugeshmat01.c:163: PASS: conditions and functionality are correct 
+hugeshmat01.c:163: PASS: conditions and functionality are correct 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   15 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>1</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>10</strong></p></td>
+<td><p><strong>hugeshmat02</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:01 2018</strong></pre></p></td>
+<td><p><strong> "hugeshmat02 -i 5" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 128 
+hugeshmat02.c:82: PASS: shmat failed as expected: EINVAL 
+hugeshmat02.c:82: PASS: shmat failed as expected: EINVAL 
+hugeshmat02.c:82: PASS: shmat failed as expected: EINVAL 
+hugeshmat02.c:82: PASS: shmat failed as expected: EINVAL 
+hugeshmat02.c:82: PASS: shmat failed as expected: EINVAL 
+hugeshmat02.c:82: PASS: shmat failed as expected: EINVAL 
+hugeshmat02.c:82: PASS: shmat failed as expected: EINVAL 
+hugeshmat02.c:82: PASS: shmat failed as expected: EINVAL 
+hugeshmat02.c:82: PASS: shmat failed as expected: EINVAL 
+hugeshmat02.c:82: PASS: shmat failed as expected: EINVAL 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   10 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>1</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>11</strong></p></td>
+<td><p><strong>hugeshmat03</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:01 2018</strong></pre></p></td>
+<td><p><strong> "hugeshmat03 -i 5" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 128 
+hugeshmat03.c:75: PASS: shmat failed as expected: EACCES 
+hugeshmat03.c:75: PASS: shmat failed as expected: EACCES 
+hugeshmat03.c:75: PASS: shmat failed as expected: EACCES 
+hugeshmat03.c:75: PASS: shmat failed as expected: EACCES 
+hugeshmat03.c:75: PASS: shmat failed as expected: EACCES 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   5 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>12</strong></p></td>
+<td><p><strong>hugeshmat04</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:01 2018</strong></pre></p></td>
+<td><p><strong> "hugeshmat04 -i 5" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+hugeshmat04.c:95: CONF: Needed > 2GB RAM, have: 1963432 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>13</strong></p></td>
+<td><p><strong>hugeshmat05</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:01 2018</strong></pre></p></td>
+<td><p><strong> "hugeshmat05 -i 5" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 5 
+hugeshmat05.c:79: INFO: allocated 8384512 huge bytes 
+hugeshmat05.c:79: INFO: allocated 8384511 huge bytes 
+hugeshmat05.c:79: INFO: allocated 2097152 huge bytes 
+hugeshmat05.c:79: INFO: allocated 2097153 huge bytes 
+hugeshmat05.c:103: PASS: No regression found. 
+hugeshmat05.c:79: INFO: allocated 8384512 huge bytes 
+hugeshmat05.c:79: INFO: allocated 8384511 huge bytes 
+hugeshmat05.c:79: INFO: allocated 2097152 huge bytes 
+hugeshmat05.c:79: INFO: allocated 2097153 huge bytes 
+hugeshmat05.c:103: PASS: No regression found. 
+hugeshmat05.c:79: INFO: allocated 8384512 huge bytes 
+hugeshmat05.c:79: INFO: allocated 8384511 huge bytes 
+hugeshmat05.c:79: INFO: allocated 2097152 huge bytes 
+hugeshmat05.c:79: INFO: allocated 2097153 huge bytes 
+hugeshmat05.c:103: PASS: No regression found. 
+hugeshmat05.c:79: INFO: allocated 8384512 huge bytes 
+hugeshmat05.c:79: INFO: allocated 8384511 huge bytes 
+hugeshmat05.c:79: INFO: allocated 2097152 huge bytes 
+hugeshmat05.c:79: INFO: allocated 2097153 huge bytes 
+hugeshmat05.c:103: PASS: No regression found. 
+hugeshmat05.c:79: INFO: allocated 8384512 huge bytes 
+hugeshmat05.c:79: INFO: allocated 8384511 huge bytes 
+hugeshmat05.c:79: INFO: allocated 2097152 huge bytes 
+hugeshmat05.c:79: INFO: allocated 2097153 huge bytes 
+hugeshmat05.c:103: PASS: No regression found. 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   5 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>1</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>14</strong></p></td>
+<td><p><strong>hugeshmctl01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:01 2018</strong></pre></p></td>
+<td><p><strong> "hugeshmctl01 -i 5" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 128 
+hugeshmctl01.c:224: PASS: pid, size, # of attaches and mode are correct - pass #0 
+hugeshmctl01.c:224: PASS: pid, size, # of attaches and mode are correct - pass #1 
+hugeshmctl01.c:289: PASS: new mode and change time are correct 
+hugeshmctl01.c:306: PASS: shmctl in func_rmid() failed as expected, shared memory appears to be removed 
+hugeshmctl01.c:224: PASS: pid, size, # of attaches and mode are correct - pass #0 
+hugeshmctl01.c:224: PASS: pid, size, # of attaches and mode are correct - pass #1 
+hugeshmctl01.c:289: PASS: new mode and change time are correct 
+hugeshmctl01.c:306: PASS: shmctl in func_rmid() failed as expected, shared memory appears to be removed 
+hugeshmctl01.c:224: PASS: pid, size, # of attaches and mode are correct - pass #0 
+hugeshmctl01.c:224: PASS: pid, size, # of attaches and mode are correct - pass #1 
+hugeshmctl01.c:289: PASS: new mode and change time are correct 
+hugeshmctl01.c:306: PASS: shmctl in func_rmid() failed as expected, shared memory appears to be removed 
+hugeshmctl01.c:224: PASS: pid, size, # of attaches and mode are correct - pass #0 
+hugeshmctl01.c:224: PASS: pid, size, # of attaches and mode are correct - pass #1 
+hugeshmctl01.c:289: PASS: new mode and change time are correct 
+hugeshmctl01.c:306: PASS: shmctl in func_rmid() failed as expected, shared memory appears to be removed 
+hugeshmctl01.c:224: PASS: pid, size, # of attaches and mode are correct - pass #0 
+hugeshmctl01.c:224: PASS: pid, size, # of attaches and mode are correct - pass #1 
+hugeshmctl01.c:289: PASS: new mode and change time are correct 
+hugeshmctl01.c:306: PASS: shmctl in func_rmid() failed as expected, shared memory appears to be removed 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   20 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>5</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>2</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>15</strong></p></td>
+<td><p><strong>hugeshmctl02</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:06 2018</strong></pre></p></td>
+<td><p><strong> "hugeshmctl02 -i 5" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 128 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EFAULT 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EFAULT 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EINVAL 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EINVAL 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EFAULT 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EFAULT 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EINVAL 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EINVAL 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EFAULT 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EFAULT 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EINVAL 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EINVAL 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EFAULT 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EFAULT 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EINVAL 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EINVAL 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EFAULT 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EFAULT 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EINVAL 
+hugeshmctl02.c:82: PASS: shmctl failed as expected: EINVAL 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   20 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>16</strong></p></td>
+<td><p><strong>hugeshmctl03</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:06 2018</strong></pre></p></td>
+<td><p><strong> "hugeshmctl03 -i 5" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 128 
+hugeshmctl03.c:108: PASS: shmctl failed as expected: EACCES 
+hugeshmctl03.c:108: PASS: shmctl failed as expected: EPERM 
+hugeshmctl03.c:108: PASS: shmctl failed as expected: EPERM 
+hugeshmctl03.c:108: PASS: shmctl failed as expected: EACCES 
+hugeshmctl03.c:108: PASS: shmctl failed as expected: EPERM 
+hugeshmctl03.c:108: PASS: shmctl failed as expected: EPERM 
+hugeshmctl03.c:108: PASS: shmctl failed as expected: EACCES 
+hugeshmctl03.c:108: PASS: shmctl failed as expected: EPERM 
+hugeshmctl03.c:108: PASS: shmctl failed as expected: EPERM 
+hugeshmctl03.c:108: PASS: shmctl failed as expected: EACCES 
+hugeshmctl03.c:108: PASS: shmctl failed as expected: EPERM 
+hugeshmctl03.c:108: PASS: shmctl failed as expected: EPERM 
+hugeshmctl03.c:108: PASS: shmctl failed as expected: EACCES 
+hugeshmctl03.c:108: PASS: shmctl failed as expected: EPERM 
+hugeshmctl03.c:108: PASS: shmctl failed as expected: EPERM 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   15 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>1</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>17</strong></p></td>
+<td><p><strong>hugeshmdt01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:06 2018</strong></pre></p></td>
+<td><p><strong> "hugeshmdt01 -i 5" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 128 
+hugeshmdt01.c:113: PASS: huge shared memory detached correctly 
+hugeshmdt01.c:113: PASS: huge shared memory detached correctly 
+hugeshmdt01.c:113: PASS: huge shared memory detached correctly 
+hugeshmdt01.c:113: PASS: huge shared memory detached correctly 
+hugeshmdt01.c:113: PASS: huge shared memory detached correctly 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   5 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>1</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>18</strong></p></td>
+<td><p><strong>hugeshmget01</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:06 2018</strong></pre></p></td>
+<td><p><strong> "hugeshmget01 -i 10" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 128 
+hugeshmget01.c:63: PASS: size, pid & mode are correct 
+hugeshmget01.c:63: PASS: size, pid & mode are correct 
+hugeshmget01.c:63: PASS: size, pid & mode are correct 
+hugeshmget01.c:63: PASS: size, pid & mode are correct 
+hugeshmget01.c:63: PASS: size, pid & mode are correct 
+hugeshmget01.c:63: PASS: size, pid & mode are correct 
+hugeshmget01.c:63: PASS: size, pid & mode are correct 
+hugeshmget01.c:63: PASS: size, pid & mode are correct 
+hugeshmget01.c:63: PASS: size, pid & mode are correct 
+hugeshmget01.c:63: PASS: size, pid & mode are correct 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   10 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>19</strong></p></td>
+<td><p><strong>hugeshmget02</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:06 2018</strong></pre></p></td>
+<td><p><strong> "hugeshmget02 -i 10" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 128 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EEXIST 
+hugeshmget02.c:81: PASS: shmget failed as expected: ENOENT 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EEXIST 
+hugeshmget02.c:81: PASS: shmget failed as expected: ENOENT 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EEXIST 
+hugeshmget02.c:81: PASS: shmget failed as expected: ENOENT 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EEXIST 
+hugeshmget02.c:81: PASS: shmget failed as expected: ENOENT 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EEXIST 
+hugeshmget02.c:81: PASS: shmget failed as expected: ENOENT 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EEXIST 
+hugeshmget02.c:81: PASS: shmget failed as expected: ENOENT 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EEXIST 
+hugeshmget02.c:81: PASS: shmget failed as expected: ENOENT 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EEXIST 
+hugeshmget02.c:81: PASS: shmget failed as expected: ENOENT 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EEXIST 
+hugeshmget02.c:81: PASS: shmget failed as expected: ENOENT 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EINVAL 
+hugeshmget02.c:81: PASS: shmget failed as expected: EEXIST 
+hugeshmget02.c:81: PASS: shmget failed as expected: ENOENT 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   40 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>20</strong></p></td>
+<td><p><strong>hugeshmget03</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:06 2018</strong></pre></p></td>
+<td><p><strong> "hugeshmget03 -i 10" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 128 
+hugeshmget03.c:57: PASS: shmget failed as expected: ENOSPC 
+hugeshmget03.c:57: PASS: shmget failed as expected: ENOSPC 
+hugeshmget03.c:57: PASS: shmget failed as expected: ENOSPC 
+hugeshmget03.c:57: PASS: shmget failed as expected: ENOSPC 
+hugeshmget03.c:57: PASS: shmget failed as expected: ENOSPC 
+hugeshmget03.c:57: PASS: shmget failed as expected: ENOSPC 
+hugeshmget03.c:57: PASS: shmget failed as expected: ENOSPC 
+hugeshmget03.c:57: PASS: shmget failed as expected: ENOSPC 
+hugeshmget03.c:57: PASS: shmget failed as expected: ENOSPC 
+hugeshmget03.c:57: PASS: shmget failed as expected: ENOSPC 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   10 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>21</strong></p></td>
+<td><p><strong>hugeshmget05</strong></p></td>
+<td><p><pre><strong>Thu Nov  8 19:46:06 2018</strong></pre></p></td>
+<td><p><strong> "hugeshmget05 -i 10" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 128 
+hugeshmget05.c:71: PASS: shmget failed as expected: EACCES 
+hugeshmget05.c:71: PASS: shmget failed as expected: EACCES 
+hugeshmget05.c:71: PASS: shmget failed as expected: EACCES 
+hugeshmget05.c:71: PASS: shmget failed as expected: EACCES 
+hugeshmget05.c:71: PASS: shmget failed as expected: EACCES 
+hugeshmget05.c:71: PASS: shmget failed as expected: EACCES 
+hugeshmget05.c:71: PASS: shmget failed as expected: EACCES 
+hugeshmget05.c:71: PASS: shmget failed as expected: EACCES 
+hugeshmget05.c:71: PASS: shmget failed as expected: EACCES 
+hugeshmget05.c:71: PASS: shmget failed as expected: EACCES 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   10 
+failed   0 
+skipped  0 
+warnings 0 
+incrementing stop 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>1</strong></p></td></tr>
+</tbody></table></div> 
+
+<h2 id="_2">Summary Report</h2>
+
+<div>
+
+<table border="1" cellspacing="3"><tbody>
+<tr>
+<td bgcolor="#ff0000"> <strong>Test Summary</strong></p></td><td bgcolor="#ff0000"><strong>Pan reported some Tests FAIL</strong></p></td></tr>
+<tr><td><strong>LTP Version</strong> </td><td><strong> 20180926     </strong></td></tr>
+<tr><td><strong>Start Time</strong>  </td><td><strong> Чтв ноя  8 19:45:58 EET 2018 </strong></td></tr>
+<tr><td><strong>End Time</strong>    </td><td><strong> Чтв ноя  8 19:46:06 EET 2018   </strong></td></tr>
+<tr><td><strong>Log Result</strong>  </td><td><a href="file:///opt/ltp/results/">      <strong>/opt/ltp/results</strong></a></td></tr>
+<tr><td><strong>Output/Failed Result</strong></td><td><a href="file:///opt/ltp/output/"> <strong>/opt/ltp/output</strong></a></td></tr>
+<tr><td><strong>Total Tests</strong></td><td><strong>21                         </strong></td></tr>
+<tr><td><strong>Total Test TPASS:</strong></td><td><strong> 21 </strong></td></tr>
+<tr><td><strong>Total Test TFAIL:</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Total Test TBROK</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Total Test TWARN</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Total Test TCONF</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Kernel Version</strong></td><td><strong>   </strong></td></tr>
+<tr><td><strong>Machine Architecture</strong></td><td><strong>  </strong></td></tr>
+<tr><td><strong>Hostname</strong>  </td> <td><strong>wip
+  </strong></td></tr></tbody></table></div></body></html>
