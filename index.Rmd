@@ -75,17 +75,17 @@ The Linux kernel is a very large piece of software. It contains drivers and spec
 
 **New features Dragon kernel distribution with custom settings:**
 
-- *AVL Interactive Tuning*: Tunes the kernel for responsiveness at the cost of throughput and power usage.
-- *PDS CPU Scheduler*: Fair process scheduler for gaming, multimedia, and real-time loads.
-- *Preemptible tree-based hierarchical RCU*: RCU implementation for real-time systems.
-- *Hard Kernel Preemption*: Most aggressive kernel preemption before requiring real-time patches. Guarantees responsive system under high intensity mixed workload scenarios.
-- *Budget Fair Queue*: Proper disk scheduler optimized for desktop usage, high throughput / low latency.
-- *TCP BBR Congestion Control*: Fast congestion control, maximizes throughput, guaranteeing higher speeds than Cubic.
-- *Smaller TX Net Queues*: Reduced queue size on network devices to combat buffer bloat.
-- *Ubuntu ureadahead Support*: Compatible with Ubuntu's readahead.
-- *Binary Compatibility Cross Distro*: Compatible with Debian Testing and newer as well as latest Ubuntu. Worst case, a package rebuild will be required on older distributions.
-- *Distribution Kernel Drop-in Replacement*: Proper distribution style configuration supporting broadest selection of hardware. Paravirtualization options enabled to reduce overhead under virtualization.
-- *Minimal Debugging*: Minimum number of debug options enabled to increase kernel throughput.
+- **AVL Interactive Tuning**: Tunes the kernel for responsiveness at the cost of throughput and power usage.
+- **PDS CPU Scheduler**: Fair process scheduler for gaming, multimedia, and real-time loads.
+- **Preemptible tree-based hierarchical RCU**: RCU implementation for real-time systems.
+- **Hard Kernel Preemption**: Most aggressive kernel preemption before requiring real-time patches. Guarantees responsive system under high intensity mixed workload scenarios.
+- **Budget Fair Queue**: Proper disk scheduler optimized for desktop usage, high throughput / low latency.
+- **TCP BBR Congestion Control**: Fast congestion control, maximizes throughput, guaranteeing higher speeds than Cubic.
+- **Smaller TX Net Queues**: Reduced queue size on network devices to combat buffer bloat.
+- **Ubuntu ureadahead Support**: Compatible with Ubuntu's readahead.
+- **Binary Compatibility Cross Distro**: Compatible with Debian Testing and newer as well as latest Ubuntu. Worst case, a package rebuild will be required on older distributions.
+- **Distribution Kernel Drop-in Replacement**: Proper distribution style configuration supporting broadest selection of hardware. Paravirtualization options enabled to reduce overhead under virtualization.
+- **Minimal Debugging***: Minimum number of debug options enabled to increase kernel throughput.
 
 ---
 
