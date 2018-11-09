@@ -1,5 +1,6 @@
 ---
 title: "Using Linux Kernel Runtime Guard (LKRG)"
+permalink: lkrg/
 ---
 
  - Installation of [**LKRG**](http://openwall.info/wiki/p_lkrg/Protected_Features) is exactly the same as loading normal kernel module. 

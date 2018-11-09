@@ -4,17 +4,17 @@ navbar:
   title: Linux WIP Kernel
   left:
   - text: Main
-    href: index.html
+    href: https://dragon-kernel.pro
   - text: Guide
-    href: guide.html
+    href: https://dragon-kernel.pro/guide
   - text: Security
-    href: lkrg.html
+    href: https://dragon-kernel.pro/lkrg
   - text: Solve problem
-    href: solve.html
+    href: https://dragon-kernel.pro/solve
   - text: Testing report
     href: https://dragon-kernel.pro/report
   - text: About
-    href: about.html
+    href: https://dragon-kernel.pro/about
 output:
   html_document:
     theme: flatly

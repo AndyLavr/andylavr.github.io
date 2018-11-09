@@ -2,6 +2,7 @@
 title: "Dragon Linux Kernel 4.19.1"
 subtitle: "For Ubuntu 18.10 Cosmic"
 date: "`r Sys.Date()`"
+permalink: /
 ---
 
 **PERFORMANCE AND TO POWER AMAZING EXPERIENCE FOR GAMING G SERIES**

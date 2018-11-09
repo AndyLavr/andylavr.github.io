@@ -1,5 +1,6 @@
 ---
 title: "System config fixes"
+permalink: solve/
 ---
 
 **Fix ATH10k WiFi work**

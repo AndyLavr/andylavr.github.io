@@ -1,5 +1,6 @@
 ---
 title: "Recommended system configuration"
+permalink: guide/
 ---
 
 
