@@ -3,6 +3,8 @@ output_dir: '.'
 navbar:
   title: Linux WIP Kernel
   left:
+  - text: Main
+    href: https://dragon-kernel.pro
   - text: Guide
     href: https://dragon-kernel.pro/guide
   - text: Security
