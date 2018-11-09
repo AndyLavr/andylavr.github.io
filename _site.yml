@@ -12,7 +12,7 @@ navbar:
   - text: Solve problem
     href: solve.html
   - text: Testing report
-    href: report.html
+    href: https://dragon-kernel.pro/report
   - text: About
     href: about.html
 output:
