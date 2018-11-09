@@ -42,8 +42,6 @@ date: "`r Sys.Date()`"
 
 By default, Ubuntu systems run with the Ubuntu kernels provided by the Ubuntu repositories. However it is handy to be able to test with modified upstream kernels to help locate problems in the Ubuntu kernel patches, or to confirm that upstream has fixed a specific issue. To this end i now offer select upstream kernel builds. These kernels are made from modified kernel source but using the Ubuntu kernel configuration files. These are then packaged as Ubuntu .deb files for simple installation.
 
-These kernels are not supported and are not appropriate for production use.
-
 Ubuntu’s stock Linux kernel is fine for most users, but because Ubuntu follows a six-month release cycle, their kernels are always a release or three behind upstream. This can cause problems for users attempting to install Ubuntu on brand new hardware, or worse, force ultra-nerds to wait to play with the latest and greatest new kernel features!
 
 As mentioned previously, my main workstation — a [MSI GT80-2QE-Titan-SLI (Broadwell)](https://www.msi.com/Laptop/GT80-2QE-Titan-SLI/Specification) — boots Dragon kernels instead. Dragon’s kernels mirror the upstream development cycle, and as a bonus, include a number of exciting optimizations and patches to improve performance and expose up-and-coming features.
