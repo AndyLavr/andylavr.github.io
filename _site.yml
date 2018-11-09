@@ -11,6 +11,8 @@ navbar:
     href: lkrg.html
   - text: Solve problem
     href: solve.html
+  - text: Testing report
+    href: report.html
   - text: About
     href: about.html
 output:
