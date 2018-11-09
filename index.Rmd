@@ -52,6 +52,10 @@ As mentioned previously, my main workstation — a [MSI GT80-2QE-Titan-SLI (Broa
 
 The Linux kernel is a very large piece of software. It contains drivers and special handling for all sorts of disparate hardware combinations. By and large, this is a good thing; it allows all sorts of different machines to boot a Linux kernel without undo fiddling. Pre-compiled kernels — like Ubuntu stock or Dragon — keep most of this code around because they cannot anticipate the kind of hardware their users might be using.
 
+
+---
+
+
 **New features Dragon kernel distribution with custom settings:**
 
  - Experience a whole new way to interact with your PC like never before. 
