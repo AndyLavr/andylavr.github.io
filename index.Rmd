@@ -44,7 +44,14 @@ By default, Ubuntu systems run with the Ubuntu kernels provided by the Ubuntu re
 
 These kernels are not supported and are not appropriate for production use.
 
-Patched Kernel kernel distribution with custom settings:
+Ubuntu’s stock Linux kernel is fine for most users, but because Ubuntu follows a six-month release cycle, their kernels are always a release or three behind upstream. This can cause problems for users attempting to install Ubuntu on brand new hardware, or worse, force ultra-nerds to wait to play with the latest and greatest new kernel features!
+
+As mentioned previously, my main workstation — a [MSI GT80-2QE-Titan-SLI (Broadwell)](https://www.msi.com/Laptop/GT80-2QE-Titan-SLI/Specification) — boots Dragon kernels instead. Dragon’s kernels mirror the upstream development cycle, and as a bonus, include a number of exciting optimizations and patches to improve performance and expose up-and-coming features.
+
+[One recent patch](https://github.com/graysky2/kernel_gcc_patch) pulls in the ability to utilize architecture-specific GCC optimizations when compiling a kernel. In general, compiler optimizations may not have much effect on runtime performance, however with something as foundational as a kernel, tiny improvements might add up quickly.
+
+The Linux kernel is a very large piece of software. It contains drivers and special handling for all sorts of disparate hardware combinations. By and large, this is a good thing; it allows all sorts of different machines to boot a Linux kernel without undo fiddling. Pre-compiled kernels — like Ubuntu stock or Dragon — keep most of this code around because they cannot anticipate the kind of hardware their users might be using.
+
 
  - Experience a whole new way to interact with your PC like never before. 
  - Full kernel adaptation to version **Ubuntu 18.10 Cosmic.**
