@@ -17,6 +17,7 @@ date: "`r Sys.Date()`"
 
 ![**PERFORMANCE AND TO POWER AMAZING EXPERIENCE FOR GAMING G SERIES**](images/g.jpeg)
 
+Dragon is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads.
 
 <!--html_preserve-->
 
@@ -54,17 +55,13 @@ The Linux kernel is a very large piece of software. It contains drivers and spec
 ---
 
 
-**New features Dragon kernel distribution with custom settings:**
+**Main Features:**
 
  - Experience a whole new way to interact with your PC like never before. 
  - Full kernel adaptation to version **Ubuntu 18.10 Cosmic.**
  - Full kernel adaptation to build GCC 8.2
  - Optimized to take full advantage of high-performance.
  - Supports all recent 64-bit versions of Debian and Ubuntu-based systems. 
-
-
-**Main Features:**
-
  - Tuned CPU for Intel i5/i7/Atom platform.
  - PDS CPU Scheduler & Multi-Queue I/O Block Layer w/ BFQ-MQ for smoothness and responsiveness.
  - UKSM - Ultra Kernel Samepage Merging.
@@ -74,6 +71,21 @@ The Linux kernel is a very large piece of software. It contains drivers and spec
  - DRM Optimized Performance.
  - Intel CPUFreq (P-State passive mode).
  - ZFS, AUFS, BFQ and Ureadahead support available.
+
+
+**New features Dragon kernel distribution with custom settings:**
+
+- *AVL Interactive Tuning*: Tunes the kernel for responsiveness at the cost of throughput and power usage.
+- *PDS CPU Scheduler*: Fair process scheduler for gaming, multimedia, and real-time loads.
+- *Preemptible tree-based hierarchical RCU*: RCU implementation for real-time systems.
+- *Hard Kernel Preemption*: Most aggressive kernel preemption before requiring real-time patches. Guarantees responsive system under high intensity mixed workload scenarios.
+- *Budget Fair Queue*: Proper disk scheduler optimized for desktop usage, high throughput / low latency.
+- *TCP BBR Congestion Control*: Fast congestion control, maximizes throughput, guaranteeing higher speeds than Cubic.
+- *Smaller TX Net Queues*: Reduced queue size on network devices to combat buffer bloat.
+- *Ubuntu ureadahead Support*: Compatible with Ubuntu's readahead.
+- *Binary Compatibility Cross Distro*: Compatible with Debian Testing and newer as well as latest Ubuntu. Worst case, a package rebuild will be required on older distributions.
+- *Distribution Kernel Drop-in Replacement*: Proper distribution style configuration supporting broadest selection of hardware. Paravirtualization options enabled to reduce overhead under virtualization.
+- *Minimal Debugging*: Minimum number of debug options enabled to increase kernel throughput.
 
 ---
 

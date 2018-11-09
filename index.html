@@ -266,6 +266,7 @@ $(document).ready(function () {
 <img src="images/g.jpeg" alt="PERFORMANCE AND TO POWER AMAZING EXPERIENCE FOR GAMING G SERIES" />
 <p class="caption"><strong>PERFORMANCE AND TO POWER AMAZING EXPERIENCE FOR GAMING G SERIES</strong></p>
 </div>
+<p>Dragon is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads.</p>
 
 
 <script>
@@ -290,16 +291,13 @@ $(document).ready(function () {
 <p><a href="https://github.com/graysky2/kernel_gcc_patch">One recent patch</a> pulls in the ability to utilize architecture-specific GCC optimizations when compiling a kernel. In general, compiler optimizations may not have much effect on runtime performance, however with something as foundational as a kernel, tiny improvements might add up quickly.</p>
 <p>The Linux kernel is a very large piece of software. It contains drivers and special handling for all sorts of disparate hardware combinations. By and large, this is a good thing; it allows all sorts of different machines to boot a Linux kernel without undo fiddling. Pre-compiled kernels — like Ubuntu stock or Dragon — keep most of this code around because they cannot anticipate the kind of hardware their users might be using.</p>
 <hr />
-<p><strong>New features Dragon kernel distribution with custom settings:</strong></p>
+<p><strong>Main Features:</strong></p>
 <ul>
 <li>Experience a whole new way to interact with your PC like never before.</li>
 <li>Full kernel adaptation to version <strong>Ubuntu 18.10 Cosmic.</strong></li>
 <li>Full kernel adaptation to build GCC 8.2</li>
 <li>Optimized to take full advantage of high-performance.</li>
 <li>Supports all recent 64-bit versions of Debian and Ubuntu-based systems.</li>
-</ul>
-<p><strong>Main Features:</strong></p>
-<ul>
 <li>Tuned CPU for Intel i5/i7/Atom platform.</li>
 <li>PDS CPU Scheduler &amp; Multi-Queue I/O Block Layer w/ BFQ-MQ for smoothness and responsiveness.</li>
 <li>UKSM - Ultra Kernel Samepage Merging.</li>
@@ -309,6 +307,20 @@ $(document).ready(function () {
 <li>DRM Optimized Performance.</li>
 <li>Intel CPUFreq (P-State passive mode).</li>
 <li>ZFS, AUFS, BFQ and Ureadahead support available.</li>
+</ul>
+<p><strong>New features Dragon kernel distribution with custom settings:</strong></p>
+<ul>
+<li><em>AVL Interactive Tuning</em>: Tunes the kernel for responsiveness at the cost of throughput and power usage.</li>
+<li><em>PDS CPU Scheduler</em>: Fair process scheduler for gaming, multimedia, and real-time loads.</li>
+<li><em>Preemptible tree-based hierarchical RCU</em>: RCU implementation for real-time systems.</li>
+<li><em>Hard Kernel Preemption</em>: Most aggressive kernel preemption before requiring real-time patches. Guarantees responsive system under high intensity mixed workload scenarios.</li>
+<li><em>Budget Fair Queue</em>: Proper disk scheduler optimized for desktop usage, high throughput / low latency.</li>
+<li><em>TCP BBR Congestion Control</em>: Fast congestion control, maximizes throughput, guaranteeing higher speeds than Cubic.</li>
+<li><em>Smaller TX Net Queues</em>: Reduced queue size on network devices to combat buffer bloat.</li>
+<li><em>Ubuntu ureadahead Support</em>: Compatible with Ubuntu’s readahead.</li>
+<li><em>Binary Compatibility Cross Distro</em>: Compatible with Debian Testing and newer as well as latest Ubuntu. Worst case, a package rebuild will be required on older distributions.</li>
+<li><em>Distribution Kernel Drop-in Replacement</em>: Proper distribution style configuration supporting broadest selection of hardware. Paravirtualization options enabled to reduce overhead under virtualization.</li>
+<li><em>Minimal Debugging</em>: Minimum number of debug options enabled to increase kernel throughput.</li>
 </ul>
 <hr />
 <p><a href=""><img src="images/ibrs3.jpeg" alt="Meltdown-Spectre" /></a></p>
