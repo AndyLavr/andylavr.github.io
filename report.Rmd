@@ -1,5 +1,6 @@
 ---
 title: "Linux Dragon Kernel testing report"
+permalink: report/
 ---
 
 
