@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2018-11-09" />
+<meta name="date" content="2018-11-10" />
 
 <title>Dragon Linux Kernel 4.19.1</title>
 
@@ -254,7 +254,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Dragon Linux Kernel 4.19.1</h1>
 <h3 class="subtitle"><em>For Ubuntu 18.10 Cosmic</em></h3>
-<h4 class="date"><em>2018-11-09</em></h4>
+<h4 class="date"><em>2018-11-10</em></h4>
 
 </div>
 
@@ -392,6 +392,29 @@ $ sudo reboot</code></pre>
 <p><a href="https://downloadcenter.intel.com/download/27591/Linux-Processor-Microcode-Data-File"><img src="https://img.shields.io/badge/Download-microcode-red.svg" alt="Download" /></a></p>
 <p><a href="https://launchpad.net/~wip-kernel"><img src="images/launchpad.png" alt="Install" /></a></p>
 <p>Install the packages from Launchpad PPA “Linux WIP-Kernel” Team:</p>
+<p><strong>Quick install</strong></p>
+<p><strong>For Dragon GENERIC kernel:</strong></p>
+<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/generic
+$ sudo apt-get update
+$ apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-generic linux-image-unsigned-4.19.1-dragon-generic linux-modules-4.19.1-dragon-generic linux-modules-extra-4.19.1-dragon-generic
+$ sudo reboot</code></pre>
+<p><strong>For Dragon Lowlatency kernel:</strong></p>
+<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/generic
+$ sudo apt-get update
+$ apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-lowlatency linux-image-unsigned-4.19.1-dragon-lowlatency linux-modules-4.19.1-dragon-lowlatency linux-modules-extra-4.19.1-dragon-lowlatency
+$ sudo reboot</code></pre>
+<p><strong>For Dragon Westmere kernel:</strong></p>
+<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
+$ sudo apt-get update
+$ apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-westmere linux-image-unsigned-4.19.1-dragon-westmere linux-modules-4.19.1-dragon-westmere linux-modules-extra-4.19.1-dragon-westmere
+$ sudo reboot</code></pre>
+<p><strong>For Dragon Atom kernel:</strong></p>
+<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
+$ sudo apt-get update
+$ apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-atom linux-image-unsigned-4.19.1-dragon-atom linux-modules-4.19.1-dragon-atom linux-modules-extra-4.19.1-dragon-atom
+$ sudo reboot</code></pre>
+<hr />
+<p>Only download:</p>
 <p><a href="https://goo.gl/vPPQ3A"><img src="https://img.shields.io/badge/Download-westmere-yellow.svg" alt="Download" /></a> <a href="https://goo.gl/vPPQ3A"><img src="https://img.shields.io/badge/Dowload-atom-red.svg" alt="Download" /></a> <a href="https://goo.gl/4v8yr9"><img src="https://img.shields.io/badge/Download-generic-green.svg" alt="Download" /></a> <a href="https://goo.gl/4v8yr9"><img src="https://img.shields.io/badge/Download-lowlatency-yellowgreen.svg" alt="Download" /></a></p>
 <ul>
 <li>Ready packages are build as they become update and fixed the source</li>

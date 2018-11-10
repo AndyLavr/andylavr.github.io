@@ -182,6 +182,48 @@ Update Intel microcode for use IBRS/IBPB:
 
 Install the packages from Launchpad PPA “Linux WIP-Kernel” Team:
 
+**Quick install**
+
+**For Dragon GENERIC kernel:**
+
+```bash
+$ sudo add-apt-repository ppa:wip-kernel/generic
+$ sudo apt-get update
+$ apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-generic linux-image-unsigned-4.19.1-dragon-generic linux-modules-4.19.1-dragon-generic linux-modules-extra-4.19.1-dragon-generic
+$ sudo reboot
+```
+
+**For Dragon Lowlatency kernel:**
+
+```bash
+$ sudo add-apt-repository ppa:wip-kernel/generic
+$ sudo apt-get update
+$ apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-lowlatency linux-image-unsigned-4.19.1-dragon-lowlatency linux-modules-4.19.1-dragon-lowlatency linux-modules-extra-4.19.1-dragon-lowlatency
+$ sudo reboot
+```
+
+**For Dragon Westmere kernel:**
+
+```bash
+$ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
+$ sudo apt-get update
+$ apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-westmere linux-image-unsigned-4.19.1-dragon-westmere linux-modules-4.19.1-dragon-westmere linux-modules-extra-4.19.1-dragon-westmere
+$ sudo reboot
+```
+
+**For Dragon Atom kernel:**
+
+```bash
+$ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
+$ sudo apt-get update
+$ apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-atom linux-image-unsigned-4.19.1-dragon-atom linux-modules-4.19.1-dragon-atom linux-modules-extra-4.19.1-dragon-atom
+$ sudo reboot
+```
+
+---
+
+Only download:
+
 [![Download](https://img.shields.io/badge/Download-westmere-yellow.svg)](https://goo.gl/vPPQ3A)
 [![Download](https://img.shields.io/badge/Dowload-atom-red.svg)](https://goo.gl/vPPQ3A)
 [![Download](https://img.shields.io/badge/Download-generic-green.svg)](https://goo.gl/4v8yr9)
