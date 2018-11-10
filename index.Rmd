@@ -197,7 +197,7 @@ Install the packages from Launchpad PPA “Linux WIP-Kernel” Team:
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/generic
 $ sudo apt-get update
-$ apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-generic linux-image-unsigned-4.19.1-dragon-generic linux-modules-4.19.1-dragon-generic linux-modules-extra-4.19.1-dragon-generic
+$ sudo apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-generic linux-image-unsigned-4.19.1-dragon-generic linux-modules-4.19.1-dragon-generic linux-modules-extra-4.19.1-dragon-generic
 $ sudo reboot
 ```
 
@@ -206,7 +206,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/generic
 $ sudo apt-get update
-$ apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-lowlatency linux-image-unsigned-4.19.1-dragon-lowlatency linux-modules-4.19.1-dragon-lowlatency linux-modules-extra-4.19.1-dragon-lowlatency
+$ sudo apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-lowlatency linux-image-unsigned-4.19.1-dragon-lowlatency linux-modules-4.19.1-dragon-lowlatency linux-modules-extra-4.19.1-dragon-lowlatency
 $ sudo reboot
 ```
 
@@ -215,7 +215,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
 $ sudo apt-get update
-$ apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-westmere linux-image-unsigned-4.19.1-dragon-westmere linux-modules-4.19.1-dragon-westmere linux-modules-extra-4.19.1-dragon-westmere
+$ sudo apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-westmere linux-image-unsigned-4.19.1-dragon-westmere linux-modules-4.19.1-dragon-westmere linux-modules-extra-4.19.1-dragon-westmere
 $ sudo reboot
 ```
 
@@ -224,7 +224,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
 $ sudo apt-get update
-$ apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-atom linux-image-unsigned-4.19.1-dragon-atom linux-modules-4.19.1-dragon-atom linux-modules-extra-4.19.1-dragon-atom
+$ sudo apt install linux-headers-4.19.1-dragon linux-headers-4.19.1-dragon-atom linux-image-unsigned-4.19.1-dragon-atom linux-modules-4.19.1-dragon-atom linux-modules-extra-4.19.1-dragon-atom
 $ sudo reboot
 ```
 
