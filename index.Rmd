@@ -181,7 +181,7 @@ Update Intel microcode for use IBRS/IBPB:
 [![**Install**](images/launchpad.png)](https://launchpad.net/~wip-kernel)
 
 
-**Sources are on Launchpad. You can see and check them. From these sources, buildbox Launchpad builds packages in a clean environment. Everything is officially and verified by Launchpad and Cannonical.**
+**Sources are on Launchpad. You can see and check them. From these sources, buildbox Launchpad builds packages in a clean environment. Everything is officially and verified by Launchpad and Canonical.**
 
 [Source in the project page menu, click Code](https://launchpad.net/~wip-kernel)
 
