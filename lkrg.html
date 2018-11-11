@@ -269,7 +269,7 @@ filename:       /lib/modules/4.19.1-dragon-westmere/kernel/drivers/staging/lkrg/
 license:        GPL v2
 description:    pi3s Linux kernel Runtime Guard
 author:         Adam &#39;pi3&#39; Zabrocki (http://pi3.com.pl)
-srcversion:     55B570DD224083E27457CD8
+srcversion:     FC44FBFE3805FC7B7981F74
 depends:        
 staging:        Y
 retpoline:      Y
@@ -296,14 +296,16 @@ options lkrg p_init_log_level=3</code></pre>
 <pre class="bash"><code> # sysctl -a | egrep lkrg
  
 lkrg.block_modules = 0
-lkrg.clean_message = 0
+lkrg.ci_panic = 0
+lkrg.clean_message = 1
 lkrg.force_run = 0
 lkrg.hide = 0
-lkrg.log_level = 3
+lkrg.log_level = 1
 lkrg.random_events = 1
 lkrg.timestamp = 15</code></pre>
 <ul>
 <li><p>Blocking module functionality (lkrg.block_modules) - only two options are available: 0 - do NOT lock the kernel and allow to load kernel module 1 - lock the kernel and do NOT allow to load kernel module</p></li>
+<li><p>Kernel panic on CI failure (lkrg.ci_panic) - only two options are available: 0 - do NOT crash the kernel on CI failure (default) 1 - crash the kernel (call panic()) on CI failure</p></li>
 <li><p>Printing “System is clean!” message (lkrg.clean_message) - only two options are available: 0 - do NOT print “System is clean!” message regardless of log_level value 1 - if log_level value allows it, print “System is clean!” message</p></li>
 <li><p>Force (lkrg.force_run) - forces LKRG to run integrity function right now. It is always visible as 0 number. Nevertheless, if you set it to 1, the integrity checking function will be immediately fired and value restored to 0 again</p></li>
 <li><p>log level (lkrg.log_level) - it might be a number between 0-4 or 0-6 (if debugging compilation was used). A strong debug provides very useful data to identify where could be a specific problem with LKRG (if it ever appears). Unfortunately, it produces tons of logs per execution and must be used only for debugging purpose, not as a normal run.</p></li>
