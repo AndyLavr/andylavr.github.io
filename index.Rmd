@@ -145,6 +145,17 @@ The name originally stood for AnotherUnionFS until version 2.
 
 ---
 
+[![**exFAT - Extended File Allocation Table**](https://dragon-kernel.pro/images/exfat_a.jpeg)](https://en.wikipedia.org/wiki/ExFAT)
+ 
+## Linux non-fuse read/write kernel driver for the exFAT, FAT12, FAT16 and vfat (FAT32) file systems ([AUFS](https://en.wikipedia.org/wiki/Aufs))
+ 
+exFAT can be used where NTFS is not a feasible solution (due to data-structure overhead), but a greater file-size limit than the standard FAT32 file system (i.e. 4 GiB) is required.
+exFAT has been adopted by the SD Card Association as the default file system for SDXC cards larger than 32 GiB.
+ 
+ - The module exFAT is integrated into the kernel.
+
+---
+
 [![**LKRG - Linux Kernel Runtime Guard**](images/logo_openwall.png)](http://www.openwall.com/lkrg/)
 
 ## Linux Kernel Runtime Guard ([LKRG](http://www.openwall.com/lkrg/))
