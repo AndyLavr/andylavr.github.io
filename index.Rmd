@@ -72,7 +72,7 @@ The Linux kernel is a very large piece of software. It contains drivers and spec
  - Built on the latest GCC 8.2
  - DRM Optimized Performance.
  - Intel CPUFreq (P-State passive mode).
- - ZFS, AUFS, BFQ and Ureadahead support available.
+ - ZFS, AUFS, exFAT, BFQ and Ureadahead support available.
 
 
 **New features Dragon kernel distribution with custom settings:**
@@ -147,9 +147,9 @@ The name originally stood for AnotherUnionFS until version 2.
 
 [![**exFAT**](https://dragon-kernel.pro/images/exfat_a.jpeg)](https://en.wikipedia.org/wiki/ExFAT)
  
-## exFAT - Extended File Allocation Table
+## exFAT - Extended File Allocation Table ([exFAT](https://en.wikipedia.org/wiki/ExFAT))
 
- **Linux non-fuse read/write kernel driver for the exFAT, FAT12, FAT16 and vfat (FAT32) file systems** ([exFAT](https://en.wikipedia.org/wiki/ExFAT))
+ **Linux non-fuse read/write kernel driver for the exFAT, FAT12, FAT16 and vfat (FAT32) file systems** 
 
  exFAT can be used where NTFS is not a feasible solution (due to data-structure overhead), but a greater file-size limit than the standard FAT32 file system (i.e. 4 GiB) is required.
  exFAT has been adopted by the SD Card Association as the default file system for SDXC cards larger than 32 GiB.
