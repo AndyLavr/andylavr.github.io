@@ -5,7 +5,7 @@ permalink: guide/
 
 
 
-### Example config files for Intel i5 Westmere, 2Gb RAM 
+### Example config files for Intel i5 Westmere, 4Gb RAM 
 
 - /etc/default/grub
 
