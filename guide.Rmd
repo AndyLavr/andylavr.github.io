@@ -28,10 +28,11 @@ $ dmesg | egrep microcode
 
 $ dmesg | egrep Spectre
 
-[    0.118050] Spectre V2 : Mitigation: Full generic retpoline
-[    0.118053] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
-[    0.118056] Spectre V2 : Spectre v2 mitigation: Enabling Indirect Branch Prediction Barrier
-[    0.118060] Spectre V2 : Enabling Restricted Speculation for firmware calls
+[    0.152389] Spectre V2 : Mitigation: Full generic retpoline
+[    0.152392] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.152395] Spectre V2 : Spectre v2 mitigation: Enabling Indirect Branch Prediction Barrier
+[    0.152398] Spectre V2 : Enabling Restricted Speculation for firmware calls
+[    0.152402] Spectre V2 : Spectre v2 cross-process SMT mitigation: Enabling STIBP
 
 ~$ grep . /sys/devices/system/cpu/vulnerabilities/*
 
@@ -39,7 +40,7 @@ $ dmesg | egrep Spectre
 /sys/devices/system/cpu/vulnerabilities/meltdown:Mitigation: PTI
 /sys/devices/system/cpu/vulnerabilities/spec_store_bypass:Mitigation: Speculative Store Bypass disabled via prctl and seccomp
 /sys/devices/system/cpu/vulnerabilities/spectre_v1:Mitigation: __user pointer sanitization
-/sys/devices/system/cpu/vulnerabilities/spectre_v2:Mitigation: Full generic retpoline, IBPB, IBRS_FW
+/sys/devices/system/cpu/vulnerabilities/spectre_v2:Mitigation: Full generic retpoline, IBPB, IBRS_FW, STIBP
 
 ```
 

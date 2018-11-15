@@ -245,7 +245,6 @@ $ sudo reboot
 
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/icelake-cannonlake
-$ sudo add-apt-repository ppa:wip-kernel/icelake-cannonlake
 $ sudo apt-get update
 $ sudo apt install linux-headers-4.19.2-dragon linux-headers-4.19.2-dragon-icelake linux-image-unsigned-4.19.2-dragon-icelake linux-modules-4.19.2-dragon-icelake linux-modules-extra-4.19.2-dragon-icelake
 $ sudo reboot
