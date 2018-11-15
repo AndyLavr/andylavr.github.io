@@ -370,11 +370,25 @@ $ sudo reboot</code></pre>
 </div>
 <div id="exfat---extended-file-allocation-table-exfat" class="section level2">
 <h2>exFAT - Extended File Allocation Table (<a href="https://en.wikipedia.org/wiki/ExFAT">exFAT</a>)</h2>
-<p><strong>Linux non-fuse read/write kernel driver for the exFAT, FAT12, FAT16 and vfat (FAT32) file systems</strong></p>
+<p><strong>Linux non-fuse read/write kernel driver for the exFAT(FAT64), FAT12, FAT16 and vfat (FAT32) file systems</strong></p>
 <p>exFAT can be used where NTFS is not a feasible solution (due to data-structure overhead), but a greater file-size limit than the standard FAT32 file system (i.e. 4 GiB) is required. exFAT has been adopted by the SD Card Association as the default file system for SDXC cards larger than 32 GiB.</p>
 <ul>
-<li>The module exFAT is integrated into the kernel.</li>
+<li>The module (<a href="https://github.com/AndyLavr/exfat-nofuse.git">exFAT v1.2.19</a>) is integrated into the kernel 4.19.3-dragon.</li>
 </ul>
+<p><strong>Enable exFAT module and install exfat-utils:</strong></p>
+<p>Add to /etc/initramfs-tools/modules:</p>
+<p>exfat_core exfat_fs</p>
+<p>For filesystem creation and manipulation beyond that of the mount command it is necessary to install the exfat-utils package:</p>
+<pre class="bash"><code>$ sudo apt install exfat-utils
+$ sudo apt purge exfat-fuse</code></pre>
+<p><strong>Usage, formatting</strong></p>
+<p>To create an exFAT file system, use mkfs.exfat (or the mkexfatfs command, which is synonymous):</p>
+<pre class="bash"><code>root #mkfs.exfat
+mkexfatfs 1.2.1
+Usage: mkfs.exfat [-i volume-id] [-n label] [-p partition-first-sector] [-s sectors-per-cluster] [-V] &lt;device&gt;
+For instance, to create it on a removable device present at /dev/sde1 while assigning &quot;Flash&quot; as the file system label:
+
+root #mkfs.exfat -n Flash /dev/sde1</code></pre>
 <hr />
 <p><a href="http://www.openwall.com/lkrg/"><img src="images/logo_openwall.png" alt="LKRG - Linux Kernel Runtime Guard" /></a></p>
 </div>
