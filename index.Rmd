@@ -154,7 +154,12 @@ The name originally stood for AnotherUnionFS until version 2.
  exFAT can be used where NTFS is not a feasible solution (due to data-structure overhead), but a greater file-size limit than the standard FAT32 file system (i.e. 4 GiB) is required.
  exFAT has been adopted by the SD Card Association as the default file system for SDXC cards larger than 32 GiB.
  
- - The module ([exFAT v1.2.19](https://github.com/AndyLavr/exfat-nofuse.git)) is integrated into the kernel 4.19.3-dragon.
+ - The module ([exFAT v1.2.24-dragon](https://github.com/AndyLavr/exfat-nofuse.git)) is integrated into the kernel 4.19.3-dragon.
+
+ - Full adaptation to Kernel 4.19.y
+
+ - Support exFat capacity more than 2TB
+
 
 **Enable exFAT module and install exfat-utils:**
 
@@ -171,16 +176,16 @@ $ sudo apt install exfat-utils
 $ sudo apt purge exfat-fuse
 ```
 
-**Usage, formatting**
+**Usage, formatting:**
 
 To create an exFAT file system, use mkfs.exfat (or the mkexfatfs command, which is synonymous):
 ```bash
-root #mkfs.exfat
+root# mkfs.exfat
 mkexfatfs 1.2.8
 Usage: mkfs.exfat [-i volume-id] [-n label] [-p partition-first-sector] [-s sectors-per-cluster] [-V] <device>
 For instance, to create it on a removable device present at /dev/sde1 while assigning "Flash" as the file system label:
 
-root #mkfs.exfat -n Flash /dev/sde1
+root# mkfs.exfat -n Flash /dev/sde1
 ```
 
 ---
