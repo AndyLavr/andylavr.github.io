@@ -268,15 +268,14 @@ $(document).ready(function () {
 <li>For use the latest version of the Dragon Kernel 4.19.y-dragon upgrade system to Ubuntu version 18.10!</li>
 </ul>
 <hr />
-<p><strong>Creating a bootable Aceruim USB stick</strong></p>
-<p>Kernel 4.8.4 for Acer Aspire SW5-012/Fendi2 (Z3537F)</p>
-<p>(based on Ubuntu 16.10 Yakkety Yak)</p>
+<p><strong>Creating a bootable Aceruim USB stick:</strong></p>
+<pre><code>Kernel 4.8.4 for Acer Aspire SW5-012/Fendi2 (Z3537F) - based on Ubuntu 16.10 Yakkety Yak</code></pre>
 <p>Before installation:</p>
 <p><a href="http://global-download.acer.com/GDFiles/BIOS/BIOS/BIOS_Acer_1.20_A_A.zip?acerid=635943075181893127&amp;Step1=NOTEBOOK&amp;Step2=ASPIRE%20SWITCH&amp;Step3=SW5-012&amp;OS=ALL&amp;LC=ru&amp;BC=ACER&amp;SC=EMEA_23"><img src="https://img.shields.io/badge/Download-BIOS-green.svg" alt="Update BIOS to version 1.20" /></a> - tested, working</p>
 <p>Strictly disable the BIOS option:</p>
-<p>D2D Recovery - Disable</p>
-<p>FTPM Support - Disable</p>
-<p>Secure Boot - Disable</p>
+<pre><code>D2D Recovery - Disable
+FTPM Support - Disable
+Secure Boot - Disable</code></pre>
 <pre><code>Acer Aspire SW5-012 / Fendi2, BIOS V1.20 23/03/2016</code></pre>
 <p><a href="https://yadi.sk/d/1QyvS_ddymFgb"><img src="https://img.shields.io/badge/Download-LiveUSB-green.svg" alt="Download Aceruim Live USB image" /></a></p>
 </div>
@@ -323,7 +322,9 @@ Where X is the letter of your connected USB drive.</code></pre>
 <h2>Unmount flash drive:</h2>
 <pre class="bash"><code>$ umount /mnt</code></pre>
 <p>Now you can boot your Acer Aspire Switch 10 either in Live USB or installation mode and install the system.</p>
-<p>*** disk image has been tested for installation and should work**</p>
+<ul>
+<li>disk image has been tested for installation and should work</li>
+</ul>
 </div>
 <div id="recommended-partitioning-scheme" class="section level2">
 <h2>Recommended partitioning scheme:</h2>

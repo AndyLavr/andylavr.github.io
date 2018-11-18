@@ -18,13 +18,11 @@ permalink: atom/
 
 ---
 
-**Creating a bootable Aceruim USB stick**
+**Creating a bootable Aceruim USB stick:**
 
-
-Kernel 4.8.4 for Acer Aspire SW5-012/Fendi2 (Z3537F)
-
-(based on Ubuntu 16.10 Yakkety Yak)
-
+```
+Kernel 4.8.4 for Acer Aspire SW5-012/Fendi2 (Z3537F) - based on Ubuntu 16.10 Yakkety Yak
+```
 
 Before installation:
 
@@ -33,12 +31,11 @@ Before installation:
 
 Strictly disable the BIOS option:
 
+```
 D2D Recovery - Disable
-
 FTPM Support - Disable
-
 Secure Boot - Disable
-
+```
 
 ```
 Acer Aspire SW5-012 / Fendi2, BIOS V1.20 23/03/2016
@@ -106,7 +103,7 @@ $ umount /mnt
 
 Now you can boot your Acer Aspire Switch 10 either in Live USB or installation mode and install the system.
 
-***  disk image has been tested for installation and should work**
+ - disk image has been tested for installation and should work
 
 ## Recommended partitioning scheme:
 
