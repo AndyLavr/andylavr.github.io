@@ -72,7 +72,7 @@ The Linux kernel is a very large piece of software. It contains drivers and spec
  - Built on the latest GCC 8.2
  - DRM Optimized Performance.
  - Intel CPUFreq (P-State passive mode).
- - ZFS, AUFS, exFAT, BFQ and Ureadahead support available.
+ - ZFS, AUFS, APFS, exFAT, BFQ and Ureadahead support available.
 
 
 **New features Dragon kernel distribution with custom settings:**
@@ -119,16 +119,17 @@ volume managers, and more, with consistent reliability, functionality and perfor
  
  - The module ZFS is integrated into the kernel.
 
-#### Warning! This kernel implement ZFS version 0.7.11.
+#### Warning! This kernel implement ZFS version 0.7.12.
 
 Packages for this version strictly install from my repository!
 
 To install ZFS, head to a terminal and run the following command:
 
 ```bash
-$ sudo add-apt-repository ppa:lavrandy/zfs-linux
+$ sudo add-apt-repository ppa:wip-kernel/openzfs
 $ sudo apt-get update
 $ sudo apt install zfsutils-linux
+$ sudo apt purge zfs-dkms
 $ sudo reboot
 ```
 
@@ -159,12 +160,12 @@ The name originally stood for AnotherUnionFS until version 2.
  
 ## exFAT - Extended File Allocation Table ([exFAT](https://en.wikipedia.org/wiki/ExFAT))
 
- **Linux non-fuse read/write kernel driver for the exFAT(FAT64), FAT12, FAT16 and vfat (FAT32) file systems** 
+ **Linux read/write kernel driver for the exFAT(FAT64), FAT12, FAT16 and vfat (FAT32) file systems** 
 
  exFAT can be used where NTFS is not a feasible solution (due to data-structure overhead), but a greater file-size limit than the standard FAT32 file system (i.e. 4 GiB) is required.
  exFAT has been adopted by the SD Card Association as the default file system for SDXC cards larger than 32 GiB.
  
- - The module ([exFAT v1.2.24-dragon](https://github.com/AndyLavr/exfat-nofuse.git)) is integrated into the kernel 4.19.3-dragon.
+ - The module ([exFAT v1.2.24-dragon](https://github.com/AndyLavr/exfat-nofuse.git)) is integrated into the kernel >= 4.19.3-dragon.
 
  - Full adaptation to Kernel 4.19.y
 
@@ -182,6 +183,8 @@ exfat_fs
 
 For filesystem creation and manipulation beyond that of the mount command it is necessary to install the exfat-utils package:
 ```bash
+$ sudo add-apt-repository ppa:wip-kernel/exfat-utils
+$ sudo apt-get update
 $ sudo apt install exfat-utils
 $ sudo apt purge exfat-fuse
 ```
@@ -191,8 +194,9 @@ $ sudo apt purge exfat-fuse
 To create an exFAT file system, use mkfs.exfat (or the mkexfatfs command, which is synonymous):
 ```bash
 root# mkfs.exfat
-mkexfatfs 1.2.8
+mkexfatfs 1.3.0
 Usage: mkfs.exfat [-i volume-id] [-n label] [-p partition-first-sector] [-s sectors-per-cluster] [-V] <device>
+
 For instance, to create it on a removable device present at /dev/sde1 while assigning "Flash" as the file system label:
 
 root# mkfs.exfat -n Flash /dev/sde1
