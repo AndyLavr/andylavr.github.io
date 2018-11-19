@@ -145,6 +145,16 @@ The name originally stood for AnotherUnionFS until version 2.
 
 ---
 
+[![**APFS**](https://dragon-kernel.pro/images/apfs.jpeg)]()
+ 
+## Apple File System ([APFS](https://en.wikipedia.org/wiki/Apple_File_System))
+ 
+ Apple File System (APFS) is a proprietary file system for macOS High Sierra and later version.
+
+ - The module APFS (read only) is integrated into the kernel.
+
+---
+
 [![**exFAT**](https://dragon-kernel.pro/images/exfat_a.jpeg)](https://en.wikipedia.org/wiki/ExFAT)
  
 ## exFAT - Extended File Allocation Table ([exFAT](https://en.wikipedia.org/wiki/ExFAT))
