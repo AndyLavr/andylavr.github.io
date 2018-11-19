@@ -119,7 +119,7 @@ volume managers, and more, with consistent reliability, functionality and perfor
  
  - The module ZFS is integrated into the kernel.
 
-#### Warning! This kernel implement ZFS version 0.7.12.
+#### Warning! This kernel implement ZFS version >= 0.7.y.
 
 Packages for this version strictly install from my repository!
 
@@ -152,7 +152,7 @@ The name originally stood for AnotherUnionFS until version 2.
  
  Apple File System (APFS) is a proprietary file system for macOS High Sierra and later version.
 
- - The module APFS (read only) is integrated into the kernel.
+ - The module APFS (read only) is integrated into the kernel >= 4.19.3-dragon.
 
 ---
 
