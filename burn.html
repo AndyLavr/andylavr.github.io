@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Dragon Live CD - Burning Iso Howto</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<!--html_preserve-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="WIP Patched Kernel kernel distribution with custom settings">
+<meta charset="utf-8" />
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+<center>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- AdSense_RU -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4314805673333081"
+     data-ad-slot="3717696774"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115408845-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115408845-3');
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4314805673333081",
+          enable_page_level_ads: true
+     });
+</script>
+
+<!--/html_preserve-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://dragon-kernel.pro">Linux WIP Kernel</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="https://dragon-kernel.pro">Main</a>
+</li>
+<li>
+  <a href="https://dragon-kernel.pro/guide">Guide</a>
+</li>
+<li>
+  <a href="https://dragon-kernel.pro/lkrg">Security</a>
+</li>
+<li>
+  <a href="https://dragon-kernel.pro/solve">Solve problem</a>
+</li>
+<li>
+  <a href="https://dragon-kernel.pro/report">Testing report</a>
+</li>
+<li>
+  <a href="https://dragon-kernel.pro/atom">Atom USB stick</a>
+</li>
+<li>
+  <a href="https://dragon-kernel.pro/about">About</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Dragon Live CD - Burning Iso Howto</h1>
+
+</div>
+
+
+<p><a href="https://github.com/RichardLitt/standard-readme"><img src="https://img.shields.io/badge/readme%20style-standard-brightgreen.svg" alt="standard-readme compliant" /></a> <a href="https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW"><img src="https://en.cryptobadges.io/badge/micro/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW" alt="Donate with Bitcoin" /></a> <a href="https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb"><img src="https://en.cryptobadges.io/badge/micro/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb" alt="Donate with Ethereum" /></a></p>
+<hr />
+<div id="verifying-the-iso-integrity" class="section level1">
+<h1>Verifying the ISO integrity</h1>
+<p>Before burning a DVD, it is highly recommended that you verify the sha256 sum (hash) of the .iso file. For the current list of Dragon Ubuntu SHA256 hashes, see the SHA256SUMS file for the release you’r hashes in the same directory. Checking the hash ensures that the file was not damaged during the download process and is 100% intact.</p>
+<hr />
+<p><strong>Burning the ISO on to a DVD</strong></p>
+<p>You can also install Dragon Ubuntu from a USB stick.</p>
+<p>Unlike a regular data file, the ISO file cannot be simply dragged and dropped or copied directly onto a disc. It needs to be burned in a specific way that expands/extracts the image so you have usable files on your disc.</p>
+<p>To install Ubuntu from a DVD, you first need to burn the downloaded ISO image onto a DVD. This requires:</p>
+<pre><code>A working DVD burner (i.e. R/W drive)
+A blank DVD. (recent Ubuntu versions do not fit on to CD any more)
+Inexpensive &quot;write once&quot; DVD-Rs are a good choice for burning ISO images.</code></pre>
+<hr />
+<p><strong>Burning from Windows</strong></p>
+<p>Windows 7/8/8.1</p>
+<ol style="list-style-type: decimal">
+<li>Right-click on an ISO image and choose “Burn disc image”.</li>
+</ol>
+<p><a href=""><img src="https://help.ubuntu.com/community/BurningIsoHowto?action=AttachFile&amp;do=get&amp;target=windows7_right.jpg" /></a></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Select a disk burner (drive) and press “Burn”.</li>
+</ol>
+<p><a href=""><img src="https://help.ubuntu.com/community/BurningIsoHowto?action=AttachFile&amp;do=get&amp;target=windows7_burn.jpg" /></a></p>
+<pre><code>If you check “Verify disc after burning”, it will verify that the ISO image has been burned correctly</code></pre>
+<p><strong>Windows 2000 or newer: Infra Recorder</strong></p>
+<ol style="list-style-type: decimal">
+<li>Download and install Infra Recorder, a free and open source image burning program.</li>
+<li>Insert a blank CD in the drive and select Do nothing or Cancel if an autorun dialog pops up.</li>
+<li>Open Infra Recorder and click the ‘Write Image’ button in the main screen.</li>
+</ol>
+<p>Alternatively you can select the ‘Actions’ menu, then ‘Burn image’.</p>
+<p><a href=""><img src="https://help.ubuntu.com/community/BurningIsoHowto?action=AttachFile&amp;do=get&amp;target=infrarecorder3.png" /></a></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Select the Ubuntu CD image file you want to use, then click ‘Open’.</li>
+<li>In the dialog, click ‘OK’.</li>
+</ol>
+<p><strong>Windows XP or newer: ISO Recorder</strong></p>
+<ol style="list-style-type: decimal">
+<li>Download and install the appropriate version of ISO Recorder.</li>
+<li>Insert an unformatted CD into your burner. (Note: one can burn DVDs with this tool only from Vista.)</li>
+</ol>
+<p>Open Windows Explorer, browse to your ISO file, right-click and choose “Next”.</p>
+<p><a href=""><img src="https://help.ubuntu.com/community/BurningIsoHowto?action=AttachFile&amp;do=get&amp;target=iso-recorder.gif" /></a></p>
+<p><strong>Burning from Mac OS X</strong></p>
+<p>Note: To burn most ISOs, you can use Apple’s Disk Utility (Disk Copy in older versions).</p>
+<ol style="list-style-type: decimal">
+<li>Launch Disk Utility (Applications → Utilities → Disk Utility).</li>
+<li>Insert your blank CD/DVD.</li>
+<li>Drag and drop your .iso file to the left pane in Disk Utility. Now both the blank disc and the .iso should be listed.</li>
+<li>Select the .iso file, and click on the Burn button in the toolbar.</li>
+</ol>
+<p><a href=""><img src="https://help.ubuntu.com/community/BurningIsoHowto?action=AttachFile&amp;do=get&amp;target=macosx_disk-utility.png" /></a></p>
+<ol start="5" style="list-style-type: decimal">
+<li>Ensure that the “Verify burned data” checkbox is ticked (you may need to click on the disclosure triangle to see the checkbox).</li>
+<li>Click on Burn. The data will be burned and verified.</li>
+</ol>
+<p><a href=""><img src="https://help.ubuntu.com/community/BurningIsoHowto?action=AttachFile&amp;do=get&amp;target=macosx_disk-utility_burn.png" /></a></p>
+<p><strong>Burning from Ubuntu</strong></p>
+<pre><code>The procedure may differ slightly depending on which version of Ubuntu you are using</code></pre>
+<ol style="list-style-type: decimal">
+<li>Insert a blank CD into your burner. A “CD/DVD Creator” or “Choose Disc Type” window might pop up. Close this, as we will not be using it.</li>
+</ol>
+<p><a href=""><img src="https://help.ubuntu.com/community/BurningIsoHowto?action=AttachFile&amp;do=get&amp;target=ubuntu_blankcd_dialog.png" /></a></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Browse to the downloaded ISO image in the file browser.</li>
+<li>Right click on the ISO image file and choose “Write to Disc”.</li>
+</ol>
+<p><a href=""><img src="https://help.ubuntu.com/community/BurningIsoHowto?action=AttachFile&amp;do=get&amp;target=ubuntu_rightclick_cd.png" /></a></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Where it says “Select a disc to write to”, select the blank CD.</li>
+</ol>
+<p><a href=""><img src="https://help.ubuntu.com/community/BurningIsoHowto?action=AttachFile&amp;do=get&amp;target=ubuntu_imageburn.png" /></a></p>
+<ol start="5" style="list-style-type: decimal">
+<li>If you want, click “Properties” and select the burning speed. Lower speeds offer greater reliability, but will take longer to write.</li>
+</ol>
+<p><a href=""><img src="https://help.ubuntu.com/community/BurningIsoHowto?action=AttachFile&amp;do=get&amp;target=ubuntu_imageburn_properties.png" /></a></p>
+<ol start="6" style="list-style-type: decimal">
+<li>Start the burning process.</li>
+<li>The program should automatically check whether the image has been burned correctly.</li>
+<li>If the standard CD burning application does not work, install K3B and follow the instructions for Kubuntu below.</li>
+</ol>
+<p><strong>Burning from Kubuntu</strong></p>
+<pre><code>The procedure may differ slightly depending on which version of Kubuntu you are using</code></pre>
+<ol style="list-style-type: decimal">
+<li>Insert a blank CD into your burner. Open K3B from the KDE menu</li>
+<li>On the near bottom of the application where it says “Welcome to K3b - The CD and DVD Kreator” click “more actions…” and then pick “Burn Image”.</li>
+</ol>
+<p><a href=""><img src="https://help.ubuntu.com/community/BurningIsoHowto?action=AttachFile&amp;do=get&amp;target=kubuntu_1.png" /></a></p>
+<ol start="3" style="list-style-type: decimal">
+<li>You may want to enable the disk verification option to make sure the image is burned correctly, and lower the burning speed to have more reliability.</li>
+<li>Start the burning process.</li>
+<li>You can use the default settings.</li>
+</ol>
+<pre><code>See CdDvd/Burning if you would like to burn from the command line (terminal)</code></pre>
+<p><strong>If the burning fails</strong></p>
+<p>If the CD writing fails, try writing at a <strong>slower speed</strong>. For better results, try the <strong>slowest</strong> burn speed reasonably possible. Most GUI tools have a “Properties” button to select speed but with Brasero those sorts of options appear after pressing the “burn” button first. This is the single most likely cause of problems but is much more widely known than SHA error-checking. Slower speeds ensure greater accuracy.</p>
+<hr />
+<div id="donate" class="section level2">
+<h2>Donate</h2>
+<p><a href="https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW"><img src="https://en.cryptobadges.io/badge/big/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW" alt="Donate with Bitcoin" /></a> <a href="https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb"><img src="https://en.cryptobadges.io/badge/big/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb" alt="Donate with Ethereum" /></a></p>
+<hr />
+</div>
+</div>
+
+<p>Copyright &copy; 1966-2018 AndyLavr All rights reserved.</p>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

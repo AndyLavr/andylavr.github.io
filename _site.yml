@@ -13,8 +13,8 @@ navbar:
     href: https://dragon-kernel.pro/solve
   - text: Testing report
     href: https://dragon-kernel.pro/report
-  - text: Atom USB stick
-    href: https://dragon-kernel.pro/atom
+  - text: Dragon LiveCD
+    href: https://dragon-kernel.pro/livecd
   - text: About
     href: https://dragon-kernel.pro/about
 output:

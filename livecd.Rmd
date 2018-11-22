@@ -1,0 +1,39 @@
+---
+title: "Dragon Live CD - Ubuntu 18.10 (Cosmic Cuttlefish)"
+permalink: livecd/
+---
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
+[![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)](https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)
+[![Donate with Ethereum](https://en.cryptobadges.io/badge/micro/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)](https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)
+
+---
+
+**Kernel version [4.19.3-dragon](https://dragon-kernel.pro), software for Live CD upgraded to 20181122**
+
+
+**[Burning Iso Howto](https://dragon-kernel.pro/burn)**
+
+
+---
+
+
+**Ubuntu Dragon Live CD for Atom CPU amd64 - INTEL Bay[Cherry]Trail**
+
+[![Download Atom Live CD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/open?id=1W76vzxZrhUD2QQXcC6bXsBti65ta25VP)
+
+
+**Ubuntu Dragon Live CD for GENERIC CPU amd64**
+
+[![Download Generic Live CD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/open?id=1AX0Hn2LHvTpmo5zypl1TAJRWEWWRc_Do)
+
+
+***
+
+
+## Donate
+
+[![Donate with Bitcoin](https://en.cryptobadges.io/badge/big/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)](https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)
+[![Donate with Ethereum](https://en.cryptobadges.io/badge/big/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)](https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)
+
+***
+
