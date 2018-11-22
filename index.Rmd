@@ -10,6 +10,10 @@ permalink: /
 Dragon is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads.
 
 
+[**Dragon Live DVD/USB stick Ubuntu 18.10 (Cosmic)**](https://dragon-kernel.pro/livedvd)
+
+---
+
 <picture>
     <source srcset="images/dragon.webp" type="image/webp">
     <img src="images/dragon.webp" alt="Dragon Kernel">
