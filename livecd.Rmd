@@ -1,5 +1,5 @@
 ---
-title: "Dragon Live CD - Ubuntu 18.10 (Cosmic Cuttlefish)"
+title: "Dragon Live DVD/USB stick - Ubuntu 18.10 (Cosmic Cuttlefish)"
 permalink: livecd/
 ---
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
@@ -8,7 +8,7 @@ permalink: livecd/
 
 ---
 
-**Kernel version [4.19.3-dragon](https://dragon-kernel.pro), software for Live CD upgraded to 20181122**
+**Kernel version [4.19.3-dragon](https://dragon-kernel.pro), software for Live DVD upgraded to 20181122**
 
 
 **[Burning Iso Howto](https://dragon-kernel.pro/burn)**
@@ -17,14 +17,14 @@ permalink: livecd/
 ---
 
 
-**Ubuntu Dragon Live CD for Atom CPU amd64 - INTEL Bay[Cherry]Trail**
+**Ubuntu Dragon Live DVD for Atom CPU amd64 - INTEL Bay[Cherry]Trail**
 
-[![Download Atom Live CD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/open?id=1W76vzxZrhUD2QQXcC6bXsBti65ta25VP)
+[![Download Atom Live DVD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/open?id=1W76vzxZrhUD2QQXcC6bXsBti65ta25VP)
 
 
-**Ubuntu Dragon Live CD for GENERIC CPU amd64**
+**Ubuntu Dragon Live DVD for GENERIC CPU amd64**
 
-[![Download Generic Live CD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/open?id=1AX0Hn2LHvTpmo5zypl1TAJRWEWWRc_Do)
+[![Download Generic Live DVD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/open?id=1AX0Hn2LHvTpmo5zypl1TAJRWEWWRc_Do)
 
 
 ***
