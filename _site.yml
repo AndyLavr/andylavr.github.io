@@ -14,7 +14,7 @@ navbar:
   - text: Testing report
     href: https://dragon-kernel.pro/report
   - text: Dragon Live DVD/USB stick
-    href: https://dragon-kernel.pro/livecd
+    href: https://dragon-kernel.pro/livedvd
   - text: About
     href: https://dragon-kernel.pro/about
 output:
