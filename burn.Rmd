@@ -134,9 +134,8 @@ The procedure may differ slightly depending on which version of Kubuntu you are 
  3. You may want to enable the disk verification option to make sure the image is burned correctly, and lower the burning speed to have more reliability.
  4. Start the burning process.
  5. You can use the default settings.
-```
-See CdDvd/Burning if you would like to burn from the command line (terminal)
-```
+
+See [**CdDvd/Burning**](https://help.ubuntu.com/community/CdDvd/Burning) if you would like to burn from the command line (terminal)
 
 **If the burning fails**
 
