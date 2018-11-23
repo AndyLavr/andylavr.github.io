@@ -1,5 +1,5 @@
 ---
-title: "Dragon Linux Kernel 4.19.3"
+title: "Dragon Linux Kernel 4.19.4"
 subtitle: "For Ubuntu 18.10 Cosmic"
 date: "`r Sys.Date()`"
 permalink: /
@@ -260,7 +260,7 @@ Install the packages from Launchpad PPA “Linux WIP-Kernel” Team:
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/generic
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.3-dragon linux-headers-4.19.3-dragon-generic linux-image-unsigned-4.19.3-dragon-generic linux-modules-4.19.3-dragon-generic linux-modules-extra-4.19.3-dragon-generic
+$ sudo apt install linux-headers-4.19.4-dragon linux-headers-4.19.4-dragon-generic linux-image-unsigned-4.19.4-dragon-generic linux-modules-4.19.4-dragon-generic linux-modules-extra-4.19.4-dragon-generic
 $ sudo reboot
 ```
 
@@ -269,7 +269,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/generic
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.3-dragon linux-headers-4.19.3-dragon-lowlatency linux-image-unsigned-4.19.3-dragon-lowlatency linux-modules-4.19.3-dragon-lowlatency linux-modules-extra-4.19.3-dragon-lowlatency
+$ sudo apt install linux-headers-4.19.4-dragon linux-headers-4.19.4-dragon-lowlatency linux-image-unsigned-4.19.4-dragon-lowlatency linux-modules-4.19.4-dragon-lowlatency linux-modules-extra-4.19.4-dragon-lowlatency
 $ sudo reboot
 ```
 
@@ -278,7 +278,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.3-dragon linux-headers-4.19.3-dragon-westmere linux-image-unsigned-4.19.3-dragon-westmere linux-modules-4.19.3-dragon-westmere linux-modules-extra-4.19.3-dragon-westmere
+$ sudo apt install linux-headers-4.19.4-dragon linux-headers-4.19.4-dragon-westmere linux-image-unsigned-4.19.4-dragon-westmere linux-modules-4.19.4-dragon-westmere linux-modules-extra-4.19.4-dragon-westmere
 $ sudo reboot
 ```
 
@@ -287,7 +287,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.3-dragon linux-headers-4.19.3-dragon-atom linux-image-unsigned-4.19.3-dragon-atom linux-modules-4.19.3-dragon-atom linux-modules-extra-4.19.3-dragon-atom
+$ sudo apt install linux-headers-4.19.4-dragon linux-headers-4.19.4-dragon-atom linux-image-unsigned-4.19.4-dragon-atom linux-modules-4.19.4-dragon-atom linux-modules-extra-4.19.4-dragon-atom
 $ sudo reboot
 ```
 
@@ -296,7 +296,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/icelake-cannonlake
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.3-dragon linux-headers-4.19.3-dragon-icelake linux-image-unsigned-4.19.3-dragon-icelake linux-modules-4.19.3-dragon-icelake linux-modules-extra-4.19.3-dragon-icelake
+$ sudo apt install linux-headers-4.19.4-dragon linux-headers-4.19.4-dragon-icelake linux-image-unsigned-4.19.4-dragon-icelake linux-modules-4.19.4-dragon-icelake linux-modules-extra-4.19.4-dragon-icelake
 $ sudo reboot
 ```
 
@@ -305,7 +305,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/icelake-cannonlake
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.3-dragon linux-headers-4.19.3-dragon-cannonlake linux-image-unsigned-4.19.3-dragon-cannonlake linux-modules-4.19.3-dragon-cannonlake linux-modules-extra-4.19.3-dragon-cannonlake
+$ sudo apt install linux-headers-4.19.4-dragon linux-headers-4.19.4-dragon-cannonlake linux-image-unsigned-4.19.4-dragon-cannonlake linux-modules-4.19.4-dragon-cannonlake linux-modules-extra-4.19.4-dragon-cannonlake
 $ sudo reboot
 ```
 
@@ -314,7 +314,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/zen-excavator
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.3-dragon linux-headers-4.19.3-dragon-zen linux-image-unsigned-4.19.3-dragon-zen linux-modules-4.19.3-dragon-zen linux-modules-extra-4.19.3-dragon-zen
+$ sudo apt install linux-headers-4.19.4-dragon linux-headers-4.19.4-dragon-zen linux-image-unsigned-4.19.4-dragon-zen linux-modules-4.19.4-dragon-zen linux-modules-extra-4.19.4-dragon-zen
 $ sudo reboot
 ```
 
@@ -323,7 +323,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/zen-excavator
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.3-dragon linux-headers-4.19.3-dragon-excavator linux-image-unsigned-4.19.3-dragon-excavator linux-modules-4.19.3-dragon-excavator linux-modules-extra-4.19.3-dragon-excavator
+$ sudo apt install linux-headers-4.19.4-dragon linux-headers-4.19.4-dragon-excavator linux-image-unsigned-4.19.4-dragon-excavator linux-modules-4.19.4-dragon-excavator linux-modules-extra-4.19.4-dragon-excavator
 $ sudo reboot
 ```
 
