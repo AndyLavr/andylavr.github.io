@@ -14,6 +14,18 @@ permalink: livedvd/
 **[Burning Iso Howto](https://dragon-kernel.pro/burn)**
 
 
+** Info for boot UEFI32 (example for Acer Aspire SW5-012)
+
+```
+ 1. Go to BIOS settings with F2
+ 2. Add the bootia32.efi file to the trusted UEFI files by selecting it and naming the option to whatever you want.
+ 3. Enable F12 boot menu.
+ 4. Exit saving changes.
+ 5. Tap F12 until you get boot menu.
+ 6. You will see your boot option there.
+
+ - The bootia32.efi file is already in the image.
+```
 ---
 
 
