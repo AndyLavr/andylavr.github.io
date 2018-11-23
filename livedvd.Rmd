@@ -24,7 +24,7 @@ permalink: livedvd/
  5. Tap F12 until you get boot menu.
  6. You will see your boot option there.
 
- - The bootia32.efi file is already in the image.
+ - The bootia32.efi file and grub-efi-ia32 package is already in the image.
 ```
 ---
 

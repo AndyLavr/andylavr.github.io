@@ -263,8 +263,8 @@ $(document).ready(function () {
 <ul>
 <li>/etc/default/grub</li>
 </ul>
-<pre class="bash"><code>GRUB_CMDLINE_LINUX_DEFAULT=&quot;spectre_v2=auto pti=auto ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux acpi_backlight=vendor intel_iommu=on swiotlb=32768 apparmor=0&quot;
-GRUB_CMDLINE_LINUX=&quot;noresume systemd.gpt_auto=0 zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 pcie_acs_override=downstream&quot;
+<pre class="bash"><code>GRUB_CMDLINE_LINUX_DEFAULT=&quot;acpi_osi=Linux acpi_backlight=vendor intel_iommu=on swiotlb=32768&quot;
+GRUB_CMDLINE_LINUX=&quot;noresume systemd.gpt_auto=0 zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 pcie_acs_override=downstream net.ifnames=0 biosdevname=0&quot;
 
 If yours update microcode CPU is supported &quot;IBRS/IBPB&quot; then enable IBRS option:
 
@@ -356,11 +356,13 @@ net.ipv4.tcp_no_metrics_save = 1
 net.ipv4.route.flush = 1
 net.ipv4.conf.all.rp_filter = 1
 net.ipv4.conf.lo.rp_filter = 1
-net.ipv4.conf.enp19s0.rp_filter = 1
+net.ipv4.conf.eth0.rp_filter = 1
+net.ipv4.conf.wlan0.rp_filter = 1
 net.ipv4.conf.default.rp_filter = 1
 net.ipv4.conf.all.accept_source_route = 0
 net.ipv4.conf.lo.accept_source_route = 0
-net.ipv4.conf.enp19s0.accept_source_route = 0
+net.ipv4.conf.eth0.accept_source_route = 0
+net.ipv4.conf.wlan0.accept_source_route = 0
 net.ipv4.conf.default.accept_source_route = 0
 net.ipv4.ip_local_port_range = 1024 65535
 net.ipv4.tcp_tw_reuse = 1
