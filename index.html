@@ -342,6 +342,23 @@ $(document).ready(function () {
 <ul>
 <li>This is an improvement upon (<a href="https://www.kernel.org/doc/html/latest/admin-guide/mm/ksm.html">KSM</a>). Some basic data structures and routines are borrowed from KSM.</li>
 </ul>
+<p><strong>Its new features:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Full system scan: It automatically scans all user processes’ anonymous VMAs. Kernel-user interaction to submit a memory area to KSM is no longer needed.</p></li>
+<li><p>Rich area detection: It automatically detects rich areas containing abundant duplicated pages based. Rich areas are given a full scan speed. Poor areas are sampled at a reasonable speed with very low CPU consumption.</p></li>
+<li><p>Ultra Per-page scan speed improvement: A new hash algorithm is proposed. As a result, on a machine with Core(TM)2 Quad Q9300 CPU in 32-bit mode and 800MHZ DDR2 main memory, it can scan memory areas that does not contain duplicated pages at speed of 627MB/sec ~ 2445MB/sec and can merge duplicated areas at speed of 477MB/sec ~ 923MB/sec.</p></li>
+<li><p>Thrashing area avoidance: Thrashing area(an VMA that has frequent Ksm page break-out) can be filtered out. My benchmark shows it’s more efficient than KSM’s per-page hash value based volatile page detection.</p></li>
+<li><p>Misc changes upon KSM:</p></li>
+</ol>
+<ul>
+<li>It has a fully x86-opitmized memcmp dedicated for 4-byte-aligned page comparison. It’s much faster than default C version on x86.</li>
+<li>rmap_item now has an struct *page member to loosely cache a address–&gt;page mapping, which reduces too much time-costly follow_page().</li>
+<li>The VMA creation/exit procedures are hooked to let the Ultra KSM know.</li>
+<li>try_to_merge_two_pages() now can revert a pte if it fails. No break_ ksm is needed for this case.</li>
+</ul>
+<ol start="6" style="list-style-type: decimal">
+<li>Full Zero Page consideration(contributed by Figo Zhang) Now uksmd consider full zero pages as special pages and merge them to an special unswappable uksm zero page.</li>
+</ol>
 <hr />
 <p><a href=""><img src="images/zfs.jpeg" alt="ZFS" /></a></p>
 </div>
