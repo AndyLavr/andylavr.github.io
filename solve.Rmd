@@ -3,6 +3,13 @@ title: "System config fixes"
 permalink: solve/
 ---
 
+**Disable insecure google-chrome(chromium) cache:**
+
+rm -rf ~/.cache/google-chrome
+ln -s /dev/null ~/.cache/google-chrome
+
+---
+
 **In Ubuntu 18.10, apt has a bug, apt in the console prints multiple errors.**
 
 Rename apt_orig to /usr/bin apt_orig and create this script named apt in /usr/bin:
