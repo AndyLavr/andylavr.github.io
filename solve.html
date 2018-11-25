@@ -258,6 +258,16 @@ $(document).ready(function () {
 </div>
 
 
+<p><strong>In Ubuntu 18.10, apt has a bug, apt in the console prints multiple errors.</strong></p>
+<p>Rename apt_orig to /usr/bin apt_orig and create this script named apt in /usr/bin:</p>
+<pre class="bash"><code>#!/bin/bash
+#
+LANG=C apt_orig $*
+#
+exit 0</code></pre>
+<p>Don’t forget $chmod 755 apt</p>
+<p>The error is only on consoles with a modified locale.</p>
+<hr />
 <p><strong>Fix ATH10k WiFi work</strong></p>
 <pre class="yama"><code>Add to /etc/modprobe.d file ath10k_core.conf and add string:
 
