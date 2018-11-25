@@ -5,8 +5,10 @@ permalink: solve/
 
 **Disable insecure google-chrome(chromium) cache:**
 
-rm -rf ~/.cache/google-chrome
-ln -s /dev/null ~/.cache/google-chrome
+```bash
+# rm -rf ~/.cache/google-chrome
+# ln -s /dev/null ~/.cache/google-chrome
+```
 
 ---
 

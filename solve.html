@@ -259,7 +259,8 @@ $(document).ready(function () {
 
 
 <p><strong>Disable insecure google-chrome(chromium) cache:</strong></p>
-<p>rm -rf ~/.cache/google-chrome ln -s /dev/null ~/.cache/google-chrome</p>
+<pre class="bash"><code># rm -rf ~/.cache/google-chrome
+# ln -s /dev/null ~/.cache/google-chrome</code></pre>
 <hr />
 <p><strong>In Ubuntu 18.10, apt has a bug, apt in the console prints multiple errors.</strong></p>
 <p>Rename apt_orig to /usr/bin apt_orig and create this script named apt in /usr/bin:</p>
