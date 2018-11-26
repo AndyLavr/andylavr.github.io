@@ -5,10 +5,12 @@ date: "`r Sys.Date()`"
 permalink: /
 ---
 
-**PERFORMANCE AND TO POWER AMAZING EXPERIENCE FOR GAMING G SERIES**
+**Dragon is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads**
 
-Dragon is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads.
-
+```
+ The vanilla Linux kernel is a solid, high-quality Ford, Dragon Linux kernel is the latest Porsche model.
+Each person has a choice and desires. (c) Andy Lavr
+```
 
 [**Dragon Live DVD/USB stick Ubuntu/Kubuntu/Xubuntu/Lubuntu 18.10 (Cosmic)**](https://dragon-kernel.pro/livedvd)
 
