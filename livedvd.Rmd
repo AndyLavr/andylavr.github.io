@@ -29,12 +29,12 @@ permalink: livedvd/
 ---
 
 
-**Ubuntu Dragon Live DVD for Atom CPU amd64 - INTEL Bay[Cherry]Trail**
+**Ubuntu/Kubuntu/Xubuntu/Lubuntu Dragon Live DVD for Atom CPU amd64 - INTEL Bay[Cherry]Trail**
 
 [![Download Atom Live DVD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/open?id=1W76vzxZrhUD2QQXcC6bXsBti65ta25VP)
 
 
-**Ubuntu Dragon Live DVD for GENERIC CPU amd64**
+**Ubuntu/Kubuntu Dragon Live DVD for GENERIC CPU amd64**
 
 [![Download Generic Live DVD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/open?id=1AX0Hn2LHvTpmo5zypl1TAJRWEWWRc_Do)
 
