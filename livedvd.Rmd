@@ -8,7 +8,7 @@ permalink: livedvd/
 
 ---
 
-**Kernel version [4.19.4-dragon](https://dragon-kernel.pro), software for Live DVD upgraded to 20181125**
+**Kernel version [4.19.4-dragon](https://dragon-kernel.pro), software for Live DVD upgraded to 20181126**
 
 
 **[Burning Iso Howto](https://dragon-kernel.pro/burn)**
