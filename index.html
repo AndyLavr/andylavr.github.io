@@ -10,9 +10,9 @@
 
 
 
-<meta name="date" content="2018-11-30" />
+<meta name="date" content="2018-12-08" />
 
-<title>Dragon Linux Kernel 4.19.5</title>
+<title>Dragon Linux Kernel 4.19.8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -254,13 +254,20 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Dragon Linux Kernel 4.19.5</h1>
+<h1 class="title toc-ignore">Dragon Linux Kernel 4.19.8</h1>
 <h3 class="subtitle"><em>For Ubuntu 18.10 Cosmic</em></h3>
-<h4 class="date"><em>2018-11-30</em></h4>
+<h4 class="date"><em>2018-12-08</em></h4>
 
 </div>
 
 
+<pre><code>WARNING!
+
+ You can only use kernel packages that are in PPA if you have a Dragon Team license key!
+Without registering with the Dragon Team you need to do the build kernel packages yourself.
+If you do not register at Dragon Team, the kernel installed from the PPA will work for only 5 minutes ...
+
+ For registration in team please read information are on the project website.</code></pre>
 <p><strong>Dragon is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads.</strong></p>
 <pre><code> The vanilla Linux kernel is a solid, high-quality Ford, Dragon Linux kernel is the latest Porsche model.
 Each person has a choice and desires... (c) Andy Lavr</code></pre>
@@ -462,42 +469,42 @@ root# mkfs.exfat -n Flash /dev/sde1</code></pre>
 <p><strong>For Dragon GENERIC kernel:</strong></p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/generic
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.5-dragon linux-headers-4.19.5-dragon-generic linux-image-unsigned-4.19.5-dragon-generic linux-modules-4.19.5-dragon-generic linux-modules-extra-4.19.5-dragon-generic
+$ sudo apt install linux-headers-4.19.8-dragon linux-headers-4.19.8-dragon-generic linux-image-unsigned-4.19.8-dragon-generic linux-modules-4.19.8-dragon-generic linux-modules-extra-4.19.8-dragon-generic
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Lowlatency kernel:</strong></p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/generic
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.5-dragon linux-headers-4.19.5-dragon-lowlatency linux-image-unsigned-4.19.5-dragon-lowlatency linux-modules-4.19.5-dragon-lowlatency linux-modules-extra-4.19.5-dragon-lowlatency
+$ sudo apt install linux-headers-4.19.8-dragon linux-headers-4.19.8-dragon-lowlatency linux-image-unsigned-4.19.8-dragon-lowlatency linux-modules-4.19.8-dragon-lowlatency linux-modules-extra-4.19.8-dragon-lowlatency
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Westmere kernel:</strong></p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.5-dragon linux-headers-4.19.5-dragon-westmere linux-image-unsigned-4.19.5-dragon-westmere linux-modules-4.19.5-dragon-westmere linux-modules-extra-4.19.5-dragon-westmere
+$ sudo apt install linux-headers-4.19.8-dragon linux-headers-4.19.8-dragon-westmere linux-image-unsigned-4.19.8-dragon-westmere linux-modules-4.19.8-dragon-westmere linux-modules-extra-4.19.8-dragon-westmere
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Atom kernel:</strong></p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.5-dragon linux-headers-4.19.5-dragon-atom linux-image-unsigned-4.19.5-dragon-atom linux-modules-4.19.5-dragon-atom linux-modules-extra-4.19.5-dragon-atom
+$ sudo apt install linux-headers-4.19.8-dragon linux-headers-4.19.8-dragon-atom linux-image-unsigned-4.19.8-dragon-atom linux-modules-4.19.8-dragon-atom linux-modules-extra-4.19.8-dragon-atom
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Ice Lake kernel</strong>:</p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/icelake-cannonlake
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.5-dragon linux-headers-4.19.5-dragon-icelake linux-image-unsigned-4.19.5-dragon-icelake linux-modules-4.19.5-dragon-icelake linux-modules-extra-4.19.5-dragon-icelake
+$ sudo apt install linux-headers-4.19.8-dragon linux-headers-4.19.8-dragon-icelake linux-image-unsigned-4.19.8-dragon-icelake linux-modules-4.19.8-dragon-icelake linux-modules-extra-4.19.8-dragon-icelake
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Cannon Lake kernel</strong>:</p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/icelake-cannonlake
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.5-dragon linux-headers-4.19.5-dragon-cannonlake linux-image-unsigned-4.19.5-dragon-cannonlake linux-modules-4.19.5-dragon-cannonlake linux-modules-extra-4.19.5-dragon-cannonlake
+$ sudo apt install linux-headers-4.19.8-dragon linux-headers-4.19.8-dragon-cannonlake linux-image-unsigned-4.19.8-dragon-cannonlake linux-modules-4.19.8-dragon-cannonlake linux-modules-extra-4.19.8-dragon-cannonlake
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Zen kernel</strong>:</p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/zen-excavator
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.5-dragon linux-headers-4.19.5-dragon-zen linux-image-unsigned-4.19.5-dragon-zen linux-modules-4.19.5-dragon-zen linux-modules-extra-4.19.5-dragon-zen
+$ sudo apt install linux-headers-4.19.8-dragon linux-headers-4.19.8-dragon-zen linux-image-unsigned-4.19.8-dragon-zen linux-modules-4.19.8-dragon-zen linux-modules-extra-4.19.8-dragon-zen
 $ sudo reboot</code></pre>
 <p><strong>For Excavator kernel</strong>:</p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/zen-excavator
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.19.5-dragon linux-headers-4.19.5-dragon-excavator linux-image-unsigned-4.19.5-dragon-excavator linux-modules-4.19.5-dragon-excavator linux-modules-extra-4.19.5-dragon-excavator
+$ sudo apt install linux-headers-4.19.8-dragon linux-headers-4.19.8-dragon-excavator linux-image-unsigned-4.19.8-dragon-excavator linux-modules-4.19.8-dragon-excavator linux-modules-extra-4.19.8-dragon-excavator
 $ sudo reboot</code></pre>
 <hr />
 <ul>
