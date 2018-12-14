@@ -5,6 +5,8 @@ navbar:
   left:
   - text: Main
     href: https://dragon-kernel.pro
+  - text: Source Code
+    href: https://github.com/AndyLavr/dragon-main
   - text: Guide
     href: https://dragon-kernel.pro/guide
   - text: Security
