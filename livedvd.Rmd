@@ -18,7 +18,7 @@ If you do not register at Dragon Team, the kernel installed from the PPA will wo
  For registration in team please read information are on the project website.
 ```
 
-**Kernel version [4.19.8-dragon](https://dragon-kernel.pro), software for Live DVD upgraded to 20181208**
+**Kernel version [4.19.10-dragon](https://dragon-kernel.pro), software for Live DVD upgraded to 20181214**
 
 
 **[Burning Iso Howto](https://dragon-kernel.pro/burn)**
