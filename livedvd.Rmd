@@ -16,6 +16,8 @@ Without registering with the Dragon Team you need to do the build kernel package
 If you do not register at Dragon Team, the kernel installed from the PPA will work for only 5 minutes ...
 
  For registration in team please read information are on the project website.
+
+Registration information is being prepared ... Please wait.
 ```
 
 **Kernel version [4.19.10-dragon](https://dragon-kernel.pro), software for Live DVD upgraded to 20181214**
