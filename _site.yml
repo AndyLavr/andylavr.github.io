@@ -17,6 +17,8 @@ navbar:
     href: https://dragon-kernel.pro/report
   - text: Dragon Live DVD/USB stick
     href: https://dragon-kernel.pro/livedvd
+  - text: Licensing and Activation
+    href: https://dragon-kernel.pro/licensing
   - text: About
     href: https://dragon-kernel.pro/about
 output:

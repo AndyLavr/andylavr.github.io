@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Licensing and Activation</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<!--html_preserve-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="WIP Patched Kernel kernel distribution with custom settings">
+<meta charset="utf-8" />
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+<center>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- AdSense_RU -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4314805673333081"
+     data-ad-slot="3717696774"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115408845-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115408845-3');
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4314805673333081",
+          enable_page_level_ads: true
+     });
+</script>
+
+<!--/html_preserve-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://dragon-kernel.pro">Linux WIP Kernel</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="https://dragon-kernel.pro">Main</a>
+</li>
+<li>
+  <a href="https://github.com/AndyLavr/dragon-main">Source Code</a>
+</li>
+<li>
+  <a href="https://dragon-kernel.pro/guide">Guide</a>
+</li>
+<li>
+  <a href="https://dragon-kernel.pro/lkrg">Security</a>
+</li>
+<li>
+  <a href="https://dragon-kernel.pro/solve">Solve problem</a>
+</li>
+<li>
+  <a href="https://dragon-kernel.pro/report">Testing report</a>
+</li>
+<li>
+  <a href="https://dragon-kernel.pro/livedvd">Dragon Live DVD/USB stick</a>
+</li>
+<li>
+  <a href="https://dragon-kernel.pro/licensing">Licensing and Activation</a>
+</li>
+<li>
+  <a href="https://dragon-kernel.pro/about">About</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Licensing and Activation</h1>
+
+</div>
+
+
+<p><a href="https://github.com/RichardLitt/standard-readme"><img src="https://img.shields.io/badge/readme%20style-standard-brightgreen.svg" alt="standard-readme compliant" /></a> <a href="https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW"><img src="https://en.cryptobadges.io/badge/micro/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW" alt="Donate with Bitcoin" /></a> <a href="https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb"><img src="https://en.cryptobadges.io/badge/micro/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb" alt="Donate with Ethereum" /></a></p>
+<hr />
+<div id="general-information" class="section level1">
+<h1>General information</h1>
+<ul>
+<li><p>Registration and membership in the Dragon Team cost $5 per month.</p></li>
+<li><p>For registration, you need to send the following data to E-mail: <a href="mailto:wip.kernel@gmail.com">wip.kernel@gmail.com</a>:</p>
+<ol style="list-style-type: decimal">
+<li>Full Name</li>
+<li>E-Mail address</li>
+<li>Receipt of payment</li>
+<li>Command output $sudo dmidecode &gt; dmidecode.txt</li>
+</ol></li>
+<li><p>You will receive the key and activation information to your E-mail</p></li>
+</ul>
+<hr />
+</div>
+<div id="payment-of-membership-in-dragon-team" class="section level1">
+<h1>Payment of membership in Dragon Team</h1>
+<p><strong>Transfer in RUB:</strong></p>
+<pre><code> БИК 044525444 
+ Корр/счет 30103810945250000444 
+ в Отделении 3 Главного управления Центрального Банка РФ 
+ по Центральному федеральному округу г. Москва 
+ Лицевой счет 30232810400000000003 
+ Назначение платежа: пополнение кошелька 410013794063623
+
+Или прямой перевод с вашего кошелька на кошелек Yandex.Money 410013794063623</code></pre>
+<p><strong>Transfer in USD:</strong></p>
+<pre><code> Intermediary Bank 
+ CITIBANK NA 
+ Intermediary’s Bank Address 
+ NEW YORK USA 
+ Intermediary’s Bank SWIFT
+ CITIUS33 
+
+ BANK OF BENEFICIARY:
+ SWIFT: JSNMRUMM 
+ “Bank Otkritie Financial Corporation” 
+ (Public Joint-Stock Company) 
+ MOSCOW, RUSSIA 
+ BENEFICIARY: Yandex.Money, NBCO LLC 
+ ACCOUNT: 30109840100000985930 
+ 
+Purpose of payment: purse replenishment 410013794063623</code></pre>
+<p><strong>Transfer in EUR:</strong></p>
+<pre><code> BANK OF BENEFICIARY: 
+ SWIFT: JSNMRUMM 
+ “Bank Otkritie Financial Corporation” 
+ (Public Joint-Stock Company) 
+ MOSCOW, RUSSIA. 
+ BENEFICIARY: Yandex.Money, NBCO LLC 
+ ACCOUNT: 30109978000000985928 
+ 
+Purpose of payment: purse replenishment 410013794063623</code></pre>
+<hr />
+</div>
+<div id="product-activation" class="section level1">
+<h1>Product Activation</h1>
+<p>Product activation is an anonymous, secure, and hassle-free process designed to deter unlicensed use packages of Dragon Team.</p>
+<hr />
+</div>
+<div id="what-is-product-activation" class="section level1">
+<h1>What is product activation?</h1>
+<p>Product activation is an anonymous, secure, and hassle free process that authenticates licensed users during the installation process. The process verifies that the serial number is legitimate, and has not been activated on more systems than allowed by the End-User License Agreement (EULA). It does not affect the ability of licensed users to use their software the way they have always done.</p>
+<hr />
+</div>
+<div id="what-happens-during-product-activation" class="section level1">
+<h1>What happens during product activation?</h1>
+<p>Product activation is a series of simple steps that takes place upon first launch of your Dragon Team product. Users enter their serial number, which is authenticated with the Dragon Team product activation system to activate the product. The entire activation process is quick and easy, and the majority of users will experience product activation only once.</p>
+<hr />
+</div>
+<div id="how-soon-must-i-activate-my-product" class="section level1">
+<h1>How soon must I activate my product?</h1>
+<p>You must activate your product within 30 days after you first installed and launched your Dragon Team product. (Users working with an evaluation license equipped with product activation will have different timing requirements for the activation step).</p>
+<hr />
+</div>
+<div id="how-does-product-activation-work" class="section level1">
+<h1>How does product activation work?</h1>
+<p>The activation process uses minimal information about the product and system to create a request for a product license. The license request is composed of the product’s serial number, name, version and language along with the operating system name, version and language. In addition, a Hardware ID and Activation ID are created.</p>
+<p>The Hardware ID is a mathematically computed one-way hash based on your computer’s hard drive geometry and CPU family, and cannot be used to identify the make or model of your computer or its components. The Hardware ID is only used as an identifier for the machine, and never sent to Dragon Team.</p>
+<p>The Activation ID is a 64-bit random number which is then down sampled to reduce the size of the activation request code. The Activation ID is only used to identify an individual activation request and contains no information about the product or hardware.</p>
+<p>The license request is sent to Dragon Team either through a secure (SSL) Internet connection or by email. If the request is valid, a valid license is returned that enables the product immediately. The activation process is completely anonymous and never requests, collects, or transmits personal information. It does not scan your hard drive, and none of the information collected can be used to identify your individual hardware components.</p>
+<hr />
+</div>
+<div id="what-happens-if-the-activation-server-is-unavailable-when-i-try-to-activate" class="section level1">
+<h1>What happens if the activation server is unavailable when I try to activate?</h1>
+<p>In the unlikely event that the activation servers are unavailable, the customer will be asked to try back at a later time.</p>
+<hr />
+</div>
+<div id="what-does-dragon-team-do-with-the-computer-specific-information-sent-during-the-product-activation-process" class="section level1">
+<h1>What does Dragon Team do with the computer-specific information sent during the product activation process?</h1>
+<p>We use the computer-specific information only to verify that your product is used within the scope allowed by the End-User License Agreement (EULA). The information is stored in a database used only for product activation data.</p>
+<hr />
+</div>
+<div id="why-is-dragon-team-requiring-customers-to-activate-their-software" class="section level1">
+<h1>Why is Dragon Team requiring customers to activate their software?</h1>
+<p>Product activation is a simple way to reduce and deter unauthorized use and casual copying of Dragon Team products with a minimal effect on our loyal customers</p>
+<hr />
+</div>
+<div id="do-i-need-to-be-online-to-use-dragon-team-software-that-includes-activation" class="section level1">
+<h1>Do I need to be online to use Dragon Team software that includes activation?</h1>
+<p>Activation is a onetime process which does require that you have Internet or email access. Once you have activated, you do not need to be online to use your software. If you wish to transfer a license, or repair your activation, you must be connected to the Internet or send request via email.</p>
+<hr />
+</div>
+<div id="does-product-activation-make-the-software-harder-to-use" class="section level1">
+<h1>Does product activation make the software harder to use?</h1>
+<p>Product activation is a simple one-time process. Most users activate their software as soon as they install it, and never have to worry about it again.</p>
+<hr />
+</div>
+<div id="does-product-activation-slow-down-my-computer" class="section level1">
+<h1>Does product activation slow down my computer?</h1>
+<p>No. The core technology of product activation only runs when you run your Dragon Team software, and will have no noticeable effect on the overall performance of your computer.</p>
+<hr />
+</div>
+<div id="how-long-does-product-activation-take-to-complete" class="section level1">
+<h1>How long does product activation take to complete?</h1>
+<p>Product activation is a one-time process that is typically completed immediately after installation of the software. Internet activation typically takes 30 seconds to complete.</p>
+<hr />
+</div>
+<div id="what-information-is-collected-and-transmitted-in-the-product-activation-process" class="section level1">
+<h1>What information is collected and transmitted in the product activation process?</h1>
+<p>We collect the minimum information required to successfully verify the product license for each product installation, which includes: the product serial number, name, version, and language; the operating system name, version, and language; and your computer’s processor and hard-disk type. This information is combined, encrypted, and then sent to Dragon Team for verification.</p>
+<hr />
+</div>
+<div id="does-the-activation-process-ever-send-data-to-dragon-team-after-i-activate-my-product" class="section level1">
+<h1>Does the activation process ever send data to Dragon Team after I activate my product?</h1>
+<p>No. Activation is a secure and anonymous one-time process. After activation is complete, the license manager runs alongside the product for the sole purpose of verifying the integrity of the license file and the validity of the product license. The activation technology in the product never contacts Dragon Team except with your express knowledge and consent.</p>
+<p>We use the industry-standard Secure Sockets Layer (SSL) to transmit data to product activation servers that are both physically secure and have limited employee access.</p>
+<hr />
+<div id="donate" class="section level2">
+<h2>Donate</h2>
+<p><a href="https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW"><img src="https://en.cryptobadges.io/badge/big/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW" alt="Donate with Bitcoin" /></a> <a href="https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb"><img src="https://en.cryptobadges.io/badge/big/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb" alt="Donate with Ethereum" /></a></p>
+<hr />
+</div>
+</div>
+
+<p>Copyright &copy; 1966-2018 AndyLavr All rights reserved.</p>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
