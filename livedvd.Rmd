@@ -14,11 +14,10 @@ WARNING!
  You can only use kernel packages that are in PPA if you have a Dragon Team license key!
 Without registering with the Dragon Team you need to do the build kernel packages yourself.
 If you do not register at Dragon Team, the kernel installed from the PPA will work for only 5 minutes ...
-
- For registration in team please read information are on the project website.
-
-Registration information is being prepared ... Please wait.
 ```
+
+ - For registration in team ([please read information](https://dragon-kernel.pro/licensing)).
+
 
 **Kernel version [4.19.10-dragon](https://dragon-kernel.pro), software for Live DVD upgraded to 20181214**
 

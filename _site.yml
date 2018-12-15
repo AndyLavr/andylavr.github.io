@@ -7,12 +7,8 @@ navbar:
     href: https://dragon-kernel.pro
   - text: Source Code
     href: https://github.com/AndyLavr/dragon-main
-  - text: Guide
-    href: https://dragon-kernel.pro/guide
   - text: Security
     href: https://dragon-kernel.pro/lkrg
-  - text: Solve problem
-    href: https://dragon-kernel.pro/solve
   - text: Testing report
     href: https://dragon-kernel.pro/report
   - text: Dragon Live DVD/USB stick
