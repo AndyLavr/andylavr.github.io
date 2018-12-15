@@ -5,179 +5,180 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+
 <url>
   <loc>https://dragon-kernel.pro/</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://dragon-kernel.pro/guide</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://dragon-kernel.pro/lkrg</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://dragon-kernel.pro/solve</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://dragon-kernel.pro/atom</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <loc>https://dragon-kernel.pro/livedvd</loc>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dragon-kernel.pro/licensing</loc>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/about</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/can.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/cap_bounds.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/commands.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/connectors.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/containers.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/cpuhotplug.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/crypto.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/cve.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/filecaps.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/fs_perms_simple.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/hugetlb.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/hyperthreading.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/input.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/ipc.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/kernel_misc.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/math.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/mm.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/net.features.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/nptl.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/numa.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/pty.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/quickhit.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/sched.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/securebits.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/smack.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/swaping.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/syscalls.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://dragon-kernel.pro/report/timers.html</loc>
-  <lastmod>2018-11-18T09:11:40+00:00</lastmod>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dragon-kernel.pro/burn</loc>
+  <lastmod>2018-12-15T12:51:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
