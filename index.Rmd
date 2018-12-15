@@ -13,7 +13,7 @@ Without registering with the Dragon Team you need to do the build kernel package
 If you do not register at Dragon Team, the kernel installed from the PPA will work for only 5 minutes ...
 ```
 
- - For registration in team ([please read information](https://dragon-kernel.pro/licensing)).
+ - For registration in team [please read information](https://dragon-kernel.pro/licensing).
 
 
 **Dragon is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads.**
