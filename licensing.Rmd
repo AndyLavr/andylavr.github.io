@@ -2,6 +2,9 @@
 title: "Licensing and Activation"
 permalink: licensing/
 ---
+
+**Only idiots work for free! (c)**
+
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
 [![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)](https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)
 [![Donate with Ethereum](https://en.cryptobadges.io/badge/micro/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)](https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)
