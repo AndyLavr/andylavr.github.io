@@ -1,5 +1,5 @@
 ---
-title: "Dragon Linux Kernel 4.19.10 RC2"
+title: "Dragon Linux Kernel 4.19.10"
 subtitle: "For Ubuntu 18.10 Cosmic"
 date: "`r Sys.Date()`"
 permalink: /
