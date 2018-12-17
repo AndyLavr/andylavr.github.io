@@ -10,7 +10,7 @@ WARNING!
 
  You can only use kernel packages that are in PPA if you have a Dragon Team license key!
 Without registering with the Dragon Team you need to do the build kernel packages yourself.
-If you do not register at Dragon Team, the kernel installed from the PPA will work for only 5 minutes ...
+If you do not register at Dragon Team, the kernel installed from the PPA will work for only 15 minutes ...
 ```
 
  - For registration in team [please read information](https://dragon-kernel.pro/licensing).
