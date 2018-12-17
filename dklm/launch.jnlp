@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp codebase="file:/home/bamston/NetBeansProjects/java_reddragon/dist/" href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>java_reddragon</title>
+        <vendor>bamston</vendor>
+        <homepage href=""/>
+        <description>java_reddragon</description>
+        <description kind="short">java_reddragon</description>
+    </information>
+    <update check="always"/>
+    <security>
+<all-permissions/>
+</security>
+    <resources>
+        <j2se version="1.8+"/>
+        <jar href="java_reddragon.jar" main="true"/>
+    <jar href="lib/jna.jar"/>
+<jar href="lib/jna-platform.jar"/>
+</resources>
+    <application-desc main-class="reddragon.jDKLM">
+    </application-desc>
+</jnlp>
