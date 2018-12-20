@@ -13,7 +13,9 @@ permalink: licensing/
 
 # General information
 
- - Registration and membership in the Dragon Team **cost $5 per month**.
+ - Registration and membership in the Dragon Team cost **$5 per month** or **$50 a subscription for a year**.
+
+   When subscribing for a year your discount 10$.
 
  - For registration, you need to send the following data to E-mail: wip.kernel@gmail.com:
 
@@ -22,7 +24,7 @@ permalink: licensing/
    3. Receipt of payment
    4. Command output **$sudo dmidecode > dmidecode.txt**
 
-You will receive the key and activation information to your E-mail
+You will receive the key and activation information to your E-mail.
 
 ---
 
