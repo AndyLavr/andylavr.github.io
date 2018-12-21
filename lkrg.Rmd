@@ -12,7 +12,7 @@ permalink: lkrg/
 
 # modinfo lkrg
 
-filename:       /lib/modules/4.19.11-dragon-westmere/kernel/drivers/staging/lkrg/lkrg.ko
+filename:       /lib/modules/4.19.12-dragon-westmere/kernel/drivers/staging/lkrg/lkrg.ko
 license:        GPL v2
 description:    pi3s Linux kernel Runtime Guard
 author:         Adam 'pi3' Zabrocki (http://pi3.com.pl)
@@ -22,7 +22,7 @@ staging:        Y
 retpoline:      Y
 intree:         Y
 name:           lkrg
-vermagic:       4.19.11-dragon-westmere SMP mod_unload 
+vermagic:       4.19.12-dragon-westmere SMP mod_unload 
 sig_id:         PKCS#7
 signer:
 sig_key:
