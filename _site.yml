@@ -6,7 +6,7 @@ navbar:
   - text: Main
     href: https://dragon-kernel.pro
   - text: Source Code
-    href: https://github.com/AndyLavr/dragon-main
+    href: https://github.com/Dragon-Team/dragon-linux
   - text: Security
     href: https://dragon-kernel.pro/lkrg
   - text: Testing report
