@@ -3,7 +3,8 @@ title: "Mini guide"
 permalink: guide/
 ---
 
-[![**NVIDIA**](https://dragon-kernel.pro/images/nv_drivers.jpeg)]()
+[![NVIDIA](./images/nv_drivers.jpeg)]()
+
 
 ## Fixed NVIDIA binary driver - version 340.107 for kernel 4.20
 
