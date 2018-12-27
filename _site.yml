@@ -6,14 +6,16 @@ navbar:
   - text: Main
     href: https://dragon-kernel.pro
   - text: Source Code
-    href: https://github.com/Dragon-Team/dragon-linux
+    href: https://github.com/Dragon-Team
   - text: Security
     href: https://dragon-kernel.pro/lkrg
   - text: Testing report
     href: https://dragon-kernel.pro/report
-  - text: Dragon Live DVD/USB stick
+  - text: Guide
+    href: https://dragon-kernel.pro/guide
+  - text: Dragon Live DVD/USB
     href: https://dragon-kernel.pro/livedvd
-  - text: Licensing and Activation
+  - text: Licensing/Activation
     href: https://dragon-kernel.pro/licensing
   - text: About
     href: https://dragon-kernel.pro/about
