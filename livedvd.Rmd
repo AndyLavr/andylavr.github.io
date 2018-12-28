@@ -57,6 +57,16 @@ If you do not register at Dragon Team, the kernel installed from the PPA will wo
 [![Download Generic Live DVD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/open?id=1AX0Hn2LHvTpmo5zypl1TAJRWEWWRc_Do)
 
 
+**Ubuntu 19.04 "Disco Dingo" (Alpha) Dragon Live DVD for Atom CPU amd64 - INTEL Bay[Cherry]Trail**
+
+ - Warning! It works only with an activated Dragon Team members license!
+
+ - Kernel version [4.20.0-dragon 201812280007](https://dragon-kernel.pro), software for Live DVD upgraded to **20181228**
+
+
+[![Download Atom Live DVD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/drive/folders/17ubptAnMRNV4ET1rW1_je-JpnpXv6Iv5)
+
+
 ***
 
 
