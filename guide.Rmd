@@ -20,6 +20,37 @@ $ sudo apt-get install nvidia-340
 
 Driver version - nvidia-graphics-drivers-340 (340.107-0ubuntu3)
 
+
+**Fixes long start system if used nvidia drivers**
+
+
+If the system starts for a long time and there is an entry in the system log:
+
+```bash
+systemd-udevd[533]: Process '/bin/systemctl stop --no-block nvidia-persistenced' failed with exit code 5
+```
+
+Complete the following steps:
+
+```
+Go to /lib/udev/rules.d/
+Open as root the config file 71-nvidia.rules
+
+Comment as posted here below the lines:
+
+# Start and stop nvidia-persistenced on power on and power off
+# respectively
+#ACTION=="add" DEVPATH=="/bus/acpi/drivers/NVIDIA ACPI Video Driver" SUBSYSTEM=="drivers" RUN+="/bin/systemctl start --no-block nvidia-persistenced.service"
+#ACTION=="remove" DEVPATH=="/bus/acpi/drivers/NVIDIA ACPI Video Driver" SUBSYSTEM=="drivers" RUN+="/bin/systemctl stop --no-block nvidia-persistenced"
+
+# Start and stop nvidia-persistenced when loading and unloading
+# the driver
+#ACTION=="add" DEVPATH=="/module/nvidia" SUBSYSTEM=="module" RUN+="/bin/systemctl start --no-block nvidia-persistenced.service"
+#ACTION=="remove" DEVPATH=="/module/nvidia" SUBSYSTEM=="module" RUN+="/bin/systemctl stop --no-block nvidia-persistenced"
+
+Now you can restart and check dmesg log file.
+``
+
 ---
 
 ### Example config files for Intel i5 Westmere, 4Gb RAM 
