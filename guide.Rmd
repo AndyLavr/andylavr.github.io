@@ -49,7 +49,7 @@ Comment as posted here below the lines:
 #ACTION=="remove" DEVPATH=="/module/nvidia" SUBSYSTEM=="module" RUN+="/bin/systemctl stop --no-block nvidia-persistenced"
 
 Now you can restart and check dmesg log file.
-``
+```
 
 ---
 

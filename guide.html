@@ -276,23 +276,22 @@ $ sudo apt-get install nvidia-340</code></pre>
 <p>If the system starts for a long time and there is an entry in the system log:</p>
 <pre class="bash"><code>systemd-udevd[533]: Process &#39;/bin/systemctl stop --no-block nvidia-persistenced&#39; failed with exit code 5</code></pre>
 <p>Complete the following steps:</p>
-<p>``` Go to /lib/udev/rules.d/ Open as root the config file 71-nvidia.rules</p>
-<p>Comment as posted here below the lines:</p>
-</div>
-<div id="start-and-stop-nvidia-persistenced-on-power-on-and-power-off" class="section level1">
-<h1>Start and stop nvidia-persistenced on power on and power off</h1>
-</div>
-<div id="respectively" class="section level1">
-<h1>respectively</h1>
-<p>#ACTION==“add” DEVPATH==“/bus/acpi/drivers/NVIDIA ACPI Video Driver” SUBSYSTEM==“drivers” RUN+=“/bin/systemctl start –no-block nvidia-persistenced.service” #ACTION==“remove” DEVPATH==“/bus/acpi/drivers/NVIDIA ACPI Video Driver” SUBSYSTEM==“drivers” RUN+=“/bin/systemctl stop –no-block nvidia-persistenced”</p>
-</div>
-<div id="start-and-stop-nvidia-persistenced-when-loading-and-unloading" class="section level1">
-<h1>Start and stop nvidia-persistenced when loading and unloading</h1>
-</div>
-<div id="the-driver" class="section level1">
-<h1>the driver</h1>
-<p>#ACTION==“add” DEVPATH==“/module/nvidia” SUBSYSTEM==“module” RUN+=“/bin/systemctl start –no-block nvidia-persistenced.service” #ACTION==“remove” DEVPATH==“/module/nvidia” SUBSYSTEM==“module” RUN+=“/bin/systemctl stop –no-block nvidia-persistenced”</p>
-<p>Now you can restart and check dmesg log file. ``</p>
+<pre><code>Go to /lib/udev/rules.d/
+Open as root the config file 71-nvidia.rules
+
+Comment as posted here below the lines:
+
+# Start and stop nvidia-persistenced on power on and power off
+# respectively
+#ACTION==&quot;add&quot; DEVPATH==&quot;/bus/acpi/drivers/NVIDIA ACPI Video Driver&quot; SUBSYSTEM==&quot;drivers&quot; RUN+=&quot;/bin/systemctl start --no-block nvidia-persistenced.service&quot;
+#ACTION==&quot;remove&quot; DEVPATH==&quot;/bus/acpi/drivers/NVIDIA ACPI Video Driver&quot; SUBSYSTEM==&quot;drivers&quot; RUN+=&quot;/bin/systemctl stop --no-block nvidia-persistenced&quot;
+
+# Start and stop nvidia-persistenced when loading and unloading
+# the driver
+#ACTION==&quot;add&quot; DEVPATH==&quot;/module/nvidia&quot; SUBSYSTEM==&quot;module&quot; RUN+=&quot;/bin/systemctl start --no-block nvidia-persistenced.service&quot;
+#ACTION==&quot;remove&quot; DEVPATH==&quot;/module/nvidia&quot; SUBSYSTEM==&quot;module&quot; RUN+=&quot;/bin/systemctl stop --no-block nvidia-persistenced&quot;
+
+Now you can restart and check dmesg log file.</code></pre>
 <hr />
 <div id="example-config-files-for-intel-i5-westmere-4gb-ram" class="section level3">
 <h3>Example config files for Intel i5 Westmere, 4Gb RAM</h3>
