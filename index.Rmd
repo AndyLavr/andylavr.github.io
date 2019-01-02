@@ -1,5 +1,5 @@
 ---
-title: "Dragon Linux Kernel 4.20 Update 2" 
+title: "Dragon Linux Kernel 4.20 Update 3" 
 subtitle: "For Ubuntu 18.10 Cosmic"
 date: "`r Sys.Date()`"
 permalink: /
