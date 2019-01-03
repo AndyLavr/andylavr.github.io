@@ -53,6 +53,27 @@ Now you can restart and check dmesg log file.
 
 ---
 
+[![VIRTUALBOX](./images/virtual_box.jpeg)]()
+
+
+## Fixed VirtualBox packages 5.2.22 for kernel 4.20
+
+
+**It is strongly recommended to use the packeges only from the PPA Linux WIP-Kernel team:**
+
+```bash
+$ sudo add-apt-repository ppa:wip-kernel/virtualbox
+$ sudo apt-get update
+$ sudo apt-get install virtualbox
+```
+
+Package version - VirtualBox-5.2.22 (5.2.22-dfsg-3)
+
+
+**Fixes work and build modules for kernel 4.20**
+
+---
+
 ### Example config files for Intel i5 Westmere, 4Gb RAM 
 
 - /etc/default/grub
