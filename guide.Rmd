@@ -223,3 +223,15 @@ wifi.powersave = 2
 
 ---
 
+- /etc/NetworkManager/NetworkManager.conf
+
+```bash
+[connection]
+wifi.powersave = 2
+
+[device]
+wifi.scan-rand-mac-address=no
+```
+
+---
+
