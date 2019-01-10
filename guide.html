@@ -304,6 +304,19 @@ $ sudo apt-get install virtualbox</code></pre>
 <p>Package version - VirtualBox-5.2.22 (5.2.22-dfsg-3)</p>
 <p><strong>Fixes work and build modules for kernel 4.20</strong></p>
 <hr />
+</div>
+<div id="force-set-halfduplex-and-disable-flow-control-for-rtl8102e" class="section level2">
+<h2>Force set HalfDuplex and disable flow control for RTL8102e</h2>
+<p>When you start the kernel phy enables full duplex and flow control rx / tx for r8169 module. Turn off flow control in use ethtool no possibility.</p>
+<p>[ +6,268667] libphy: r8169: probed [ +0,000464] r8169 0000:13:00.0 eth0: RTL8102e, f0:4d:a2:cb:b8:f3, XID 24e, IRQ 30 [ +0,023024] RTL8201CP Ethernet r8169-1300:00: attached PHY driver [RTL8201CP Ethernet] (mii_bus:phy_addr=r8169-1300:00, irq=IGNORE) [ +1,673582] r8169 0000:13:00.0 eth0: Link is Up - 100Mbps/Full - flow control rx/tx</p>
+<p>If you turn off and turn on the ethernet cable, the driver disables the flow control and fullduplex.</p>
+<p>[ +5,143360] r8169 0000:13:00.0 eth0: Link is Down [ +2,530738] libphy: r8169: probed [ +0,000480] r8169 0000:13:00.0 eth0: RTL8102e, f0:4d:a2:cb:b8:f3, XID 24e, IRQ 30 [ +0,023594] RTL8201CP Ethernet r8169-1300:00: attached PHY driver [RTL8201CP Ethernet] (mii_bus:phy_addr=r8169-1300:00, irq=IGNORE) [ +1,705550] r8169 0000:13:00.0 eth0: Link is Up - 100Mbps/Half - flow control off</p>
+<p>This behavior of the driver does not allow the network card to operate at full speed after a restart or first start of the system.</p>
+<p>Use module parameter rtl8201_half=1</p>
+<pre class="bash"><code>Add to /etc/modprobe.d/realtek.conf
+
+options realtek rtl8201_half=1</code></pre>
+<hr />
 <div id="example-config-files-for-intel-i5-westmere-4gb-ram" class="section level3">
 <h3>Example config files for Intel i5 Westmere, 4Gb RAM</h3>
 <ul>
