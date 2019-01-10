@@ -3,6 +3,19 @@ title: "Mini guide"
 permalink: guide/
 ---
 
+[![i915](./images/i915.jpeg)]()
+
+
+## Fixes booting kernel for i915 video chipset
+
+```
+If kernel starting and boot screen black then change kernel grub boot options  i915.modeset=1 to i915.modeset=0
+```
+
+From boot grub menu enter "e" key and edit kernel boot line and press F10 for boot.
+
+---
+
 [![NVIDIA](./images/nv_drivers.jpeg)]()
 
 
