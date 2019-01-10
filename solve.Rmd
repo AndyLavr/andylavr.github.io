@@ -12,7 +12,7 @@ permalink: solve/
 
 ---
 
-**In Ubuntu 18.10, apt has a bug, apt in the console prints multiple errors.**
+**In Ubuntu, apt has a bug, apt in the console prints multiple errors.**
 
 Rename apt_orig to /usr/bin apt_orig and create this script named apt in /usr/bin:
 

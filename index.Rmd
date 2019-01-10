@@ -23,7 +23,7 @@ If you do not register at Dragon Team, the kernel installed from the PPA will wo
 Each person has a choice and desires... (c) Andy Lavr
 ```
 
-[**Dragon Live DVD/USB stick Ubuntu/Kubuntu/Xubuntu/Lubuntu 18.10 (Cosmic)**](https://dragon-kernel.pro/livedvd)
+[**Dragon Live DVD/USB stick Ubuntu/Kubuntu/Xubuntu/Lubuntu (Cosmic/Disco)**](https://dragon-kernel.pro/livedvd)
 
 ---
 
@@ -77,7 +77,7 @@ The Linux kernel is a very large piece of software. It contains drivers and spec
 **Main Features:**
 
  - Experience a whole new way to interact with your PC like never before. 
- - Full kernel adaptation to version **Ubuntu 18.10 Cosmic.**
+ - Full kernel adaptation to version **Ubuntu Cosmic/Disco.**
  - Full kernel adaptation to build GCC 8.2
  - Optimized to take full advantage of high-performance.
  - Supports all recent 64-bit versions of Debian and Ubuntu-based systems. 
