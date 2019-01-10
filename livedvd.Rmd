@@ -1,5 +1,5 @@
 ---
-title: "Dragon Live DVD/USB stick Ubuntu/Kubuntu/Xubuntu/Lubuntu 18.10 (Cosmic)"
+title: "Dragon Live DVD/USB stick Ubuntu/Kubuntu/Xubuntu/Lubuntu (Cosmic/Disco)"
 permalink: livedvd/
 ---
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
