@@ -10,9 +10,9 @@
 
 
 
-<meta name="date" content="2019-01-10" />
+<meta name="date" content="2019-01-13" />
 
-<title>Dragon Linux Kernel 4.20.1</title>
+<title>Dragon Linux Kernel 4.20.2</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -257,9 +257,9 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Dragon Linux Kernel 4.20.1</h1>
+<h1 class="title toc-ignore">Dragon Linux Kernel 4.20.2</h1>
 <h3 class="subtitle"><em>For Ubuntu Cosmic/Disco</em></h3>
-<h4 class="date"><em>2019-01-10</em></h4>
+<h4 class="date"><em>2019-01-13</em></h4>
 
 </div>
 
@@ -338,7 +338,16 @@ Each person has a choice and desires... (c) Andy Lavr</code></pre>
 <li><strong>Minimal Debugging</strong>*: Minimum number of debug options enabled to increase kernel throughput.</li>
 </ul>
 <hr />
+<p><a href=""><img src="images/nv.jpeg" alt="Nvidia" /></a></p>
+<div id="linux-x64-amd64em64t-display-kernel-module" class="section level2">
+<h2>Linux X64 (AMD64/EM64T) display kernel module</h2>
+<p>Dragon Linux Team provide their own packages of the NVIDIA Linux Graphics Driver in the distribution’s native package management format. This may interact better with the rest of your distribution’s framework, and you may want to use this rather than NVIDIA’s official package.</p>
+<ul>
+<li>The modules nvidia* version 390-87 is integrated into the kernel.</li>
+</ul>
+<hr />
 <p><a href=""><img src="images/ibrs3.jpeg" alt="Meltdown-Spectre" /></a></p>
+</div>
 <div id="full-security-support" class="section level2">
 <h2>Full security support:</h2>
 <ul>
@@ -473,42 +482,42 @@ root# mkfs.exfat -n Flash /dev/sde1</code></pre>
 <p><strong>For Dragon GENERIC kernel:</strong></p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/generic
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.1-dragon linux-headers-4.20.1-dragon-generic linux-image-unsigned-4.20.1-dragon-generic linux-modules-4.20.1-dragon-generic linux-modules-extra-4.20.1-dragon-generic
+$ sudo apt install linux-headers-4.20.2-dragon linux-headers-4.20.2-dragon-generic linux-image-unsigned-4.20.2-dragon-generic linux-modules-4.20.2-dragon-generic linux-modules-extra-4.20.2-dragon-generic
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Lowlatency kernel:</strong></p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/generic
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.1-dragon linux-headers-4.20.1-dragon-lowlatency linux-image-unsigned-4.20.1-dragon-lowlatency linux-modules-4.20.1-dragon-lowlatency linux-modules-extra-4.20.1-dragon-lowlatency
+$ sudo apt install linux-headers-4.20.2-dragon linux-headers-4.20.2-dragon-lowlatency linux-image-unsigned-4.20.2-dragon-lowlatency linux-modules-4.20.2-dragon-lowlatency linux-modules-extra-4.20.2-dragon-lowlatency
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Westmere kernel:</strong></p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.1-dragon linux-headers-4.20.1-dragon-westmere linux-image-unsigned-4.20.1-dragon-westmere linux-modules-4.20.1-dragon-westmere linux-modules-extra-4.20.1-dragon-westmere
+$ sudo apt install linux-headers-4.20.2-dragon linux-headers-4.20.2-dragon-westmere linux-image-unsigned-4.20.2-dragon-westmere linux-modules-4.20.2-dragon-westmere linux-modules-extra-4.20.2-dragon-westmere
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Atom kernel:</strong></p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.1-dragon linux-headers-4.20.1-dragon-atom linux-image-unsigned-4.20.1-dragon-atom linux-modules-4.20.1-dragon-atom linux-modules-extra-4.20.1-dragon-atom
+$ sudo apt install linux-headers-4.20.2-dragon linux-headers-4.20.2-dragon-atom linux-image-unsigned-4.20.2-dragon-atom linux-modules-4.20.2-dragon-atom linux-modules-extra-4.20.2-dragon-atom
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Ice Lake kernel</strong>:</p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/icelake-cannonlake
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.1-dragon linux-headers-4.20.1-dragon-icelake linux-image-unsigned-4.20.1-dragon-icelake linux-modules-4.20.1-dragon-icelake linux-modules-extra-4.20.1-dragon-icelake
+$ sudo apt install linux-headers-4.20.2-dragon linux-headers-4.20.2-dragon-icelake linux-image-unsigned-4.20.2-dragon-icelake linux-modules-4.20.2-dragon-icelake linux-modules-extra-4.20.2-dragon-icelake
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Cannon Lake kernel</strong>:</p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/icelake-cannonlake
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.1-dragon linux-headers-4.20.1-dragon-cannonlake linux-image-unsigned-4.20.1-dragon-cannonlake linux-modules-4.20.1-dragon-cannonlake linux-modules-extra-4.20.1-dragon-cannonlake
+$ sudo apt install linux-headers-4.20.2-dragon linux-headers-4.20.2-dragon-cannonlake linux-image-unsigned-4.20.2-dragon-cannonlake linux-modules-4.20.2-dragon-cannonlake linux-modules-extra-4.20.2-dragon-cannonlake
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Zen kernel</strong>:</p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/zen-excavator
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.1-dragon linux-headers-4.20.1-dragon-zen linux-image-unsigned-4.20.1-dragon-zen linux-modules-4.20.1-dragon-zen linux-modules-extra-4.20.1-dragon-zen
+$ sudo apt install linux-headers-4.20.2-dragon linux-headers-4.20.2-dragon-zen linux-image-unsigned-4.20.2-dragon-zen linux-modules-4.20.2-dragon-zen linux-modules-extra-4.20.2-dragon-zen
 $ sudo reboot</code></pre>
 <p><strong>For Excavator kernel</strong>:</p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/zen-excavator
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.1-dragon linux-headers-4.20.1-dragon-excavator linux-image-unsigned-4.20.1-dragon-excavator linux-modules-4.20.1-dragon-excavator linux-modules-extra-4.20.1-dragon-excavator
+$ sudo apt install linux-headers-4.20.2-dragon linux-headers-4.20.2-dragon-excavator linux-image-unsigned-4.20.2-dragon-excavator linux-modules-4.20.2-dragon-excavator linux-modules-extra-4.20.2-dragon-excavator
 $ sudo reboot</code></pre>
 <hr />
 <ul>
