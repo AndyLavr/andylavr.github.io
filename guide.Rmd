@@ -66,6 +66,22 @@ Now you can restart and check dmesg log file.
 
 ---
 
+[![ALSA-LIB](./images/alsa.jpeg)]()
+
+
+## Alsa v1.1.8 PPA
+
+**It is strongly recommended to use the packeges only from the PPA Linux WIP-Kernel team:**
+
+
+```bash
+$ sudo add-apt-repository ppa:wip-kernel/alsa-lib
+$ sudo apt update
+$ sudo apt dist-upgrade -y
+```
+
+---
+
 [![VIRTUALBOX](./images/virtual_box.jpeg)]()
 
 
