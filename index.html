@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2019-01-18" />
+<meta name="date" content="2019-01-20" />
 
 <title>Dragon Linux Kernel 4.20.3</title>
 
@@ -259,7 +259,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Dragon Linux Kernel 4.20.3</h1>
 <h3 class="subtitle"><em>For Ubuntu Cosmic/Disco</em></h3>
-<h4 class="date"><em>2019-01-18</em></h4>
+<h4 class="date"><em>2019-01-20</em></h4>
 
 </div>
 
@@ -313,7 +313,7 @@ Each person has a choice and desires... (c) Andy Lavr</code></pre>
 <li>Full kernel adaptation to build GCC 8.2</li>
 <li>Optimized to take full advantage of high-performance.</li>
 <li>Supports all recent 64-bit versions of Debian and Ubuntu-based systems.</li>
-<li>Tuned CPU for Intel i5/i7/Atom platform.</li>
+<li>Tuned CPU for Intel i5/i7/Atom and AMD platform.</li>
 <li>PDS CPU Scheduler &amp; Multi-Queue I/O Block Layer w/ BFQ-MQ for smoothness and responsiveness.</li>
 <li>UKSM - Ultra Kernel Samepage Merging.</li>
 <li>Caching, Virtual Memory Manager and CPU Governor Improvements.</li>
@@ -321,7 +321,7 @@ Each person has a choice and desires... (c) Andy Lavr</code></pre>
 <li>Built on the latest GCC 8.2</li>
 <li>DRM Optimized Performance, Nvidia kernel module is integrated into the kernel.</li>
 <li>Intel CPUFreq (P-State passive mode).</li>
-<li>ZFS, AUFS, APFS, exFAT, BFQ and Ureadahead support available.</li>
+<li>OpenZFS, AUFS, APFS, exFAT, BFQ and Ureadahead support available.</li>
 </ul>
 <p><strong>New features Dragon kernel distribution with custom settings:</strong></p>
 <ul>
@@ -388,12 +388,12 @@ Each person has a choice and desires... (c) Andy Lavr</code></pre>
 <h2>OpenZFS (<a href="http://open-zfs.org/wiki/Main_Page">ZFS</a>)</h2>
 <p>OpenZFS is an outstanding storage platform that encompasses the functionality of traditional filesystems, volume managers, and more, with consistent reliability, functionality and performance.</p>
 <ul>
-<li>The module ZFS is integrated into the kernel.</li>
+<li>The module OpenZFS is integrated into the kernel.</li>
 </ul>
-<div id="warning-this-kernel-implement-zfs-version-0.7.12." class="section level4">
-<h4>Warning! This kernel implement ZFS version 0.7.12.</h4>
+<div id="warning-this-kernel-implement-openzfs-version-0.7.12." class="section level4">
+<h4>Warning! This kernel implement OpenZFS version 0.7.12.</h4>
 <p>Packages for this version strictly install from my repository!</p>
-<p>To install ZFS, head to a terminal and run the following command:</p>
+<p>To install OpenZFS, head to a terminal and run the following command:</p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/openzfs
 $ sudo apt-get update
 $ sudo apt install zfsutils-linux
@@ -427,7 +427,7 @@ $ sudo reboot</code></pre>
 <p>exFAT can be used where NTFS is not a feasible solution (due to data-structure overhead), but a greater file-size limit than the standard FAT32 file system (i.e. 4 GiB) is required. exFAT has been adopted by the SD Card Association as the default file system for SDXC cards larger than 32 GiB.</p>
 <ul>
 <li><p>The module (<a href="https://github.com/AndyLavr/exfat-nofuse.git">exFAT v1.2.24-dragon</a>) is integrated into the kernel.</p></li>
-<li><p>Full adaptation to Kernel 4.19.y</p></li>
+<li><p>Full adaptation to Kernel 4.20.y</p></li>
 <li><p>Support exFat capacity more than 2TB</p></li>
 </ul>
 <p><strong>Enable exFAT module and install exfat-utils:</strong></p>

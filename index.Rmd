@@ -81,7 +81,7 @@ The Linux kernel is a very large piece of software. It contains drivers and spec
  - Full kernel adaptation to build GCC 8.2
  - Optimized to take full advantage of high-performance.
  - Supports all recent 64-bit versions of Debian and Ubuntu-based systems. 
- - Tuned CPU for Intel i5/i7/Atom platform.
+ - Tuned CPU for Intel i5/i7/Atom and AMD platform.
  - PDS CPU Scheduler & Multi-Queue I/O Block Layer w/ BFQ-MQ for smoothness and responsiveness.
  - UKSM - Ultra Kernel Samepage Merging.
  - Caching, Virtual Memory Manager and CPU Governor Improvements.
@@ -89,7 +89,7 @@ The Linux kernel is a very large piece of software. It contains drivers and spec
  - Built on the latest GCC 8.2
  - DRM Optimized Performance, Nvidia kernel module is integrated into the kernel.
  - Intel CPUFreq (P-State passive mode).
- - ZFS, AUFS, APFS, exFAT, BFQ and Ureadahead support available.
+ - OpenZFS, AUFS, APFS, exFAT, BFQ and Ureadahead support available.
 
 
 **New features Dragon kernel distribution with custom settings:**
@@ -166,13 +166,13 @@ This may interact better with the rest of your distribution's framework, and you
  OpenZFS is an outstanding storage platform that encompasses the functionality of traditional filesystems,
 volume managers, and more, with consistent reliability, functionality and performance.
  
- - The module ZFS is integrated into the kernel.
+ - The module OpenZFS is integrated into the kernel.
 
-#### Warning! This kernel implement ZFS version 0.7.12.
+#### Warning! This kernel implement OpenZFS version 0.7.12.
 
 Packages for this version strictly install from my repository!
 
-To install ZFS, head to a terminal and run the following command:
+To install OpenZFS, head to a terminal and run the following command:
 
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/openzfs
@@ -216,7 +216,7 @@ The name originally stood for AnotherUnionFS until version 2.
  
  - The module ([exFAT v1.2.24-dragon](https://github.com/AndyLavr/exfat-nofuse.git)) is integrated into the kernel.
 
- - Full adaptation to Kernel 4.19.y
+ - Full adaptation to Kernel 4.20.y
 
  - Support exFat capacity more than 2TB
 
