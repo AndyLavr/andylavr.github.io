@@ -31,6 +31,19 @@ You will receive the key and activation information to your E-mail.
 # Payment of membership in Dragon Team
 
 
+**The first payment option:**
+
+
+Sign up to [Skrill](https://account.skrill.com/signup?rid=112159280) payment service and transfer funds to my account - wip.kernel@gmail.com
+
+On this service, you can exchange cryptocurrency for transfer money.
+
+Registration and work with the service are free.
+
+
+**Second payment option:**
+
+
 **Transfer in RUB:**
 
 ```
