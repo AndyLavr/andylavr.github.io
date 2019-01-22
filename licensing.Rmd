@@ -46,7 +46,7 @@ Registration and work with the service are free.
 
 [![**YANDEX**](images/yandex.png)]()
 
- - If you want to make a cash payment, you do not need to have your own bank account;
+ - If you want to make a cash payment, you do not need to have your own bank account.
  - Just go to the operator of any bank with the following details and ask to transfer the amount you need.
 
  Sign Up to [Yandex.Money](https://money.yandex.ru) payment service and direct transfer from your Yandex.Money wallet to a wallet 410013794063623
