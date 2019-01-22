@@ -33,6 +33,7 @@ You will receive the key and activation information to your E-mail.
 
 **The first payment option:**
 
+[![**SKRILL**](images/skrill.jpeg)]()
 
 Sign up to [Skrill](https://account.skrill.com/signup?rid=112159280) payment service and transfer funds to my account - wip.kernel@gmail.com
 
@@ -43,6 +44,7 @@ Registration and work with the service are free.
 
 **Second payment option:**
 
+[![**YANDEX**](images/yandex.png)]()
 
 **Transfer in RUB:**
 
