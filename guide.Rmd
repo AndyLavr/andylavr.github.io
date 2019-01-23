@@ -185,7 +185,6 @@ vm.laptop_mode = 0
 
 vm.overcommit_ratio = 200 
 vm.overcommit_memory = 2
-kernel.sysrq = 1
 
 # System open file limit
 fs.file-max = 243968
