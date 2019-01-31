@@ -61,7 +61,7 @@ If you do not register at Dragon Team, the kernel installed from the PPA will wo
 
  - Access for Dragon Team members only!
 
- - Kernel version [4.20.5-dragon Release](https://dragon-kernel.pro), software for Live DVD upgraded to **20190127**
+ - Kernel version [4.20.6-dragon Release](https://dragon-kernel.pro), software for Live DVD upgraded to **20190131**
 
 
 [![Download Atom Live DVD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/drive/folders/1nwfC6PrX_0ZosVnRXF7JgDtTk0wLxw8s?usp=sharing)
