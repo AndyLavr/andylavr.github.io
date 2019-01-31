@@ -41,6 +41,8 @@ If you do not register at Dragon Team, the kernel installed from the PPA will wo
 
  - Warning! It works only with an activated Dragon Team members license!
 
+ - ISO Kubuntu/Xubuntu/Lubuntu access for Dragon Team members only!
+
  - Kernel version [4.20.5-dragon Release](https://dragon-kernel.pro), software for Live DVD upgraded to **20190127**
 
 
@@ -51,6 +53,8 @@ If you do not register at Dragon Team, the kernel installed from the PPA will wo
 
  - Warning! It works only with an activated Dragon Team members license!
 
+ - ISO Kubuntu access for Dragon Team members only!
+
  - Kernel version [4.20.5-dragon Release](https://dragon-kernel.pro), software for Live DVD upgraded to **20190127**
 
 
@@ -59,7 +63,9 @@ If you do not register at Dragon Team, the kernel installed from the PPA will wo
 
 **Ubuntu 19.04 "Disco Dingo" (Alpha) Dragon Live DVD for Atom CPU amd64 - INTEL Bay[Cherry]Trail**
 
- - Access for Dragon Team members only!
+ - Warning! It works only with an activated Dragon Team members license!
+
+ - All ISO access for Dragon Team members only!
 
  - Kernel version [4.20.6-dragon Release](https://dragon-kernel.pro), software for Live DVD upgraded to **20190131**
 
