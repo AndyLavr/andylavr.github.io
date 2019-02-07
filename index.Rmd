@@ -334,6 +334,7 @@ $ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
 $ sudo apt-get update
 $ sudo apt install linux-headers-4.20.7-dragon linux-headers-4.20.7-dragon-atom linux-image-unsigned-4.20.7-dragon-atom linux-modules-4.20.7-dragon-atom linux-modules-extra-4.20.7-dragon-atom
 $ sudo reboot
+```
 
 
 ---
