@@ -250,7 +250,7 @@ net.ipv4.tcp_slow_start_after_idle = 0
 net.ipv4.ip_default_ttl = 63
 #
 net.ipv4.tcp_ecn = 1
-net.core.default_qdisc = fq_codel
+net.core.default_qdisc = cake
 #
 kernel.perf_cpu_time_max_percent = 100
 #
