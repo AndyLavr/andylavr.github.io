@@ -2,11 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
 <head>
   <title>Linux Test Project - Results</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
 
-<h1>LTP Output/Log (Report Generated on Чтв ноя  8 19:37:25 EET 2018) </h1>
+<h1>LTP Output/Log (Report Generated on Птн фев  8 12:48:13 EET 2019) </h1>
 <table border="1" cellspacing="3">
   <tbody>
     <tr>
@@ -57,11 +56,12 @@
     </tr>
 <tr bgcolor=#66ff66><td><p><strong>1</strong></p></td>
 <td><p><strong>ar_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:31 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:13 2019</strong></pre></p></td>
 <td><p><strong> "export TCdat </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>ar01 1 TPASS: ar added new file after another (-a) 
+<td><pre><strong>ar01 1 TINFO: timeout per run is 0h 5m 0s 
+ar01 1 TPASS: ar added new file after another (-a) 
 ar01 2 TPASS: ar moved file correctly (-ma) 
 ar01 3 TPASS: ar added new file before another (-b) 
 ar01 4 TPASS: ar moved file correctly (-mb) 
@@ -89,19 +89,20 @@ failed   1
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>7</strong></p></td>
+<td><p><strong>1</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>1</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>9</strong></p></td>
-<td><p><strong>15</strong></p></td></tr>
+<td><p><strong>10</strong></p></td>
+<td><p><strong>17</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>2</strong></p></td>
 <td><p><strong>ld01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:38 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:14 2019</strong></pre></p></td>
 <td><p><strong> "ld01" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>ld01 1 TPASS: ld x.o y.o 2> ld.out failed as expected 
+<td><pre><strong>ld01 1 TINFO: timeout per run is 0h 5m 0s 
+ld01 1 TPASS: ld x.o y.o 2> ld.out failed as expected 
 ld01 1 TFAIL: Missing files were not reported 
 ld: cannot find x.o: Нет такого файла или каталога 
 ld: cannot find y.o: Нет такого файла или каталога 
@@ -112,7 +113,7 @@ gcc: ошибка: y.o: Нет такого файла или каталога
 gcc: фатальная ошибка: не заданы входные файлы 
 компиляция прервана. 
 ld01 3 TPASS: ld -shared f1.o d1.o -o test.so passed as expected 
-ld01 3 TFAIL: Failed to build shared library 
+ld01 3 TPASS: Shared library could be build 
 ld01 4 TPASS: ld -Bdynamic -shared f1.o d1.o -o test.so passed as expected 
 ld01 4 TPASS: ld -Bstatic -L. main.o rd1.o test.so -o a.out failed as expected 
 ld01 5 TPASS: ld -Bdynamic -shared main.o f1.o rf1.o -o test.so -L/usr/lib/ passed as expected 
@@ -121,8 +122,8 @@ ld: attempted static link of dynamic object `test.so'
 ld01 5 TPASS: Got expected error message 
  
 Summary: 
-passed   8 
-failed   3 
+passed   9 
+failed   2 
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
@@ -130,15 +131,16 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>1</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>11</strong></p></td>
+<td><p><strong>14</strong></p></td>
 <td><p><strong>11</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>3</strong></p></td>
 <td><p><strong>ldd01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:38 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:14 2019</strong></pre></p></td>
 <td><p><strong> "ldd01" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>ldd01 1 TPASS: Found lddfile*.obj.so 
+<td><pre><strong>ldd01 1 TINFO: timeout per run is 0h 5m 0s 
+ldd01 1 TPASS: Found lddfile*.obj.so 
 ldd01 2 TPASS: Found GLIBC 
  
 Summary: 
@@ -151,15 +153,16 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>3</strong></p></td>
-<td><p><strong>2</strong></p></td></tr>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>3</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>4</strong></p></td>
 <td><p><strong>nm01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:38 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:14 2019</strong></pre></p></td>
 <td><p><strong> "nm01" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>nm01 1 TPASS: nm -f posix -A lib.a > nm.out passed as expected 
+<td><pre><strong>nm01 1 TINFO: timeout per run is 0h 5m 0s 
+nm01 1 TPASS: nm -f posix -A lib.a > nm.out passed as expected 
 nm01 1 TPASS: Got correct listing 
 nm01 1 TPASS: nm -f posix -A dir/lib.a > nm.out passed as expected 
 nm01 1 TPASS: Got correct listing 
@@ -238,15 +241,16 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>1</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>4</strong></p></td>
-<td><p><strong>4</strong></p></td></tr>
+<td><p><strong>5</strong></p></td>
+<td><p><strong>5</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>5</strong></p></td>
 <td><p><strong>file01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:38 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:14 2019</strong></pre></p></td>
 <td><p><strong> "file01.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>file01 1 TBROK: Failed to determine CPU endianess 
+<td><pre><strong>file01 1 TINFO: timeout per run is 0h 5m 0s 
+file01 1 TBROK: Failed to determine CPU endianess 
  
 Summary: 
 passed   0 
@@ -259,14 +263,15 @@ warnings 0
 <td><p><strong>2</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>1</strong></p></td>
-<td><p><strong>0</strong></p></td></tr>
+<td><p><strong>1</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>6</strong></p></td>
 <td><p><strong>tar01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:38 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:14 2019</strong></pre></p></td>
 <td><p><strong> " tar_tests.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tar_tests 1 TPASS: tar cvf test.tar file1 file2 file3 > tar.out passed as expected 
+<td><pre><strong>tar_tests 1 TINFO: timeout per run is 0h 5m 0s 
+tar_tests 1 TPASS: tar cvf test.tar file1 file2 file3 > tar.out passed as expected 
 tar_tests 1 TPASS: Listing in tar.out is correct 
 tar_tests 1 TPASS: tar dvf test.tar > tar.out passed as expected 
 tar_tests 1 TPASS: Listing in tar.out is correct 
@@ -345,15 +350,16 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>14</strong></p></td>
-<td><p><strong>13</strong></p></td></tr>
+<td><p><strong>11</strong></p></td>
+<td><p><strong>21</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>7</strong></p></td>
 <td><p><strong>cpio01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:39 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:15 2019</strong></pre></p></td>
 <td><p><strong> "cpio_tests.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>3 блока 
+<td><pre><strong>cpio_tests 1 TINFO: timeout per run is 0h 5m 0s 
+3 блока 
 cpio_tests 1 TPASS: cpio -o > cpio.out < filelist passed as expected 
 3 блока 
 cpio_tests 1 TPASS: cpio -i < cpio.out passed as expected 
@@ -369,15 +375,16 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>3</strong></p></td>
-<td><p><strong>4</strong></p></td></tr>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>6</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>8</strong></p></td>
 <td><p><strong>unzip01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:39 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:15 2019</strong></pre></p></td>
 <td><p><strong> "unzip01.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>unzip01 1 TPASS: unzip /opt/ltp/testcases/data/unzip01/test.zip > unzip.out passed as expected 
+<td><pre><strong>unzip01 1 TINFO: timeout per run is 0h 5m 0s 
+unzip01 1 TPASS: unzip /opt/ltp/testcases/data/unzip01/test.zip > unzip.out passed as expected 
 unzip01 1 TPASS: Unzip output is correct 
 unzip01 1 TPASS: Files unzipped correctly 
  
@@ -391,15 +398,16 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>3</strong></p></td>
+<td><p><strong>2</strong></p></td>
 <td><p><strong>3</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>9</strong></p></td>
 <td><p><strong>gzip01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:39 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:15 2019</strong></pre></p></td>
 <td><p><strong> "gzip_tests.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>gzip_tests 1 TINFO: Test #1: gzip -r will recursively compress contents of directory 
+<td><pre><strong>gzip_tests 1 TINFO: timeout per run is 0h 5m 0s 
+gzip_tests 1 TINFO: Test #1: gzip -r will recursively compress contents of directory 
 gzip_tests 1 TINFO: Test #1: Creating 10 directories 
 gzip_tests 1 TINFO: Test #1: filling each dir with 10 files 
 gzip_tests 1 TINFO: Test #1: creating output file 
@@ -423,15 +431,16 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>15</strong></p></td>
-<td><p><strong>22</strong></p></td></tr>
+<td><p><strong>9</strong></p></td>
+<td><p><strong>31</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>10</strong></p></td>
 <td><p><strong>cp01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:39 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:15 2019</strong></pre></p></td>
 <td><p><strong> "cp_tests.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>cp_tests 1 TINFO: Creating 10 directories. 
+<td><pre><strong>cp_tests 1 TINFO: timeout per run is 0h 5m 0s 
+cp_tests 1 TINFO: Creating 10 directories. 
 cp_tests 1 TINFO: Filling each dir with 10 files. 
 cp_tests 1 TPASS: cp file file_copy passed as expected 
 cp_tests 1 TPASS: Files file and file_copy are equal 
@@ -454,25 +463,26 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>10</strong></p></td>
-<td><p><strong>12</strong></p></td></tr>
+<td><p><strong>8</strong></p></td>
+<td><p><strong>18</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>11</strong></p></td>
 <td><p><strong>ln01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:39 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:15 2019</strong></pre></p></td>
 <td><p><strong> "ln_tests.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>ln_tests 1 TPASS: ln file file_link passed as expected 
+<td><pre><strong>ln_tests 1 TINFO: timeout per run is 0h 5m 0s 
+ln_tests 1 TPASS: ln file file_link passed as expected 
 ln_tests 1 TPASS: File and link content is equal 
 ln_tests 2 TPASS: ln -s file file_link passed as expected 
 ln_tests 2 TPASS: File and link content is equal 
 ln_tests 3 TPASS: ln -s dir dir_link passed as expected 
 ln_tests 3 TPASS: Directory and link content is equal 
-ln_tests 4 TPASS: ln /tmp/ltp-CTOCdgjyHe/LTP_ln_tests.LUsjCHBi2f/file file_link passed as expected 
+ln_tests 4 TPASS: ln /tmp/ltp-5c3p2YZyyp/LTP_ln_tests.bHPBbZGwVG/file file_link passed as expected 
 ln_tests 4 TPASS: File and link content is equal 
-ln_tests 5 TPASS: ln -s /tmp/ltp-CTOCdgjyHe/LTP_ln_tests.LUsjCHBi2f/file file_link passed as expected 
+ln_tests 5 TPASS: ln -s /tmp/ltp-5c3p2YZyyp/LTP_ln_tests.bHPBbZGwVG/file file_link passed as expected 
 ln_tests 5 TPASS: File and link content is equal 
-ln_tests 6 TPASS: ln -s /tmp/ltp-CTOCdgjyHe/LTP_ln_tests.LUsjCHBi2f/dir dir_link passed as expected 
+ln_tests 6 TPASS: ln -s /tmp/ltp-5c3p2YZyyp/LTP_ln_tests.bHPBbZGwVG/dir dir_link passed as expected 
 ln_tests 6 TPASS: Directory and link content is equal 
  
 Summary: 
@@ -481,19 +491,20 @@ failed   0
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>1</strong></p></td>
+<td><p><strong>0</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>4</strong></p></td>
-<td><p><strong>2</strong></p></td></tr>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>4</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>12</strong></p></td>
 <td><p><strong>mkdir01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:40 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:15 2019</strong></pre></p></td>
 <td><p><strong> "mkdir_tests.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>mkdir_tests 1 TPASS: mkdir dir 2> mkdir.out failed as expected 
+<td><pre><strong>mkdir_tests 1 TINFO: timeout per run is 0h 5m 0s 
+mkdir_tests 1 TPASS: mkdir dir 2> mkdir.out failed as expected 
 mkdir_tests 1 TFAIL: Got wrong error message 
 mkdir: невозможно создать каталог «dir»: Файл существует 
 mkdir_tests 2 TPASS: mkdir some/long/path/of/several/directories 2> mkdir.out failed as expected 
@@ -507,7 +518,7 @@ failed   2
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>0</strong></p></td>
+<td><p><strong>1</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>1</strong></p></td>
 <td><p><strong>no</strong></p></td>
@@ -515,11 +526,12 @@ warnings 0
 <td><p><strong>2</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>13</strong></p></td>
 <td><p><strong>mv01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:40 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:16 2019</strong></pre></p></td>
 <td><p><strong> "mv_tests.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>mv_tests 1 TINFO: Test #1: mv <dir1> <dir2> will move dir1 to dir2 and all its contents 
+<td><pre><strong>mv_tests 1 TINFO: timeout per run is 0h 5m 0s 
+mv_tests 1 TINFO: Test #1: mv <dir1> <dir2> will move dir1 to dir2 and all its contents 
 mv_tests 1 TINFO: Test #1: Creating 10 directories. 
 mv_tests 1 TINFO: Test #1: filling each dir with 10 files. 
 mv_tests 1 TINFO: Test #1: creating output file 
@@ -540,15 +552,16 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>8</strong></p></td>
-<td><p><strong>10</strong></p></td></tr>
+<td><p><strong>5</strong></p></td>
+<td><p><strong>17</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>14</strong></p></td>
 <td><p><strong>du01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:40 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:16 2019</strong></pre></p></td>
 <td><p><strong> "du01.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>du01 1 TPASS: 'du' passed 
+<td><pre><strong>du01 1 TINFO: timeout per run is 0h 5m 0s 
+du01 1 TPASS: 'du' passed 
 du01 2 TPASS: 'du testfile' passed 
 du01 3 TPASS: 'du -a' passed 
 du01 4 TPASS: 'du --all' passed 
@@ -592,23 +605,24 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>1</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>6</strong></p></td>
-<td><p><strong>6</strong></p></td></tr>
+<td><p><strong>4</strong></p></td>
+<td><p><strong>9</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>15</strong></p></td>
 <td><p><strong>df01_ext2_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:40 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:16 2019</strong></pre></p></td>
 <td><p><strong> "df01.sh -f ext2" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-df01 1 TINFO: Formatting /dev/loop11 with ext2 extra opts='' 
+<td><pre><strong>df01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+df01 1 TINFO: Formatting /dev/loop0 with ext2 extra opts='' 
 df01 1 TPASS: 'df -P' passed. 
 df01 2 TPASS: 'df -a -P' passed. 
 df01 3 TPASS: 'df -i -P' passed. 
 df01 4 TPASS: 'df -k -P' passed. 
 df01 5 TPASS: 'df -t ext2 -P' passed. 
 df01 6 TPASS: 'df -T -P' passed. 
-df01 7 TPASS: 'df -v /dev/loop11 -P' passed. 
+df01 7 TPASS: 'df -v /dev/loop0 -P' passed. 
 df01 8 TPASS: 'df -h' passed. 
 df01 9 TPASS: 'df -H' passed. 
 df01 10 TPASS: 'df -m' passed. 
@@ -621,27 +635,28 @@ failed   0
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>2</strong></p></td>
+<td><p><strong>1</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>12</strong></p></td>
-<td><p><strong>21</strong></p></td></tr>
+<td><p><strong>7</strong></p></td>
+<td><p><strong>29</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>16</strong></p></td>
 <td><p><strong>df01_ext3_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:42 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:17 2019</strong></pre></p></td>
 <td><p><strong> "df01.sh -f ext3" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-df01 1 TINFO: Formatting /dev/loop11 with ext3 extra opts='' 
+<td><pre><strong>df01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+df01 1 TINFO: Formatting /dev/loop0 with ext3 extra opts='' 
 df01 1 TPASS: 'df -P' passed. 
 df01 2 TPASS: 'df -a -P' passed. 
 df01 3 TPASS: 'df -i -P' passed. 
 df01 4 TPASS: 'df -k -P' passed. 
 df01 5 TPASS: 'df -t ext3 -P' passed. 
 df01 6 TPASS: 'df -T -P' passed. 
-df01 7 TPASS: 'df -v /dev/loop11 -P' passed. 
+df01 7 TPASS: 'df -v /dev/loop0 -P' passed. 
 df01 8 TPASS: 'df -h' passed. 
 df01 9 TPASS: 'df -H' passed. 
 df01 10 TPASS: 'df -m' passed. 
@@ -654,27 +669,28 @@ failed   0
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>0</strong></p></td>
+<td><p><strong>1</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>13</strong></p></td>
-<td><p><strong>25</strong></p></td></tr>
+<td><p><strong>11</strong></p></td>
+<td><p><strong>36</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>17</strong></p></td>
 <td><p><strong>df01_ext4_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:42 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:18 2019</strong></pre></p></td>
 <td><p><strong> "df01.sh -f ext4" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-df01 1 TINFO: Formatting /dev/loop11 with ext4 extra opts='' 
+<td><pre><strong>df01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+df01 1 TINFO: Formatting /dev/loop0 with ext4 extra opts='' 
 df01 1 TPASS: 'df -P' passed. 
 df01 2 TPASS: 'df -a -P' passed. 
 df01 3 TPASS: 'df -i -P' passed. 
 df01 4 TPASS: 'df -k -P' passed. 
 df01 5 TPASS: 'df -t ext4 -P' passed. 
 df01 6 TPASS: 'df -T -P' passed. 
-df01 7 TPASS: 'df -v /dev/loop11 -P' passed. 
+df01 7 TPASS: 'df -v /dev/loop0 -P' passed. 
 df01 8 TPASS: 'df -h' passed. 
 df01 9 TPASS: 'df -H' passed. 
 df01 10 TPASS: 'df -m' passed. 
@@ -687,21 +703,22 @@ failed   0
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>1</strong></p></td>
+<td><p><strong>6</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>10</strong></p></td>
-<td><p><strong>24</strong></p></td></tr>
+<td><p><strong>7</strong></p></td>
+<td><p><strong>26</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>18</strong></p></td>
 <td><p><strong>df01_xfs_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:43 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:24 2019</strong></pre></p></td>
 <td><p><strong> "df01.sh -f xfs" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
+<td><pre><strong>df01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
 df01 1 TCONF: 'mkfs.xfs' not found 
-df01 1 TINFO: The /dev/loop11 is not mounted, skipping umount 
+df01 1 TINFO: The /dev/loop0 is not mounted, skipping umount 
  
 Summary: 
 passed   0 
@@ -714,22 +731,23 @@ warnings 0
 <td><p><strong>32</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>1</strong></p></td>
-<td><p><strong>1</strong></p></td></tr>
+<td><p><strong>3</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>19</strong></p></td>
 <td><p><strong>df01_vfat_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:43 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:24 2019</strong></pre></p></td>
 <td><p><strong> "df01.sh -f vfat" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-df01 1 TINFO: Formatting /dev/loop11 with vfat extra opts='' 
+<td><pre><strong>df01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+df01 1 TINFO: Formatting /dev/loop0 with vfat extra opts='' 
 df01 1 TPASS: 'df -P' passed. 
 df01 2 TPASS: 'df -a -P' passed. 
 df01 3 TPASS: 'df -i -P' passed. 
 df01 4 TPASS: 'df -k -P' passed. 
 df01 5 TPASS: 'df -t vfat -P' passed. 
 df01 6 TPASS: 'df -T -P' passed. 
-df01 7 TPASS: 'df -v /dev/loop11 -P' passed. 
+df01 7 TPASS: 'df -v /dev/loop0 -P' passed. 
 df01 8 TPASS: 'df -h' passed. 
 df01 9 TPASS: 'df -H' passed. 
 df01 10 TPASS: 'df -m' passed. 
@@ -742,49 +760,62 @@ failed   0
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>0</strong></p></td>
+<td><p><strong>2</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>12</strong></p></td>
-<td><p><strong>20</strong></p></td></tr>
+<td><p><strong>7</strong></p></td>
+<td><p><strong>24</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>20</strong></p></td>
 <td><p><strong>df01_exfat_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:43 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:26 2019</strong></pre></p></td>
 <td><p><strong> "df01.sh -f exfat" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-df01 1 TCONF: 'mkfs.exfat' not found 
-df01 1 TINFO: The /dev/loop11 is not mounted, skipping umount 
+<td><pre><strong>df01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+df01 1 TINFO: Formatting /dev/loop0 with exfat extra opts='' 
+df01 1 TPASS: 'df -P' passed. 
+df01 2 TPASS: 'df -a -P' passed. 
+df01 3 TPASS: 'df -i -P' passed. 
+df01 4 TPASS: 'df -k -P' passed. 
+df01 5 TPASS: 'df -t exfat -P' passed. 
+df01 6 TPASS: 'df -T -P' passed. 
+df01 7 TPASS: 'df -v /dev/loop0 -P' passed. 
+df01 8 TPASS: 'df -h' passed. 
+df01 9 TPASS: 'df -H' passed. 
+df01 10 TPASS: 'df -m' passed. 
+df01 11 TPASS: 'df --version' passed. 
+df01 12 TPASS: 'df -x exfat -P' passed. 
  
 Summary: 
-passed   0 
+passed   12 
 failed   0 
-skipped  1 
+skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
 <td><p><strong>1</strong></p></td>
 <td><p><strong>exited<strong></p></td>
-<td><p><strong>32</strong></p></td>
+<td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>1</strong></p></td>
-<td><p><strong>1</strong></p></td></tr>
+<td><p><strong>8</strong></p></td>
+<td><p><strong>26</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>21</strong></p></td>
 <td><p><strong>df01_ntfs_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:37:44 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:27 2019</strong></pre></p></td>
 <td><p><strong> "df01.sh -f ntfs" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-df01 1 TINFO: Formatting /dev/loop11 with ntfs extra opts='' 
+<td><pre><strong>df01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+df01 1 TINFO: Formatting /dev/loop0 with ntfs extra opts='' 
 df01 1 TPASS: 'df -P' passed. 
 df01 2 TPASS: 'df -a -P' passed. 
 df01 3 TPASS: 'df -i -P' passed. 
 df01 4 TPASS: 'df -k -P' passed. 
 df01 5 TPASS: 'df -t fuseblk -P' passed. 
 df01 6 TPASS: 'df -T -P' passed. 
-df01 7 TPASS: 'df -v /dev/loop11 -P' passed. 
+df01 7 TPASS: 'df -v /dev/loop0 -P' passed. 
 df01 8 TPASS: 'df -h' passed. 
 df01 9 TPASS: 'df -H' passed. 
 df01 10 TPASS: 'df -m' passed. 
@@ -797,47 +828,23 @@ failed   0
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>18</strong></p></td>
+<td><p><strong>12</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>13</strong></p></td>
-<td><p><strong>75</strong></p></td></tr>
+<td><p><strong>10</strong></p></td>
+<td><p><strong>101</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>22</strong></p></td>
 <td><p><strong>mkfs01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:02 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:39 2019</strong></pre></p></td>
 <td><p><strong> "mkfs01.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-mkfs01 1 TPASS: 'mkfs   /dev/loop11 ' passed. 
-mkfs01 2 TPASS: 'mkfs   /dev/loop11 16000' passed. 
-mkfs01 3 TPASS: 'mkfs  -c /dev/loop11 ' passed. 
-mkfs01 4 TPASS: 'mkfs -V   ' passed. 
-mkfs01 5 TPASS: 'mkfs -h   ' passed. 
- 
-Summary: 
-passed   5 
-failed   0 
-skipped  0 
-warnings 0 
-</strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>1</strong></p></td>
-<td><p><strong>exited<strong></p></td>
-<td><p><strong>0</strong></p></td>
-<td><p><strong>no</strong></p></td>
-<td><p><strong>3</strong></p></td>
-<td><p><strong>12</strong></p></td></tr>
-<tr bgcolor=#66ff66><td><p><strong>23</strong></p></td>
-<td><p><strong>mkfs01_ext2_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:03 2018</strong></pre></p></td>
-<td><p><strong> "mkfs01.sh -f ext2" </strong></p></td>
-<td><p><strong>""</strong></p></td>
-<td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-mkfs01 1 TPASS: 'mkfs -t ext2  /dev/loop11 ' passed. 
-mkfs01 2 TPASS: 'mkfs -t ext2  /dev/loop11 16000' passed. 
-mkfs01 3 TPASS: 'mkfs -t ext2 -c /dev/loop11 ' passed. 
+<td><pre><strong>mkfs01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+mkfs01 1 TPASS: 'mkfs   /dev/loop0 ' passed. 
+mkfs01 2 TPASS: 'mkfs   /dev/loop0 16000' passed. 
+mkfs01 3 TPASS: 'mkfs  -c /dev/loop0 ' passed. 
 mkfs01 4 TPASS: 'mkfs -V   ' passed. 
 mkfs01 5 TPASS: 'mkfs -h   ' passed. 
  
@@ -852,17 +859,44 @@ warnings 0
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>4</strong></p></td>
-<td><p><strong>12</strong></p></td></tr>
+<td><p><strong>16</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>23</strong></p></td>
+<td><p><strong>mkfs01_ext2_sh</strong></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:40 2019</strong></pre></p></td>
+<td><p><strong> "mkfs01.sh -f ext2" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>mkfs01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+mkfs01 1 TPASS: 'mkfs -t ext2  /dev/loop0 ' passed. 
+mkfs01 2 TPASS: 'mkfs -t ext2  /dev/loop0 16000' passed. 
+mkfs01 3 TPASS: 'mkfs -t ext2 -c /dev/loop0 ' passed. 
+mkfs01 4 TPASS: 'mkfs -V   ' passed. 
+mkfs01 5 TPASS: 'mkfs -h   ' passed. 
+ 
+Summary: 
+passed   5 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>4</strong></p></td>
+<td><p><strong>15</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>24</strong></p></td>
 <td><p><strong>mkfs01_ext3_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:04 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:41 2019</strong></pre></p></td>
 <td><p><strong> "mkfs01.sh -f ext3" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-mkfs01 1 TPASS: 'mkfs -t ext3  /dev/loop11 ' passed. 
-mkfs01 2 TPASS: 'mkfs -t ext3  /dev/loop11 16000' passed. 
-mkfs01 3 TPASS: 'mkfs -t ext3 -c /dev/loop11 ' passed. 
+<td><pre><strong>mkfs01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+mkfs01 1 TPASS: 'mkfs -t ext3  /dev/loop0 ' passed. 
+mkfs01 2 TPASS: 'mkfs -t ext3  /dev/loop0 16000' passed. 
+mkfs01 3 TPASS: 'mkfs -t ext3 -c /dev/loop0 ' passed. 
 mkfs01 4 TPASS: 'mkfs -V   ' passed. 
 mkfs01 5 TPASS: 'mkfs -h   ' passed. 
  
@@ -877,17 +911,18 @@ warnings 0
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>9</strong></p></td>
-<td><p><strong>18</strong></p></td></tr>
+<td><p><strong>27</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>25</strong></p></td>
 <td><p><strong>mkfs01_ext4_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:05 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:42 2019</strong></pre></p></td>
 <td><p><strong> "mkfs01.sh -f ext4" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-mkfs01 1 TPASS: 'mkfs -t ext4  /dev/loop11 ' passed. 
-mkfs01 2 TPASS: 'mkfs -t ext4  /dev/loop11 16000' passed. 
-mkfs01 3 TPASS: 'mkfs -t ext4 -c /dev/loop11 ' passed. 
+<td><pre><strong>mkfs01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+mkfs01 1 TPASS: 'mkfs -t ext4  /dev/loop0 ' passed. 
+mkfs01 2 TPASS: 'mkfs -t ext4  /dev/loop0 16000' passed. 
+mkfs01 3 TPASS: 'mkfs -t ext4 -c /dev/loop0 ' passed. 
 mkfs01 4 TPASS: 'mkfs -V   ' passed. 
 mkfs01 5 TPASS: 'mkfs -h   ' passed. 
  
@@ -901,15 +936,16 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>3</strong></p></td>
-<td><p><strong>13</strong></p></td></tr>
+<td><p><strong>4</strong></p></td>
+<td><p><strong>16</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>26</strong></p></td>
 <td><p><strong>mkfs01_xfs_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:06 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:43 2019</strong></pre></p></td>
 <td><p><strong> "mkfs01.sh -f xfs" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
+<td><pre><strong>mkfs01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
 mkfs01 1 TCONF: 'mkfs.xfs' not found 
  
 Summary: 
@@ -922,18 +958,19 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>32</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>2</strong></p></td>
+<td><p><strong>1</strong></p></td>
 <td><p><strong>1</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>27</strong></p></td>
 <td><p><strong>mkfs01_btrfs_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:06 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:43 2019</strong></pre></p></td>
 <td><p><strong> "mkfs01.sh -f btrfs" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-mkfs01 1 TPASS: 'mkfs -t btrfs  -f /dev/loop11 ' passed. 
-mkfs01 2 TCONF: 'mkfs -t btrfs  -f /dev/loop11 16000' not supported. 
-mkfs01 3 TCONF: 'mkfs -t btrfs -c -f /dev/loop11 ' not supported. 
+<td><pre><strong>mkfs01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+mkfs01 1 TPASS: 'mkfs -t btrfs  -f /dev/loop0 ' passed. 
+mkfs01 2 TCONF: 'mkfs -t btrfs  -f /dev/loop0 16000' not supported. 
+mkfs01 3 TCONF: 'mkfs -t btrfs -c -f /dev/loop0 ' not supported. 
 mkfs01 4 TPASS: 'mkfs -V   ' passed. 
 mkfs01 5 TPASS: 'mkfs -h   ' passed. 
  
@@ -948,42 +985,18 @@ warnings 0
 <td><p><strong>32</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>2</strong></p></td>
-<td><p><strong>4</strong></p></td></tr>
+<td><p><strong>6</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>28</strong></p></td>
 <td><p><strong>mkfs01_minix_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:06 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:43 2019</strong></pre></p></td>
 <td><p><strong> "mkfs01.sh -f minix" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-mkfs01 1 TPASS: 'mkfs -t minix  /dev/loop11 ' passed. 
-mkfs01 2 TPASS: 'mkfs -t minix  /dev/loop11 16000' passed. 
-mkfs01 3 TPASS: 'mkfs -t minix -c /dev/loop11 ' passed. 
-mkfs01 4 TPASS: 'mkfs -V   ' passed. 
-mkfs01 5 TPASS: 'mkfs -h   ' passed. 
- 
-Summary: 
-passed   5 
-failed   0 
-skipped  0 
-warnings 0 
-</strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>0</strong></p></td>
-<td><p><strong>exited<strong></p></td>
-<td><p><strong>0</strong></p></td>
-<td><p><strong>no</strong></p></td>
-<td><p><strong>3</strong></p></td>
-<td><p><strong>10</strong></p></td></tr>
-<tr bgcolor=#66ff66><td><p><strong>29</strong></p></td>
-<td><p><strong>mkfs01_msdos_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:06 2018</strong></pre></p></td>
-<td><p><strong> "mkfs01.sh -f msdos" </strong></p></td>
-<td><p><strong>""</strong></p></td>
-<td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-mkfs01 1 TPASS: 'mkfs -t msdos  /dev/loop11 ' passed. 
-mkfs01 2 TPASS: 'mkfs -t msdos  /dev/loop11 16000' passed. 
-mkfs01 3 TPASS: 'mkfs -t msdos -c /dev/loop11 ' passed. 
+<td><pre><strong>mkfs01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+mkfs01 1 TPASS: 'mkfs -t minix  /dev/loop0 ' passed. 
+mkfs01 2 TPASS: 'mkfs -t minix  /dev/loop0 16000' passed. 
+mkfs01 3 TPASS: 'mkfs -t minix -c /dev/loop0 ' passed. 
 mkfs01 4 TPASS: 'mkfs -V   ' passed. 
 mkfs01 5 TPASS: 'mkfs -h   ' passed. 
  
@@ -997,18 +1010,19 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>5</strong></p></td>
-<td><p><strong>20</strong></p></td></tr>
-<tr bgcolor=#66ff66><td><p><strong>30</strong></p></td>
-<td><p><strong>mkfs01_vfat_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:07 2018</strong></pre></p></td>
-<td><p><strong> "mkfs01.sh -f vfat" </strong></p></td>
+<td><p><strong>3</strong></p></td>
+<td><p><strong>11</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>29</strong></p></td>
+<td><p><strong>mkfs01_msdos_sh</strong></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:44 2019</strong></pre></p></td>
+<td><p><strong> "mkfs01.sh -f msdos" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-mkfs01 1 TPASS: 'mkfs -t vfat  /dev/loop11 ' passed. 
-mkfs01 2 TPASS: 'mkfs -t vfat  /dev/loop11 16000' passed. 
-mkfs01 3 TPASS: 'mkfs -t vfat -c /dev/loop11 ' passed. 
+<td><pre><strong>mkfs01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+mkfs01 1 TPASS: 'mkfs -t msdos  /dev/loop0 ' passed. 
+mkfs01 2 TPASS: 'mkfs -t msdos  /dev/loop0 16000' passed. 
+mkfs01 3 TPASS: 'mkfs -t msdos -c /dev/loop0 ' passed. 
 mkfs01 4 TPASS: 'mkfs -V   ' passed. 
 mkfs01 5 TPASS: 'mkfs -h   ' passed. 
  
@@ -1022,18 +1036,45 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>2</strong></p></td>
-<td><p><strong>23</strong></p></td></tr>
+<td><p><strong>4</strong></p></td>
+<td><p><strong>22</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>30</strong></p></td>
+<td><p><strong>mkfs01_vfat_sh</strong></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:44 2019</strong></pre></p></td>
+<td><p><strong> "mkfs01.sh -f vfat" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>mkfs01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+mkfs01 1 TPASS: 'mkfs -t vfat  /dev/loop0 ' passed. 
+mkfs01 2 TPASS: 'mkfs -t vfat  /dev/loop0 16000' passed. 
+mkfs01 3 TPASS: 'mkfs -t vfat -c /dev/loop0 ' passed. 
+mkfs01 4 TPASS: 'mkfs -V   ' passed. 
+mkfs01 5 TPASS: 'mkfs -h   ' passed. 
+ 
+Summary: 
+passed   5 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>4</strong></p></td>
+<td><p><strong>21</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>31</strong></p></td>
 <td><p><strong>mkfs01_ntfs_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:07 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:44 2019</strong></pre></p></td>
 <td><p><strong> "mkfs01.sh -f ntfs" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-mkfs01 1 TPASS: 'mkfs -t ntfs  /dev/loop11 ' passed. 
-mkfs01 2 TPASS: 'mkfs -t ntfs  /dev/loop11 16000' passed. 
-mkfs01 3 TCONF: 'mkfs -t ntfs -c /dev/loop11 ' not supported. 
+<td><pre><strong>mkfs01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+mkfs01 1 TPASS: 'mkfs -t ntfs  /dev/loop0 ' passed. 
+mkfs01 2 TPASS: 'mkfs -t ntfs  /dev/loop0 16000' passed. 
+mkfs01 3 TCONF: 'mkfs -t ntfs -c /dev/loop0 ' not supported. 
 mkfs01 4 TPASS: 'mkfs -V   ' passed. 
 mkfs01 5 TPASS: 'mkfs -h   ' passed. 
  
@@ -1043,55 +1084,55 @@ failed   0
 skipped  1 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>18</strong></p></td>
+<td><p><strong>12</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>32</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>4</strong></p></td>
-<td><p><strong>55</strong></p></td></tr>
+<td><p><strong>77</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>32</strong></p></td>
 <td><p><strong>mkswap01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:25 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:56 2019</strong></pre></p></td>
 <td><p><strong> "mkswap01.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop11' 
-mkswap01 1 TPASS: 'mkswap   /dev/loop11 ' passed. 
-mkswap01 2 TPASS: 'mkswap   /dev/loop11 262140' passed. 
-mkswap01 3 TINFO: Can not do swapon on /dev/loop11. 
+<td><pre><strong>mkswap01 1 TINFO: timeout per run is 0h 5m 0s 
+tst_device.c:230: INFO: Using test device LTP_DEV='/dev/loop0' 
+mkswap01 1 TPASS: 'mkswap   /dev/loop0 ' passed. 
+mkswap01 2 TPASS: 'mkswap   /dev/loop0 262140' passed. 
+mkswap01 3 TINFO: Can not do swapon on /dev/loop0. 
 mkswap01 3 TINFO: Device size specified by 'mkswap' greater than real size. 
 mkswap01 3 TINFO: Swapon failed expectedly. 
-mkswap01 3 TPASS: 'mkswap -f  /dev/loop11 262148' passed. 
-mkswap01 4 TPASS: 'mkswap -c  /dev/loop11 ' passed. 
-mkswap01 5 TINFO: Can not do swapon on /dev/loop11. 
+mkswap01 3 TPASS: 'mkswap -f  /dev/loop0 262148' passed. 
+mkswap01 4 TPASS: 'mkswap -c  /dev/loop0 ' passed. 
+mkswap01 5 TINFO: Can not do swapon on /dev/loop0. 
 mkswap01 5 TINFO: Page size specified by 'mkswap -p' is not equal to system's page size. 
 mkswap01 5 TINFO: Swapon failed expectedly. 
-mkswap01 5 TPASS: 'mkswap -p 2048 /dev/loop11 ' passed. 
-mkswap01 6 TPASS: 'mkswap -L ltp_testswap /dev/loop11 ' passed. 
-mkswap01 7 TPASS: 'mkswap -v1  /dev/loop11 ' passed. 
-mkswap01 8 TPASS: 'mkswap -U 9e7cd7bb-8135-495c-a5b7-825274667e71 /dev/loop11 ' passed. 
-mkswap01 9 TPASS: 'mkswap -V  /dev/loop11 ' passed. 
-mkswap01 10 TPASS: 'mkswap -h  /dev/loop11 ' passed. 
+mkswap01 5 TPASS: 'mkswap -p 2048 /dev/loop0 ' passed. 
+mkswap01 6 TPASS: 'mkswap -L ltp_testswap /dev/loop0 ' passed. 
+mkswap01 7 TPASS: 'mkswap -v1  /dev/loop0 ' passed. 
+mkswap01 8 TBROK: "check_for_file /dev/disk/by-uuid/eed2cb5b-d158-4b88-8393-106faf240ca8" timed out 
  
 Summary: 
-passed   10 
+passed   7 
 failed   0 
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>1</strong></p></td>
+<td><p><strong>2</strong></p></td>
 <td><p><strong>exited<strong></p></td>
-<td><p><strong>0</strong></p></td>
+<td><p><strong>2</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>9</strong></p></td>
-<td><p><strong>30</strong></p></td></tr>
+<td><p><strong>8</strong></p></td>
+<td><p><strong>32</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>33</strong></p></td>
 <td><p><strong>which01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:26 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:58 2019</strong></pre></p></td>
 <td><p><strong> "which01.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>which01 1 TPASS: 'which  pname' passed. 
+<td><pre><strong>which01 1 TINFO: timeout per run is 0h 5m 0s 
+which01 1 TPASS: 'which  pname' passed. 
 which01 2 TCONF: 'which -all pname' not supported. 
 which01 3 TPASS: 'which -a pname' passed. 
 which01 4 TCONF: 'alias | which --read-alias pname' not supported. 
@@ -1113,14 +1154,15 @@ warnings 0
 <td><p><strong>32</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>3</strong></p></td>
-<td><p><strong>2</strong></p></td></tr>
+<td><p><strong>5</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>34</strong></p></td>
 <td><p><strong>lsmod01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:26 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:58 2019</strong></pre></p></td>
 <td><p><strong> "lsmod01.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>lsmod01 1 TPASS: 'lsmod' passed. 
+<td><pre><strong>lsmod01 1 TINFO: timeout per run is 0h 5m 0s 
+lsmod01 1 TPASS: 'lsmod' passed. 
  
 Summary: 
 passed   1 
@@ -1132,15 +1174,16 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>2</strong></p></td>
-<td><p><strong>2</strong></p></td></tr>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>3</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>35</strong></p></td>
 <td><p><strong>insmod01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:26 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:58 2019</strong></pre></p></td>
 <td><p><strong> "insmod01.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>insmod01 1 TINFO: Found module at 'ltp_insmod01.ko' 
+<td><pre><strong>insmod01 1 TINFO: timeout per run is 0h 5m 0s 
+insmod01 1 TINFO: Found module at 'ltp_insmod01.ko' 
 insmod01 1 TINFO: running rmmod ltp_insmod01 
 insmod01 1 TPASS: insmod passed 
  
@@ -1158,11 +1201,12 @@ warnings 0
 <td><p><strong>1</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>36</strong></p></td>
 <td><p><strong>wc01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:26 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:58 2019</strong></pre></p></td>
 <td><p><strong> "wc01.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>wc01 1 TPASS: wc passed with -c option. 
+<td><pre><strong>wc01 1 TINFO: timeout per run is 0h 5m 0s 
+wc01 1 TPASS: wc passed with -c option. 
 wc01 2 TPASS: wc passed with --bytes option. 
 wc01 3 TPASS: wc passed with -l option. 
 wc01 4 TPASS: wc passed with --lines option. 
@@ -1185,15 +1229,16 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>5</strong></p></td>
+<td><p><strong>4</strong></p></td>
 <td><p><strong>5</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>37</strong></p></td>
 <td><p><strong>keyctl01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:26 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:58 2019</strong></pre></p></td>
 <td><p><strong> "keyctl01.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>keyctl01 1 TPASS: Bug not reproduced 
+<td><pre><strong>keyctl01 1 TINFO: timeout per run is 0h 5m 0s 
+keyctl01 1 TPASS: Bug not reproduced 
  
 Summary: 
 passed   1 
@@ -1205,15 +1250,16 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>11</strong></p></td>
+<td><p><strong>8</strong></p></td>
 <td><p><strong>13</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>38</strong></p></td>
 <td><p><strong>gdb01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:27 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:48:59 2019</strong></pre></p></td>
 <td><p><strong> "gdb01.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>GNU gdb (Ubuntu 8.2-0ubuntu1) 8.2 
+<td><pre><strong>gdb01 1 TINFO: timeout per run is 0h 5m 0s 
+GNU gdb (Ubuntu 8.2-0ubuntu1) 8.2 
 Copyright (C) 2018 Free Software Foundation, Inc. 
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html> 
 This is free software: you are free to change and redistribute it. 
@@ -1280,7 +1326,7 @@ systemd-timesync:x:127:131:systemd Time Synchronization,,,:/run/systemd:/usr/sbi
 nm-openvpn:x:128:133:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin 
 systemd-coredump:x:998:998:systemd Core Dumper:/:/sbin/nologin 
 bitcoin:x:129:134::/var/lib/bitcoin:/usr/sbin/nologin 
-[Inferior 1 (process 25193) exited normally] 
+[Inferior 1 (process 6329) exited normally] 
 gdb01 1 TPASS: gdb attached to process and completed run 
  
 Summary: 
@@ -1293,29 +1339,44 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>31</strong></p></td>
-<td><p><strong>8</strong></p></td></tr>
+<td><p><strong>33</strong></p></td>
+<td><p><strong>9</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>39</strong></p></td>
 <td><p><strong>unshare01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:28 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:49:00 2019</strong></pre></p></td>
 <td><p><strong> "unshare01.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>/opt/ltp/testcases/bin/unshare01.sh: 124: local: -u: bad variable name 
+<td><pre><strong>unshare01 1 TINFO: timeout per run is 0h 5m 0s 
+unshare01 1 TPASS: unshare --user id -u got correct uid/gid 
+unshare01 2 TPASS: unshare --user id -g got correct uid/gid 
+unshare01 3 TPASS: unshare --user --map-root-user id -u got correct uid/gid 
+unshare01 4 TPASS: unshare --user --map-root-user id -g got correct uid/gid 
+unshare01 5 TPASS: unshare --mount mount --bind dir_A dir_B got bind info as expected 
+unshare01 6 TPASS: unshare --mount --propagation shared mount --bind dir_A dir_B got bind info as expected 
+unshare01 7 TPASS: unshare --user --map-root-user --mount mount --bind dir_A dir_B got bind info as expected 
+unshare01 8 TPASS: unshare --user --map-root-user --mount --propagation shared mount --bind dir_A dir_B got bind info as expected 
+ 
+Summary: 
+passed   8 
+failed   0 
+skipped  0 
+warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>exited<strong></p></td>
-<td><p><strong>2</strong></p></td>
+<td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>1</strong></p></td>
-<td><p><strong>1</strong></p></td></tr>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>5</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>40</strong></p></td>
 <td><p><strong>sysctl01_sh</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:38:28 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:49:00 2019</strong></pre></p></td>
 <td><p><strong> "sysctl01.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>sysctl01 1 TCONF: sched_time_avg(_ms) was not supported 
+<td><pre><strong>sysctl01 1 TINFO: timeout per run is 0h 5m 0s 
+sysctl01 1 TCONF: sched_time_avg(_ms) was not supported 
  
 Summary: 
 passed   0 
@@ -1339,9 +1400,9 @@ incrementing stop
 <table border="1" cellspacing="3"><tbody>
 <tr>
 <td bgcolor="#ff0000"> <strong>Test Summary</strong></p></td><td bgcolor="#ff0000"><strong>Pan reported some Tests FAIL</strong></p></td></tr>
-<tr><td><strong>LTP Version</strong> </td><td><strong> 20180926     </strong></td></tr>
-<tr><td><strong>Start Time</strong>  </td><td><strong> Чтв ноя  8 19:37:25 EET 2018 </strong></td></tr>
-<tr><td><strong>End Time</strong>    </td><td><strong> Чтв ноя  8 19:38:28 EET 2018   </strong></td></tr>
+<tr><td><strong>LTP Version</strong> </td><td><strong> 20190115     </strong></td></tr>
+<tr><td><strong>Start Time</strong>  </td><td><strong> Птн фев  8 12:48:13 EET 2019 </strong></td></tr>
+<tr><td><strong>End Time</strong>    </td><td><strong> Птн фев  8 12:49:05 EET 2019   </strong></td></tr>
 <tr><td><strong>Log Result</strong>  </td><td><a href="file:///opt/ltp/results/">      <strong>/opt/ltp/results</strong></a></td></tr>
 <tr><td><strong>Output/Failed Result</strong></td><td><a href="file:///opt/ltp/output/"> <strong>/opt/ltp/output</strong></a></td></tr>
 <tr><td><strong>Total Tests</strong></td><td><strong>40                         </strong></td></tr>
@@ -1350,7 +1411,7 @@ incrementing stop
 <tr><td><strong>Total Test TBROK</strong></td><td><strong> 0 </strong></td></tr>
 <tr><td><strong>Total Test TWARN</strong></td><td><strong> 0 </strong></td></tr>
 <tr><td><strong>Total Test TCONF</strong></td><td><strong> 0 </strong></td></tr>
-<tr><td><strong>Kernel Version</strong></td><td><strong> Linux version 4.19.1-dragon-westmere (buildd@lcy01-amd64-024) (gcc version 8.2.0 (Ubuntu 8.2.0-7ubuntu1)) #201811060006-Ubuntu SMP Tue Nov 6 20:52:51 UTC 2018 </strong></td></tr>
-<tr><td><strong>Machine Architecture</strong></td><td><strong> x86_64 </strong></td></tr>
+<tr><td><strong>Kernel Version</strong></td><td><strong>   </strong></td></tr>
+<tr><td><strong>Machine Architecture</strong></td><td><strong>  </strong></td></tr>
 <tr><td><strong>Hostname</strong>  </td> <td><strong>wip
   </strong></td></tr></tbody></table></div></body></html>

@@ -2,11 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
 <head>
   <title>Linux Test Project - Results</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
 
-<h1>LTP Output/Log (Report Generated on Чтв ноя  8 19:48:26 EET 2018) </h1>
+<h1>LTP Output/Log (Report Generated on Птн фев  8 13:01:17 EET 2019) </h1>
 <table border="1" cellspacing="3">
   <tbody>
     <tr>
@@ -57,11 +56,11 @@
     </tr>
 <tr bgcolor=#66ff66><td><p><strong>1</strong></p></td>
 <td><p><strong>kmsg01</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:48:26 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 13:01:17 2019</strong></pre></p></td>
 <td><p><strong> "kmsg01" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_test.c:1085: INFO: Timeout per run is 0h 05m 00s 
+<td><pre><strong>tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
 kmsg01.c:301: INFO: TEST: injected messages appear in /dev/kmsg 
 kmsg01.c:343: PASS: injected messages found in log 
 kmsg01.c:344: PASS: sequence numbers grow as expected 
@@ -75,7 +74,7 @@ kmsg01.c:358: INFO: TEST: mult. readers will get same first message
 kmsg01.c:394: PASS: all readers got same message on first read 
 kmsg01.c:412: INFO: TEST: read returns EPIPE when messages get overwritten 
 kmsg01.c:417: INFO: first seqno: 0 
-kmsg01.c:430: INFO: first seqno now: 464 
+kmsg01.c:430: INFO: first seqno now: 460 
 kmsg01.c:442: PASS: read failed with EPIPE as expected 
 kmsg01.c:448: INFO: TEST: Subsequent reads() will return available records again 
 kmsg01.c:452: PASS: after EPIPE read returned next record 
@@ -92,15 +91,15 @@ failed   0
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>1</strong></p></td>
+<td><p><strong>0</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>4</strong></p></td>
-<td><p><strong>33</strong></p></td></tr>
+<td><p><strong>3</strong></p></td>
+<td><p><strong>26</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>2</strong></p></td>
 <td><p><strong>fw_load</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:48:27 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 13:01:17 2019</strong></pre></p></td>
 <td><p><strong> "fw_load" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -115,18 +114,18 @@ fw_load     5  TPASS  :  Expect: can't load firmware '.../n4_load_tst.fw'
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>1</strong></p></td>
-<td><p><strong>0</strong></p></td></tr>
+<td><p><strong>1</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>3</strong></p></td>
 <td><p><strong>rtc01</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:48:27 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 13:01:17 2019</strong></pre></p></td>
 <td><p><strong> "rtc01" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>rtc01       0  TINFO  :  RTC READ TEST: 
 rtc01       1  TPASS  :  RTC READ TEST Passed 
-rtc01       0  TINFO  :  Current RTC date/time is 8-11-2018, 17:48:27. 
+rtc01       0  TINFO  :  Current RTC date/time is 8-2-2019, 11:01:17. 
 rtc01       0  TINFO  :  RTC ALARM TEST : 
-rtc01       0  TINFO  :  Alarm time set to 17:48:32. 
+rtc01       0  TINFO  :  Alarm time set to 11:01:22. 
 rtc01       0  TINFO  :  Waiting 5 seconds for the alarm... 
 rtc01       0  TINFO  :  Alarm rang. 
 rtc01       2  TPASS  :  RTC ALARM TEST Passed 
@@ -145,10 +144,10 @@ rtc01       0  TINFO  :  RTC Tests Done!
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>0</strong></p></td>
-<td><p><strong>1</strong></p></td></tr>
+<td><p><strong>0</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>4</strong></p></td>
 <td><p><strong>ltp_acpi</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:48:37 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 13:01:27 2019</strong></pre></p></td>
 <td><p><strong> "ltp_acpi" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -168,39 +167,39 @@ ltp_acpi   10  TPASS  :  Test-case '9'
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>0</strong></p></td>
-<td><p><strong>1</strong></p></td></tr>
+<td><p><strong>2</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>5</strong></p></td>
 <td><p><strong>cpufreq_boost</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:48:37 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 13:01:27 2019</strong></pre></p></td>
 <td><p><strong> "cpufreq_boost" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>cpufreq_boost    0  TINFO  :  found 'acpi_cpufreq' driver, sysfs knob '/sys/devices/system/cpu/cpufreq/boost' 
 cpufreq_boost    0  TINFO  :  maximum speed is 2661000 KHz 
 cpufreq_boost    0  TINFO  :  load CPU0 with boost enabled 
-cpufreq_boost    0  TINFO  :  elapsed time is 1850 ms 
+cpufreq_boost    0  TINFO  :  elapsed time is 1823 ms 
 cpufreq_boost    0  TINFO  :  load CPU0 with boost disabled 
-cpufreq_boost    0  TINFO  :  elapsed time is 2015 ms 
+cpufreq_boost    0  TINFO  :  elapsed time is 2005 ms 
 cpufreq_boost    1  TPASS  :  compare time spent with and without boost (-2%) 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
 <td><p><strong>3</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>384</strong></p></td>
-<td><p><strong>2</strong></p></td></tr>
+<td><p><strong>382</strong></p></td>
+<td><p><strong>0</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>6</strong></p></td>
 <td><p><strong>uaccess</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:48:41 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 13:01:30 2019</strong></pre></p></td>
 <td><p><strong> "uaccess" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
-<td><pre><strong>ltp_uaccess    0  TINFO  :  TC 0: read user-space memory from kernel, ptr '0x5610f06551a0' 
+<td><pre><strong>ltp_uaccess    0  TINFO  :  TC 0: read user-space memory from kernel, ptr '0x55f5411a31a0' 
 ltp_uaccess    1  TPASS  :  copy_from_user(), get_user(): strings equal 
-ltp_uaccess    0  TINFO  :  TC 1: write from kernel-space to user-space, ptr '0x7ffdc53041cc' 
+ltp_uaccess    0  TINFO  :  TC 1: write from kernel-space to user-space, ptr '0x7ffc31cb00dc' 
 ltp_uaccess    2  TPASS  :  copy_to_user(), put_user(): strings equal 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>1</strong></p></td>
+<td><p><strong>0</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
@@ -208,7 +207,7 @@ ltp_uaccess    2  TPASS  :  copy_to_user(), put_user(): strings equal
 <td><p><strong>1</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>7</strong></p></td>
 <td><p><strong>rcu_torture</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:48:42 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 13:01:30 2019</strong></pre></p></td>
 <td><p><strong> "rcu_torture.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -216,22 +215,18 @@ ltp_uaccess    2  TPASS  :  copy_to_user(), put_user(): strings equal
 rcu_torture 1 TINFO: rcu: running 60 sec... 
 rcu_torture 1 TPASS: rcu: completed 
 rcu_torture 2 TINFO: rcu_bh: running 60 sec... 
-rcu_torture 2 TPASS: rcu_bh: completed 
-rcu_torture 3 TINFO: srcu: running 60 sec... 
-rcu_torture 3 TPASS: srcu: completed 
-rcu_torture 4 TINFO: sched: running 60 sec... 
-rcu_torture 4 TPASS: sched: completed 
-rcu_torture 5 TINFO: cleanup 
+rcu_torture 2 TBROK: failed to load module 
+rcu_torture 2 TINFO: cleanup 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>243</strong></p></td>
+<td><p><strong>61</strong></p></td>
 <td><p><strong>exited<strong></p></td>
-<td><p><strong>0</strong></p></td>
+<td><p><strong>2</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>5</strong></p></td>
-<td><p><strong>5</strong></p></td></tr>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>4</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>8</strong></p></td>
 <td><p><strong>lock_torture</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:52:45 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 13:02:31 2019</strong></pre></p></td>
 <td><p><strong> "lock_torture.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -254,11 +249,11 @@ lock_torture 7 TINFO: cleanup
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>8</strong></p></td>
-<td><p><strong>6</strong></p></td></tr>
+<td><p><strong>5</strong></p></td>
+<td><p><strong>8</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>9</strong></p></td>
 <td><p><strong>zram01</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:58:45 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 13:08:32 2019</strong></pre></p></td>
 <td><p><strong> "zram01.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -272,11 +267,11 @@ zram01 2 TINFO: test that we can set compression algorithm
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>2</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>1</strong></p></td>
-<td><p><strong>1</strong></p></td></tr>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>2</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>10</strong></p></td>
 <td><p><strong>zram02</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:58:45 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 13:08:32 2019</strong></pre></p></td>
 <td><p><strong> "zram02.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -284,11 +279,33 @@ zram01 2 TINFO: test that we can set compression algorithm
 zram02 1 TFAIL: unexpected num of devices: 4 
 zram02 2 TINFO: zram cleanup 
 sh: echo: I/O error 
-incrementing stop 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>1</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>1</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>11</strong></p></td>
+<td><p><strong>umip_basic_test</strong></p></td>
+<td><p><pre><strong>Fri Feb  8 13:08:32 2019</strong></pre></p></td>
+<td><p><strong> "umip_basic_test" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_kconfig.c:62: INFO: Parsing kernel config '/boot/config-4.20.7-dragon-westmere' 
+tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
+umip_basic_test.c:130: CONF: cpuinfo show: cpu does not support umip 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+incrementing stop 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>32</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>1</strong></p></td></tr>
@@ -301,18 +318,18 @@ incrementing stop
 <table border="1" cellspacing="3"><tbody>
 <tr>
 <td bgcolor="#ff0000"> <strong>Test Summary</strong></p></td><td bgcolor="#ff0000"><strong>Pan reported some Tests FAIL</strong></p></td></tr>
-<tr><td><strong>LTP Version</strong> </td><td><strong> 20180926     </strong></td></tr>
-<tr><td><strong>Start Time</strong>  </td><td><strong> Чтв ноя  8 19:48:26 EET 2018 </strong></td></tr>
-<tr><td><strong>End Time</strong>    </td><td><strong> Чтв ноя  8 19:58:45 EET 2018   </strong></td></tr>
+<tr><td><strong>LTP Version</strong> </td><td><strong> 20190115     </strong></td></tr>
+<tr><td><strong>Start Time</strong>  </td><td><strong> Птн фев  8 13:01:17 EET 2019 </strong></td></tr>
+<tr><td><strong>End Time</strong>    </td><td><strong> Птн фев  8 13:08:32 EET 2019   </strong></td></tr>
 <tr><td><strong>Log Result</strong>  </td><td><a href="file:///opt/ltp/results/">      <strong>/opt/ltp/results</strong></a></td></tr>
 <tr><td><strong>Output/Failed Result</strong></td><td><a href="file:///opt/ltp/output/"> <strong>/opt/ltp/output</strong></a></td></tr>
-<tr><td><strong>Total Tests</strong></td><td><strong>10                         </strong></td></tr>
-<tr><td><strong>Total Test TPASS:</strong></td><td><strong> 10 </strong></td></tr>
+<tr><td><strong>Total Tests</strong></td><td><strong>11                         </strong></td></tr>
+<tr><td><strong>Total Test TPASS:</strong></td><td><strong> 11 </strong></td></tr>
 <tr><td><strong>Total Test TFAIL:</strong></td><td><strong> 0 </strong></td></tr>
 <tr><td><strong>Total Test TBROK</strong></td><td><strong> 0 </strong></td></tr>
 <tr><td><strong>Total Test TWARN</strong></td><td><strong> 0 </strong></td></tr>
 <tr><td><strong>Total Test TCONF</strong></td><td><strong> 0 </strong></td></tr>
-<tr><td><strong>Kernel Version</strong></td><td><strong> Linux version 4.19.1-dragon-westmere (buildd@lcy01-amd64-024) (gcc version 8.2.0 (Ubuntu 8.2.0-7ubuntu1)) #201811060006-Ubuntu SMP Tue Nov 6 20:52:51 UTC 2018 </strong></td></tr>
-<tr><td><strong>Machine Architecture</strong></td><td><strong> x86_64 </strong></td></tr>
+<tr><td><strong>Kernel Version</strong></td><td><strong>   </strong></td></tr>
+<tr><td><strong>Machine Architecture</strong></td><td><strong>  </strong></td></tr>
 <tr><td><strong>Hostname</strong>  </td> <td><strong>wip
   </strong></td></tr></tbody></table></div></body></html>

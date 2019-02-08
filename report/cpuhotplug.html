@@ -2,11 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
 <head>
   <title>Linux Test Project - Results</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
 
-<h1>LTP Output/Log (Report Generated on Чтв ноя  8 19:39:17 EET 2018) </h1>
+<h1>LTP Output/Log (Report Generated on Птн фев  8 12:50:05 EET 2019) </h1>
 <table border="1" cellspacing="3">
   <tbody>
     <tr>
@@ -57,16 +56,16 @@
     </tr>
 <tr bgcolor=#66ff66><td><p><strong>1</strong></p></td>
 <td><p><strong>cpuhotplug02</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:39:17 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:50:05 2019</strong></pre></p></td>
 <td><p><strong> "cpuhotplug02.sh -c 1 -l 1" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>Name:   cpuhotplug02 
-Date:   Чтв ноя  8 19:39:17 EET 2018 
+Date:   Птн фев  8 12:50:05 EET 2019 
 Desc:   What happens to a process when its CPU is offlined? 
  
 CPU is 1 
-cpuhotplug02 1 TPASS: turned off CPU 1, process migrated to 	CPU   2 
+cpuhotplug02 1 TPASS: turned off CPU 1, process migrated to 	CPU   0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
 <td><p><strong>7</strong></p></td>
 <td><p><strong>exited<strong></p></td>
@@ -76,59 +75,68 @@ cpuhotplug02 1 TPASS: turned off CPU 1, process migrated to 	CPU   2
 <td><p><strong>2</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>2</strong></p></td>
 <td><p><strong>cpuhotplug03</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:39:24 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:50:12 2019</strong></pre></p></td>
 <td><p><strong> "cpuhotplug03.sh -c 1 -l 1" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>Name:   cpuhotplug03 
-Date:   Чтв ноя  8 19:39:24 EET 2018 
+Date:   Птн фев  8 12:50:12 EET 2019 
 Desc:   Do tasks get scheduled to a newly on-lined CPU? 
  
 CPU is 1 
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND 
-root     26580  0.0  0.0   2560   884 pts/1    R    19:39   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
-root     26582  0.0  0.0   2560   884 pts/1    R    19:39   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
-root     26583  0.0  0.0   2560   820 pts/1    R    19:39   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
-root     26584  0.0  0.0   2560   756 pts/1    R    19:39   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
-root     26585  0.0  0.0   2560   820 pts/1    R    19:39   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
-root     26586  0.0  0.0   2560   820 pts/1    R    19:39   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
-root     26587  0.0  0.0   2560   756 pts/1    R    19:39   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
-root     26588  0.0  0.0   2560   820 pts/1    R    19:39   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+root      7772  0.0  0.0   2560   820 pts/4    R    12:50   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+root      7773  0.0  0.0   2560   884 pts/4    R    12:50   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+root      7775  0.0  0.0   2560   800 pts/4    R    12:50   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+root      7776  0.0  0.0   2560   824 pts/4    R    12:50   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+root      7777  0.0  0.0   2560   820 pts/4    R    12:50   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+root      7778  0.0  0.0   2560   820 pts/4    R    12:50   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+root      7779  0.0  0.0   2560   824 pts/4    R    12:50   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+root      7780  0.0  0.0   2560   820 pts/4    R    12:50   0:00 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+root      7784  0.0  0.0   8864   836 pts/4    S    12:50   0:00 grep cpuhotplug_do_spin_loop 
 cpuhotplug03 1 TINFO: Onlining CPU 1 
-cpuhotplug03 1 TBROK: No cpuhotplug_do_spin_loop processes 			found on any processor 
-</strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>1</strong></p></td>
-<td><p><strong>exited<strong></p></td>
-<td><p><strong>2</strong></p></td>
-<td><p><strong>no</strong></p></td>
-<td><p><strong>465</strong></p></td>
-<td><p><strong>8</strong></p></td></tr>
-<tr bgcolor=#66ff66><td><p><strong>3</strong></p></td>
-<td><p><strong>cpuhotplug04</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:39:25 2018</strong></pre></p></td>
-<td><p><strong> "cpuhotplug04.sh -l 1" </strong></p></td>
-<td><p><strong>""</strong></p></td>
-<td><p><strong>exit</strong></p></td>
-<td><pre><strong>Name:   cpuhotplug04 
-Date:   Чтв ноя  8 19:39:25 EET 2018 
-Desc:   Does it prevent us from offlining the last CPU? 
- 
-cpuhotplug04 1 TPASS: Success 
+  1 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+  2 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+  2 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+  3 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+  3 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+  3 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+  1 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+  0 /bin/sh /opt/ltp/testcases/bin/cpuhotplug_do_spin_loop 
+cpuhotplug03 1 TPASS: 2 cpuhotplug_do_spin_loop processes found on 	CPU1 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
 <td><p><strong>1</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>5</strong></p></td>
-<td><p><strong>4</strong></p></td></tr>
+<td><p><strong>511</strong></p></td>
+<td><p><strong>10</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>3</strong></p></td>
+<td><p><strong>cpuhotplug04</strong></p></td>
+<td><p><pre><strong>Fri Feb  8 12:50:13 2019</strong></pre></p></td>
+<td><p><strong> "cpuhotplug04.sh -l 1" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>Name:   cpuhotplug04 
+Date:   Птн фев  8 12:50:13 EET 2019 
+Desc:   Does it prevent us from offlining the last CPU? 
+ 
+cpuhotplug04 1 TPASS: Success 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>4</strong></p></td>
+<td><p><strong>6</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>4</strong></p></td>
 <td><p><strong>cpuhotplug05</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:39:26 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:50:13 2019</strong></pre></p></td>
 <td><p><strong> "cpuhotplug05.sh -c 1 -l 1 -d /tmp" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>Name:   cpuhotplug05 
-Date:   Thu Nov  8 19:39:26 EET 2018 
+Date:   Fri Feb  8 12:50:13 EET 2019 
 Desc:   Does sar behave properly during CPU hotplug events? 
  
 cpuhotplug05 1 TCONF: 'sar' not found 
@@ -141,32 +149,32 @@ cpuhotplug05 1 TCONF: 'sar' not found
 <td><p><strong>0</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>5</strong></p></td>
 <td><p><strong>cpuhotplug06</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:39:26 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:50:13 2019</strong></pre></p></td>
 <td><p><strong> "cpuhotplug06.sh -c 1 -l 1" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>Name:   cpuhotplug06 
-Date:   Чтв ноя  8 19:39:26 EET 2018 
+Date:   Птн фев  8 12:50:13 EET 2019 
 Desc:   Does top work properly when CPU hotplug events occur? 
  
 CPU is 1 
-26752 pts/1    00:00:00 top 
-cpuhotplug06 1 TPASS: PID 26752 still running. 
+ 7969 pts/4    00:00:00 top 
+cpuhotplug06 1 TPASS: PID 7969 still running. 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
 <td><p><strong>2</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>12</strong></p></td>
-<td><p><strong>15</strong></p></td></tr>
+<td><p><strong>14</strong></p></td>
+<td><p><strong>19</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>6</strong></p></td>
 <td><p><strong>cpuhotplug07</strong></p></td>
-<td><p><pre><strong>Thu Nov  8 19:39:28 2018</strong></pre></p></td>
+<td><p><pre><strong>Fri Feb  8 12:50:15 2019</strong></pre></p></td>
 <td><p><strong> "cpuhotplug07.sh -c 1 -l 1 -d /usr/src/linux" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>Name:   cpuhotplug07 
-Date:   Чтв ноя  8 19:39:28 EET 2018 
+Date:   Птн фев  8 12:50:15 EET 2019 
 Desc:   What happens when hotplugging during a heavy workload? 
 Issue:  Hotplug bugs have been found during kernel compiles 
  
@@ -187,10 +195,10 @@ incrementing stop
 
 <table border="1" cellspacing="3"><tbody>
 <tr>
-<td bgcolor="#ff0000"> <strong>Test Summary</strong></p></td><td bgcolor="#ff0000"><strong>Pan reported some Tests FAIL</strong></p></td></tr>
-<tr><td><strong>LTP Version</strong> </td><td><strong> 20180926     </strong></td></tr>
-<tr><td><strong>Start Time</strong>  </td><td><strong> Чтв ноя  8 19:39:17 EET 2018 </strong></td></tr>
-<tr><td><strong>End Time</strong>    </td><td><strong> Чтв ноя  8 19:39:28 EET 2018   </strong></td></tr>
+<td bgcolor="#66ff66"> <strong>Test Summary</strong></p></td><td bgcolor="#66ff66"><strong>Pan reported all Test Pass</strong></p></td></tr>
+<tr><td><strong>LTP Version</strong> </td><td><strong> 20190115     </strong></td></tr>
+<tr><td><strong>Start Time</strong>  </td><td><strong> Птн фев  8 12:50:05 EET 2019 </strong></td></tr>
+<tr><td><strong>End Time</strong>    </td><td><strong> Птн фев  8 12:50:15 EET 2019   </strong></td></tr>
 <tr><td><strong>Log Result</strong>  </td><td><a href="file:///opt/ltp/results/">      <strong>/opt/ltp/results</strong></a></td></tr>
 <tr><td><strong>Output/Failed Result</strong></td><td><a href="file:///opt/ltp/output/"> <strong>/opt/ltp/output</strong></a></td></tr>
 <tr><td><strong>Total Tests</strong></td><td><strong>6                         </strong></td></tr>
@@ -199,7 +207,7 @@ incrementing stop
 <tr><td><strong>Total Test TBROK</strong></td><td><strong> 0 </strong></td></tr>
 <tr><td><strong>Total Test TWARN</strong></td><td><strong> 0 </strong></td></tr>
 <tr><td><strong>Total Test TCONF</strong></td><td><strong> 0 </strong></td></tr>
-<tr><td><strong>Kernel Version</strong></td><td><strong> Linux version 4.19.1-dragon-westmere (buildd@lcy01-amd64-024) (gcc version 8.2.0 (Ubuntu 8.2.0-7ubuntu1)) #201811060006-Ubuntu SMP Tue Nov 6 20:52:51 UTC 2018 </strong></td></tr>
-<tr><td><strong>Machine Architecture</strong></td><td><strong> x86_64 </strong></td></tr>
+<tr><td><strong>Kernel Version</strong></td><td><strong>   </strong></td></tr>
+<tr><td><strong>Machine Architecture</strong></td><td><strong>  </strong></td></tr>
 <tr><td><strong>Hostname</strong>  </td> <td><strong>wip
   </strong></td></tr></tbody></table></div></body></html>

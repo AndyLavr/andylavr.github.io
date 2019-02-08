@@ -36,12 +36,13 @@ VERSION_CODENAME=cosmic
 UBUNTU_CODENAME=cosmic
 
 uname:
-Linux wip 4.19.1-dragon-westmere #201811060006-Ubuntu SMP Tue Nov 6 20:52:51 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Linux wip 4.20.7-dragon-westmere #201902070020-Ubuntu DRAGON SMP Thu Feb 7 16:50:50 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
 
 /proc/cmdline
-BOOT_IMAGE=/@/boot/vmlinuz-4.19.1-dragon-westmere root=UUID=281ed76e-a164-46f9-9c13-cc539b5084d4 ro rootflags=subvol=@ noresume systemd.gpt_auto=0 ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux intel_iommu=on swiotlb=32768 apparmor=0 acpi_backlight=vendor nowatchdog zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 modprobe.blacklist=lkrg pcie_acs_override=downstream
+BOOT_IMAGE=/@/boot/vmlinuz-4.20.7-dragon-westmere root=UUID=281ed76e-a164-46f9-9c13-cc539b5084d4 ro rootflags=subvol=@ noresume psi=1 systemd.gpt_auto=0 ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux-Dell-Video intel_iommu=on swiotlb=32768 apparmor=0 acpi_backlight=vendor nowatchdog zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 modprobe.blacklist=lkrg acpi_serialize pcie_acs_override=downstream net.ifnames=0 biosdevname=0
 
 Gnu C                  gcc (Ubuntu 8.2.0-7ubuntu1) 8.2.0
+Clang                  clang version 7.0.0-3 (tags/RELEASE_700/final)
 Gnu make               4.2.1
 util-linux             linux 2.32
 mount                  linux 2.32 (libmount 2.32.0: selinux, smack, btrfs, assert, debug)
@@ -56,12 +57,12 @@ iproute2               iproute2-ss181023
 iputils                iputils-s20180629
 Kbd                    2.0.4
 Sh-utils               8.28
-Modules Loaded         sctp brd overlay nls_iso8859_1 xfs ext2 geneve tcp_dctcp ip_gre gre ip_tunnel ipvlan esp4 macsec ah4 xfrm4_mode_transport macvtap tap macvlan 8021q garp mrp stp llc vxlan ip6_udp_tunnel udp_tunnel sch_netem tcp_bbr xfrm_user xfrm_algo veth hid_generic dell_laptop dell_smm_hwmon iptable_nat nf_nat_ipv4 binfmt_misc intel_powerclamp coretemp kvm_intel kvm irqbypass intel_cstate joydev dell_wmi dell_smbios dcdbas sparse_keymap dell_wmi_descriptor i2c_i801 wmi_bmof snd_hda_codec_idt snd_hda_codec_generic snd_hda_codec_hdmi snd_hda_intel snd_hda_codec snd_hda_core snd_hwdep snd_pcm snd_seq_dummy snd_seq_oss wl snd_seq_midi snd_seq_midi_event snd_rawmidi cfg80211 snd_seq usbhid r8169 hid snd_seq_device snd_timer snd soundcore eeprom ipt_REJECT nf_reject_ipv4 nf_log_ipv4 nf_log_common xt_LOG xt_limit tcp_yeah xt_tcpudp tcp_vegas xt_addrtype sch_fq_codel xt_conntrack ip6_tables nf_conntrack_netbios_ns nf_conntrack_broadcast parport_pc nf_nat_ftp nf_nat ppdev nf_conntrack_ftp nf_conntrack nf_defrag_ipv6 lp nf_defrag_ipv4 parport iptable_filter sunrpc bpfilter ip_tables x_tables btrfs libcrc32c xor zstd_compress raid6_pq gpu_sched rtsx_pci_sdmmc rtsx_pci mmc_block radeon ttm drm_kms_helper syscopyarea sysfillrect sysimgblt input_leds psmouse fb_sys_fops serio_raw drm ahci libahci i2c_algo_bit wmi video mac_hid lz4 lz4_compress
+Modules Loaded         binfmt_misc iptable_nat nf_nat_ipv4 zfs zunicode zavl icp zcommon znvpair spl dell_laptop dell_smm_hwmon intel_powerclamp coretemp kvm_intel kvm irqbypass intel_cstate dell_wmi dell_smbios dcdbas sparse_keymap dell_wmi_descriptor wmi_bmof i2c_i801 snd_hda_codec_idt joydev snd_hda_codec_generic wl snd_hda_codec_hdmi r8169 cfg80211 realtek snd_hda_intel snd_hda_codec snd_hda_core eeprom snd_hwdep ipt_REJECT nf_reject_ipv4 nf_log_ipv4 nf_log_common xt_LOG xt_limit xt_tcpudp xt_addrtype sch_cake xt_conntrack tcp_yeah tcp_vegas ip6_tables nf_conntrack_netbios_ns nf_conntrack_broadcast nf_nat_ftp nf_nat nf_conntrack_ftp nf_conntrack nf_defrag_ipv6 exfat_fs exfat_core nf_defrag_ipv4 parport_pc ppdev lp iptable_filter parport bpfilter sunrpc ip_tables x_tables btrfs xor zstd_compress raid6_pq gpu_sched rtsx_pci_sdmmc rtsx_pci mmc_block radeon ttm drm_kms_helper syscopyarea sysfillrect sysimgblt fb_sys_fops hid_generic drm input_leds psmouse ahci usbhid serio_raw i2c_algo_bit hid libahci wmi video mac_hid lz4 lz4_compress
 
 free reports:
               всего        занято        свободно      общая  буф./врем.   доступно
-Память:     1963432      948236      159340       42276      855856      787512
-Подкачка:     8388604      143360     8245244
+Память:     3900396     1928080      342184       21688     1630132     1806828
+Подкачка:     8388604           0     8388604
 
 cpuinfo:
 Архитектура:         x86_64
@@ -78,10 +79,10 @@ ID прроизводителя:   GenuineIntel
 Модель:              37
 Имя модели:          Intel(R) Core(TM) i5 CPU       M 480  @ 2.67GHz
 Степпинг:            5
-CPU МГц:             1628.980
+CPU МГц:             1868.222
 CPU max MHz:         2661,0000
 CPU min MHz:         1197,0000
-BogoMIPS:            5319.44
+BogoMIPS:            5325.20
 Виртуализация:       VT-x
 L1d cache:           32K
 L1i cache:           32K
@@ -122,6 +123,8 @@ NUMA node0 CPU(s):   0-3
 
 - [Hyperthreading stress](report/hyperthreading.html)
 
+- [IMA](report/ima.html)
+
 - [Input device](report/input.html)
 
 - [Interprocess communication stress](report/ipc.html)
@@ -147,8 +150,6 @@ NUMA node0 CPU(s):   0-3
 - [Securebits](report/securebits.html)
 
 - [Net smack](report/smack.html)
-
-- [Swaping](report/swaping.html)
 
 - [Kernel system calls](report/syscalls.html)
 

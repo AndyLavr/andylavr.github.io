@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+  <title>Linux Test Project - Results</title>
+</head>
+<body>
+
+<h1>LTP Output/Log (Report Generated on Птн фев  8 13:39:13 EET 2019) </h1>
+<table border="1" cellspacing="3">
+  <tbody>
+    <tr>
+      <td bgcolor="#66ff66"><b>&nbsp;PASSED&nbsp;</b></td>
+      <td bgcolor="#ff0000"><b>&nbsp;FAILED&nbsp;</b></td>
+      <td bgcolor="Fuchsia"><b>&nbsp;WARNING&nbsp;</b></td>
+      <td bgcolor="Yellow"><b>&nbsp;BROKEN&nbsp;</b></td>
+      <td bgcolor="#8dc997"><b>&nbsp;RETIRED&nbsp;</b></td>
+      <td bgcolor="Aqua"><b>&nbsp;CONFIG-ERROR&nbsp;</b></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<b>Meaning of the following KEYWORDS in test results/logs:</b>
+<hr>
+<li><b>TPASS -</b> Indicates that the test case had the expected result and passed</li>
+<li><b>TFAIL -</b> Indicates that the test case had an unexpected result and failed.</li>
+<li><b>TBROK -</b> Indicates that the remaining test cases are broken and will not execute correctly, because some precondition not met, such as a resource not being available.</li>
+<li><b>TCONF -</b> Indicates that the test case was not written to run on the current harware or software configuration such as machine type, or, kernel version.</li>
+<li><b>TWARN -</b> Indicates that the test case experienced an unexpected or undesirable event that should not affect the test itself such as being unable to cleanup resources after the test finished.</li>
+<li><b>TINFO -</b> Specifies useful information about the status of the test that does not affect the result and does not indicate a problem.</li>
+<hr>
+
+<br>
+<li><a href="#_1">Click Here for Detailed Report</a></li>
+<li><a href="#_2">Click Here for Summary Report</a></li>
+<br>
+
+<h2 id="_1">Detailed Report</h2>
+<div>
+<table border="1" cellspacing="3">
+<tbody>
+    <tr>
+      <td bgcolor="Silver"><strong>No</strong></td>
+      <td bgcolor="Silver"><strong>Test-Name</strong></td>
+      <td bgcolor="Silver"><strong>Start-Time</strong></td>
+      <td bgcolor="Silver"><strong>Command-Line</strong></td>
+      <td bgcolor="Silver"><strong>Contacts</strong></td>
+      <td bgcolor="Silver"><strong>Analysis</strong></td>
+      <td bgcolor="Silver"><strong>Test-Output</strong></td>
+      <td bgcolor="Silver"><strong>Initiation-Status</strong></td>
+      <td bgcolor="Silver"><strong>Duration</strong></td>
+      <td bgcolor="Silver"><strong>Termination-type</strong></td>
+      <td bgcolor="Silver"><strong>Termination-id</strong></td>
+      <td bgcolor="Silver"><strong>Core-File</strong></td>
+      <td bgcolor="Silver"><strong>cutime</strong></td>
+      <td bgcolor="Silver"><strong>cstime</strong></td>
+    </tr>
+<tr bgcolor=#66ff66><td><p><strong>1</strong></p></td>
+<td><p><strong>ima_measurements</strong></p></td>
+<td><p><pre><strong>Fri Feb  8 13:39:13 2019</strong></pre></p></td>
+<td><p><strong> "ima_measurements.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>ima_measurements 1 TINFO: timeout per run is 0h 5m 0s 
+ima_measurements 1 TINFO: /proc/cmdline: BOOT_IMAGE=/@/boot/vmlinuz-4.20.7-dragon-westmere root=UUID=281ed76e-a164-46f9-9c13-cc539b5084d4 ro rootflags=subvol=@ noresume psi=1 systemd.gpt_auto=0 ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux-Dell-Video intel_iommu=on swiotlb=32768 apparmor=0 acpi_backlight=vendor nowatchdog zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 modprobe.blacklist=lkrg acpi_serialize pcie_acs_override=downstream net.ifnames=0 biosdevname=0 
+ima_measurements 1 TINFO: IMA kernel config: 
+ima_measurements 1 TINFO: CONFIG_IMA=y 
+ima_measurements 1 TINFO: CONFIG_IMA_MEASURE_PCR_IDX=10 
+ima_measurements 1 TINFO: CONFIG_IMA_LSM_RULES=y 
+ima_measurements 1 TINFO: CONFIG_IMA_NG_TEMPLATE=y 
+ima_measurements 1 TINFO: CONFIG_IMA_DEFAULT_TEMPLATE="ima-ng" 
+ima_measurements 1 TINFO: CONFIG_IMA_DEFAULT_HASH_SHA1=y 
+ima_measurements 1 TINFO: CONFIG_IMA_DEFAULT_HASH="sha1" 
+ima_measurements 1 TINFO: CONFIG_IMA_APPRAISE=y 
+ima_measurements 1 TINFO: CONFIG_IMA_APPRAISE_BOOTPARAM=y 
+ima_measurements 1 TINFO: CONFIG_IMA_APPRAISE_MODSIG=y 
+ima_measurements 1 TINFO: CONFIG_IMA_TRUSTED_KEYRING=y 
+ima_measurements 1 TINFO: not using default policy 
+ima_measurements 1 TINFO: IMA measurement tests assume tcb policy to be loaded (ima_policy=tcb) 
+ima_measurements 1 TINFO: verify adding record to the IMA measurement list 
+ima_measurements 1 TINFO: measurement record: '10 9afeb4ffa5336bf21d419b31dcc903b84fe2b92d ima-ng sha1:52195a2c5e017e44c6c0f15a3f94464b4029ce47 /tmp/ltp-peCCKWKD7b/LTP_ima_measurements.GUD5OPSPpO/test.txt' 
+ima_measurements 1 TINFO: computing digest for sha1 algorithm 
+ima_measurements 1 TPASS: correct digest found 
+ima_measurements 2 TINFO: verify updating record in the IMA measurement list 
+ima_measurements 2 TINFO: measurement record: '10 66904562bb51bb2696fc7f44023c6a925e15da67 ima-ng sha1:fa5527797f5d2e035e5feb585e89248d8db5e776 /tmp/ltp-peCCKWKD7b/LTP_ima_measurements.GUD5OPSPpO/test.txt' 
+ima_measurements 2 TINFO: computing digest for sha1 algorithm 
+ima_measurements 2 TPASS: correct digest found 
+ima_measurements 3 TINFO: verify not measuring user files 
+ima_measurements 3 TPASS: grep /tmp/ltp-peCCKWKD7b/LTP_ima_measurements.GUD5OPSPpO/user/test.txt /sys/kernel/security/ima/ascii_runtime_measurements failed as expected 
+ 
+Summary: 
+passed   3 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>8</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>3</strong></p></td>
+<td><p><strong>28</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>2</strong></p></td>
+<td><p><strong>ima_policy</strong></p></td>
+<td><p><pre><strong>Fri Feb  8 13:39:21 2019</strong></pre></p></td>
+<td><p><strong> "ima_policy.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>ima_policy 1 TINFO: timeout per run is 0h 5m 0s 
+ima_policy 1 TINFO: /proc/cmdline: BOOT_IMAGE=/@/boot/vmlinuz-4.20.7-dragon-westmere root=UUID=281ed76e-a164-46f9-9c13-cc539b5084d4 ro rootflags=subvol=@ noresume psi=1 systemd.gpt_auto=0 ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux-Dell-Video intel_iommu=on swiotlb=32768 apparmor=0 acpi_backlight=vendor nowatchdog zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 modprobe.blacklist=lkrg acpi_serialize pcie_acs_override=downstream net.ifnames=0 biosdevname=0 
+ima_policy 1 TINFO: IMA kernel config: 
+ima_policy 1 TINFO: CONFIG_IMA=y 
+ima_policy 1 TINFO: CONFIG_IMA_MEASURE_PCR_IDX=10 
+ima_policy 1 TINFO: CONFIG_IMA_LSM_RULES=y 
+ima_policy 1 TINFO: CONFIG_IMA_NG_TEMPLATE=y 
+ima_policy 1 TINFO: CONFIG_IMA_DEFAULT_TEMPLATE="ima-ng" 
+ima_policy 1 TINFO: CONFIG_IMA_DEFAULT_HASH_SHA1=y 
+ima_policy 1 TINFO: CONFIG_IMA_DEFAULT_HASH="sha1" 
+ima_policy 1 TINFO: CONFIG_IMA_APPRAISE=y 
+ima_policy 1 TINFO: CONFIG_IMA_APPRAISE_BOOTPARAM=y 
+ima_policy 1 TINFO: CONFIG_IMA_APPRAISE_MODSIG=y 
+ima_policy 1 TINFO: CONFIG_IMA_TRUSTED_KEYRING=y 
+ima_policy 1 TCONF: IMA policy already loaded and kernel not configured to enable multiple writes to it (need CONFIG_IMA_WRITE_POLICY=y) 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  1 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>3</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>3</strong></p></td>
+<td><p><strong>ima_tpm</strong></p></td>
+<td><p><pre><strong>Fri Feb  8 13:39:21 2019</strong></pre></p></td>
+<td><p><strong> "ima_tpm.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>ima_tpm 1 TINFO: timeout per run is 0h 5m 0s 
+ima_tpm 1 TINFO: /proc/cmdline: BOOT_IMAGE=/@/boot/vmlinuz-4.20.7-dragon-westmere root=UUID=281ed76e-a164-46f9-9c13-cc539b5084d4 ro rootflags=subvol=@ noresume psi=1 systemd.gpt_auto=0 ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux-Dell-Video intel_iommu=on swiotlb=32768 apparmor=0 acpi_backlight=vendor nowatchdog zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 modprobe.blacklist=lkrg acpi_serialize pcie_acs_override=downstream net.ifnames=0 biosdevname=0 
+ima_tpm 1 TINFO: IMA kernel config: 
+ima_tpm 1 TINFO: CONFIG_IMA=y 
+ima_tpm 1 TINFO: CONFIG_IMA_MEASURE_PCR_IDX=10 
+ima_tpm 1 TINFO: CONFIG_IMA_LSM_RULES=y 
+ima_tpm 1 TINFO: CONFIG_IMA_NG_TEMPLATE=y 
+ima_tpm 1 TINFO: CONFIG_IMA_DEFAULT_TEMPLATE="ima-ng" 
+ima_tpm 1 TINFO: CONFIG_IMA_DEFAULT_HASH_SHA1=y 
+ima_tpm 1 TINFO: CONFIG_IMA_DEFAULT_HASH="sha1" 
+ima_tpm 1 TINFO: CONFIG_IMA_APPRAISE=y 
+ima_tpm 1 TINFO: CONFIG_IMA_APPRAISE_BOOTPARAM=y 
+ima_tpm 1 TINFO: CONFIG_IMA_APPRAISE_MODSIG=y 
+ima_tpm 1 TINFO: CONFIG_IMA_TRUSTED_KEYRING=y 
+ima_tpm 1 TINFO: verify boot aggregate 
+ima_tpm 1 TINFO: TPM Hardware Support not enabled in kernel or no TPM chip found 
+ima_tpm 1 TPASS: bios boot aggregate is 0 
+ima_tpm 2 TINFO: verify PCR values 
+ima_tpm 2 TINFO: evmctl version: evmctl 1.1 
+ima_tpm 2 TCONF: TPM Hardware Support not enabled in kernel or no TPM chip found 
+ 
+Summary: 
+passed   1 
+failed   0 
+skipped  1 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>32</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>2</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>4</strong></p></td>
+<td><p><strong>ima_violations</strong></p></td>
+<td><p><pre><strong>Fri Feb  8 13:39:21 2019</strong></pre></p></td>
+<td><p><strong> "ima_violations.sh" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>ima_violations 1 TINFO: timeout per run is 0h 5m 0s 
+ima_violations 1 TINFO: /proc/cmdline: BOOT_IMAGE=/@/boot/vmlinuz-4.20.7-dragon-westmere root=UUID=281ed76e-a164-46f9-9c13-cc539b5084d4 ro rootflags=subvol=@ noresume psi=1 systemd.gpt_auto=0 ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux-Dell-Video intel_iommu=on swiotlb=32768 apparmor=0 acpi_backlight=vendor nowatchdog zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 modprobe.blacklist=lkrg acpi_serialize pcie_acs_override=downstream net.ifnames=0 biosdevname=0 
+ima_violations 1 TINFO: IMA kernel config: 
+ima_violations 1 TINFO: CONFIG_IMA=y 
+ima_violations 1 TINFO: CONFIG_IMA_MEASURE_PCR_IDX=10 
+ima_violations 1 TINFO: CONFIG_IMA_LSM_RULES=y 
+ima_violations 1 TINFO: CONFIG_IMA_NG_TEMPLATE=y 
+ima_violations 1 TINFO: CONFIG_IMA_DEFAULT_TEMPLATE="ima-ng" 
+ima_violations 1 TINFO: CONFIG_IMA_DEFAULT_HASH_SHA1=y 
+ima_violations 1 TINFO: CONFIG_IMA_DEFAULT_HASH="sha1" 
+ima_violations 1 TINFO: CONFIG_IMA_APPRAISE=y 
+ima_violations 1 TINFO: CONFIG_IMA_APPRAISE_BOOTPARAM=y 
+ima_violations 1 TINFO: CONFIG_IMA_APPRAISE_MODSIG=y 
+ima_violations 1 TINFO: CONFIG_IMA_TRUSTED_KEYRING=y 
+ima_violations 1 TINFO: using log /var/log/messages 
+ima_violations 1 TINFO: verify open writers violation 
+ima_violations 1 TINFO: open_writers not found in /var/log/messages (1/3 attempt)... 
+ima_violations 1 TINFO: open_writers not found in /var/log/messages (2/3 attempt)... 
+ima_violations 1 TINFO: open_writers not found in /var/log/messages (3/3 attempt)... 
+ima_violations 1 TFAIL: open_writers not found in /var/log/messages 
+ima_violations 2 TINFO: verify ToMToU violation 
+ima_violations 2 TINFO: ToMToU not found in /var/log/messages (1/3 attempt)... 
+ima_violations 2 TINFO: ToMToU not found in /var/log/messages (2/3 attempt)... 
+ima_violations 2 TINFO: ToMToU not found in /var/log/messages (3/3 attempt)... 
+ima_violations 2 TFAIL: ToMToU not found in /var/log/messages 
+ima_violations 3 TINFO: verify open_writers using mmapped files 
+tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
+ima_mmap.c:52: INFO: sleep 3s 
+ima_violations 3 TINFO: open_writers not found in /var/log/messages (1/3 attempt)... 
+ima_violations 3 TINFO: open_writers not found in /var/log/messages (2/3 attempt)... 
+ima_mmap.c:55: PASS: test completed 
+ 
+Summary: 
+passed   1 
+failed   0 
+skipped  0 
+warnings 0 
+ima_violations 3 TINFO: open_writers not found in /var/log/messages (3/3 attempt)... 
+ima_violations 3 TFAIL: open_writers not found in /var/log/messages 
+ 
+Summary: 
+passed   0 
+failed   3 
+skipped  0 
+warnings 0 
+incrementing stop 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>12</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>5</strong></p></td>
+<td><p><strong>7</strong></p></td></tr>
+</tbody></table></div> 
+
+<h2 id="_2">Summary Report</h2>
+
+<div>
+
+<table border="1" cellspacing="3"><tbody>
+<tr>
+<td bgcolor="#ff0000"> <strong>Test Summary</strong></p></td><td bgcolor="#ff0000"><strong>Pan reported some Tests FAIL</strong></p></td></tr>
+<tr><td><strong>LTP Version</strong> </td><td><strong> 20190115     </strong></td></tr>
+<tr><td><strong>Start Time</strong>  </td><td><strong> Птн фев  8 13:39:13 EET 2019 </strong></td></tr>
+<tr><td><strong>End Time</strong>    </td><td><strong> Птн фев  8 13:39:38 EET 2019   </strong></td></tr>
+<tr><td><strong>Log Result</strong>  </td><td><a href="file:///opt/ltp/results/">      <strong>/opt/ltp/results</strong></a></td></tr>
+<tr><td><strong>Output/Failed Result</strong></td><td><a href="file:///opt/ltp/output/"> <strong>/opt/ltp/output</strong></a></td></tr>
+<tr><td><strong>Total Tests</strong></td><td><strong>4                         </strong></td></tr>
+<tr><td><strong>Total Test TPASS:</strong></td><td><strong> 4 </strong></td></tr>
+<tr><td><strong>Total Test TFAIL:</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Total Test TBROK</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Total Test TWARN</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Total Test TCONF</strong></td><td><strong> 0 </strong></td></tr>
+<tr><td><strong>Kernel Version</strong></td><td><strong>   </strong></td></tr>
+<tr><td><strong>Machine Architecture</strong></td><td><strong>  </strong></td></tr>
+<tr><td><strong>Hostname</strong>  </td> <td><strong>wip
+  </strong></td></tr></tbody></table></div></body></html>
