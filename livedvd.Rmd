@@ -37,40 +37,24 @@ If you do not register at Dragon Team, the kernel installed from the PPA will wo
 ---
 
 
-**Ubuntu/Kubuntu/Xubuntu/Lubuntu Dragon Live DVD for Atom CPU amd64 - INTEL Bay[Cherry]Trail**
+**Lubuntu Dragon Live DVD for Atom CPU x86_64 - INTEL Bay[Cherry]Trail**
 
  - Warning! It works only with an activated Dragon Team members license!
 
- - ISO Kubuntu/Xubuntu/Lubuntu access for Dragon Team members only!
-
- - Kernel version [4.20.6-dragon Release](https://dragon-kernel.pro), software for Live DVD upgraded to **20190201**
+ - Kernel version [4.20.7-dragon Release](https://dragon-kernel.pro), software for Live DVD upgraded to **20190208**
 
 
 [![Download Atom Live DVD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/open?id=1W76vzxZrhUD2QQXcC6bXsBti65ta25VP)
 
 
-**Ubuntu/Kubuntu Dragon Live DVD for GENERIC CPU amd64**
+**Lubuntu Dragon Live DVD for GENERIC CPU x86_64**
 
  - Warning! It works only with an activated Dragon Team members license!
 
- - ISO Kubuntu access for Dragon Team members only!
-
- - Kernel version [4.20.6-dragon Release](https://dragon-kernel.pro), software for Live DVD upgraded to **20190201**
+ - Kernel version [4.20.7-dragon Release](https://dragon-kernel.pro), software for Live DVD upgraded to **20190208**
 
 
 [![Download Generic Live DVD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/open?id=1AX0Hn2LHvTpmo5zypl1TAJRWEWWRc_Do)
-
-
-**Ubuntu 19.04 "Disco Dingo" (Alpha) Dragon Live DVD for Atom CPU amd64 - INTEL Bay[Cherry]Trail**
-
- - Warning! It works only with an activated Dragon Team members license!
-
- - All ISO access for Dragon Team members only!
-
- - Kernel version [4.20.7-dragon Release](https://dragon-kernel.pro), software for Live DVD upgraded to **20190206**
-
-
-[![Download Atom Live DVD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/drive/folders/1nwfC6PrX_0ZosVnRXF7JgDtTk0wLxw8s?usp=sharing)
 
 
 ***
