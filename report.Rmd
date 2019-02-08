@@ -127,7 +127,7 @@ NUMA node0 CPU(s):   0-3
 
 - [Input device](report/input.html)
 
-- [Interprocess communication stress](report/ipc.html)
+- [Interprocess communication stress](report/ips.html)
 
 - [Kernel misc](report/kernel_misc.html)
 
