@@ -10,6 +10,8 @@ permalink: /
 
 **Dragon is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads.**
 
+---
+
 <picture>
  <center>
     <source srcset="images/dragon.webp" type="image/webp">
@@ -22,28 +24,7 @@ permalink: /
 Each person has a choice and desires... (c) Andy Lavr
 ```
 
----
-
-<!--html_preserve-->
-
-<script>
-  (function() {
-    var cx = 'partner-pub-4314805673333081:4559596035';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search>
-
-<!--/html_preserve-->
-
-
-![**INTRODUCTION**](images/g.jpeg)
-
+**INTRODUCTION**
 
 By default, Ubuntu systems run with the Ubuntu kernels provided by the Ubuntu repositories. However it is handy to be able to test with modified upstream kernels to help locate problems in the Ubuntu kernel patches, or to confirm that upstream has fixed a specific issue. To this end i now offer select upstream kernel builds. These kernels are made from modified kernel source but using the Ubuntu kernel configuration files. These are then packaged as Ubuntu .deb files for simple installation.
 
@@ -335,6 +316,23 @@ $ sudo reboot
 ---
 
 - Ready packages are build as they become update and fixed the source
+
+<!--html_preserve-->
+
+<script>
+  (function() {
+    var cx = 'partner-pub-4314805673333081:4559596035';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+<!--/html_preserve-->
 
 ---
 
