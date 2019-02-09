@@ -5,32 +5,19 @@ date: "`r Sys.Date()`"
 permalink: /
 ---
 
-```
-WARNING!
-
- You can only use kernel packages that are in PPA if you have a Dragon Team license key!
-Without registering with the Dragon Team you need to do the build kernel packages yourself.
-If you do not register at Dragon Team, the kernel installed from the PPA will work for only 15 minutes ...
-```
-
- - For registration in team [please read information](https://dragon-kernel.pro/licensing).
-
-
 **Dragon is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads.**
+
+<picture>
+ <center>
+    <source srcset="images/dragon.webp" type="image/webp">
+    <img src="images/dragon.webp" alt="Dragon Kernel">
+ </center>
+</picture>
 
 ```
  The vanilla Linux kernel is a solid, high-quality Ford, Dragon Linux kernel is the latest Porsche model.
 Each person has a choice and desires... (c) Andy Lavr
 ```
-
-[**Dragon Live DVD/USB stick Ubuntu/Kubuntu/Xubuntu/Lubuntu (Cosmic/Disco)**](https://dragon-kernel.pro/livedvd)
-
----
-
-<picture>
-    <source srcset="images/dragon.webp" type="image/webp">
-    <img src="images/dragon.webp" alt="Dragon Kernel">
-</picture>
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
 [![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)](https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)
@@ -298,6 +285,17 @@ Update Intel microcode for use IBRS/IBPB:
 
 Install the packages from Launchpad PPA “Linux WIP-Kernel” Team:
 
+```
+WARNING!
+
+ You can only use kernel packages that are in PPA if you have a Dragon Team license key!
+Without registering with the Dragon Team you need to do the build kernel packages yourself.
+If you do not register at Dragon Team, the kernel installed from the PPA will work for only 15 minutes ...
+```
+
+ - For registration in team [please read information](https://dragon-kernel.pro/licensing).
+
+
 **Quick install**
 
 **For Dragon GENERIC kernel:**
@@ -335,7 +333,6 @@ $ sudo apt-get update
 $ sudo apt install linux-headers-4.20.7-dragon linux-headers-4.20.7-dragon-atom linux-image-unsigned-4.20.7-dragon-atom linux-modules-4.20.7-dragon-atom linux-modules-extra-4.20.7-dragon-atom
 $ sudo reboot
 ```
-
 
 ---
 
