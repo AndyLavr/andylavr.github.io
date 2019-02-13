@@ -8,7 +8,6 @@ permalink: lkrg/
  - If default logging level is used, LKRG produces one short sentence saying that system is clean unless corruptions are detected.
 
 ```bash
-# modprobe lkrg
 
 # modinfo lkrg
 
@@ -30,15 +29,27 @@ sig_hashalgo:   md4
 signature:
 parm:           p_init_log_level:Logging level init value [1 (alive) is default] (uint)
 
-
- Add file /etc/modprobe.d/lkrg.conf
-
-and insert string options:
-
-options lkrg p_init_log_level=3
 ```
 
- - The project has built in a **sysctl** interface which enables the interaction between the administrator and LKRG. 
+ - Install LKRG service:
+
+[Download](https://dragon-kernel.pro/files/install_lkrg-service.tar.gz) install scripts, unpack and run scripts:
+
+```
+$ tar zxf install_lkrg-service.tar.gz
+
+$ lkrg-systemd install
+
+Uninstall service run:
+
+$ lkrg-systemd uninstall
+
+``` 
+
+ View status service - **$ systemctl status lkrg.service** 
+
+
+ - The project has built in a **sysctl** interface which enables the interaction between the administrator and LKRG.
  
  **By default 5 different options are available:**
 

@@ -266,8 +266,7 @@ $(document).ready(function () {
 <li>As soon as system is installed it starts the work.</li>
 <li>If default logging level is used, LKRG produces one short sentence saying that system is clean unless corruptions are detected.</li>
 </ul>
-<pre class="bash"><code># modprobe lkrg
-
+<pre class="bash"><code>
 # modinfo lkrg
 
 filename:       /lib/modules/4.20.8-dragon-westmere/kernel/drivers/staging/lkrg/lkrg.ko
@@ -287,13 +286,20 @@ sig_key:
 sig_hashalgo:   md4
 signature:
 parm:           p_init_log_level:Logging level init value [1 (alive) is default] (uint)
+</code></pre>
+<ul>
+<li>Install LKRG service:</li>
+</ul>
+<p><a href="https://dragon-kernel.pro/files/install_lkrg-service.tar.gz">Download</a> install scripts, unpack and run scripts:</p>
+<pre><code>$ tar zxf install_lkrg-service.tar.gz
 
+$ lkrg-systemd install
 
- Add file /etc/modprobe.d/lkrg.conf
+Uninstall service run:
 
-and insert string options:
-
-options lkrg p_init_log_level=3</code></pre>
+$ lkrg-systemd uninstall
+</code></pre>
+<p>View status service - <strong>$ systemctl status lkrg.service</strong></p>
 <ul>
 <li>The project has built in a <strong>sysctl</strong> interface which enables the interaction between the administrator and LKRG.</li>
 </ul>
