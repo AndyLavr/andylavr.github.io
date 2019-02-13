@@ -8,7 +8,7 @@ permalink: /
 [![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)](https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)
 [![Donate with Ethereum](https://en.cryptobadges.io/badge/micro/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)](https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)
 
-**Dragon is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads.**
+**Dragon is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads. These kernels are not supported and are not appropriate for production use. You assume all risks associated with the use of this kernel.**
 
 ---
 
