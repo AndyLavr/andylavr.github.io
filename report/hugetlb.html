@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<h1>LTP Output/Log (Report Generated on Птн фев  8 12:58:19 EET 2019) </h1>
+<h1>LTP Output/Log (Report Generated on Суб фев 16 11:28:03 EET 2019) </h1>
 <table border="1" cellspacing="3">
   <tbody>
     <tr>
@@ -56,94 +56,192 @@
     </tr>
 <tr bgcolor=#66ff66><td><p><strong>1</strong></p></td>
 <td><p><strong>hugemmap01</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:19 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:03 2019</strong></pre></p></td>
 <td><p><strong> "hugemmap01" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
 mem.c:814: INFO: set nr_hugepages to 128 
-hugemmap01.c:73: PASS: call succeeded 
+mem.c:823: BROK: nr_hugepages = 31, but expect 128 
 mem.c:814: INFO: set nr_hugepages to 16 
  
 Summary: 
-passed   1 
+passed   0 
 failed   0 
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>exited<strong></p></td>
-<td><p><strong>0</strong></p></td>
+<td><p><strong>2</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>0</strong></p></td>
-<td><p><strong>0</strong></p></td></tr>
+<td><p><strong>33</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>2</strong></p></td>
 <td><p><strong>hugemmap02</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:19 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:03 2019</strong></pre></p></td>
 <td><p><strong> "hugemmap02" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
 mem.c:814: INFO: set nr_hugepages to 128 
-hugemmap02.c:108: PASS: huge mmap succeeded (64-bit) 
+mem.c:823: BROK: nr_hugepages = 31, but expect 128 
 mem.c:814: INFO: set nr_hugepages to 16 
  
 Summary: 
-passed   1 
+passed   0 
 failed   0 
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>exited<strong></p></td>
-<td><p><strong>0</strong></p></td>
+<td><p><strong>2</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>0</strong></p></td>
-<td><p><strong>1</strong></p></td></tr>
+<td><p><strong>8</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>3</strong></p></td>
 <td><p><strong>hugemmap04</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:19 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:03 2019</strong></pre></p></td>
 <td><p><strong> "hugemmap04" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
 mem.c:814: INFO: set nr_hugepages to 128 
-hugemmap04.c:71: INFO: Size of huge pages is 2048 KB 
-hugemmap04.c:90: PASS: Succeeded mapping file using 128 pages 
+mem.c:823: BROK: nr_hugepages = 31, but expect 128 
 mem.c:814: INFO: set nr_hugepages to 16 
  
 Summary: 
-passed   1 
+passed   0 
 failed   0 
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>exited<strong></p></td>
-<td><p><strong>0</strong></p></td>
+<td><p><strong>2</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>0</strong></p></td>
-<td><p><strong>0</strong></p></td></tr>
+<td><p><strong>3</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>4</strong></p></td>
 <td><p><strong>hugemmap05</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:19 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:03 2019</strong></pre></p></td>
 <td><p><strong> "hugemmap05" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
 hugemmap05.c:235: INFO: original nr_hugepages is 16 
 hugemmap05.c:248: INFO: original nr_overcommit_hugepages is 16 
-hugemmap05.c:116: INFO: check /proc/meminfo before allocation. 
-hugemmap05.c:297: INFO: HugePages_Total is 192. 
-hugemmap05.c:297: INFO: HugePages_Free is 192. 
-hugemmap05.c:297: INFO: HugePages_Surp is 64. 
-hugemmap05.c:297: INFO: HugePages_Rsvd is 192. 
+hugemmap05.c:101: BROK: mmap((nil),402653184,3,1,6,0) failed: ENOMEM 
+hugemmap05.c:192: INFO: restore nr_hugepages to 16. 
+hugemmap05.c:201: INFO: restore nr_overcommit_hugepages to 16. 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>15</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>5</strong></p></td>
+<td><p><strong>hugemmap06</strong></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:03 2019</strong></pre></p></td>
+<td><p><strong> "hugemmap06" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
+mem.c:814: INFO: set nr_hugepages to 255 
+mem.c:823: BROK: nr_hugepages = 31, but expect 255 
+mem.c:814: INFO: set nr_hugepages to 16 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>13</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>6</strong></p></td>
+<td><p><strong>hugemmap05_1</strong></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:03 2019</strong></pre></p></td>
+<td><p><strong> "hugemmap05 -m" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
+hugemmap05.c:235: INFO: original nr_hugepages is 16 
+hugemmap05.c:248: INFO: original nr_overcommit_hugepages is 16 
+tst_safe_sysv_ipc.c:111: BROK: hugemmap05.c:97: shmget(218366145, 402653184, b80) failed: ENOMEM 
+hugemmap05.c:192: INFO: restore nr_hugepages to 16. 
+hugemmap05.c:201: INFO: restore nr_overcommit_hugepages to 16. 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>1</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>28</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>7</strong></p></td>
+<td><p><strong>hugemmap05_2</strong></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:04 2019</strong></pre></p></td>
+<td><p><strong> "hugemmap05 -s" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
+hugemmap05.c:235: INFO: original nr_hugepages is 16 
+hugemmap05.c:248: INFO: original nr_overcommit_hugepages is 16 
+hugemmap05.c:101: BROK: mmap((nil),402653184,3,1,6,0) failed: ENOMEM 
+hugemmap05.c:192: INFO: restore nr_hugepages to 16. 
+hugemmap05.c:201: INFO: restore nr_overcommit_hugepages to 16. 
+ 
+Summary: 
+passed   0 
+failed   0 
+skipped  0 
+warnings 0 
+</strong></pre></td><td><p><strong>"ok"</strong></p></td>
+<td><p><strong>6</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>2</strong></p></td>
+<td><p><strong>no</strong></p></td>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>33</strong></p></td></tr>
+<tr bgcolor=#66ff66><td><p><strong>8</strong></p></td>
+<td><p><strong>hugemmap05_3</strong></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:10 2019</strong></pre></p></td>
+<td><p><strong> "hugemmap05 -s -m" </strong></p></td>
+<td><p><strong>""</strong></p></td>
+<td><p><strong>exit</strong></p></td>
+<td><pre><strong>tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
+hugemmap05.c:235: INFO: original nr_hugepages is 16 
+hugemmap05.c:248: INFO: original nr_overcommit_hugepages is 16 
+hugemmap05.c:105: INFO: check sysfs before allocation. 
+hugemmap05.c:286: INFO: HugePages_Total is 192. 
+hugemmap05.c:286: INFO: HugePages_Free is 192. 
+hugemmap05.c:286: INFO: HugePages_Surp is 64. 
+hugemmap05.c:286: INFO: HugePages_Rsvd is 192. 
+hugemmap05.c:132: INFO: shmid: 0x380000 
 hugemmap05.c:272: INFO: First hex is 7070707 
-hugemmap05.c:151: INFO: check /proc/meminfo. 
-hugemmap05.c:297: INFO: HugePages_Total is 192. 
-hugemmap05.c:297: INFO: HugePages_Free is 0. 
-hugemmap05.c:297: INFO: HugePages_Surp is 64. 
-hugemmap05.c:297: INFO: HugePages_Rsvd is 0. 
+hugemmap05.c:140: INFO: check sysfs. 
+hugemmap05.c:286: INFO: HugePages_Total is 192. 
+hugemmap05.c:286: INFO: HugePages_Free is 0. 
+hugemmap05.c:286: INFO: HugePages_Surp is 64. 
+hugemmap05.c:286: INFO: HugePages_Rsvd is 0. 
 hugemmap05.c:175: PASS: hugepages overcommit test pass 
 hugemmap05.c:192: INFO: restore nr_hugepages to 16. 
 hugemmap05.c:201: INFO: restore nr_overcommit_hugepages to 16. 
@@ -159,147 +257,10 @@ warnings 0
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>36</strong></p></td>
-<td><p><strong>9</strong></p></td></tr>
-<tr bgcolor=#66ff66><td><p><strong>5</strong></p></td>
-<td><p><strong>hugemmap06</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:19 2019</strong></pre></p></td>
-<td><p><strong> "hugemmap06" </strong></p></td>
-<td><p><strong>""</strong></p></td>
-<td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
-mem.c:814: INFO: set nr_hugepages to 255 
-hugemmap06.c:139: PASS: No regression found. 
-hugemmap06.c:139: PASS: No regression found. 
-hugemmap06.c:139: PASS: No regression found. 
-hugemmap06.c:139: PASS: No regression found. 
-hugemmap06.c:139: PASS: No regression found. 
-mem.c:814: INFO: set nr_hugepages to 16 
- 
-Summary: 
-passed   5 
-failed   0 
-skipped  0 
-warnings 0 
-</strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>1</strong></p></td>
-<td><p><strong>exited<strong></p></td>
-<td><p><strong>0</strong></p></td>
-<td><p><strong>no</strong></p></td>
-<td><p><strong>1</strong></p></td>
-<td><p><strong>55</strong></p></td></tr>
-<tr bgcolor=#66ff66><td><p><strong>6</strong></p></td>
-<td><p><strong>hugemmap05_1</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:20 2019</strong></pre></p></td>
-<td><p><strong> "hugemmap05 -m" </strong></p></td>
-<td><p><strong>""</strong></p></td>
-<td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
-hugemmap05.c:235: INFO: original nr_hugepages is 16 
-hugemmap05.c:248: INFO: original nr_overcommit_hugepages is 16 
-hugemmap05.c:116: INFO: check /proc/meminfo before allocation. 
-hugemmap05.c:297: INFO: HugePages_Total is 192. 
-hugemmap05.c:297: INFO: HugePages_Free is 192. 
-hugemmap05.c:297: INFO: HugePages_Surp is 64. 
-hugemmap05.c:297: INFO: HugePages_Rsvd is 192. 
-hugemmap05.c:132: INFO: shmid: 0xe0000 
-hugemmap05.c:272: INFO: First hex is 7070707 
-hugemmap05.c:151: INFO: check /proc/meminfo. 
-hugemmap05.c:297: INFO: HugePages_Total is 192. 
-hugemmap05.c:297: INFO: HugePages_Free is 0. 
-hugemmap05.c:297: INFO: HugePages_Surp is 64. 
-hugemmap05.c:297: INFO: HugePages_Rsvd is 0. 
-hugemmap05.c:175: PASS: hugepages overcommit test pass 
-hugemmap05.c:192: INFO: restore nr_hugepages to 16. 
-hugemmap05.c:201: INFO: restore nr_overcommit_hugepages to 16. 
- 
-Summary: 
-passed   1 
-failed   0 
-skipped  0 
-warnings 0 
-</strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>0</strong></p></td>
-<td><p><strong>exited<strong></p></td>
-<td><p><strong>0</strong></p></td>
-<td><p><strong>no</strong></p></td>
-<td><p><strong>33</strong></p></td>
-<td><p><strong>8</strong></p></td></tr>
-<tr bgcolor=#66ff66><td><p><strong>7</strong></p></td>
-<td><p><strong>hugemmap05_2</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:20 2019</strong></pre></p></td>
-<td><p><strong> "hugemmap05 -s" </strong></p></td>
-<td><p><strong>""</strong></p></td>
-<td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
-hugemmap05.c:235: INFO: original nr_hugepages is 16 
-hugemmap05.c:248: INFO: original nr_overcommit_hugepages is 16 
-hugemmap05.c:105: INFO: check sysfs before allocation. 
-hugemmap05.c:286: INFO: HugePages_Total is 192. 
-hugemmap05.c:286: INFO: HugePages_Free is 192. 
-hugemmap05.c:286: INFO: HugePages_Surp is 64. 
-hugemmap05.c:286: INFO: HugePages_Rsvd is 192. 
-hugemmap05.c:272: INFO: First hex is 7070707 
-hugemmap05.c:140: INFO: check sysfs. 
-hugemmap05.c:286: INFO: HugePages_Total is 192. 
-hugemmap05.c:286: INFO: HugePages_Free is 0. 
-hugemmap05.c:286: INFO: HugePages_Surp is 64. 
-hugemmap05.c:286: INFO: HugePages_Rsvd is 0. 
-hugemmap05.c:175: PASS: hugepages overcommit test pass 
-hugemmap05.c:192: INFO: restore nr_hugepages to 16. 
-hugemmap05.c:201: INFO: restore nr_overcommit_hugepages to 16. 
- 
-Summary: 
-passed   1 
-failed   0 
-skipped  0 
-warnings 0 
-</strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>0</strong></p></td>
-<td><p><strong>exited<strong></p></td>
-<td><p><strong>0</strong></p></td>
-<td><p><strong>no</strong></p></td>
-<td><p><strong>33</strong></p></td>
-<td><p><strong>7</strong></p></td></tr>
-<tr bgcolor=#66ff66><td><p><strong>8</strong></p></td>
-<td><p><strong>hugemmap05_3</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:20 2019</strong></pre></p></td>
-<td><p><strong> "hugemmap05 -s -m" </strong></p></td>
-<td><p><strong>""</strong></p></td>
-<td><p><strong>exit</strong></p></td>
-<td><pre><strong>tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
-hugemmap05.c:235: INFO: original nr_hugepages is 16 
-hugemmap05.c:248: INFO: original nr_overcommit_hugepages is 16 
-hugemmap05.c:105: INFO: check sysfs before allocation. 
-hugemmap05.c:286: INFO: HugePages_Total is 192. 
-hugemmap05.c:286: INFO: HugePages_Free is 192. 
-hugemmap05.c:286: INFO: HugePages_Surp is 64. 
-hugemmap05.c:286: INFO: HugePages_Rsvd is 192. 
-hugemmap05.c:132: INFO: shmid: 0xe8000 
-hugemmap05.c:272: INFO: First hex is 7070707 
-hugemmap05.c:140: INFO: check sysfs. 
-hugemmap05.c:286: INFO: HugePages_Total is 192. 
-hugemmap05.c:286: INFO: HugePages_Free is 0. 
-hugemmap05.c:286: INFO: HugePages_Surp is 64. 
-hugemmap05.c:286: INFO: HugePages_Rsvd is 0. 
-hugemmap05.c:175: PASS: hugepages overcommit test pass 
-hugemmap05.c:192: INFO: restore nr_hugepages to 16. 
-hugemmap05.c:201: INFO: restore nr_overcommit_hugepages to 16. 
- 
-Summary: 
-passed   1 
-failed   0 
-skipped  0 
-warnings 0 
-</strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>1</strong></p></td>
-<td><p><strong>exited<strong></p></td>
-<td><p><strong>0</strong></p></td>
-<td><p><strong>no</strong></p></td>
-<td><p><strong>33</strong></p></td>
-<td><p><strong>8</strong></p></td></tr>
+<td><p><strong>10</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>9</strong></p></td>
 <td><p><strong>hugeshmat01</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:21 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:10 2019</strong></pre></p></td>
 <td><p><strong> "hugeshmat01 -i 5" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -328,15 +289,15 @@ failed   0
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>0</strong></p></td>
+<td><p><strong>1</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>0</strong></p></td>
-<td><p><strong>1</strong></p></td></tr>
+<td><p><strong>0</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>10</strong></p></td>
 <td><p><strong>hugeshmat02</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:21 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:11 2019</strong></pre></p></td>
 <td><p><strong> "hugeshmat02 -i 5" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -365,10 +326,10 @@ warnings 0
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>0</strong></p></td>
-<td><p><strong>0</strong></p></td></tr>
+<td><p><strong>1</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>11</strong></p></td>
 <td><p><strong>hugeshmat03</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:21 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:11 2019</strong></pre></p></td>
 <td><p><strong> "hugeshmat03 -i 5" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -392,16 +353,16 @@ warnings 0
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>0</strong></p></td>
-<td><p><strong>1</strong></p></td></tr>
+<td><p><strong>0</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>12</strong></p></td>
 <td><p><strong>hugeshmat04</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:21 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:11 2019</strong></pre></p></td>
 <td><p><strong> "hugeshmat04 -i 5" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>tst_test.c:1096: INFO: Timeout per run is 0h 05m 00s 
 mem.c:814: INFO: set nr_hugepages to 528 
-mem.c:823: BROK: nr_hugepages = 525, but expect 528 
+mem.c:823: BROK: nr_hugepages = 286, but expect 528 
 mem.c:814: INFO: set nr_hugepages to 16 
  
 Summary: 
@@ -414,11 +375,11 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>2</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>1</strong></p></td>
-<td><p><strong>33</strong></p></td></tr>
+<td><p><strong>0</strong></p></td>
+<td><p><strong>29</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>13</strong></p></td>
 <td><p><strong>hugeshmat05</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:21 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:11 2019</strong></pre></p></td>
 <td><p><strong> "hugeshmat05 -i 5" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -457,7 +418,7 @@ failed   0
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>0</strong></p></td>
+<td><p><strong>1</strong></p></td>
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
@@ -465,7 +426,7 @@ warnings 0
 <td><p><strong>1</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>14</strong></p></td>
 <td><p><strong>hugeshmctl01</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:21 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:12 2019</strong></pre></p></td>
 <td><p><strong> "hugeshmctl01 -i 5" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -503,11 +464,11 @@ warnings 0
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>1</strong></p></td>
+<td><p><strong>2</strong></p></td>
 <td><p><strong>2</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>15</strong></p></td>
 <td><p><strong>hugeshmctl02</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:26 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:17 2019</strong></pre></p></td>
 <td><p><strong> "hugeshmctl02 -i 5" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -549,7 +510,7 @@ warnings 0
 <td><p><strong>0</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>16</strong></p></td>
 <td><p><strong>hugeshmctl03</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:26 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:17 2019</strong></pre></p></td>
 <td><p><strong> "hugeshmctl03 -i 5" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -586,7 +547,7 @@ warnings 0
 <td><p><strong>1</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>17</strong></p></td>
 <td><p><strong>hugeshmdt01</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:26 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:17 2019</strong></pre></p></td>
 <td><p><strong> "hugeshmdt01 -i 5" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -610,10 +571,10 @@ warnings 0
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>0</strong></p></td>
-<td><p><strong>1</strong></p></td></tr>
+<td><p><strong>0</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>18</strong></p></td>
 <td><p><strong>hugeshmget01</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:26 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:17 2019</strong></pre></p></td>
 <td><p><strong> "hugeshmget01 -i 10" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -642,10 +603,10 @@ warnings 0
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>0</strong></p></td>
-<td><p><strong>0</strong></p></td></tr>
+<td><p><strong>1</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>19</strong></p></td>
 <td><p><strong>hugeshmget02</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:26 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:17 2019</strong></pre></p></td>
 <td><p><strong> "hugeshmget02 -i 10" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -704,10 +665,10 @@ warnings 0
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>0</strong></p></td>
-<td><p><strong>1</strong></p></td></tr>
+<td><p><strong>0</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>20</strong></p></td>
 <td><p><strong>hugeshmget03</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:26 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:17 2019</strong></pre></p></td>
 <td><p><strong> "hugeshmget03 -i 10" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -736,10 +697,10 @@ warnings 0
 <td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>0</strong></p></td>
-<td><p><strong>0</strong></p></td></tr>
+<td><p><strong>1</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>21</strong></p></td>
 <td><p><strong>hugeshmget05</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 12:58:26 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:28:17 2019</strong></pre></p></td>
 <td><p><strong> "hugeshmget05 -i 10" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
@@ -780,8 +741,8 @@ incrementing stop
 <tr>
 <td bgcolor="#66ff66"> <strong>Test Summary</strong></p></td><td bgcolor="#66ff66"><strong>Pan reported all Test Pass</strong></p></td></tr>
 <tr><td><strong>LTP Version</strong> </td><td><strong> 20190115     </strong></td></tr>
-<tr><td><strong>Start Time</strong>  </td><td><strong> Птн фев  8 12:58:19 EET 2019 </strong></td></tr>
-<tr><td><strong>End Time</strong>    </td><td><strong> Птн фев  8 12:58:26 EET 2019   </strong></td></tr>
+<tr><td><strong>Start Time</strong>  </td><td><strong> Суб фев 16 11:28:03 EET 2019 </strong></td></tr>
+<tr><td><strong>End Time</strong>    </td><td><strong> Суб фев 16 11:28:17 EET 2019   </strong></td></tr>
 <tr><td><strong>Total Tests</strong></td><td><strong>21                         </strong></td></tr>
 <tr><td><strong>Total Test TPASS:</strong></td><td><strong> 21 </strong></td></tr>
 <tr><td><strong>Total Test TFAIL:</strong></td><td><strong> 0 </strong></td></tr>

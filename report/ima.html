@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<h1>LTP Output/Log (Report Generated on Птн фев  8 13:39:13 EET 2019) </h1>
+<h1>LTP Output/Log (Report Generated on Суб фев 16 11:29:47 EET 2019) </h1>
 <table border="1" cellspacing="3">
   <tbody>
     <tr>
@@ -56,12 +56,12 @@
     </tr>
 <tr bgcolor=#66ff66><td><p><strong>1</strong></p></td>
 <td><p><strong>ima_measurements</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 13:39:13 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:29:47 2019</strong></pre></p></td>
 <td><p><strong> "ima_measurements.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>ima_measurements 1 TINFO: timeout per run is 0h 5m 0s 
-ima_measurements 1 TINFO: /proc/cmdline: BOOT_IMAGE=/@/boot/vmlinuz-4.20.7-dragon-westmere root=UUID=281ed76e-a164-46f9-9c13-cc539b5084d4 ro rootflags=subvol=@ noresume psi=1 systemd.gpt_auto=0 ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux-Dell-Video intel_iommu=on swiotlb=32768 apparmor=0 acpi_backlight=vendor nowatchdog zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 modprobe.blacklist=lkrg acpi_serialize pcie_acs_override=downstream net.ifnames=0 biosdevname=0 
+ima_measurements 1 TINFO: /proc/cmdline: BOOT_IMAGE=/@/boot/vmlinuz-4.20.10-dragon-westmere root=UUID=281ed76e-a164-46f9-9c13-cc539b5084d4 ro rootflags=subvol=@ noresume psi=1 systemd.gpt_auto=0 ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux-Dell-Video intel_iommu=on swiotlb=32768 apparmor=0 acpi_backlight=vendor nowatchdog zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 modprobe.blacklist=lkrg acpi_serialize pcie_acs_override=downstream net.ifnames=0 biosdevname=0 
 ima_measurements 1 TINFO: IMA kernel config: 
 ima_measurements 1 TINFO: CONFIG_IMA=y 
 ima_measurements 1 TINFO: CONFIG_IMA_MEASURE_PCR_IDX=10 
@@ -74,39 +74,34 @@ ima_measurements 1 TINFO: CONFIG_IMA_APPRAISE=y
 ima_measurements 1 TINFO: CONFIG_IMA_APPRAISE_BOOTPARAM=y 
 ima_measurements 1 TINFO: CONFIG_IMA_APPRAISE_MODSIG=y 
 ima_measurements 1 TINFO: CONFIG_IMA_TRUSTED_KEYRING=y 
-ima_measurements 1 TINFO: not using default policy 
 ima_measurements 1 TINFO: IMA measurement tests assume tcb policy to be loaded (ima_policy=tcb) 
 ima_measurements 1 TINFO: verify adding record to the IMA measurement list 
-ima_measurements 1 TINFO: measurement record: '10 9afeb4ffa5336bf21d419b31dcc903b84fe2b92d ima-ng sha1:52195a2c5e017e44c6c0f15a3f94464b4029ce47 /tmp/ltp-peCCKWKD7b/LTP_ima_measurements.GUD5OPSPpO/test.txt' 
-ima_measurements 1 TINFO: computing digest for sha1 algorithm 
-ima_measurements 1 TPASS: correct digest found 
+ima_measurements 1 TFAIL: cannot find measurement record for '/tmp/ltp-c2vnbGx9dG/LTP_ima_measurements.0fKUySvfgE/test.txt' 
 ima_measurements 2 TINFO: verify updating record in the IMA measurement list 
-ima_measurements 2 TINFO: measurement record: '10 66904562bb51bb2696fc7f44023c6a925e15da67 ima-ng sha1:fa5527797f5d2e035e5feb585e89248d8db5e776 /tmp/ltp-peCCKWKD7b/LTP_ima_measurements.GUD5OPSPpO/test.txt' 
-ima_measurements 2 TINFO: computing digest for sha1 algorithm 
-ima_measurements 2 TPASS: correct digest found 
+ima_measurements 2 TFAIL: cannot find measurement record for '/tmp/ltp-c2vnbGx9dG/LTP_ima_measurements.0fKUySvfgE/test.txt' 
 ima_measurements 3 TINFO: verify not measuring user files 
-ima_measurements 3 TPASS: grep /tmp/ltp-peCCKWKD7b/LTP_ima_measurements.GUD5OPSPpO/user/test.txt /sys/kernel/security/ima/ascii_runtime_measurements failed as expected 
+ima_measurements 3 TPASS: grep /tmp/ltp-c2vnbGx9dG/LTP_ima_measurements.0fKUySvfgE/user/test.txt /sys/kernel/security/ima/ascii_runtime_measurements failed as expected 
  
 Summary: 
-passed   3 
-failed   0 
+passed   1 
+failed   2 
 skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
-<td><p><strong>8</strong></p></td>
-<td><p><strong>exited<strong></p></td>
 <td><p><strong>0</strong></p></td>
+<td><p><strong>exited<strong></p></td>
+<td><p><strong>1</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>3</strong></p></td>
-<td><p><strong>28</strong></p></td></tr>
+<td><p><strong>5</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>2</strong></p></td>
 <td><p><strong>ima_policy</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 13:39:21 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:29:47 2019</strong></pre></p></td>
 <td><p><strong> "ima_policy.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>ima_policy 1 TINFO: timeout per run is 0h 5m 0s 
-ima_policy 1 TINFO: /proc/cmdline: BOOT_IMAGE=/@/boot/vmlinuz-4.20.7-dragon-westmere root=UUID=281ed76e-a164-46f9-9c13-cc539b5084d4 ro rootflags=subvol=@ noresume psi=1 systemd.gpt_auto=0 ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux-Dell-Video intel_iommu=on swiotlb=32768 apparmor=0 acpi_backlight=vendor nowatchdog zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 modprobe.blacklist=lkrg acpi_serialize pcie_acs_override=downstream net.ifnames=0 biosdevname=0 
+ima_policy 1 TINFO: /proc/cmdline: BOOT_IMAGE=/@/boot/vmlinuz-4.20.10-dragon-westmere root=UUID=281ed76e-a164-46f9-9c13-cc539b5084d4 ro rootflags=subvol=@ noresume psi=1 systemd.gpt_auto=0 ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux-Dell-Video intel_iommu=on swiotlb=32768 apparmor=0 acpi_backlight=vendor nowatchdog zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 modprobe.blacklist=lkrg acpi_serialize pcie_acs_override=downstream net.ifnames=0 biosdevname=0 
 ima_policy 1 TINFO: IMA kernel config: 
 ima_policy 1 TINFO: CONFIG_IMA=y 
 ima_policy 1 TINFO: CONFIG_IMA_MEASURE_PCR_IDX=10 
@@ -119,28 +114,32 @@ ima_policy 1 TINFO: CONFIG_IMA_APPRAISE=y
 ima_policy 1 TINFO: CONFIG_IMA_APPRAISE_BOOTPARAM=y 
 ima_policy 1 TINFO: CONFIG_IMA_APPRAISE_MODSIG=y 
 ima_policy 1 TINFO: CONFIG_IMA_TRUSTED_KEYRING=y 
-ima_policy 1 TCONF: IMA policy already loaded and kernel not configured to enable multiple writes to it (need CONFIG_IMA_WRITE_POLICY=y) 
+ima_policy 1 TINFO: verify that invalid policy isn't loaded 
+ima_policy 1 TPASS: didn't load invalid policy 
+ima_policy 2 TINFO: verify that policy file is not opened concurrently and able to loaded multiple times 
+ima_policy 2 TINFO: IMA policy updated, please reboot after testing to restore settings 
+ima_policy 2 TPASS: policy was loaded just by one process and able to loaded multiple times 
  
 Summary: 
-passed   0 
+passed   2 
 failed   0 
-skipped  1 
+skipped  0 
 warnings 0 
 </strong></pre></td><td><p><strong>"ok"</strong></p></td>
 <td><p><strong>0</strong></p></td>
 <td><p><strong>exited<strong></p></td>
-<td><p><strong>32</strong></p></td>
+<td><p><strong>0</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>2</strong></p></td>
-<td><p><strong>3</strong></p></td></tr>
+<td><p><strong>6</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>3</strong></p></td>
 <td><p><strong>ima_tpm</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 13:39:21 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:29:47 2019</strong></pre></p></td>
 <td><p><strong> "ima_tpm.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>ima_tpm 1 TINFO: timeout per run is 0h 5m 0s 
-ima_tpm 1 TINFO: /proc/cmdline: BOOT_IMAGE=/@/boot/vmlinuz-4.20.7-dragon-westmere root=UUID=281ed76e-a164-46f9-9c13-cc539b5084d4 ro rootflags=subvol=@ noresume psi=1 systemd.gpt_auto=0 ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux-Dell-Video intel_iommu=on swiotlb=32768 apparmor=0 acpi_backlight=vendor nowatchdog zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 modprobe.blacklist=lkrg acpi_serialize pcie_acs_override=downstream net.ifnames=0 biosdevname=0 
+ima_tpm 1 TINFO: /proc/cmdline: BOOT_IMAGE=/@/boot/vmlinuz-4.20.10-dragon-westmere root=UUID=281ed76e-a164-46f9-9c13-cc539b5084d4 ro rootflags=subvol=@ noresume psi=1 systemd.gpt_auto=0 ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux-Dell-Video intel_iommu=on swiotlb=32768 apparmor=0 acpi_backlight=vendor nowatchdog zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 modprobe.blacklist=lkrg acpi_serialize pcie_acs_override=downstream net.ifnames=0 biosdevname=0 
 ima_tpm 1 TINFO: IMA kernel config: 
 ima_tpm 1 TINFO: CONFIG_IMA=y 
 ima_tpm 1 TINFO: CONFIG_IMA_MEASURE_PCR_IDX=10 
@@ -171,15 +170,15 @@ warnings 0
 <td><p><strong>32</strong></p></td>
 <td><p><strong>no</strong></p></td>
 <td><p><strong>2</strong></p></td>
-<td><p><strong>2</strong></p></td></tr>
+<td><p><strong>7</strong></p></td></tr>
 <tr bgcolor=#66ff66><td><p><strong>4</strong></p></td>
 <td><p><strong>ima_violations</strong></p></td>
-<td><p><pre><strong>Fri Feb  8 13:39:21 2019</strong></pre></p></td>
+<td><p><pre><strong>Sat Feb 16 11:29:47 2019</strong></pre></p></td>
 <td><p><strong> "ima_violations.sh" </strong></p></td>
 <td><p><strong>""</strong></p></td>
 <td><p><strong>exit</strong></p></td>
 <td><pre><strong>ima_violations 1 TINFO: timeout per run is 0h 5m 0s 
-ima_violations 1 TINFO: /proc/cmdline: BOOT_IMAGE=/@/boot/vmlinuz-4.20.7-dragon-westmere root=UUID=281ed76e-a164-46f9-9c13-cc539b5084d4 ro rootflags=subvol=@ noresume psi=1 systemd.gpt_auto=0 ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux-Dell-Video intel_iommu=on swiotlb=32768 apparmor=0 acpi_backlight=vendor nowatchdog zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 modprobe.blacklist=lkrg acpi_serialize pcie_acs_override=downstream net.ifnames=0 biosdevname=0 
+ima_violations 1 TINFO: /proc/cmdline: BOOT_IMAGE=/@/boot/vmlinuz-4.20.10-dragon-westmere root=UUID=281ed76e-a164-46f9-9c13-cc539b5084d4 ro rootflags=subvol=@ noresume psi=1 systemd.gpt_auto=0 ipv6.disable=1 intremap=no_x2apic_optout acpi_osi=Linux-Dell-Video intel_iommu=on swiotlb=32768 apparmor=0 acpi_backlight=vendor nowatchdog zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 modprobe.blacklist=lkrg acpi_serialize pcie_acs_override=downstream net.ifnames=0 biosdevname=0 
 ima_violations 1 TINFO: IMA kernel config: 
 ima_violations 1 TINFO: CONFIG_IMA=y 
 ima_violations 1 TINFO: CONFIG_IMA_MEASURE_PCR_IDX=10 
@@ -229,8 +228,8 @@ incrementing stop
 <td><p><strong>exited<strong></p></td>
 <td><p><strong>1</strong></p></td>
 <td><p><strong>no</strong></p></td>
-<td><p><strong>5</strong></p></td>
-<td><p><strong>7</strong></p></td></tr>
+<td><p><strong>4</strong></p></td>
+<td><p><strong>11</strong></p></td></tr>
 </tbody></table></div> 
 
 <h2 id="_2">Summary Report</h2>
@@ -241,8 +240,8 @@ incrementing stop
 <tr>
 <td bgcolor="#66ff66"> <strong>Test Summary</strong></p></td><td bgcolor="#66ff66"><strong>Pan reported all Test Pass</strong></p></td></tr>
 <tr><td><strong>LTP Version</strong> </td><td><strong> 20190115     </strong></td></tr>
-<tr><td><strong>Start Time</strong>  </td><td><strong> Птн фев  8 13:39:13 EET 2019 </strong></td></tr>
-<tr><td><strong>End Time</strong>    </td><td><strong> Птн фев  8 13:39:38 EET 2019   </strong></td></tr>
+<tr><td><strong>Start Time</strong>  </td><td><strong> Суб фев 16 11:29:47 EET 2019 </strong></td></tr>
+<tr><td><strong>End Time</strong>    </td><td><strong> Суб фев 16 11:30:04 EET 2019   </strong></td></tr>
 <tr><td><strong>Total Tests</strong></td><td><strong>4                         </strong></td></tr>
 <tr><td><strong>Total Test TPASS:</strong></td><td><strong> 4 </strong></td></tr>
 <tr><td><strong>Total Test TFAIL:</strong></td><td><strong> 0 </strong></td></tr>
