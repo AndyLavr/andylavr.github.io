@@ -1,6 +1,6 @@
 ---
 title: "Dragon Linux Kernel 4.20.10"
-subtitle: "For Ubuntu Cosmic/Disco"
+subtitle: "For distributives based Ubuntu Cosmic/Disco"
 date: "`r Sys.Date()`"
 permalink: /
 ---
