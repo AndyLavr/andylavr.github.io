@@ -8,7 +8,7 @@ permalink: livedvd/
 
 ---
 
- ## Ubuntu MATE Dragon Live DVD/USB stick
+ **Ubuntu MATE Dragon Live DVD/USB stick**
 
 [Ubuntu MATE](https://ubuntu-mate.org) is a stable, easy-to-use operating system with a configurable desktop environment. It is ideal for those who want the most out of their computers and prefer a traditional desktop metaphor. With modest hardware requirements it is suitable for modern workstations, single board computers and older hardware alike. Ubuntu MATE makes modern computers fast and old computers usable.
 
