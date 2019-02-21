@@ -270,7 +270,7 @@ $(document).ready(function () {
 # modinfo lkrg
 
 filename:       /lib/modules/4.20.11-dragon-westmere/kernel/drivers/staging/lkrg/lkrg.ko
-version:        0.6-dragon
+version:        0.6a-dragon
 license:        GPL v2
 description:    pi3s Linux kernel Runtime Guard
 author:         Adam &#39;pi3&#39; Zabrocki (http://pi3.com.pl)
@@ -314,7 +314,9 @@ lkrg.force_run = 0
 lkrg.hide = 0
 lkrg.log_level = 1
 lkrg.random_events = 1
-lkrg.timestamp = 15</code></pre>
+lkrg.timestamp = 15
+lkrg.smep_panic = 1
+lkrg.umh_lock = 0</code></pre>
 <ul>
 <li><p>Blocking module functionality (lkrg.block_modules) - only two options are available: 0 - do NOT lock the kernel and allow to load kernel module 1 - lock the kernel and do NOT allow to load kernel module</p></li>
 <li><p>Kernel panic on CI failure (lkrg.ci_panic) - only two options are available: 0 - do NOT crash the kernel on CI failure (default) 1 - crash the kernel (call panic()) on CI failure</p></li>
@@ -323,6 +325,8 @@ lkrg.timestamp = 15</code></pre>
 <li><p>log level (lkrg.log_level) - it might be a number between 0-4 or 0-6 (if debugging compilation was used). A strong debug provides very useful data to identify where could be a specific problem with LKRG (if it ever appears). Unfortunately, it produces tons of logs per execution and must be used only for debugging purpose, not as a normal run.</p></li>
 <li><p>Random events (lkrg.random_events) - only two options are available: 0 - do NOT perform integrity checking on the random events (perform it only at regular intervals configured by lkrg.timestamp) 1 - perform integrity checking on the random events (as well as at the regular intervals)</p></li>
 <li><p>timestamp (lkrg.timestamp) - changes how often kernel timer will be launched (kernel timer periodically calls integrity function). It can’t be less than 5 seconds (not to eat too much system resources) and not more than 1800 seconds (half an hour) - not to be silent for too long</p></li>
+<li><p>sysctl interface (lkrg.smep_panic) which will be enabled by default. If LKRG detects SMEP violation it will kill the kernel (invoke function panic()). This mitigation should be enough to stop bypasses but it is only effective on machines which support SMEP</p></li>
+<li><p>sysctl interface (lkrg.umh_lock) which will be disabled by default. If it is enabled, LKRG completely locks down UMH functionality, and nothing can be executed via this interface. It has of course side effects e.g. systemd daemon is using UMH to invoke “systemd-cgroups-agent”. If you enable lkrg.umh_lock then any call to the systemd-cgroups-agent will fail. However, not all systems are using systemd. Additionally, if you’re super paranoid this feature can be useful for you.</p></li>
 </ul>
 <hr />
 

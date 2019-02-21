@@ -12,7 +12,7 @@ permalink: lkrg/
 # modinfo lkrg
 
 filename:       /lib/modules/4.20.11-dragon-westmere/kernel/drivers/staging/lkrg/lkrg.ko
-version:        0.6-dragon
+version:        0.6a-dragon
 license:        GPL v2
 description:    pi3s Linux kernel Runtime Guard
 author:         Adam 'pi3' Zabrocki (http://pi3.com.pl)
@@ -65,6 +65,8 @@ lkrg.hide = 0
 lkrg.log_level = 1
 lkrg.random_events = 1
 lkrg.timestamp = 15
+lkrg.smep_panic = 1
+lkrg.umh_lock = 0
 ```
 
  - Blocking module functionality (lkrg.block_modules) - only two options are
@@ -104,6 +106,19 @@ lkrg.timestamp = 15
     launched (kernel timer periodically calls integrity function). It can't be
     less than 5 seconds (not to eat too much system resources) and not more
     than 1800 seconds (half an hour) - not to be silent for too long
+
+ - sysctl interface (lkrg.smep_panic) which will be enabled by default. 
+    If LKRG detects SMEP violation it will kill the kernel 
+    (invoke function panic()). This mitigation should be enough to stop bypasses 
+    but it is only effective on machines which support SMEP
+
+ - sysctl interface (lkrg.umh_lock) which will be disabled by default. 
+    If it is enabled, LKRG completely locks down 
+    UMH functionality, and nothing can be executed via this interface. It has of 
+    course side effects e.g. systemd daemon is using UMH to invoke 
+    "systemd-cgroups-agent". If you enable lkrg.umh_lock then any call to the 
+    systemd-cgroups-agent will fail. However, not all systems are using systemd. 
+    Additionally, if you're super paranoid this feature can be useful for you.
 
 
 ---
