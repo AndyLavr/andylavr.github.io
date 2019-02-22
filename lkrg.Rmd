@@ -34,7 +34,7 @@ parm:           p_init_log_level:Logging level init value [1 (alive) is default]
 
  - Install LKRG service:
 
-[Download](https://dragon-kernel.pro/files/install_lkrg-service.tar.gz) install scripts, unpack and run scripts:
+[Download](https://drive.google.com/open?id=1P6Vsd_snlSfpoyr0msZgL5dhJYGp7XmS) install scripts, unpack and run scripts:
 
 ```
 $ tar zxf install_lkrg-service.tar.gz
