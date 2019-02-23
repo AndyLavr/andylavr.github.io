@@ -1,5 +1,5 @@
 ---
-title: "Dragon Linux Kernel 4.20.11"
+title: "Dragon Linux Kernel 4.20.12"
 subtitle: "For distributives based on Ubuntu Cosmic/Disco"
 date: "`r Sys.Date()`"
 permalink: /
@@ -282,7 +282,7 @@ If you do not register at Dragon Team, the kernel installed from the PPA will wo
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/generic
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.11-dragon linux-headers-4.20.11-dragon-generic linux-image-unsigned-4.20.11-dragon-generic linux-modules-4.20.11-dragon-generic linux-modules-extra-4.20.11-dragon-generic
+$ sudo apt install linux-headers-4.20.12-dragon linux-headers-4.20.12-dragon-generic linux-image-unsigned-4.20.12-dragon-generic linux-modules-4.20.12-dragon-generic linux-modules-extra-4.20.12-dragon-generic
 $ sudo reboot
 ```
 
@@ -291,7 +291,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/generic
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.11-dragon linux-headers-4.20.11-dragon-lowlatency linux-image-unsigned-4.20.11-dragon-lowlatency linux-modules-4.20.11-dragon-lowlatency linux-modules-extra-4.20.11-dragon-lowlatency
+$ sudo apt install linux-headers-4.20.12-dragon linux-headers-4.20.12-dragon-lowlatency linux-image-unsigned-4.20.12-dragon-lowlatency linux-modules-4.20.12-dragon-lowlatency linux-modules-extra-4.20.12-dragon-lowlatency
 $ sudo reboot
 ```
 
@@ -300,7 +300,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.11-dragon linux-headers-4.20.11-dragon-westmere linux-image-unsigned-4.20.11-dragon-westmere linux-modules-4.20.11-dragon-westmere linux-modules-extra-4.20.11-dragon-westmere
+$ sudo apt install linux-headers-4.20.12-dragon linux-headers-4.20.12-dragon-westmere linux-image-unsigned-4.20.12-dragon-westmere linux-modules-4.20.12-dragon-westmere linux-modules-extra-4.20.12-dragon-westmere
 $ sudo reboot
 ```
 
@@ -309,7 +309,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.11-dragon linux-headers-4.20.11-dragon-atom linux-image-unsigned-4.20.11-dragon-atom linux-modules-4.20.11-dragon-atom linux-modules-extra-4.20.11-dragon-atom
+$ sudo apt install linux-headers-4.20.12-dragon linux-headers-4.20.12-dragon-atom linux-image-unsigned-4.20.12-dragon-atom linux-modules-4.20.12-dragon-atom linux-modules-extra-4.20.12-dragon-atom
 $ sudo reboot
 ```
 
