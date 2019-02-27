@@ -78,12 +78,12 @@ The Linux kernel is a very large piece of software. It contains drivers and spec
  
 ## Linux X64 (AMD64/EM64T) display kernel module
 
- Full information is driver version **390.87** here - ([Nvidia Main site](https://www.nvidia.com/download/driverResults.aspx/137276/en-us))
+ Full information is driver version **390.116** here - ([Nvidia Main site](https://www.nvidia.com/Download/driverResults.aspx/142567/en-us))
 
  Dragon Linux Team provide their own packages of the NVIDIA Linux Graphics Driver in the distribution's native package management format. 
 This may interact better with the rest of your distribution's framework, and you may want to use this rather than NVIDIA's official package.
 
- - The modules nvidia* version 390.87 is integrated into the kernel.
+ - The modules nvidia* version 390.116 is integrated into the kernel.
 
 ---
 
