@@ -30,7 +30,7 @@ By default, Ubuntu systems run with the Ubuntu kernels provided by the Ubuntu re
 
 Ubuntu’s stock Linux kernel is fine for most users, but because Ubuntu follows a six-month release cycle, their kernels are always a release or three behind upstream. This can cause problems for users attempting to install Ubuntu on brand new hardware, or worse, force ultra-nerds to wait to play with the latest and greatest new kernel features!
 
-All workstations that I use today — a [MSI GT80-2QE-Titan-SLI (Broadwell)](https://www.msi.com/Laptop/GT80-2QE-Titan-SLI/Specification), [Dell Inspiron N5010 (Westmere)](https://technoish.com/dell-inspiron-n5010-review/), [Toshiba Satellite Click 10 LX0W-C - C64M (Atom Cherry Trail)](http://www.toshiba.co.uk/discontinued-products/satellite-click-10-lx0w-c-104/?categoryNameProductPage=laptops) and [Acer Aspire SW5-012/Fendi2 Z3537F (Atom)](https://www.cnet.com/products/acer-aspire-switch-10-sw5-012-12l7-10-1-atom-z3735f-2-gb-ram-32-gb-ssd/specs/)  - boots Dragon kernels instead. Dragon’s kernels mirror the upstream development cycle, and as a bonus, include a number of exciting optimizations and patches to improve performance and expose up-and-coming features.
+All workstations that I use today — a [MSI GT80-2QE-Titan-SLI (Broadwell)](https://www.msi.com/Laptop/GT80-2QE-Titan-SLI/Specification), [Dell Inspiron N5010 (Westmere)](https://technoish.com/dell-inspiron-n5010-review/), [Toshiba Satellite Click 10 LX0W-C - C64M (Atom Cherry Trail)](http://www.toshiba.co.uk/discontinued-products/satellite-click-10-lx0w-c-104/?categoryNameProductPage=laptops) and [Acer Aspire SW5-012/Fendi2 Z3537F (Atom Bay Trail)](https://www.cnet.com/products/acer-aspire-switch-10-sw5-012-12l7-10-1-atom-z3735f-2-gb-ram-32-gb-ssd/specs/)  - boots Dragon kernels instead. Dragon’s kernels mirror the upstream development cycle, and as a bonus, include a number of exciting optimizations and patches to improve performance and expose up-and-coming features.
 
 [One recent patch](https://github.com/graysky2/kernel_gcc_patch) pulls in the ability to utilize architecture-specific GCC optimizations when compiling a kernel. In general, compiler optimizations may not have much effect on runtime performance, however with something as foundational as a kernel, tiny improvements might add up quickly.
 
@@ -270,6 +270,9 @@ WARNING!
  You can only use kernel packages that are in PPA if you have a Dragon Team license key!
 Without registering with the Dragon Team you need to do the build kernel packages yourself.
 If you do not register at Dragon Team, the kernel installed from the PPA will work for only 15 minutes ...
+
+ License activation is possible only on systems installed with LiveDVD/USB Dragon MATE images.
+Dragon Team cannot guarantee the maximum support for the operation of the device as it is unknown whether the necessary libraries and firmware are installed in the system or not.
 ```
 
  - For registration in team [please read information](https://dragon-kernel.pro/licensing).
