@@ -10,9 +10,9 @@
 
 
 
-<meta name="date" content="2019-02-28" />
+<meta name="date" content="2019-03-07" />
 
-<title>Dragon Linux Kernel 4.20.13</title>
+<title>Dragon Linux Kernel 4.20.14</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -257,9 +257,9 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Dragon Linux Kernel 4.20.13</h1>
+<h1 class="title toc-ignore">Dragon Linux Kernel 4.20.14</h1>
 <h3 class="subtitle"><em>For distributives based on Ubuntu Cosmic/Disco</em></h3>
-<h4 class="date"><em>2019-02-28</em></h4>
+<h4 class="date"><em>2019-03-07</em></h4>
 
 </div>
 
@@ -286,15 +286,15 @@ Each person has a choice and desires... (c) Andy Lavr</code></pre>
 <ul>
 <li>Experience a whole new way to interact with your PC like never before.</li>
 <li>Full kernel adaptation to version <strong>Ubuntu Cosmic/Disco.</strong></li>
-<li>Full kernel adaptation to build GCC 8.2</li>
+<li>Full kernel adaptation to build GCC 8.3</li>
 <li>Optimized to take full advantage of high-performance.</li>
 <li>Supports all recent 64-bit versions of Debian and Ubuntu-based systems.</li>
-<li>Tuned CPU for Intel i5/i7/Atom and AMD platform.</li>
+<li>Tuned CPU for Intel i5/i7/i9/Atom and AMD platform.</li>
 <li>PDS CPU Scheduler &amp; Multi-Queue I/O Block Layer w/ BFQ-MQ for smoothness and responsiveness.</li>
 <li>UKSM - Ultra Kernel Samepage Merging.</li>
 <li>Caching, Virtual Memory Manager and CPU Governor Improvements.</li>
 <li>General-purpose Multitasking Kernel.</li>
-<li>Built on the latest GCC 8.2</li>
+<li>Built on the latest GCC 8.3</li>
 <li>DRM Optimized Performance, Nvidia kernel module is integrated into the kernel.</li>
 <li>Intel CPUFreq (P-State passive mode).</li>
 <li>OpenZFS, AUFS, APFS, exFAT, BFQ and Ureadahead support available.</li>
@@ -432,7 +432,7 @@ root# mkfs.exfat -n Flash /dev/sde1</code></pre>
 <h2>Linux Kernel Runtime Guard (<a href="http://www.openwall.com/lkrg/">LKRG</a>)</h2>
 <p>Linux Kernel Runtime Guard (LKRG) is a loadable kernel module that performs runtime integrity checking of the Linux kernel and detection of security vulnerability exploits against the kernel.</p>
 <ul>
-<li>The module LKRG is integrated into the kernel.</li>
+<li>The module LKRG v0.6a is integrated into the kernel.</li>
 </ul>
 <hr />
 <p><a href="http://linux-test-project.github.io/"><img src="images/ltp_logo.jpeg" alt="Linux Test Project" /></a></p>
@@ -470,22 +470,22 @@ Dragon Team cannot guarantee the maximum support for the operation of the device
 <p><strong>For Dragon GENERIC kernel:</strong></p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/generic
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.13-dragon linux-headers-4.20.13-dragon-generic linux-image-unsigned-4.20.13-dragon-generic linux-modules-4.20.13-dragon-generic linux-modules-extra-4.20.13-dragon-generic
+$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-generic linux-image-unsigned-4.20.14-dragon-generic linux-modules-4.20.14-dragon-generic linux-modules-extra-4.20.14-dragon-generic
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Lowlatency kernel:</strong></p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/generic
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.13-dragon linux-headers-4.20.13-dragon-lowlatency linux-image-unsigned-4.20.13-dragon-lowlatency linux-modules-4.20.13-dragon-lowlatency linux-modules-extra-4.20.13-dragon-lowlatency
+$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-lowlatency linux-image-unsigned-4.20.14-dragon-lowlatency linux-modules-4.20.14-dragon-lowlatency linux-modules-extra-4.20.14-dragon-lowlatency
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Westmere kernel:</strong></p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.13-dragon linux-headers-4.20.13-dragon-westmere linux-image-unsigned-4.20.13-dragon-westmere linux-modules-4.20.13-dragon-westmere linux-modules-extra-4.20.13-dragon-westmere
+$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-westmere linux-image-unsigned-4.20.14-dragon-westmere linux-modules-4.20.14-dragon-westmere linux-modules-extra-4.20.14-dragon-westmere
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Atom kernel:</strong></p>
 <pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.13-dragon linux-headers-4.20.13-dragon-atom linux-image-unsigned-4.20.13-dragon-atom linux-modules-4.20.13-dragon-atom linux-modules-extra-4.20.13-dragon-atom
+$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-atom linux-image-unsigned-4.20.14-dragon-atom linux-modules-4.20.14-dragon-atom linux-modules-extra-4.20.14-dragon-atom
 $ sudo reboot</code></pre>
 <hr />
 <ul>

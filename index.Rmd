@@ -1,5 +1,5 @@
 ---
-title: "Dragon Linux Kernel 4.20.13"
+title: "Dragon Linux Kernel 4.20.14"
 subtitle: "For distributives based on Ubuntu Cosmic/Disco"
 date: "`r Sys.Date()`"
 permalink: /
@@ -44,15 +44,15 @@ The Linux kernel is a very large piece of software. It contains drivers and spec
 
  - Experience a whole new way to interact with your PC like never before. 
  - Full kernel adaptation to version **Ubuntu Cosmic/Disco.**
- - Full kernel adaptation to build GCC 8.2
+ - Full kernel adaptation to build GCC 8.3
  - Optimized to take full advantage of high-performance.
  - Supports all recent 64-bit versions of Debian and Ubuntu-based systems. 
- - Tuned CPU for Intel i5/i7/Atom and AMD platform.
+ - Tuned CPU for Intel i5/i7/i9/Atom and AMD platform.
  - PDS CPU Scheduler & Multi-Queue I/O Block Layer w/ BFQ-MQ for smoothness and responsiveness.
  - UKSM - Ultra Kernel Samepage Merging.
  - Caching, Virtual Memory Manager and CPU Governor Improvements.
  - General-purpose Multitasking Kernel.
- - Built on the latest GCC 8.2
+ - Built on the latest GCC 8.3
  - DRM Optimized Performance, Nvidia kernel module is integrated into the kernel.
  - Intel CPUFreq (P-State passive mode).
  - OpenZFS, AUFS, APFS, exFAT, BFQ and Ureadahead support available.
@@ -227,7 +227,7 @@ root# mkfs.exfat -n Flash /dev/sde1
 performs runtime integrity checking of the Linux kernel and detection of
 security vulnerability exploits against the kernel.
 
- - The module LKRG is integrated into the kernel.
+ - The module LKRG v0.6a is integrated into the kernel.
 
 ---
 
@@ -285,7 +285,7 @@ Dragon Team cannot guarantee the maximum support for the operation of the device
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/generic
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.13-dragon linux-headers-4.20.13-dragon-generic linux-image-unsigned-4.20.13-dragon-generic linux-modules-4.20.13-dragon-generic linux-modules-extra-4.20.13-dragon-generic
+$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-generic linux-image-unsigned-4.20.14-dragon-generic linux-modules-4.20.14-dragon-generic linux-modules-extra-4.20.14-dragon-generic
 $ sudo reboot
 ```
 
@@ -294,7 +294,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/generic
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.13-dragon linux-headers-4.20.13-dragon-lowlatency linux-image-unsigned-4.20.13-dragon-lowlatency linux-modules-4.20.13-dragon-lowlatency linux-modules-extra-4.20.13-dragon-lowlatency
+$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-lowlatency linux-image-unsigned-4.20.14-dragon-lowlatency linux-modules-4.20.14-dragon-lowlatency linux-modules-extra-4.20.14-dragon-lowlatency
 $ sudo reboot
 ```
 
@@ -303,7 +303,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.13-dragon linux-headers-4.20.13-dragon-westmere linux-image-unsigned-4.20.13-dragon-westmere linux-modules-4.20.13-dragon-westmere linux-modules-extra-4.20.13-dragon-westmere
+$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-westmere linux-image-unsigned-4.20.14-dragon-westmere linux-modules-4.20.14-dragon-westmere linux-modules-extra-4.20.14-dragon-westmere
 $ sudo reboot
 ```
 
@@ -312,7 +312,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.13-dragon linux-headers-4.20.13-dragon-atom linux-image-unsigned-4.20.13-dragon-atom linux-modules-4.20.13-dragon-atom linux-modules-extra-4.20.13-dragon-atom
+$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-atom linux-image-unsigned-4.20.14-dragon-atom linux-modules-4.20.14-dragon-atom linux-modules-extra-4.20.14-dragon-atom
 $ sudo reboot
 ```
 
