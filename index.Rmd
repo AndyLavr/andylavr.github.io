@@ -1,5 +1,5 @@
 ---
-title: "Dragon Linux Kernel 4.20.14"
+title: "Dragon Linux Kernel 5.0.1"
 subtitle: "For distributives based on Ubuntu Cosmic/Disco"
 date: "`r Sys.Date()`"
 permalink: /
@@ -9,6 +9,18 @@ permalink: /
 [![Donate with Ethereum](https://en.cryptobadges.io/badge/micro/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)](https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb)
 
 **Dragon is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads. These kernels are not supported and are not appropriate for production use. You assume all risks associated with the use of this kernel.**
+
+Maximum support for devices operation only if the system is installed from the ([Dragon Live disk](https://dragon-kernel.pro/livedvd))
+
+**Dragon Kernel semantic versioning and give your version numbers meaning:**
+
+Dragon Kernel no longer uses the stable version of the Linux kernel, all builds are based only on the mainline version.
+
+```
+major.minor[.maintenance-build]  (Example: 5.0.1-dragon)
+
+major.minor is mainline kernel version,  maintenance build is Dragon kernel version.
+```
 
 ---
 
@@ -134,14 +146,14 @@ volume managers, and more, with consistent reliability, functionality and perfor
  
  - The module OpenZFS is integrated into the kernel.
 
-#### Warning! This kernel implement OpenZFS version 0.7.12.
+#### Warning! This kernel implement OpenZFS version 0.7.13.
 
 Packages for this version strictly install from my repository!
 
 To install OpenZFS, head to a terminal and run the following command:
 
 ```bash
-$ sudo add-apt-repository ppa:wip-kernel/openzfs
+$ sudo add-apt-repository ppa:wip-kernel/openzfsv5
 $ sudo apt-get update
 $ sudo apt install zfsutils-linux
 $ sudo apt purge zfs-dkms
@@ -182,7 +194,7 @@ The name originally stood for AnotherUnionFS until version 2.
  
  - The module ([exFAT v1.2.24-dragon](https://github.com/AndyLavr/exfat-nofuse.git)) is integrated into the kernel.
 
- - Full adaptation to Kernel 4.20.y
+ - Full adaptation to Kernel 5.0.y
 
  - Support exFat capacity more than 2TB
 
@@ -283,36 +295,36 @@ Dragon Team cannot guarantee the maximum support for the operation of the device
 **For Dragon GENERIC kernel:**
 
 ```bash
-$ sudo add-apt-repository ppa:wip-kernel/generic
+$ sudo add-apt-repository ppa:wip-kernel/genv5
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-generic linux-image-unsigned-4.20.14-dragon-generic linux-modules-4.20.14-dragon-generic linux-modules-extra-4.20.14-dragon-generic
+$ sudo apt install linux-headers-5.0.1-dragon linux-headers-5.0.1-dragon-generic linux-image-unsigned-5.0.1-dragon-generic linux-modules-5.0.1-dragon-generic linux-modules-extra-5.0.1-dragon-generic
 $ sudo reboot
 ```
 
 **For Dragon Lowlatency kernel:**
 
 ```bash
-$ sudo add-apt-repository ppa:wip-kernel/generic
+$ sudo add-apt-repository ppa:wip-kernel/genv5
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-lowlatency linux-image-unsigned-4.20.14-dragon-lowlatency linux-modules-4.20.14-dragon-lowlatency linux-modules-extra-4.20.14-dragon-lowlatency
+$ sudo apt install linux-headers-5.0.1-dragon linux-headers-5.0.1-dragon-lowlatency linux-image-unsigned-5.0.1-dragon-lowlatency linux-modules-5.0.1-dragon-lowlatency linux-modules-extra-5.0.1-dragon-lowlatency
 $ sudo reboot
 ```
 
 **For Dragon Westmere kernel:**
 
 ```bash
-$ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
+$ sudo add-apt-repository ppa:wip-kernel/wav5pax
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-westmere linux-image-unsigned-4.20.14-dragon-westmere linux-modules-4.20.14-dragon-westmere linux-modules-extra-4.20.14-dragon-westmere
+$ sudo apt install linux-headers-5.0.1-dragon linux-headers-5.0.1-dragon-westmere linux-image-unsigned-5.0.1-dragon-westmere linux-modules-5.0.1-dragon-westmere linux-modules-extra-5.0.1-dragon-westmere
 $ sudo reboot
 ```
 
 **For Dragon Atom kernel:**
 
 ```bash
-$ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
+$ sudo add-apt-repository ppa:wip-kernel/wav5pax
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-atom linux-image-unsigned-4.20.14-dragon-atom linux-modules-4.20.14-dragon-atom linux-modules-extra-4.20.14-dragon-atom
+$ sudo apt install linux-headers-5.0.1-dragon linux-headers-5.0.1-dragon-atom linux-image-unsigned-5.0.1-dragon-atom linux-modules-5.0.1-dragon-atom linux-modules-extra-5.0.1-dragon-atom
 $ sudo reboot
 ```
 

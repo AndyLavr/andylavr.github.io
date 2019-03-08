@@ -10,9 +10,9 @@
 
 
 
-<meta name="date" content="2019-03-07" />
+<meta name="date" content="2019-03-08" />
 
-<title>Dragon Linux Kernel 4.20.14</title>
+<title>Dragon Linux Kernel 5.0.1</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -257,15 +257,21 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Dragon Linux Kernel 4.20.14</h1>
+<h1 class="title toc-ignore">Dragon Linux Kernel 5.0.1</h1>
 <h3 class="subtitle"><em>For distributives based on Ubuntu Cosmic/Disco</em></h3>
-<h4 class="date"><em>2019-03-07</em></h4>
+<h4 class="date"><em>2019-03-08</em></h4>
 
 </div>
 
 
 <p><a href="https://github.com/RichardLitt/standard-readme"><img src="https://img.shields.io/badge/readme%20style-standard-brightgreen.svg" alt="standard-readme compliant" /></a> <a href="https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW"><img src="https://en.cryptobadges.io/badge/micro/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW" alt="Donate with Bitcoin" /></a> <a href="https://en.cryptobadges.io/donate/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb"><img src="https://en.cryptobadges.io/badge/micro/0xE42f2d4D4aF888Ac784ED26a68E828475A4712Cb" alt="Donate with Ethereum" /></a></p>
 <p><strong>Dragon is a distro kernel replacement built using the best configuration and kernel sources for desktop, multimedia, and gaming workloads. These kernels are not supported and are not appropriate for production use. You assume all risks associated with the use of this kernel.</strong></p>
+<p>Maximum support for devices operation only if the system is installed from the (<a href="https://dragon-kernel.pro/livedvd">Dragon Live disk</a>)</p>
+<p><strong>Dragon Kernel semantic versioning and give your version numbers meaning:</strong></p>
+<p>Dragon Kernel no longer uses the stable version of the Linux kernel, all builds are based only on the mainline version.</p>
+<pre><code>major.minor[.maintenance-build]  (Example: 5.0.1-dragon)
+
+major.minor is mainline kernel version,  maintenance build is Dragon kernel version.</code></pre>
 <hr />
 <picture>
 <center>
@@ -366,11 +372,11 @@ Each person has a choice and desires... (c) Andy Lavr</code></pre>
 <ul>
 <li>The module OpenZFS is integrated into the kernel.</li>
 </ul>
-<div id="warning-this-kernel-implement-openzfs-version-0.7.12." class="section level4">
-<h4>Warning! This kernel implement OpenZFS version 0.7.12.</h4>
+<div id="warning-this-kernel-implement-openzfs-version-0.7.13." class="section level4">
+<h4>Warning! This kernel implement OpenZFS version 0.7.13.</h4>
 <p>Packages for this version strictly install from my repository!</p>
 <p>To install OpenZFS, head to a terminal and run the following command:</p>
-<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/openzfs
+<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/openzfsv5
 $ sudo apt-get update
 $ sudo apt install zfsutils-linux
 $ sudo apt purge zfs-dkms
@@ -403,7 +409,7 @@ $ sudo reboot</code></pre>
 <p>exFAT can be used where NTFS is not a feasible solution (due to data-structure overhead), but a greater file-size limit than the standard FAT32 file system (i.e. 4 GiB) is required. exFAT has been adopted by the SD Card Association as the default file system for SDXC cards larger than 32 GiB.</p>
 <ul>
 <li><p>The module (<a href="https://github.com/AndyLavr/exfat-nofuse.git">exFAT v1.2.24-dragon</a>) is integrated into the kernel.</p></li>
-<li><p>Full adaptation to Kernel 4.20.y</p></li>
+<li><p>Full adaptation to Kernel 5.0.y</p></li>
 <li><p>Support exFat capacity more than 2TB</p></li>
 </ul>
 <p><strong>Enable exFAT module and install exfat-utils:</strong></p>
@@ -468,24 +474,24 @@ Dragon Team cannot guarantee the maximum support for the operation of the device
 </ul>
 <p><strong>Quick install</strong></p>
 <p><strong>For Dragon GENERIC kernel:</strong></p>
-<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/generic
+<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/genv5
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-generic linux-image-unsigned-4.20.14-dragon-generic linux-modules-4.20.14-dragon-generic linux-modules-extra-4.20.14-dragon-generic
+$ sudo apt install linux-headers-5.0.1-dragon linux-headers-5.0.1-dragon-generic linux-image-unsigned-5.0.1-dragon-generic linux-modules-5.0.1-dragon-generic linux-modules-extra-5.0.1-dragon-generic
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Lowlatency kernel:</strong></p>
-<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/generic
+<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/genv5
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-lowlatency linux-image-unsigned-4.20.14-dragon-lowlatency linux-modules-4.20.14-dragon-lowlatency linux-modules-extra-4.20.14-dragon-lowlatency
+$ sudo apt install linux-headers-5.0.1-dragon linux-headers-5.0.1-dragon-lowlatency linux-image-unsigned-5.0.1-dragon-lowlatency linux-modules-5.0.1-dragon-lowlatency linux-modules-extra-5.0.1-dragon-lowlatency
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Westmere kernel:</strong></p>
-<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
+<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/wav5pax
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-westmere linux-image-unsigned-4.20.14-dragon-westmere linux-modules-4.20.14-dragon-westmere linux-modules-extra-4.20.14-dragon-westmere
+$ sudo apt install linux-headers-5.0.1-dragon linux-headers-5.0.1-dragon-westmere linux-image-unsigned-5.0.1-dragon-westmere linux-modules-5.0.1-dragon-westmere linux-modules-extra-5.0.1-dragon-westmere
 $ sudo reboot</code></pre>
 <p><strong>For Dragon Atom kernel:</strong></p>
-<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/wip-kernel-release
+<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/wav5pax
 $ sudo apt-get update
-$ sudo apt install linux-headers-4.20.14-dragon linux-headers-4.20.14-dragon-atom linux-image-unsigned-4.20.14-dragon-atom linux-modules-4.20.14-dragon-atom linux-modules-extra-4.20.14-dragon-atom
+$ sudo apt install linux-headers-5.0.1-dragon linux-headers-5.0.1-dragon-atom linux-image-unsigned-5.0.1-dragon-atom linux-modules-5.0.1-dragon-atom linux-modules-extra-5.0.1-dragon-atom
 $ sudo reboot</code></pre>
 <hr />
 <ul>
