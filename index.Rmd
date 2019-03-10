@@ -1,5 +1,5 @@
 ---
-title: "Dragon Linux Kernel 5.0.1"
+title: "Dragon Linux Kernel 5.0.2"
 subtitle: "For distributives based on Ubuntu Cosmic/Disco"
 date: "`r Sys.Date()`"
 permalink: /
@@ -17,7 +17,7 @@ Maximum support for devices operation only if the system is installed from the (
 Dragon Kernel no longer uses the stable version of the Linux kernel, all builds are based only on the mainline version.
 
 ```
-major.minor[.maintenance-build]  (Example: 5.0.1-dragon)
+major.minor[.maintenance-build]  (Example: 5.0.2-dragon)
 
 major.minor is mainline kernel version,  maintenance build is Dragon kernel version.
 ```
@@ -314,7 +314,7 @@ Dragon Team cannot guarantee the maximum support for the operation of the device
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/genv5
 $ sudo apt-get update
-$ sudo apt install linux-headers-5.0.1-dragon linux-headers-5.0.1-dragon-generic linux-image-unsigned-5.0.1-dragon-generic linux-modules-5.0.1-dragon-generic linux-modules-extra-5.0.1-dragon-generic
+$ sudo apt install linux-headers-5.0.2-dragon linux-headers-5.0.2-dragon-generic linux-image-unsigned-5.0.2-dragon-generic linux-modules-5.0.2-dragon-generic linux-modules-extra-5.0.2-dragon-generic
 $ sudo reboot
 ```
 
@@ -323,7 +323,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/genv5
 $ sudo apt-get update
-$ sudo apt install linux-headers-5.0.1-dragon linux-headers-5.0.1-dragon-lowlatency linux-image-unsigned-5.0.1-dragon-lowlatency linux-modules-5.0.1-dragon-lowlatency linux-modules-extra-5.0.1-dragon-lowlatency
+$ sudo apt install linux-headers-5.0.2-dragon linux-headers-5.0.2-dragon-lowlatency linux-image-unsigned-5.0.2-dragon-lowlatency linux-modules-5.0.2-dragon-lowlatency linux-modules-extra-5.0.2-dragon-lowlatency
 $ sudo reboot
 ```
 
@@ -332,7 +332,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/wav5pax
 $ sudo apt-get update
-$ sudo apt install linux-headers-5.0.1-dragon linux-headers-5.0.1-dragon-westmere linux-image-unsigned-5.0.1-dragon-westmere linux-modules-5.0.1-dragon-westmere linux-modules-extra-5.0.1-dragon-westmere
+$ sudo apt install linux-headers-5.0.2-dragon linux-headers-5.0.2-dragon-westmere linux-image-unsigned-5.0.2-dragon-westmere linux-modules-5.0.2-dragon-westmere linux-modules-extra-5.0.2-dragon-westmere
 $ sudo reboot
 ```
 
@@ -341,7 +341,7 @@ $ sudo reboot
 ```bash
 $ sudo add-apt-repository ppa:wip-kernel/wav5pax
 $ sudo apt-get update
-$ sudo apt install linux-headers-5.0.1-dragon linux-headers-5.0.1-dragon-atom linux-image-unsigned-5.0.1-dragon-atom linux-modules-5.0.1-dragon-atom linux-modules-extra-5.0.1-dragon-atom
+$ sudo apt install linux-headers-5.0.2-dragon linux-headers-5.0.2-dragon-atom linux-image-unsigned-5.0.2-dragon-atom linux-modules-5.0.2-dragon-atom linux-modules-extra-5.0.2-dragon-atom
 $ sudo reboot
 ```
 
