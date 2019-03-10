@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2019-03-08" />
+<meta name="date" content="2019-03-10" />
 
 <title>Dragon Linux Kernel 5.0.1</title>
 
@@ -259,7 +259,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Dragon Linux Kernel 5.0.1</h1>
 <h3 class="subtitle"><em>For distributives based on Ubuntu Cosmic/Disco</em></h3>
-<h4 class="date"><em>2019-03-08</em></h4>
+<h4 class="date"><em>2019-03-10</em></h4>
 
 </div>
 
@@ -440,6 +440,16 @@ root# mkfs.exfat -n Flash /dev/sde1</code></pre>
 <ul>
 <li>The module LKRG v0.6a is integrated into the kernel.</li>
 </ul>
+<hr />
+<p><a href=""><img src="images/iptables.jpeg" alt="iptables" /></a></p>
+</div>
+<div id="fixes-work-iptables-for-dragon-kernel-v5.0.2-dragon" class="section level2">
+<h2>Fixes work IPTABLES for Dragon Kernel &gt;= v5.0.2-dragon</h2>
+<p><strong>It is strongly recommended to use the iptables package only from the PPA Linux WIP-Kernel team:</strong></p>
+<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/iptables
+$ sudo apt update
+$ sudo apt dist-upgrade -y</code></pre>
+<p>Package version - iptables (1.8.2-4ubuntu1)</p>
 <hr />
 <p><a href="http://linux-test-project.github.io/"><img src="images/ltp_logo.jpeg" alt="Linux Test Project" /></a></p>
 </div>

@@ -243,6 +243,23 @@ security vulnerability exploits against the kernel.
 
 ---
 
+[![iptables](./images/iptables.jpeg)]()
+
+
+## Fixes work IPTABLES for Dragon Kernel >= v5.0.2-dragon
+
+**It is strongly recommended to use the iptables package only from the PPA Linux WIP-Kernel team:**
+
+```bash
+$ sudo add-apt-repository ppa:wip-kernel/iptables
+$ sudo apt update
+$ sudo apt dist-upgrade -y
+```
+
+Package version - iptables (1.8.2-4ubuntu1)
+
+---
+
 [![**Linux Test Project**](images/ltp_logo.jpeg)](http://linux-test-project.github.io/)
 
 ## Kernel tested by - [Linux Test Project](http://linux-test-project.github.io/)

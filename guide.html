@@ -261,7 +261,17 @@ $(document).ready(function () {
 </div>
 
 
+<p><a href=""><img src="images/iptables.jpeg" alt="iptables" /></a></p>
+<div id="fixes-work-iptables-for-dragon-kernel-v5.0.2-dragon" class="section level2">
+<h2>Fixes work IPTABLES for Dragon Kernel &gt;= v5.0.2-dragon</h2>
+<p><strong>It is strongly recommended to use the iptables package only from the PPA Linux WIP-Kernel team:</strong></p>
+<pre class="bash"><code>$ sudo add-apt-repository ppa:wip-kernel/iptables
+$ sudo apt update
+$ sudo apt dist-upgrade -y</code></pre>
+<p>Package version - iptables (1.8.2-4ubuntu1)</p>
+<hr />
 <p><a href=""><img src="images/i915.jpeg" alt="i915" /></a></p>
+</div>
 <div id="fixes-booting-kernel-for-i915-video-chipset" class="section level2">
 <h2>Fixes booting kernel for i915 video chipset</h2>
 <pre><code>If kernel starting and boot screen black then change kernel grub boot options  i915.modeset=1 to i915.modeset=0</code></pre>
