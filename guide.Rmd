@@ -40,6 +40,9 @@ $ sudo update-grub
 $ reboot
 ```
 
+ - Read more - [Signing a custom kernel for Secure Boot](https://dragon-kernel.pro/sign)
+
+
  Thanks Edgard Pineda "epineda" <edgard.pineda@gmail.com>
 
 ---
