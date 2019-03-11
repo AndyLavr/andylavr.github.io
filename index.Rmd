@@ -65,7 +65,7 @@ The Linux kernel is a very large piece of software. It contains drivers and spec
  - Caching, Virtual Memory Manager and CPU Governor Improvements.
  - General-purpose Multitasking Kernel.
  - Built on the latest GCC 8.3
- - DRM Optimized Performance, Nvidia kernel module is integrated into the kernel.
+ - DRM Optimized Performance.
  - Intel CPUFreq (P-State passive mode).
  - OpenZFS, AUFS, APFS, exFAT, BFQ and Ureadahead support available.
 
@@ -83,19 +83,6 @@ The Linux kernel is a very large piece of software. It contains drivers and spec
 - **Binary Compatibility Cross Distro**: Compatible with Debian Testing and newer as well as latest Ubuntu. Worst case, a package rebuild will be required on older distributions.
 - **Distribution Kernel Drop-in Replacement**: Proper distribution style configuration supporting broadest selection of hardware. Paravirtualization options enabled to reduce overhead under virtualization.
 - **Minimal Debugging***: Minimum number of debug options enabled to increase kernel throughput.
-
----
-
-[![**Nvidia**](images/nv.jpeg)]()
- 
-## Linux X64 (AMD64/EM64T) display kernel module
-
- Full information is driver version **390.116** here - ([Nvidia Main site](https://www.nvidia.com/Download/driverResults.aspx/142567/en-us))
-
- Dragon Linux Team provide their own packages of the NVIDIA Linux Graphics Driver in the distribution's native package management format. 
-This may interact better with the rest of your distribution's framework, and you may want to use this rather than NVIDIA's official package.
-
- - The modules nvidia* version 390.116 is integrated into the kernel.
 
 ---
 
