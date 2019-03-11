@@ -131,7 +131,7 @@ The Linux kernel is a very large piece of software. It contains drivers and spec
  OpenZFS is an outstanding storage platform that encompasses the functionality of traditional filesystems,
 volume managers, and more, with consistent reliability, functionality and performance.
  
- - The module OpenZFS is integrated into the kernel.
+ - The module OpenZFS is integrated into the kernel (only GENERIC kernel build).
 
 #### Warning! This kernel implement OpenZFS version 0.7.13.
 
@@ -233,7 +233,7 @@ security vulnerability exploits against the kernel.
 [![iptables](./images/iptables.jpeg)]()
 
 
-## Fixes work IPTABLES for Dragon Kernel >= v5.0.3-dragon
+## Fixes work IPTABLES for Dragon Kernel
 
 **It is strongly recommended to use the iptables package only from the PPA Linux WIP-Kernel team:**
 
