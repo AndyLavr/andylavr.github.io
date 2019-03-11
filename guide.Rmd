@@ -3,6 +3,46 @@ title: "Mini guide"
 permalink: guide/
 ---
 
+[![mok](./images/mok.png)]()
+
+
+## For signing Dragon Kernel for EFI Boot with your MOK:
+
+ 
+ Generate your MOK.pem:
+
+```
+$ openssl x509 -in /var/lib/shim-signed/mok/MOK.der -inform DER -outform PEM -out ~/MOK.pem
+```
+
+ Install the full kernel and debs package:
+
+```
+$ sudo add-apt-repository ppa:wip-kernel/genv5
+$ sudo apt-get update
+$ sudo apt install linux-headers-5.0.3-dragon linux-headers-5.0.3-dragon-generic linux-image-unsigned-5.0.3-dragon-generic linux-modules-5.0.3-dragon-generic linux-modules-extra-5.0.3-dragon-generic
+```
+
+ Sign your kernel: sudo sbsign --key /var/lib/shim-signed/mok/MOK.priv --cert ~/MOK.pem /boot/vmlinuz-5.0.3-dragon --output /boot/vmlinuz-5.0.3-dragon.signed
+
+```
+$ sudo cp /boot/initrd.img-5.0.3-dragon<open curly brace>,.signed<close curly brace>
+$ sudo update-grub
+$ reboot
+``
+
+ Delete old not signed kernel: 
+
+```
+$ sudo mv /boot/vmlinuz-5.0.3-dragon<open curly brace>.signed,<close curly brace> and sudo mv /boot/initrd.img-5.0.3-dragon<open curly brace>.signed,<close curly brace>
+$ sudo update-grub
+$ reboot
+```
+
+ Thanks Edgard Pineda "epineda" <edgard.pineda@gmail.com>
+
+---
+
 [![iptables](./images/iptables.jpeg)]()
 
 

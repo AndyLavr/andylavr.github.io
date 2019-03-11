@@ -261,7 +261,28 @@ $(document).ready(function () {
 </div>
 
 
+<p><a href=""><img src="images/mok.png" alt="mok" /></a></p>
+<div id="for-signing-dragon-kernel-for-efi-boot-with-your-mok" class="section level2">
+<h2>For signing Dragon Kernel for EFI Boot with your MOK:</h2>
+<p>Generate your MOK.pem:</p>
+<pre><code>$ openssl x509 -in /var/lib/shim-signed/mok/MOK.der -inform DER -outform PEM -out ~/MOK.pem</code></pre>
+<p>Install the full kernel and debs package:</p>
+<pre><code>$ sudo add-apt-repository ppa:wip-kernel/genv5
+$ sudo apt-get update
+$ sudo apt install linux-headers-5.0.3-dragon linux-headers-5.0.3-dragon-generic linux-image-unsigned-5.0.3-dragon-generic linux-modules-5.0.3-dragon-generic linux-modules-extra-5.0.3-dragon-generic</code></pre>
+<p>Sign your kernel: sudo sbsign –key /var/lib/shim-signed/mok/MOK.priv –cert ~/MOK.pem /boot/vmlinuz-5.0.3-dragon –output /boot/vmlinuz-5.0.3-dragon.signed</p>
+<pre><code>$ sudo cp /boot/initrd.img-5.0.3-dragon&lt;open curly brace&gt;,.signed&lt;close curly brace&gt;
+$ sudo update-grub
+$ reboot
+``
+
+ Delete old not signed kernel: 
+</code></pre>
+<p>$ sudo mv /boot/vmlinuz-5.0.3-dragon<open curly brace>.signed,<close curly brace> and sudo mv /boot/initrd.img-5.0.3-dragon<open curly brace>.signed,<close curly brace> $ sudo update-grub $ reboot ```</p>
+<p>Thanks Edgard Pineda “epineda” <a href="mailto:edgard.pineda@gmail.com">edgard.pineda@gmail.com</a></p>
+<hr />
 <p><a href=""><img src="images/iptables.jpeg" alt="iptables" /></a></p>
+</div>
 <div id="fixes-work-iptables-for-dragon-kernel-v5.0.2-dragon" class="section level2">
 <h2>Fixes work IPTABLES for Dragon Kernel &gt;= v5.0.2-dragon</h2>
 <p><strong>It is strongly recommended to use the iptables package only from the PPA Linux WIP-Kernel team:</strong></p>
