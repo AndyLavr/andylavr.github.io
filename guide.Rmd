@@ -36,7 +36,7 @@ From boot grub menu enter "e" key and edit kernel boot line and press F10 for bo
 [![NVIDIA](./images/nv_drivers.jpeg)]()
 
 
-## Fixed NVIDIA binary driver - version 340.107 for kernel 4.20
+## Fixed NVIDIA binary driver - version 340.107
 
  - for users nvidia-legacy card
 
@@ -102,7 +102,7 @@ $ sudo apt dist-upgrade -y
 [![VIRTUALBOX](./images/virtual_box.jpeg)]()
 
 
-## Fixed VirtualBox packages 5.2.22 for kernel 4.20
+## Fixed VirtualBox packages 5.2.22
 
 
 **It is strongly recommended to use the packeges only from the PPA Linux WIP-Kernel team:**
@@ -115,52 +115,6 @@ $ sudo apt-get install virtualbox
 
 Package version - VirtualBox-5.2.22 (5.2.22-dfsg-3)
 
-
-**Fixes work and build modules for kernel 4.20**
-
----
-
-## Force set HalfDuplex and disable flow control for RTL8102e
-
- When you start the kernel phy enables full duplex and flow control rx /
-tx for r8169 module. Turn off flow control in use ethtool no
-possibility.
-
-```
-[  +6,268667] libphy: r8169: probed
-[  +0,000464] r8169 0000:13:00.0 eth0: RTL8102e, f0:4d:a2:cb:b8:f3, XID
-24e, IRQ 30
-[  +0,023024] RTL8201CP Ethernet r8169-1300:00: attached PHY driver
-[RTL8201CP Ethernet] (mii_bus:phy_addr=r8169-1300:00, irq=IGNORE)
-[  +1,673582] r8169 0000:13:00.0 eth0: Link is Up - 100Mbps/Full - flow
-control rx/tx
-```
-
-If you turn off and turn on the ethernet cable, the driver disables
-the flow control and fullduplex.
-
-```
-[  +5,143360] r8169 0000:13:00.0 eth0: Link is Down
-[  +2,530738] libphy: r8169: probed
-[  +0,000480] r8169 0000:13:00.0 eth0: RTL8102e, f0:4d:a2:cb:b8:f3, XID
-24e, IRQ 30
-[  +0,023594] RTL8201CP Ethernet r8169-1300:00: attached PHY driver
-[RTL8201CP Ethernet] (mii_bus:phy_addr=r8169-1300:00, irq=IGNORE)
-[  +1,705550] r8169 0000:13:00.0 eth0: Link is Up - 100Mbps/Half - flow
-control off
-```
-
- This behavior of the driver does not allow the network card to operate
-at full speed after a restart or first start of the system.
-
-Use module parameter rtl8201_half=1
-
-```bash
-Add to /etc/modprobe.d/realtek.conf
-
-options realtek rtl8201_half=1
-```
-
 ---
 
 ### Example config files for Intel i5 Westmere, 4Gb RAM 
@@ -168,7 +122,7 @@ options realtek rtl8201_half=1
 - /etc/default/grub
 
 ```bash
-GRUB_CMDLINE_LINUX_DEFAULT="noresume psi=1 acpi_osi=Linux acpi_backlight=vendor intel_iommu=on swiotlb=32768 apparmor=0 net.ifnames=0 biosdevname=0"
+GRUB_CMDLINE_LINUX_DEFAULT="noresume psi=1 acpi_serialize acpi_osi=Linux acpi_backlight=vendor intel_iommu=on swiotlb=32768 apparmor=0 net.ifnames=0 biosdevname=0"
 GRUB_CMDLINE_LINUX="systemd.gpt_auto=0 zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=15 pcie_acs_override=downstream"
 ```
 
