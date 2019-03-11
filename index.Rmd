@@ -181,7 +181,7 @@ The name originally stood for AnotherUnionFS until version 2.
  
  - The module ([exFAT v1.2.24-dragon](https://github.com/AndyLavr/exfat-nofuse.git)) is integrated into the kernel.
 
- - Full adaptation to Kernel 5.0.y
+ - Full adaptation to Kernel v5
 
  - Support exFat capacity more than 2TB
 
