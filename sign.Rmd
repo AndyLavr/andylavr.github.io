@@ -17,8 +17,8 @@ should be similar steps to complete the signing (e.g. HashTool instead of MokUti
 or you can install shim to use instead. The ubuntu package for shim is called `shim-signed`, but
 please inform yourself on how to install it correctly, so you do not mess up your bootloader.
 
- Since the most recent GRUB2 update (2.02+dfsg1-5ubuntu1) in Ubuntu, GRUB2 does not load unsigned
-kernels anymore, as long as Secure Boot is enabled. Users of Ubuntu 18.04 will be notified during
+ Since the most recent GRUB2 update (2.02) in Ubuntu, GRUB2 does not load unsigned
+kernels anymore, as long as Secure Boot is enabled. Users of Ubuntu 18.04+ will be notified during
 upgrade of the grub-efi package, that this kernel is not signed and the upgrade will abort.
 
 Thus you have three options to solve this problem:
@@ -98,16 +98,16 @@ step 4. Continue with booting your system.
 $ sudo mokutil --list-enrolled
 ```
 
-7. Sign your installed kernel (it should be at /boot/vmlinuz-[KERNEL-VERSION]-surface-linux-surface):
+7. Sign your installed kernel (it should be at /boot/vmlinuz-[KERNEL-VERSION]-dragon-generic):
 
 ```
-$ sudo sbsign --key MOK.priv --cert MOK.pem /boot/vmlinuz-[KERNEL-VERSION]-surface-linux-surface --output /boot/vmlinuz-[KERNEL-VERSION]-surface-linux-surface.signed
+$ sudo sbsign --key MOK.priv --cert MOK.pem /boot/vmlinuz-[KERNEL-VERSION]-dragon-generic --output /boot/vmlinuz-[KERNEL-VERSION]-dragon-generic.signed
 ```
 
 8. Copy the initram of the unsigned kernel, so we also have an initram for the signed one.
 
 ```
-$ sudo cp /boot/initrd.img-[KERNEL-VERSION]-surface-linux-surface{,.signed}
+$ sudo cp /boot/initrd.img-[KERNEL-VERSION]-dragon-generic{,.signed}
 ```
 
 9. Update your grub-config
@@ -119,8 +119,8 @@ $ sudo update-grub
 10. Reboot your system and select the signed kernel. If booting works, you can remove the unsigned kernel:
 
 ```
-$ sudo mv /boot/vmlinuz-[KERNEL-VERSION]-surface-linux-surface{.signed,}
-$ sudo mv /boot/initrd.img-[KERNEL-VERSION]-surface-linux-surface{.signed,}
+$ sudo mv /boot/vmlinuz-[KERNEL-VERSION]-dragon-generic{.signed,}
+$ sudo mv /boot/initrd.img-[KERNEL-VERSION]-dragon-generic{.signed,}
 $ sudo update-grub
 ```
 

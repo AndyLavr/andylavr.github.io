@@ -265,7 +265,7 @@ $(document).ready(function () {
 <hr />
 <p><a href=""><img src="images/mok.png" alt="mok" /></a></p>
 <p>Instructions are for ubuntu, but should work similar for other distros, if they are using shim and grub as bootloader. If your distro is not using shim (e.g. Linux Foundation Preloader), there should be similar steps to complete the signing (e.g. HashTool instead of MokUtil for LF Preloader) or you can install shim to use instead. The ubuntu package for shim is called <code>shim-signed</code>, but please inform yourself on how to install it correctly, so you do not mess up your bootloader.</p>
-<p>Since the most recent GRUB2 update (2.02+dfsg1-5ubuntu1) in Ubuntu, GRUB2 does not load unsigned kernels anymore, as long as Secure Boot is enabled. Users of Ubuntu 18.04 will be notified during upgrade of the grub-efi package, that this kernel is not signed and the upgrade will abort.</p>
+<p>Since the most recent GRUB2 update (2.02) in Ubuntu, GRUB2 does not load unsigned kernels anymore, as long as Secure Boot is enabled. Users of Ubuntu 18.04+ will be notified during upgrade of the grub-efi package, that this kernel is not signed and the upgrade will abort.</p>
 <p>Thus you have three options to solve this problem:</p>
 <ol style="list-style-type: decimal">
 <li>You sign the kernel yourself.</li>
@@ -325,13 +325,13 @@ nsComment               = &quot;OpenSSL Generated Certificate&quot;</code></pre>
 </ol>
 <pre><code>$ sudo mokutil --list-enrolled</code></pre>
 <ol start="7" style="list-style-type: decimal">
-<li>Sign your installed kernel (it should be at /boot/vmlinuz-[KERNEL-VERSION]-surface-linux-surface):</li>
+<li>Sign your installed kernel (it should be at /boot/vmlinuz-[KERNEL-VERSION]-dragon-generic):</li>
 </ol>
-<pre><code>$ sudo sbsign --key MOK.priv --cert MOK.pem /boot/vmlinuz-[KERNEL-VERSION]-surface-linux-surface --output /boot/vmlinuz-[KERNEL-VERSION]-surface-linux-surface.signed</code></pre>
+<pre><code>$ sudo sbsign --key MOK.priv --cert MOK.pem /boot/vmlinuz-[KERNEL-VERSION]-dragon-generic --output /boot/vmlinuz-[KERNEL-VERSION]-dragon-generic.signed</code></pre>
 <ol start="8" style="list-style-type: decimal">
 <li>Copy the initram of the unsigned kernel, so we also have an initram for the signed one.</li>
 </ol>
-<pre><code>$ sudo cp /boot/initrd.img-[KERNEL-VERSION]-surface-linux-surface{,.signed}</code></pre>
+<pre><code>$ sudo cp /boot/initrd.img-[KERNEL-VERSION]-dragon-generic{,.signed}</code></pre>
 <ol start="9" style="list-style-type: decimal">
 <li>Update your grub-config</li>
 </ol>
@@ -339,8 +339,8 @@ nsComment               = &quot;OpenSSL Generated Certificate&quot;</code></pre>
 <ol start="10" style="list-style-type: decimal">
 <li>Reboot your system and select the signed kernel. If booting works, you can remove the unsigned kernel:</li>
 </ol>
-<pre><code>$ sudo mv /boot/vmlinuz-[KERNEL-VERSION]-surface-linux-surface{.signed,}
-$ sudo mv /boot/initrd.img-[KERNEL-VERSION]-surface-linux-surface{.signed,}
+<pre><code>$ sudo mv /boot/vmlinuz-[KERNEL-VERSION]-dragon-generic{.signed,}
+$ sudo mv /boot/initrd.img-[KERNEL-VERSION]-dragon-generic{.signed,}
 $ sudo update-grub</code></pre>
 <p>Now your system should run under a signed kernel and upgrading GRUB2 works again. If you want to upgrade the custom kernel, you can sign the new version easily by following above steps again from step seven on. Thus BACKUP the MOK-keys (MOK.der, MOK.pem, MOK.priv).</p>
 <hr />
