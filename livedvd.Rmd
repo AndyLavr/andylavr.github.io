@@ -30,7 +30,7 @@ Dragon Team cannot guarantee the maximum support for the operation of the device
 
  - Warning! It works only with an activated Dragon Team members license!
 
- - Kernel version [4.20.13-dragon Release](https://dragon-kernel.pro), software for Live DVD upgraded to **20190228**
+ - Kernel version [5.0.3-dragon Release](https://dragon-kernel.pro), software for Live DVD upgraded to **20190312**
 
 
 [![Download Atom Live DVD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/open?id=1W76vzxZrhUD2QQXcC6bXsBti65ta25VP)
@@ -40,7 +40,7 @@ Dragon Team cannot guarantee the maximum support for the operation of the device
 
  - Warning! It works only with an activated Dragon Team members license!
 
- - Kernel version [4.20.13-dragon Release](https://dragon-kernel.pro), software for Live DVD upgraded to **20190228**
+ - Kernel version [5.0.3-dragon Release](https://dragon-kernel.pro), software for Live DVD upgraded to **20190312**
 
 
 [![Download Generic Live DVD image](https://img.shields.io/badge/Download-LiveUSB-green.svg)](https://drive.google.com/open?id=1AX0Hn2LHvTpmo5zypl1TAJRWEWWRc_Do)
