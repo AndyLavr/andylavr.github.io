@@ -269,15 +269,15 @@ $(document).ready(function () {
 <p>Install the full kernel and debs package:</p>
 <pre><code>$ sudo add-apt-repository ppa:wip-kernel/genv5
 $ sudo apt-get update
-$ sudo apt install linux-headers-5.0.3-dragon linux-headers-5.0.3-dragon-generic linux-image-unsigned-5.0.3-dragon-generic linux-modules-5.0.3-dragon-generic linux-modules-extra-5.0.3-dragon-generic</code></pre>
+$ sudo apt install linux-headers-5.0.4-dragon linux-headers-5.0.4-dragon-generic linux-image-unsigned-5.0.4-dragon-generic linux-modules-5.0.4-dragon-generic linux-modules-extra-5.0.4-dragon-generic</code></pre>
 <p>Sign your kernel:</p>
-<pre><code>$ sudo sbsign --key /var/lib/shim-signed/mok/MOK.priv --cert ~/MOK.pem /boot/vmlinuz-5.0.3-dragon-generic --output /boot/vmlinuz-5.0.3-dragon-generic.signed
-$ sudo cp /boot/initrd.img-5.0.3-dragon-generic{,.signed}
+<pre><code>$ sudo sbsign --key /var/lib/shim-signed/mok/MOK.priv --cert ~/MOK.pem /boot/vmlinuz-5.0.4-dragon-generic --output /boot/vmlinuz-5.0.4-dragon-generic.signed
+$ sudo cp /boot/initrd.img-5.0.4-dragon-generic{,.signed}
 $ sudo update-grub
 $ reboot</code></pre>
 <p>Delete old not signed kernel:</p>
-<pre><code>$ sudo rm /boot/vmlinuz-5.0.3-dragon-generic
-$ sudo rm /boot/initrd.img-5.0.3-dragon-generic
+<pre><code>$ sudo rm /boot/vmlinuz-5.0.4-dragon-generic
+$ sudo rm /boot/initrd.img-5.0.4-dragon-generic
 $ sudo update-grub
 $ reboot</code></pre>
 <ul>
