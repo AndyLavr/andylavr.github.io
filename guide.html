@@ -276,8 +276,8 @@ $ sudo cp /boot/initrd.img-5.0.3-dragon-generic{,.signed}
 $ sudo update-grub
 $ reboot</code></pre>
 <p>Delete old not signed kernel:</p>
-<pre><code>$ sudo mv /boot/vmlinuz-5.0.3-dragon-generic{.signed,} 
-$ sudo mv /boot/initrd.img-5.0.3-dragon-generic{.signed,}
+<pre><code>$ sudo rm /boot/vmlinuz-5.0.3-dragon-generic
+$ sudo rm /boot/initrd.img-5.0.3-dragon-generic
 $ sudo update-grub
 $ reboot</code></pre>
 <ul>
