@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dragon-kernel.site/sitemap.xml
+

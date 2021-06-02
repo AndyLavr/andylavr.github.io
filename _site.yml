@@ -1,0 +1,17 @@
+name: Dragon-Kernel
+output_dir: '.'
+navbar:
+  title: Dragon Kernel
+  left:
+  - text: Membership by Request
+    href: mailto:wip.kernel@gmail.com
+output:
+  html_document:
+    theme: flatly
+    highlight: textmate
+    include:
+      after_body: footer.html
+      in_header: GA_Script.html
+    lib_dir: site_libs
+    self_contained: no
+

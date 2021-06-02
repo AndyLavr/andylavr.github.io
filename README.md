@@ -1,2 +1,2 @@
-# wip-kernel-www
-WIP Kernel web resource
+
+## Dragon Kernel WWW (https://dragon-kernel.site)

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8" />
+<title>Spectre Meltdown Checker</title>
+</head>
+<body style="color:white; background-color:black">
+<pre>
+Spectre and Meltdown mitigation detection tool v0.44+
+
+Checking for vulnerabilities on current system
+Kernel is <span style="color:fuchsia;">Linux 5.13.7-dragon-sandybridge #202106020001 DRAGON SMP Wed Jun 2 07:14:53 MSK 2021 x86_64</span>
+CPU is <span style="color:fuchsia;">Intel(R) Core(TM) i7-2920XM CPU @ 2.50GHz</span>
+
+<span style="font-weight:bold;color:#3333FF;">Hardware check</span>
+* Hardware support (CPU microcode) for mitigation techniques
+  * Indirect Branch Restricted Speculation (IBRS)
+    * SPEC_CTRL MSR is available: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+    * CPU indicates IBRS capability: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (SPEC_CTRL feature bit)
+  * Indirect Branch Prediction Barrier (IBPB)
+    * PRED_CMD MSR is available: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+    * CPU indicates IBPB capability: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (SPEC_CTRL feature bit)
+  * Single Thread Indirect Branch Predictors (STIBP)
+    * SPEC_CTRL MSR is available: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+    * CPU indicates STIBP capability: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (Intel STIBP feature bit)
+  * Speculative Store Bypass Disable (SSBD)
+    * CPU indicates SSBD capability: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (Intel SSBD)
+  * L1 data cache invalidation
+    * FLUSH_CMD MSR is available: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+    * CPU indicates L1D flush capability: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (L1D flush feature bit)
+  * Microarchitectural Data Sampling
+    * VERW instruction is available: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (MD_CLEAR feature bit)
+  * Enhanced IBRS (IBRS_ALL)
+    * CPU indicates ARCH_CAPABILITIES MSR availability: <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+    * ARCH_CAPABILITIES MSR advertises IBRS_ALL capability: <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+  * CPU explicitly indicates not being vulnerable to Meltdown/L1TF (RDCL_NO): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+  * CPU explicitly indicates not being vulnerable to Variant 4 (SSB_NO): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+  * CPU/Hypervisor indicates L1D flushing is not necessary on this system: <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+  * Hypervisor indicates host CPU might be vulnerable to RSB underflow (RSBA): <span style="background-color:#3333FF;"></span><span style="color:dimgray;background-color:#3333FF;"> NO </span>
+  * CPU explicitly indicates not being vulnerable to Microarchitectural Data Sampling (MDS_NO): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+  * CPU explicitly indicates not being vulnerable to TSX Asynchronous Abort (TAA_NO): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+  * CPU explicitly indicates not being vulnerable to iTLB Multihit (PSCHANGE_MSC_NO): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+  * CPU explicitly indicates having MSR for TSX control (TSX_CTRL_MSR): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+  * CPU supports Transactional Synchronization Extensions (TSX): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+  * CPU supports Software Guard Extensions (SGX): <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NO </span>
+  * CPU supports Special Register Buffer Data Sampling (SRBDS): <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NO </span>
+  * CPU microcode is known to cause stability problems: <span style="background-color:#3333FF;"></span><span style="color:dimgray;background-color:#3333FF;"> NO </span> (family 0x6 model 0x2a stepping 0x7 ucode 0x2f cpuid 0x206a7)
+  * CPU microcode is the latest known available version: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (latest version is 0x2f dated 2019/02/17 according to builtin firmwares DB v191+i20210217)
+* CPU vulnerability to the speculative execution attack variants
+  * Affected by CVE-2017-5753 (Spectre Variant 1, bounds check bypass): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> YES </span>
+  * Affected by CVE-2017-5715 (Spectre Variant 2, branch target injection): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> YES </span>
+  * Affected by CVE-2017-5754 (Variant 3, Meltdown, rogue data cache load): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> YES </span>
+  * Affected by CVE-2018-3640 (Variant 3a, rogue system register read): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> YES </span>
+  * Affected by CVE-2018-3639 (Variant 4, speculative store bypass): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> YES </span>
+  * Affected by CVE-2018-3615 (Foreshadow (SGX), L1 terminal fault): <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NO </span>
+  * Affected by CVE-2018-3620 (Foreshadow-NG (OS), L1 terminal fault): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> YES </span>
+  * Affected by CVE-2018-3646 (Foreshadow-NG (VMM), L1 terminal fault): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> YES </span>
+  * Affected by CVE-2018-12126 (Fallout, microarchitectural store buffer data sampling (MSBDS)): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> YES </span>
+  * Affected by CVE-2018-12130 (ZombieLoad, microarchitectural fill buffer data sampling (MFBDS)): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> YES </span>
+  * Affected by CVE-2018-12127 (RIDL, microarchitectural load port data sampling (MLPDS)): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> YES </span>
+  * Affected by CVE-2019-11091 (RIDL, microarchitectural data sampling uncacheable memory (MDSUM)): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> YES </span>
+  * Affected by CVE-2019-11135 (ZombieLoad V2, TSX Asynchronous Abort (TAA)): <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NO </span>
+  * Affected by CVE-2018-12207 (No eXcuses, iTLB Multihit, machine check exception on page size changes (MCEPSC)): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> YES </span>
+  * Affected by CVE-2020-0543 (Special Register Buffer Data Sampling (SRBDS)): <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NO </span>
+
+<span style="font-weight:bold;color:#3333FF;">CVE-2017-5753 aka 'Spectre Variant 1, bounds check bypass'</span>
+* Mitigated according to the /sys interface: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (Mitigation: usercopy/swapgs barriers and __user pointer sanitization)
+* Kernel has array_index_mask_nospec: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (1 occurrence(s) found of x86 64 bits array_index_mask_nospec())
+* Kernel has the Red Hat/Ubuntu patch: <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+* Kernel has mask_nospec64 (arm64): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+* Kernel has array_index_nospec (arm64): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (Mitigation: usercopy/swapgs barriers and __user pointer sanitization)
+
+<span style="font-weight:bold;color:#3333FF;">CVE-2017-5715 aka 'Spectre Variant 2, branch target injection'</span>
+* Mitigated according to the /sys interface: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (Mitigation: Full generic retpoline, IBPB: conditional, IBRS_FW, STIBP: conditional, RSB filling)
+* Mitigation 1
+  * Kernel is compiled with IBRS support: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+    * IBRS enabled and active: <span style="background-color:#3333FF;"></span><span style="color:dimgray;background-color:#3333FF;"> YES </span> (for firmware code only)
+  * Kernel is compiled with IBPB support: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+    * IBPB enabled and active: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+* Mitigation 2
+  * Kernel has branch predictor hardening (arm): <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+  * Kernel compiled with retpoline option: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+    * Kernel compiled with a retpoline-aware compiler: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (kernel reports full retpoline compilation)
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (Full retpoline + IBPB are mitigating the vulnerability)
+
+<span style="font-weight:bold;color:#3333FF;">CVE-2017-5754 aka 'Variant 3, Meltdown, rogue data cache load'</span>
+* Mitigated according to the /sys interface: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (Mitigation: PTI)
+* Kernel supports Page Table Isolation (PTI): <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+  * PTI enabled and active: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+  * Reduced performance impact of PTI: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (CPU supports PCID, performance impact of PTI will be reduced)
+* Running as a Xen PV DomU: <span style="background-color:#3333FF;"></span><span style="color:dimgray;background-color:#3333FF;"> NO </span>
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (Mitigation: PTI)
+
+<span style="font-weight:bold;color:#3333FF;">CVE-2018-3640 aka 'Variant 3a, rogue system register read'</span>
+* CPU microcode mitigates the vulnerability: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (your CPU microcode mitigates the vulnerability)
+
+<span style="font-weight:bold;color:#3333FF;">CVE-2018-3639 aka 'Variant 4, speculative store bypass'</span>
+* Mitigated according to the /sys interface: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (Mitigation: Speculative Store Bypass disabled via prctl and seccomp)
+* Kernel supports disabling speculative store bypass (SSB): <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (found in /proc/self/status)
+* SSB mitigation is enabled and active: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (per-thread through prctl)
+* SSB mitigation currently active for selected processes: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (gsettings-helper irqbalance ModemManager pulseaudio systemd-journald systemd-logind systemd-timesyncd tor udevadm upowerd)
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (Mitigation: Speculative Store Bypass disabled via prctl and seccomp)
+
+<span style="font-weight:bold;color:#3333FF;">CVE-2018-3615 aka 'Foreshadow (SGX), L1 terminal fault'</span>
+* CPU microcode mitigates the vulnerability: <span style="background-color:#3333FF;"></span><span style="color:dimgray;background-color:#3333FF;"> N/A </span>
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (your CPU vendor reported your CPU model as not vulnerable)
+
+<span style="font-weight:bold;color:#3333FF;">CVE-2018-3620 aka 'Foreshadow-NG (OS), L1 terminal fault'</span>
+* Mitigated according to the /sys interface: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (Mitigation: PTE Inversion; VMX: conditional cache flushes, SMT vulnerable)
+* Kernel supports PTE inversion: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (found in kernel image)
+* PTE inversion enabled and active: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (Mitigation: PTE Inversion; VMX: conditional cache flushes, SMT vulnerable)
+
+<span style="font-weight:bold;color:#3333FF;">CVE-2018-3646 aka 'Foreshadow-NG (VMM), L1 terminal fault'</span>
+* Information from the /sys interface: Mitigation: PTE Inversion; VMX: conditional cache flushes, SMT vulnerable
+* This system is a host running a hypervisor: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NO </span>
+* Mitigation 1 (KVM)
+  * EPT is disabled: <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+* Mitigation 2
+  * L1D flush is supported by kernel: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (found flush_l1d in /proc/cpuinfo)
+  * L1D flush enabled: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (conditional flushes)
+  * Hardware-backed L1D flush supported: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (performance impact of the mitigation will be greatly reduced)
+  * Hyper-Threading (SMT) is enabled: <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> YES </span>
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (this system is not running a hypervisor)
+
+<span style="font-weight:bold;color:#3333FF;">CVE-2018-12126 aka 'Fallout, microarchitectural store buffer data sampling (MSBDS)'</span>
+* Mitigated according to the /sys interface: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (Mitigation: Clear CPU buffers; SMT vulnerable)
+* Kernel supports using MD_CLEAR mitigation: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (md_clear found in /proc/cpuinfo)
+* Kernel mitigation is enabled and active: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+* SMT is either mitigated or disabled: <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (Your microcode and kernel are both up to date for this mitigation, and mitigation is enabled)
+
+<span style="font-weight:bold;color:#3333FF;">CVE-2018-12130 aka 'ZombieLoad, microarchitectural fill buffer data sampling (MFBDS)'</span>
+* Mitigated according to the /sys interface: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (Mitigation: Clear CPU buffers; SMT vulnerable)
+* Kernel supports using MD_CLEAR mitigation: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (md_clear found in /proc/cpuinfo)
+* Kernel mitigation is enabled and active: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+* SMT is either mitigated or disabled: <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (Your microcode and kernel are both up to date for this mitigation, and mitigation is enabled)
+
+<span style="font-weight:bold;color:#3333FF;">CVE-2018-12127 aka 'RIDL, microarchitectural load port data sampling (MLPDS)'</span>
+* Mitigated according to the /sys interface: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (Mitigation: Clear CPU buffers; SMT vulnerable)
+* Kernel supports using MD_CLEAR mitigation: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (md_clear found in /proc/cpuinfo)
+* Kernel mitigation is enabled and active: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+* SMT is either mitigated or disabled: <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (Your microcode and kernel are both up to date for this mitigation, and mitigation is enabled)
+
+<span style="font-weight:bold;color:#3333FF;">CVE-2019-11091 aka 'RIDL, microarchitectural data sampling uncacheable memory (MDSUM)'</span>
+* Mitigated according to the /sys interface: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (Mitigation: Clear CPU buffers; SMT vulnerable)
+* Kernel supports using MD_CLEAR mitigation: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (md_clear found in /proc/cpuinfo)
+* Kernel mitigation is enabled and active: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span>
+* SMT is either mitigated or disabled: <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (Your microcode and kernel are both up to date for this mitigation, and mitigation is enabled)
+
+<span style="font-weight:bold;color:#3333FF;">CVE-2019-11135 aka 'ZombieLoad V2, TSX Asynchronous Abort (TAA)'</span>
+* Mitigated according to the /sys interface: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (Not affected)
+* TAA mitigation is supported by kernel: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (found tsx_async_abort in kernel image)
+* TAA mitigation enabled and active: <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (your CPU vendor reported your CPU model as not vulnerable)
+
+<span style="font-weight:bold;color:#3333FF;">CVE-2018-12207 aka 'No eXcuses, iTLB Multihit, machine check exception on page size changes (MCEPSC)'</span>
+* Mitigated according to the /sys interface: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (KVM: Mitigation: VMX disabled)
+* This system is a host running a hypervisor: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NO </span>
+* iTLB Multihit mitigation is supported by kernel: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (found itlb_multihit in kernel image)
+* iTLB Multihit mitigation enabled and active: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (KVM: Mitigation: VMX disabled)
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (this system is not running a hypervisor)
+
+<span style="font-weight:bold;color:#3333FF;">CVE-2020-0543 aka 'Special Register Buffer Data Sampling (SRBDS)'</span>
+* Mitigated according to the /sys interface: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (Not affected)
+* SRBDS mitigation control is supported by the kernel: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (found SRBDS implementation evidence in kernel image. Your kernel is up to date for SRBDS mitigation)
+* SRBDS mitigation control is enabled and active: <span style="background-color:yellow;"></span><span style="color:dimgray;background-color:yellow;"> NO </span>
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (your CPU vendor reported your CPU model as not vulnerable)
+
+&gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">SUMMARY:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;">CVE-2017-5753:OK</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;">CVE-2017-5715:OK</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;">CVE-2017-5754:OK</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;">CVE-2018-3640:OK</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;">CVE-2018-3639:OK</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;">CVE-2018-3615:OK</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;">CVE-2018-3620:OK</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;">CVE-2018-3646:OK</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;">CVE-2018-12126:OK</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;">CVE-2018-12130:OK</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;">CVE-2018-12127:OK</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;">CVE-2019-11091:OK</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;">CVE-2019-11135:OK</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;">CVE-2018-12207:OK</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;">CVE-2020-0543:OK</span>
+
+Need more detailed information about mitigation options? Use --explain
+A false sense of security is worse than no security at all, see --disclaimer
+</pre>
+</body>
+</html>

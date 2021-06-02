@@ -1,0 +1,82 @@
+---
+title: "Dragon Kernel Club"
+subtitle: "The Dragon Kernel is a testing laboratory for modified @linux-next kernel"
+permalink: /
+---
+
+---
+
+<picture>
+ <center>
+    <source srcset="images/dragon.jpg" type="image/jpg">
+    <img src="images/dragon.jpg" alt="Dragon Kernel Club">
+ </center>
+</picture>
+
+
+<center>
+
+## This is a private project. Access and support only team members!
+
+### [Pay](https://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html#DoesTheGPLAllowMoney) and [get](https://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html#InternalDistribution) the kernel packages can only for club members!
+
+
+---
+
+</center>
+
+
+<details>
+  <summary>
+    <font style="color:#37C79C;">Version info</font>
+  </summary>
+<p>
+
+
+ **Dragon Kernel semantic versioning and give your version numbers meaning:**
+
+```
+major.minor[.maintenance-build]  (Example: 5.13.7-dragon)
+
+major.minor is linux-next kernel version,  maintenance build is Dragon kernel version.
+```
+
+</p>
+</details>
+
+
+<details>
+  <summary>
+    <font style="color:#FF9633;">View dmesg output</font>
+  </summary>
+<p>
+
+- [<font style="color:#1D32FC;">Dell Precision M6600 (Sandy Bridge)</font>](dmesg.html)
+
+
+</p>
+</details>
+
+
+<details>
+  <summary>
+    <font style="color:#FF9633;">View Spectre and Meltdown mitigation detection tool log</font>
+  </summary>
+<p>
+
+- [<font style="color:#1D32FC;">Linux 5.13.7-dragon-sandybridge</font>](checker.html)
+
+</p>
+</details>
+
+
+---
+
+<center>
+“If you think we are in fact violating the [GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html), take us to court. Otherwise, you are our lowest priority."
+
+[![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)](https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)
+</center>
+
+
+---
