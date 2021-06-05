@@ -36,7 +36,7 @@ permalink: /
  **Dragon Kernel semantic versioning and give your version numbers meaning:**
 
 ```
-major.minor[.maintenance-build]  (Example: 5.13.7-dragon)
+major.minor[.maintenance-build]  (Example: 5.13.8-dragon)
 
 major.minor is linux-next kernel version,  maintenance build is Dragon kernel version.
 ```
@@ -64,7 +64,7 @@ major.minor is linux-next kernel version,  maintenance build is Dragon kernel ve
   </summary>
 <p>
 
-- [<font style="color:#1D32FC;">Linux 5.13.7-dragon-sandybridge</font>](checker.html)
+- [<font style="color:#1D32FC;">Linux 5.13.8-dragon-sandybridge</font>](checker.html)
 
 </p>
 </details>
