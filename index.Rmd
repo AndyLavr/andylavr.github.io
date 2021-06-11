@@ -23,11 +23,8 @@ permalink: /
 
 ---
 
-</center>
-
-
-<center>
 ### Current Dragon kernel version is v5.13.9
+
 </center>
 
 
