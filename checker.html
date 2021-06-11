@@ -10,7 +10,7 @@
 Spectre and Meltdown mitigation detection tool v0.44+
 
 Checking for vulnerabilities on current system
-Kernel is <span style="color:fuchsia;">Linux 5.13.8-dragon-sandybridge #202106050001 DRAGON SMP Sat Jun 5 13:05:58 UTC 2021 x86_64</span>
+Kernel is <span style="color:fuchsia;">Linux 5.13.9-dragon-sandybridge #202106110001 DRAGON SMP PREEMPT Fri Jun 11 16:22:20 MSK 2021 x86_64</span>
 CPU is <span style="color:fuchsia;">Intel(R) Core(TM) i7-2920XM CPU @ 2.50GHz</span>
 
 <span style="font-weight:bold;color:#3333FF;">Hardware check</span>
@@ -101,7 +101,7 @@ CPU is <span style="color:fuchsia;">Intel(R) Core(TM) i7-2920XM CPU @ 2.50GHz</s
 * Mitigated according to the /sys interface: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (Mitigation: Speculative Store Bypass disabled via prctl and seccomp)
 * Kernel supports disabling speculative store bypass (SSB): <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (found in /proc/self/status)
 * SSB mitigation is enabled and active: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (per-thread through prctl)
-* SSB mitigation currently active for selected processes: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (gsettings-helper irqbalance ModemManager pulseaudio systemd-journald systemd-logind systemd-timesyncd tor udevadm upowerd)
+* SSB mitigation currently active for selected processes: <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> YES </span> (gsettings-helper irqbalance ModemManager pdns_recursor pulseaudio systemd-journald systemd-logind systemd-timesyncd tor udevadm upowerd)
 &gt; <span style="background-color:aqua;"></span><span style="color:dimgray;background-color:aqua;">STATUS:</span> <span style="background-color:lime;"></span><span style="color:dimgray;background-color:lime;"> NOT VULNERABLE </span> (Mitigation: Speculative Store Bypass disabled via prctl and seccomp)
 
 <span style="font-weight:bold;color:#3333FF;">CVE-2018-3615 aka 'Foreshadow (SGX), L1 terminal fault'</span>
