@@ -23,7 +23,9 @@ permalink: /
 
 ---
 
-### Current Dragon kernel version is v5.14.1 (Based @linux-next 20210701 and Dragon fixes)
+### Current Dragon kernel version is v5.14.1 
+
+**Based @linux-next 20210701 and Dragon fixes.**
 
 </center>
 
