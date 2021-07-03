@@ -23,7 +23,7 @@ permalink: /
 
 ---
 
-### Current Dragon kernel version is v5.13.10
+### Current Dragon kernel version is v5.14.1
 
 </center>
 
@@ -38,7 +38,7 @@ permalink: /
  **Dragon Kernel semantic versioning and give your version numbers meaning:**
 
 ```
-major.minor[.maintenance-build]  (Example: 5.13.10-dragon)
+major.minor[.maintenance-build]  (Example: 5.14.1-dragon)
 
 major.minor is linux-next kernel version,  maintenance build is Dragon kernel version.
 ```
@@ -66,7 +66,7 @@ major.minor is linux-next kernel version,  maintenance build is Dragon kernel ve
   </summary>
 <p>
 
-- [<font style="color:#1D32FC;">Linux 5.13.10-dragon-sandybridge</font>](checker.html)
+- [<font style="color:#1D32FC;">Linux 5.14.1-dragon-sandybridge</font>](checker.html)
 
 </p>
 </details>
