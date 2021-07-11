@@ -74,13 +74,24 @@ major.minor is linux-next kernel version,  maintenance build is Dragon kernel ve
 </details>
 
 
+<center>[![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)](https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)</center>
+
+
 ---
 
-<center>
-“If you think we are in fact violating the [GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html), take us to court. Otherwise, you are our lowest priority."
+<picture>
+ <center>
+    <source srcset="images/fagot-nobg.png" type="image/jpg">
+    <img src="images/fagot-nobg.png" alt="Fuck Off!">
+ </center>
+</picture>
 
-[![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)](https://en.cryptobadges.io/donate/1KvWrbLhuzk8DSb2Yq2948bMj3uQvVTQCW)
-</center>
+<center>Ukrainian assholes will never get access to the club!</center>
+
+
+---
+
+<center>“If you think we are in fact violating the [GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html), take us to court. Otherwise, you are our lowest priority."</center>
 
 
 ---
